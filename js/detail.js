@@ -45,8 +45,9 @@ const Detail = (() => {
     ].filter(Boolean);
 
     body.innerHTML = `
-      <div class="d-hero">
+      <div class="d-hero${bd ? '' : ' is-nudo'}">
         ${bd ? `<img src="${bd}" alt="" loading="lazy">` : ''}
+        ${m.tagline ? `<blockquote class="d-quote">${F.esc(m.tagline)}</blockquote>` : ''}
         <div class="d-head">
           <h2 id="sheet-title">${F.esc(m.title)}</h2>
           ${m.originalTitle && m.originalTitle !== m.title

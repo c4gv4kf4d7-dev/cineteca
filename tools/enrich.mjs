@@ -147,6 +147,15 @@ async function arricchisci(film) {
     v.site === 'YouTube' && /trailer/i.test(v.type));
   const trailer = video ? `https://www.youtube.com/watch?v=${video.key}` : film.trailer;
 
+  // La tagline italiana spesso manca: ripiego su quella originale.
+  let tagline = d.tagline || null;
+  if (!tagline) {
+    try {
+      const en = await tmdb(`/movie/${d.id}`, { language: 'en-US' });
+      tagline = en.tagline || null;
+    } catch { /* pazienza, resta senza */ }
+  }
+
   let esterni = {};
   try {
     esterni = await voti(d.imdb_id);
@@ -188,7 +197,7 @@ async function arricchisci(film) {
     popularity: d.popularity    || null,
     budget:     d.budget  || null,
     revenue:    d.revenue || null,
-    tagline:    d.tagline || null,
+    tagline,
     castDetail
   };
 }

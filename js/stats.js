@@ -32,6 +32,17 @@ const Stats = (() => {
   }
 
   function render() {
+    try { disegna(); }
+    catch (err) {
+      // Meglio dire cosa è andato storto che lasciare la pagina bianca.
+      console.error('Statistiche non disegnabili:', err);
+      root.innerHTML = `<p class="empty">Le statistiche non si sono caricate.<br>
+        <small>${F.esc(err.message)}</small><br><br>
+        Ricarica la pagina; se insiste, svuota la cache del browser.</p>`;
+    }
+  }
+
+  function disegna() {
     const films = Store.all();
     const visti = films.filter(m => m.user.seen);
 

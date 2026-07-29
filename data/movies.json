@@ -41,7 +41,7 @@
       "popularity": 155.2255,
       "budget": null,
       "revenue": 2286163,
-      "tagline": null,
+      "tagline": "Surviving the crash is just the beginning.",
       "castDetail": [
         {
           "name": "Aaron Eckhart",
@@ -153,7 +153,7 @@
       "popularity": 32.0685,
       "budget": 5000000,
       "revenue": 24071317,
-      "tagline": null,
+      "tagline": "We've been expecting you.",
       "castDetail": [
         {
           "name": "Adam Scott",
@@ -250,7 +250,7 @@
       "popularity": 27.7673,
       "budget": 85000000,
       "revenue": null,
-      "tagline": null,
+      "tagline": "Where goes the neighborhood.",
       "castDetail": [
         {
           "name": "Anne Hathaway",
@@ -350,7 +350,7 @@
       "popularity": 8.9015,
       "budget": null,
       "revenue": null,
-      "tagline": null,
+      "tagline": "Evil found a way out.",
       "castDetail": [
         {
           "name": "Amelia Eve",
@@ -438,7 +438,7 @@
       "popularity": 1.2331,
       "budget": null,
       "revenue": null,
-      "tagline": null,
+      "tagline": "Dream big...even if you're small.",
       "castDetail": [
         {
           "name": "Max Alexander",
@@ -700,7 +700,7 @@
       "popularity": 13.6642,
       "budget": 80000000,
       "revenue": null,
-      "tagline": null,
+      "tagline": "No sweat.",
       "castDetail": [
         {
           "name": "Austin Abrams",
@@ -764,7 +764,7 @@
       "popularity": 15.6532,
       "budget": null,
       "revenue": null,
-      "tagline": null,
+      "tagline": "Your mommy won't save you.",
       "castDetail": [
         {
           "name": "Jessica Chastain",
@@ -1542,8 +1542,8 @@
       "streaming": [],
       "poster": "/qQhInj9fw3S2bMbiEujVldthgKe.jpg",
       "backdrop": "/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
-      "tmdbRating": 7.95,
-      "tmdbVotes": 1723,
+      "tmdbRating": 7.948,
+      "tmdbVotes": 1751,
       "popularity": 1116.8359,
       "budget": 250000000,
       "revenue": 639631800,
@@ -1562,7 +1562,7 @@
         {
           "name": "Anne Hathaway",
           "character": "Penelope",
-          "profile": "/g2ozigjyCoSZmMnwo4fyhhJjslM.jpg"
+          "profile": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
         },
         {
           "name": "Robert Pattinson",
@@ -2221,7 +2221,7 @@
       "popularity": 2.1314,
       "budget": null,
       "revenue": null,
-      "tagline": null,
+      "tagline": "They said I couldn't. I did it. And I filmed it.",
       "castDetail": [
         {
           "name": "Katy Perry",
@@ -2390,7 +2390,7 @@
       "popularity": 129.1904,
       "budget": 250000000,
       "revenue": 1010218278,
-      "tagline": null,
+      "tagline": "Discover the making of a king.",
       "castDetail": [
         {
           "name": "Jaafar Jackson",
@@ -2729,7 +2729,7 @@
       "poster": "/lVesXbaSnCh0e27punAv4ZKWkxk.jpg",
       "backdrop": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
       "tmdbRating": 7.683,
-      "tmdbVotes": 3167,
+      "tmdbVotes": 3168,
       "popularity": 51.7414,
       "budget": 150000000,
       "revenue": 1868208796,
@@ -2950,8 +2950,8 @@
       "streaming": [],
       "poster": "/AaTg95kewgcTNyGYxm3VmH3RSj5.jpg",
       "backdrop": "/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-      "tmdbRating": 6.504,
-      "tmdbVotes": 1228,
+      "tmdbRating": 6.519,
+      "tmdbVotes": 1239,
       "popularity": 205.3708,
       "budget": 30000000,
       "revenue": 231229179,
@@ -3025,7 +3025,7 @@
       "title": "Super Mario Galaxy - Il film",
       "originalTitle": null,
       "release": "2026-04-01",
-      "director": "Aaron Horvath",
+      "director": "Michael Jelenic",
       "genres": [
         "Famiglia",
         "Commedia",
@@ -3299,7 +3299,7 @@
       "popularity": 9.8889,
       "budget": 20000000,
       "revenue": 2980376,
-      "tagline": null,
+      "tagline": "This is not a ghost story.",
       "castDetail": [
         {
           "name": "Anne Hathaway",
@@ -4160,5 +4160,5 @@
       ]
     }
   ],
-  "enrichedAt": "2026-07-29T19:09:49.702Z"
+  "enrichedAt": "2026-07-29T21:15:14.636Z"
 }

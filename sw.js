@@ -1,13 +1,27 @@
-/* Service worker minimo: guscio in cache, dati sempre freschi. */
-const CACHE = 'cineteca-v14';
+/* ══════════════════════════════════════════════════════════
+   Service worker — prima la rete, la cache è il paracadute.
+
+   La versione precedente serviva prima la cache: bastava
+   aggiungere uno script all'index perché il browser continuasse
+   a servire la pagina vecchia, senza il file nuovo, rompendo
+   la app. Qui la rete vince sempre e la cache interviene solo
+   quando la rete non c'è.
+   ══════════════════════════════════════════════════════════ */
+
+const CACHE = 'cineteca-v16';
 const SHELL = [
   './', './index.html', './css/styles.css',
-  './js/store.js', './js/format.js', './js/charts.js', './js/stats.js', './js/detail.js', './js/app.js',
-  './manifest.webmanifest'
+  './js/store.js', './js/format.js', './js/charts.js',
+  './js/consiglia.js', './js/perte.js', './js/stats.js', './js/detail.js', './js/app.js',
+  './data/movies.json', './manifest.webmanifest'
 ];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches.open(CACHE)
+      .then(c => Promise.allSettled(SHELL.map(u => c.add(u))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', e => {
@@ -21,22 +35,24 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   const { request } = e;
   if (request.method !== 'GET') return;
+  if (!request.url.startsWith('http')) return;
 
-  const url = new URL(request.url);
-
-  // Catalogo e locandine: prima la rete, la cache è il paracadute offline.
-  if (url.pathname.includes('/data/') || url.hostname === 'image.tmdb.org') {
-    e.respondWith(
-      fetch(request)
-        .then(res => {
-          const copy = res.clone();
-          caches.open(CACHE).then(c => c.put(request, copy));
-          return res;
-        })
-        .catch(() => caches.match(request))
-    );
-    return;
-  }
-
-  e.respondWith(caches.match(request).then(hit => hit || fetch(request)));
+  e.respondWith(
+    fetch(request)
+      .then(res => {
+        // Solo le risposte valide meritano di finire in cache.
+        if (res && res.ok && res.type !== 'opaque') {
+          const copia = res.clone();
+          caches.open(CACHE).then(c => c.put(request, copia)).catch(() => {});
+        }
+        return res;
+      })
+      .catch(async () => {
+        const hit = await caches.match(request);
+        if (hit) return hit;
+        // Navigazione offline senza corrispondenza: rimando alla home.
+        if (request.mode === 'navigate') return caches.match('./index.html');
+        return Response.error();
+      })
+  );
 });

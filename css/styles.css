@@ -265,10 +265,34 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .sheet-close:hover{ background:rgba(5,6,11,.95); transform:rotate(90deg); }
 .sheet-close svg{ width:17px; height:17px; }
 
-.d-hero{ position:relative; min-height:270px; display:flex; align-items:flex-end; }
-.d-hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.55; }
-.d-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(to top, var(--bg-2) 4%, rgba(10,12,21,.55) 55%, rgba(10,12,21,.2)); }
-.d-head{ position:relative; z-index:2; padding:clamp(20px,3vw,34px); width:100%; }
+/* Immagine grande che sfuma su tutti i lati, non solo in basso:
+   la locandina non deve mai finire con un bordo netto. */
+.d-hero{ position:relative; min-height:min(52vh,420px); display:flex; flex-direction:column; justify-content:flex-end; }
+.d-hero.is-nudo{ min-height:0; }
+.d-hero img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.72;
+  -webkit-mask-image:radial-gradient(125% 100% at 50% 0%, #000 42%, transparent 88%);
+          mask-image:radial-gradient(125% 100% at 50% 0%, #000 42%, transparent 88%);
+}
+.d-hero::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(to top, var(--bg-2) 3%, rgba(10,12,21,.72) 42%, rgba(10,12,21,.12) 78%),
+    linear-gradient(to right, var(--bg-2), transparent 22%, transparent 78%, var(--bg-2));
+}
+
+.d-quote{
+  position:relative; z-index:2; margin:0; padding:0 clamp(20px,3vw,34px);
+  max-width:26ch;
+  font-size:clamp(19px,2.6vw,30px); line-height:1.28; font-weight:600; font-style:italic;
+  letter-spacing:-.015em; color:#fff;
+  text-shadow:0 2px 26px rgba(0,0,0,.75);
+  animation:quoteIn .7s cubic-bezier(.2,.8,.3,1) both;
+}
+.d-quote::before, .d-quote::after{ content:'"'; color:var(--accent); font-style:normal; }
+.d-quote::after{ content:'"'; }
+@keyframes quoteIn{ from{ opacity:0; transform:translateY(14px); } }
+.d-head{ position:relative; z-index:2; padding:clamp(18px,2.6vw,28px) clamp(20px,3vw,34px) clamp(20px,3vw,34px); width:100%; }
 .d-head h2{ margin:0 0 8px; font-size:clamp(24px,3.4vw,38px); line-height:1.06; letter-spacing:-.025em; font-weight:800; }
 .d-orig{ margin:0 0 14px; color:var(--ink-3); font-size:14px; font-style:italic; }
 .d-facts{ display:flex; flex-wrap:wrap; gap:8px; }
@@ -345,6 +369,36 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .ph-numbers span{ display:block; margin-top:10px; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-2); }
 .ph-numbers i{ display:block; margin-top:3px; font-style:normal; font-size:10px; letter-spacing:.06em; text-transform:none; color:var(--ink-3); }
 .ph-foot{ margin:clamp(18px,2.6vw,28px) 0 0; font-size:13.5px; color:var(--ink-3); }
+
+/* ── per te ──────────────────────────────────────────── */
+.ritratto{
+  margin:8px 0 34px; padding:clamp(22px,3vw,38px);
+  border:1px solid var(--line); border-radius:var(--r-l);
+  background:linear-gradient(150deg, rgba(77,227,255,.07), rgba(183,140,255,.05) 55%, transparent);
+}
+.ritratto-frase{ margin:0; font-size:clamp(17px,2.2vw,23px); line-height:1.55; letter-spacing:-.01em; max-width:60ch; }
+.ritratto-frase b{ color:var(--accent); font-weight:700; }
+.ritratto-tag{ display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+
+.consigli{ display:flex; flex-direction:column; gap:10px; }
+.cons{
+  display:flex; align-items:center; gap:15px; width:100%; padding:11px; text-align:left;
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--r-m);
+  transition:background .2s, border-color .2s, transform .2s;
+}
+.cons:hover{ background:var(--panel-2); border-color:var(--line-2); transform:translateY(-3px); }
+.cons-pos{ flex:none; width:20px; font-family:var(--ff-mono); font-size:13px; color:var(--ink-3); text-align:right; }
+.cons-ph{ flex:none; width:48px; aspect-ratio:2/3; border-radius:var(--r-s); overflow:hidden; background:#12141F; }
+.cons-ph img{ width:100%; height:100%; object-fit:cover; }
+.cons-body{ flex:1; min-width:0; }
+.cons-body b{ display:block; font-size:14.5px; font-weight:650; margin-bottom:4px; }
+.cons-meta{ display:block; font-family:var(--ff-mono); font-size:11px; color:var(--ink-3); }
+.cons-perche{ display:block; margin-top:6px; font-size:12px; line-height:1.5; color:var(--accent); }
+.cons-punti{
+  flex:none; display:grid; place-items:center; min-width:38px; height:38px; padding:0 9px;
+  border-radius:999px; background:rgba(77,227,255,.1); border:1px solid rgba(77,227,255,.25);
+  font-family:var(--ff-mono); font-size:14px; font-weight:600; color:var(--accent);
+}
 
 /* ── barre con locandina ─────────────────────────────── */
 .cbars{ display:flex; flex-direction:column; gap:9px; }

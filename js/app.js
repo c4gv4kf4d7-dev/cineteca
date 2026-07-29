@@ -159,6 +159,7 @@
     // L'hero ha senso solo sulla lista del cinema.
     heroEl.hidden = filtro.status !== 'cinema';
     if (filtro.status === 'cinema') renderHero();
+    if ($('#view-perte').classList.contains('is-active')) PerTe.render();
     if ($('#view-stats').classList.contains('is-active')) Stats.render();
   }
 
@@ -182,6 +183,7 @@
       document.querySelectorAll('.view').forEach(v =>
         v.classList.toggle('is-active', v.id === `view-${tab.dataset.view}`));
       if (tab.dataset.view === 'stats') Stats.render();
+      if (tab.dataset.view === 'perte') PerTe.render();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   });
