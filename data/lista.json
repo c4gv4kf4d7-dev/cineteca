@@ -1,0 +1,125 @@
+{
+  "nota": "Corrispondenze TMDB verificate a mano. Alimenta tools/importa.mjs.",
+  "visto": [
+    {
+      "tmdbId": 858024,
+      "titolo": "Hamnet - Nel nome del figlio"
+    },
+    {
+      "tmdbId": 1314481,
+      "titolo": "Il diavolo veste Prada 2"
+    },
+    {
+      "tmdbId": 1339713,
+      "titolo": "Obsession"
+    },
+    {
+      "tmdbId": 1083381,
+      "titolo": "Backrooms"
+    },
+    {
+      "tmdbId": 1275779,
+      "titolo": "Disclosure Day"
+    },
+    {
+      "tmdbId": 1368337,
+      "titolo": "Odissea"
+    },
+    {
+      "tmdbId": 1212763,
+      "titolo": "La casa - Il rogo del Male"
+    },
+    {
+      "tmdbId": 687163,
+      "titolo": "L'ultima missione: Project Hail Mary"
+    },
+    {
+      "tmdbId": 1316092,
+      "titolo": "Cime tempestose"
+    },
+    {
+      "tmdbId": 1317288,
+      "titolo": "Marty Supreme"
+    },
+    {
+      "tmdbId": 680493,
+      "titolo": "Return to Silent Hill"
+    }
+  ],
+  "cinema": [
+    {
+      "tmdbId": 1684016,
+      "titolo": "Katy Perry: The Lifetimes Tour - Live from Paris"
+    }
+  ],
+  "casa": [
+    {
+      "tmdbId": 1084244,
+      "titolo": "Toy Story 5"
+    },
+    {
+      "tmdbId": 936075,
+      "titolo": "Michael"
+    },
+    {
+      "tmdbId": 1472638,
+      "titolo": "Buen Camino"
+    },
+    {
+      "tmdbId": 83533,
+      "titolo": "Avatar: Fuoco e cenere"
+    },
+    {
+      "tmdbId": 1084242,
+      "titolo": "Zootropolis 2"
+    },
+    {
+      "tmdbId": 1325734,
+      "titolo": "The Drama - Un segreto è per sempre"
+    },
+    {
+      "tmdbId": 1273221,
+      "titolo": "Scary Movie"
+    },
+    {
+      "tmdbId": 1226863,
+      "titolo": "Super Mario Galaxy - Il film"
+    },
+    {
+      "tmdbId": 1215532,
+      "titolo": "Hopper - Il segreto della marmotta"
+    },
+    {
+      "tmdbId": 1102883,
+      "titolo": "Mother Mary"
+    },
+    {
+      "tmdbId": 1327819,
+      "titolo": "Jumpers - Un salto tra gli animali"
+    },
+    {
+      "tmdbId": 1517606,
+      "titolo": "Notte prima degli esami 3.0"
+    },
+    {
+      "tmdbId": 1159559,
+      "titolo": "Scream 7"
+    },
+    {
+      "tmdbId": 1208348,
+      "titolo": "Rental Family - Nelle vite degli altri"
+    },
+    {
+      "tmdbId": 840464,
+      "titolo": "Greenland 2: Migration"
+    },
+    {
+      "tmdbId": 1198994,
+      "titolo": "Send Help"
+    },
+    {
+      "tmdbId": 1236153,
+      "titolo": "Mercy - Sotto accusa"
+    }
+  ]
+}

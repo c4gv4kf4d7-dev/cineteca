@@ -1,0 +1,4164 @@
+{
+  "generatedFrom": "Notion — Movies (3acf0fe16d3680a39fe9e1967823c653)",
+  "generatedAt": "2026-07-29",
+  "movies": [
+    {
+      "id": "cs-65949",
+      "title": "Deep Water",
+      "originalTitle": "Deep Water",
+      "release": "2026-07-23",
+      "director": "Renny Harlin",
+      "genres": [
+        "Thriller"
+      ],
+      "countries": [
+        "Spagna",
+        "Nuova Zelanda",
+        "USA"
+      ],
+      "runtime": 106,
+      "trailer": "https://www.youtube.com/watch?v=pZ-ZVkePQsM",
+      "cast": [
+        "Aaron Eckhart",
+        "Ben Kingsley",
+        "Angus Sampson"
+      ],
+      "plot": "Un gruppo di passeggeri internazionali è a bordo di un volo intercontinentale da Los Angeles a Shanghai. Una situazione estrema li costringe a lottare per sopravvivere, isolati e senza via di fuga.",
+      "source": "comingsoon:65949",
+      "lista": "cinema",
+      "tmdbId": 1127384,
+      "imdbId": "tt29516222",
+      "rtScore": null,
+      "metascore": 53,
+      "imdbRating": 5.5,
+      "imdbVotes": 7157,
+      "releaseGlobale": "2026-04-30",
+      "streaming": [],
+      "poster": "/ejYdwL5CAtekoZ3zV4hYRAQUmgN.jpg",
+      "backdrop": "/szKv713FcUXx6hcfdY369vtkmzr.jpg",
+      "tmdbRating": 7.221,
+      "tmdbVotes": 319,
+      "popularity": 155.2255,
+      "budget": null,
+      "revenue": 2286163,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Aaron Eckhart",
+          "character": "Ben",
+          "profile": "/u5JjnRMr9zKEVvOP7k3F6gdcwT6.jpg"
+        },
+        {
+          "name": "Ben Kingsley",
+          "character": "Rich",
+          "profile": "/k3Dmu49B2akwDvgqy52MOxznI59.jpg"
+        },
+        {
+          "name": "Molly Belle Wright",
+          "character": "Cora",
+          "profile": "/sjG5KfNuvSyv7ztNFNcuCulnuCS.jpg"
+        },
+        {
+          "name": "Angus Sampson",
+          "character": "Dan",
+          "profile": "/8EX6ul2zyVUg91oDvI3RpYS5szV.jpg"
+        },
+        {
+          "name": "Elijah Tamati",
+          "character": "Finn",
+          "profile": "/rFGB97FgZDQ7t01NtMdb4n6vkgg.jpg"
+        },
+        {
+          "name": "Zhao Simei",
+          "character": "Lilly",
+          "profile": "/39WrPp7nICluex1fGNhtPaUhTFI.jpg"
+        },
+        {
+          "name": "李汶翰",
+          "character": "Sam",
+          "profile": "/eUi1yeqa7YIl4LIwz1rDasteJ27.jpg"
+        },
+        {
+          "name": "那尔那茜",
+          "character": "Zoe",
+          "profile": "/i2oD8NEMmCSXDVtJq0bxOF0cJ4V.jpg"
+        },
+        {
+          "name": "Richard Crouchley",
+          "character": "Matt",
+          "profile": "/8AIFy9NYA4PCNkVtDj03B2hXucA.jpg"
+        },
+        {
+          "name": "Madeleine West",
+          "character": "Martine",
+          "profile": "/buJ3lN6iDQBuuP9FwGgpT9WQxLt.jpg"
+        },
+        {
+          "name": "Kate Fitzpatrick",
+          "character": "Becky",
+          "profile": "/ckDTcLQYGaFH2eRt5LaS69GI3lF.jpg"
+        },
+        {
+          "name": "Lakota Johnson",
+          "character": "Hutch",
+          "profile": "/iBhqBDvu7J3yN7xqoIEcvkfFESw.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1430077",
+      "title": "Hokum",
+      "originalTitle": "Hokum",
+      "release": "2026-08-05",
+      "director": "Damian McCarthy",
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "USA",
+        "Irlanda",
+        "Emirati Arabi Uniti",
+        "Hong Kong"
+      ],
+      "runtime": 108,
+      "trailer": "https://www.youtube.com/watch?v=q94kfZwyAkc",
+      "cast": [
+        "Adam Scott",
+        "Peter Coonan",
+        "David Wilmot",
+        "Florence Ordesh",
+        "Will O'Connell",
+        "Michael Patric",
+        "Brendan Conroy",
+        "Austin Amelio",
+        "Ezra Carlisle",
+        "Mallory Adams",
+        "Sioux Carroll"
+      ],
+      "plot": "Quando lo scrittore Ohm Bauman si ritira in una locanda isolata per spargere le ceneri dei suoi genitori, viene ossessionato dai racconti di una strega che infesta la suite nuziale. Visioni inquietanti e una scioccante scomparsa lo costringono a confrontarsi con gli angoli oscuri del suo passato.",
+      "source": "tmdb:1430077",
+      "lista": "cinema",
+      "tmdbId": 1430077,
+      "imdbId": "tt35672862",
+      "rtScore": null,
+      "metascore": 76,
+      "imdbRating": 7.3,
+      "imdbVotes": 16522,
+      "releaseGlobale": "2026-04-29",
+      "streaming": [],
+      "poster": "/nhF54SQmeaMUODgRKEuMMJoTysT.jpg",
+      "backdrop": "/asD57THSyXt4SC7SwVpe4R0xjRC.jpg",
+      "tmdbRating": 7,
+      "tmdbVotes": 608,
+      "popularity": 32.0685,
+      "budget": 5000000,
+      "revenue": 24071317,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Adam Scott",
+          "character": "Ohm Bauman",
+          "profile": "/b82C29R6fGiPoqIglQ4lzS6q2YX.jpg"
+        },
+        {
+          "name": "Peter Coonan",
+          "character": "Mal",
+          "profile": "/4CIPj53v871Gwwyean91BhXesfW.jpg"
+        },
+        {
+          "name": "David Wilmot",
+          "character": "Jerry",
+          "profile": "/epb46N0iJyAmSOguMdFn6qQGSsy.jpg"
+        },
+        {
+          "name": "Florence Ordesh",
+          "character": "Fiona",
+          "profile": "/vOSd53O4QOjZUl9U8LIP84lrvGk.jpg"
+        },
+        {
+          "name": "Will O'Connell",
+          "character": "Alby / Jack the Jackass",
+          "profile": "/9aQlrstSFoKQdsCigFWQibyfZhW.jpg"
+        },
+        {
+          "name": "Michael Patric",
+          "character": "Fergal",
+          "profile": "/mHbEIuUbc9wuqDRhVgLn4hnxVvn.jpg"
+        },
+        {
+          "name": "Brendan Conroy",
+          "character": "Mr. Cobb",
+          "profile": "/pUyjqFWqBERIW0wIJkxwgvfq1VY.jpg"
+        },
+        {
+          "name": "Austin Amelio",
+          "character": "Conquistador",
+          "profile": "/y4QTXuSSmD99n8dinMiTRBkUnAp.jpg"
+        },
+        {
+          "name": "Ezra Carlisle",
+          "character": "Boy",
+          "profile": "/9R5EmE7JOU703wl43si2wMwp0MP.jpg"
+        },
+        {
+          "name": "Mallory Adams",
+          "character": "Delia Bauman",
+          "profile": "/c5CdKuNTubd0kZUA7oNizY7my8Z.jpg"
+        },
+        {
+          "name": "Sioux Carroll",
+          "character": "Witch",
+          "profile": "/5k8boLGuGzclsLu6mp0tQAZbbTG.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cs-66536",
+      "title": "La Fine di Oak Street",
+      "originalTitle": "The End of Oak Street",
+      "release": "2026-08-12",
+      "director": "David Robert Mitchell",
+      "genres": [
+        "Thriller",
+        "Fantascienza"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 100,
+      "trailer": "https://www.youtube.com/watch?v=TR9hY0wbFsk",
+      "cast": [
+        "Anne Hathaway",
+        "Ewan McGregor",
+        "Maisy Stella"
+      ],
+      "plot": "Negli anni '80 una famiglia inizia a notare strani eventi nel proprio quartiere. Un misterioso fenomeno cosmico li isola in un luogo sconosciuto e dovranno restare uniti per sopravvivere.",
+      "source": "comingsoon:66536",
+      "lista": "cinema",
+      "tmdbId": 1101383,
+      "imdbId": "tt27165187",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-08-12",
+      "streaming": [],
+      "poster": "/3sBzqJcVjl4VKb9ULS569IIiUwu.jpg",
+      "backdrop": "/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 27.7673,
+      "budget": 85000000,
+      "revenue": null,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Anne Hathaway",
+          "character": "Denise Platt",
+          "profile": "/g2ozigjyCoSZmMnwo4fyhhJjslM.jpg"
+        },
+        {
+          "name": "Ewan McGregor",
+          "character": "Greg Platt",
+          "profile": "/aEmyadfRXTmmR7UW7OXsm5a6smS.jpg"
+        },
+        {
+          "name": "Christian Convery",
+          "character": "Brian Platt",
+          "profile": "/tOR2tSrvHPVDltE4jBDEva3GNqY.jpg"
+        },
+        {
+          "name": "Maisy Stella",
+          "character": "Audrey Platt",
+          "profile": "/3rBVjUtx6tRxzsLt2Rd6Kz9y59T.jpg"
+        },
+        {
+          "name": "Jordan Alexa Davis",
+          "character": null,
+          "profile": "/itz31u3sG9hAlwuFZ6FWz1KhY1R.jpg"
+        },
+        {
+          "name": "P.J. Byrne",
+          "character": null,
+          "profile": "/shniQxLvKNvANyJy3hLG8Oo7fW7.jpg"
+        },
+        {
+          "name": "Chris Coy",
+          "character": null,
+          "profile": "/qM89KmZYCOC9VVUle5OPMP0i5U8.jpg"
+        },
+        {
+          "name": "Bethany Anne Lind",
+          "character": "Mary Bagrowski",
+          "profile": "/d0FjeKbWYhbTzFSimCnC9K1Maza.jpg"
+        },
+        {
+          "name": "Emily Kuroda",
+          "character": "Mrs. Valcour",
+          "profile": "/yaZhAxSsElEaX0az2U6FUBN38ET.jpg"
+        },
+        {
+          "name": "Denitra Isler",
+          "character": "Mae",
+          "profile": "/gIIubxZEMjZiz9mTtfAlpQETjaw.jpg"
+        },
+        {
+          "name": "Hudson Meek",
+          "character": "Kaden",
+          "profile": "/29S5mIoO18vNbOs0qrLC2XRVNlV.jpg"
+        },
+        {
+          "name": "Anne Gee Byrd",
+          "character": "Mrs. Huddleston",
+          "profile": "/yNqUNepmVQ462yoTnZOWVbudKeG.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cs-68691",
+      "title": "Insidious: Fuori dall'Altrove",
+      "originalTitle": "Insidious: Out of the Further",
+      "release": "2026-08-19",
+      "director": "Jacob Chase",
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "Australia",
+        "USA"
+      ],
+      "runtime": null,
+      "trailer": "https://www.youtube.com/watch?v=ovnITQDbjUA",
+      "cast": [
+        "Amelia Eve"
+      ],
+      "plot": "Gemma, giovane madre, cresce sua figlia nella stessa casa in cui è cresciuta. Quando strani eventi riemergono, il passato sembra tornare a bussare alla porta.",
+      "source": "comingsoon:68691",
+      "lista": "cinema",
+      "tmdbId": 1291595,
+      "imdbId": "tt32393988",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-08-19",
+      "streaming": [],
+      "poster": "/eszahdPOeElmK3DSNXW44Qb0aNh.jpg",
+      "backdrop": "/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 8.9015,
+      "budget": null,
+      "revenue": null,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Amelia Eve",
+          "character": "Gemma",
+          "profile": "/tae6mUhWxNs82IVgWlarxPKbVL8.jpg"
+        },
+        {
+          "name": "Island Austin",
+          "character": "Maya",
+          "profile": "/663fMDrygvPYcV4L567iHVzEfXD.jpg"
+        },
+        {
+          "name": "Lin Shaye",
+          "character": "Elise Rainier",
+          "profile": "/aL87Za52elH81zMiXQn5C7AXAeg.jpg"
+        },
+        {
+          "name": "Sam Spruell",
+          "character": "Cyrus",
+          "profile": "/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
+        },
+        {
+          "name": "Brandon Perea",
+          "character": "Nick",
+          "profile": "/hEzljVgsho0Uwd8tg7AGB5Uy3Lr.jpg"
+        },
+        {
+          "name": "Maisie Richardson-Sellers",
+          "character": "Clare",
+          "profile": "/kYqqlIllubeg36H93RCNEzUSO5j.jpg"
+        },
+        {
+          "name": "Joseph Lopez",
+          "character": "Lester",
+          "profile": "/tmhwEUByCT6iXlxmJvpTsX97Css.jpg"
+        },
+        {
+          "name": "Laura Gordon",
+          "character": null,
+          "profile": "/7Gro37r1iqm4Wiyf2QlvMPgSeza.jpg"
+        },
+        {
+          "name": "Charli Penton",
+          "character": null,
+          "profile": "/1zHWlcfqZ8rwlNAb70k5XbitBUI.jpg"
+        },
+        {
+          "name": "Taylor Bogrand",
+          "character": "Doll Girl",
+          "profile": null
+        }
+      ]
+    },
+    {
+      "id": "cs-67639",
+      "title": "Couture",
+      "originalTitle": "Couture",
+      "release": "2026-08-26",
+      "director": "Alice Winocour",
+      "genres": [
+        "Drammatico"
+      ],
+      "countries": [
+        "Francia",
+        "USA"
+      ],
+      "runtime": 106,
+      "trailer": "https://www.comingsoon.it/film/couture/67639/video/?vid=48883",
+      "cast": [
+        "Angelina Jolie",
+        "Louis Garrel",
+        "Ella Rumpf"
+      ],
+      "plot": "Nella Fashion Week di Parigi, tra apparenze e pressione costante, tre donne si incrociano. I loro percorsi mettono a nudo fragilità e scelte, dentro e fuori dal mondo della moda.",
+      "source": "comingsoon:67639",
+      "lista": "cinema",
+      "tmdbId": 1677927,
+      "imdbId": null,
+      "releaseGlobale": "2026-06-13",
+      "streaming": [],
+      "poster": "/szWNSL9PfUtGPDODYp0hgBVr45a.jpg",
+      "backdrop": "/9Dygx7zaog5DJbGtnAak6ixZQaf.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 1.2331,
+      "budget": null,
+      "revenue": null,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Max Alexander",
+          "character": "Self",
+          "profile": null
+        },
+        {
+          "name": "Bob Mackie",
+          "character": "Self",
+          "profile": "/gNhwliizuE3zNPIhKwWEHxpZmGb.jpg"
+        },
+        {
+          "name": "Sherri Madison",
+          "character": "Self",
+          "profile": null
+        },
+        {
+          "name": "Fern Mallis",
+          "character": "Self",
+          "profile": "/c5kKIWLRDLMwCExtrrbd17SzxfD.jpg"
+        },
+        {
+          "name": "Isaac Mizrahi",
+          "character": "Self",
+          "profile": "/oP2Ebh9mDaDeFgzAGd6VuiLsDVb.jpg"
+        },
+        {
+          "name": "Sharon Stone",
+          "character": "Self",
+          "profile": "/5lYs0HaAvsXPZJpMcndbSeQdPgT.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cs-66983",
+      "title": "The Dog Stars - Le Stelle Dopo la Fine",
+      "originalTitle": "The Dog Stars",
+      "release": "2026-08-26",
+      "director": "Ridley Scott",
+      "genres": [
+        "Azione",
+        "Avventura",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "countries": [
+        "Gran Bretagna"
+      ],
+      "runtime": 100,
+      "trailer": "https://www.youtube.com/watch?v=kf1XH8Elzr0",
+      "cast": [
+        "Margaret Qualley",
+        "Josh Brolin",
+        "Guy Pearce"
+      ],
+      "plot": "Dopo un evento che ha cambiato il mondo, un sopravvissuto vive ai margini aggrappandosi a poche certezze. Un segnale inatteso riaccende la speranza e lo spinge a rimettersi in viaggio.",
+      "source": "comingsoon:66983",
+      "lista": "cinema",
+      "tmdbId": 1384216,
+      "imdbId": "tt21285562",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-08-26",
+      "streaming": [],
+      "poster": "/2QUzsotrBTMF78xwmePCTX7EqpX.jpg",
+      "backdrop": "/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 8.3027,
+      "budget": 110000000,
+      "revenue": null,
+      "tagline": "Alla fine del mondo nessuno si salva da solo.",
+      "castDetail": [
+        {
+          "name": "Jacob Elordi",
+          "character": "Hig",
+          "profile": "/1csUnKCfwqcsd796N8uPQoDRA6x.jpg"
+        },
+        {
+          "name": "Josh Brolin",
+          "character": "Bangley",
+          "profile": "/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+          "name": "Margaret Qualley",
+          "character": "Cima",
+          "profile": "/4LeaweyyTXCNs9V5swAuU4gGgZC.jpg"
+        },
+        {
+          "name": "Guy Pearce",
+          "character": "Pops",
+          "profile": "/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg"
+        },
+        {
+          "name": "Allison Janney",
+          "character": null,
+          "profile": "/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
+        },
+        {
+          "name": "Benedict Wong",
+          "character": null,
+          "profile": "/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
+        },
+        {
+          "name": "Alara-Star Khan",
+          "character": null,
+          "profile": "/9GFBpG1EWmd1mG33YU15E2fGXIB.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cs-53576",
+      "title": "Train to Busan",
+      "originalTitle": "Busanhaeng",
+      "release": "2026-09-02",
+      "director": "Shin-yeong Jang",
+      "genres": [
+        "Azione",
+        "Horror",
+        "Thriller"
+      ],
+      "countries": [
+        "Corea del Sud"
+      ],
+      "runtime": 118,
+      "trailer": "https://www.youtube.com/watch?v=tct7-hE16LY",
+      "cast": [
+        "공유",
+        "김수안",
+        "정유미",
+        "마동석",
+        "Choi Woo-shik",
+        "안소희",
+        "김의성",
+        "예수정",
+        "Park Myung-shin",
+        "최귀화",
+        "정석용",
+        "Kim Chang-hwan"
+      ],
+      "plot": "Seok-wu, manager assorbito dal lavoro, vuole portare la figlia Su-an dalla madre a Busan per il compleanno. Durante il viaggio, l'imprevisto trasforma il treno in una corsa contro il tempo.",
+      "source": "comingsoon:53576",
+      "lista": "cinema",
+      "tmdbId": 396535,
+      "imdbId": "tt5700672",
+      "rtScore": 95,
+      "metascore": 73,
+      "imdbRating": 7.6,
+      "imdbVotes": 300921,
+      "releaseGlobale": "2016-07-20",
+      "streaming": [],
+      "poster": "/oekUlBFR85PejJK3z5jWyy3KyCG.jpg",
+      "backdrop": "/brnfCYyz8EMbBrHgmh8sCwBi5i1.jpg",
+      "tmdbRating": 7.8,
+      "tmdbVotes": 8519,
+      "popularity": 19.8111,
+      "budget": 8500000,
+      "revenue": 87547518,
+      "tagline": "La lotta per la sopravvivenza è cominciata...",
+      "castDetail": [
+        {
+          "name": "공유",
+          "character": "Seok-woo",
+          "profile": "/ocGoFb6TrK3uWGXt4WnuibUG1vD.jpg"
+        },
+        {
+          "name": "김수안",
+          "character": "Soo-ahn",
+          "profile": "/hmPZhhoeUY89Rys6LrsjpTMeoEN.jpg"
+        },
+        {
+          "name": "정유미",
+          "character": "Sung-gyeong",
+          "profile": "/pU8iBcZHhuc4kQe6HHZVcommefG.jpg"
+        },
+        {
+          "name": "마동석",
+          "character": "Sang-hwa",
+          "profile": "/ckxoXz3l4mCcHEIRaqUc7oGoIFg.jpg"
+        },
+        {
+          "name": "Choi Woo-shik",
+          "character": "Yeong-gook",
+          "profile": "/hRDiuKWwe156zRjEu826eci7H3r.jpg"
+        },
+        {
+          "name": "안소희",
+          "character": "Jin-hee",
+          "profile": "/phQLXdKnWggfiqlvUKj86Kq0T1q.jpg"
+        },
+        {
+          "name": "김의성",
+          "character": "Yong-suk",
+          "profile": "/y7T2LJyorTK2NDk10yeTINWKrWR.jpg"
+        },
+        {
+          "name": "예수정",
+          "character": "In-gil",
+          "profile": "/rwGPhu8Ge36eMkrOlzfdKKFargw.jpg"
+        },
+        {
+          "name": "Park Myung-shin",
+          "character": "Jong-gil",
+          "profile": "/4VXJXafwdzVMugBeTtTHf6RtDKS.jpg"
+        },
+        {
+          "name": "최귀화",
+          "character": "Homeless Man",
+          "profile": "/aYiS6jQNNmOSfzcobDs12pLOOjj.jpg"
+        },
+        {
+          "name": "정석용",
+          "character": "Captain of KTX",
+          "profile": "/tyTSdGaVKotPmJXGNtz6fXoj8Tc.jpg"
+        },
+        {
+          "name": "Kim Chang-hwan",
+          "character": "Kim Jin-mo",
+          "profile": "/8c9u3ziEgdSuuD9gHWFjcBevywg.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cs-68600",
+      "title": "Resident Evil",
+      "originalTitle": "Resident Evil",
+      "release": "2026-09-17",
+      "director": "Zach Cregger",
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 90,
+      "trailer": "https://www.youtube.com/watch?v=w_k72lFKSkc",
+      "cast": [
+        "Austin Abrams",
+        "Zach Cherry",
+        "Kali Reis"
+      ],
+      "plot": "Un nuovo capitolo reboot ispirato al survival horror Capcom, con una storia originale. L'incubo torna a crescere lontano dai personaggi più noti, ma con la stessa atmosfera di tensione.",
+      "source": "comingsoon:68600",
+      "lista": "cinema",
+      "tmdbId": 1423191,
+      "imdbId": "tt35538033",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-09-16",
+      "streaming": [],
+      "poster": "/zP83bIkBViw5b1s9bDemYJ3AAgX.jpg",
+      "backdrop": "/ddfXMkaPViSrg0P5aoYGFMc58x2.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 13.6642,
+      "budget": 80000000,
+      "revenue": null,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Austin Abrams",
+          "character": "Bryan",
+          "profile": "/gG4KsGZDw3tO2R66cn9VdOo8uSu.jpg"
+        },
+        {
+          "name": "Zach Cherry",
+          "character": "Dave",
+          "profile": "/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg"
+        },
+        {
+          "name": "Kali Reis",
+          "character": "Pauline",
+          "profile": "/ruLDXHnKA4aHEQCcFGDAJ7bLTdt.jpg"
+        },
+        {
+          "name": "Paul Walter Hauser",
+          "character": "Carl",
+          "profile": "/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg"
+        },
+        {
+          "name": "Johnno Wilson",
+          "character": "Max",
+          "profile": "/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cs-67091",
+      "title": "Mammina",
+      "originalTitle": "Other Mommy",
+      "release": "2026-10-08",
+      "director": "Rob Savage",
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": null,
+      "trailer": "https://www.youtube.com/watch?v=z8ffzHPyHko",
+      "cast": [
+        "Jessica Chastain"
+      ],
+      "plot": "Una bambina di otto anni si trasferisce con la famiglia in una nuova casa. Qualcosa la segue nell'ombra: un'entità che lei chiama \"L'Altra Mamma\".",
+      "source": "comingsoon:67091",
+      "lista": "cinema",
+      "tmdbId": 1400837,
+      "imdbId": "tt36586020",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-10-08",
+      "streaming": [],
+      "poster": "/ir1esRZZk49yKaLAVQd2FgvLxLf.jpg",
+      "backdrop": "/wpx3J1ZuIZgWc9rzdfcj7fDru58.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 15.6532,
+      "budget": null,
+      "revenue": null,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Jessica Chastain",
+          "character": "Ursula / Other Mommy",
+          "profile": "/eQKnihReJeB9vQEa5gySzAlKfZt.jpg"
+        },
+        {
+          "name": "Arabella Olivia Clark",
+          "character": "Bela",
+          "profile": "/bwTovaznMIXo9Je01soHBCzmFxn.jpg"
+        },
+        {
+          "name": "Jay Duplass",
+          "character": "Russ / Daddo",
+          "profile": "/eUY0JDlqzf5pE9pmdvv4IPU3NYn.jpg"
+        },
+        {
+          "name": "Dichen Lachman",
+          "character": null,
+          "profile": "/yLrpMHBNtuUAu3M9EjaYHnn5EEY.jpg"
+        },
+        {
+          "name": "Arian Moayed",
+          "character": null,
+          "profile": "/hYBqwt0HelUqgKSd1VDUAyvfDME.jpg"
+        },
+        {
+          "name": "Karen Allen",
+          "character": null,
+          "profile": "/eJszpndpRzrXbSlz7RUlApoTykn.jpg"
+        },
+        {
+          "name": "Sean Kaufman",
+          "character": null,
+          "profile": "/9sMkCOJU6tWIoezXBapA58C4qpH.jpg"
+        },
+        {
+          "name": "Adam Silver",
+          "character": null,
+          "profile": "/jE3zEMEYflS3adHtF11YqLAwlVI.jpg"
+        },
+        {
+          "name": "Carrie Dimaculangan",
+          "character": "Callie",
+          "profile": "/be9i55RrygV2ti7vXwr61j8OlCL.jpg"
+        },
+        {
+          "name": "Travis Nelson",
+          "character": "Tony",
+          "profile": "/y5aSsFzlsW21qjXb2gxdla8rsKc.jpg"
+        },
+        {
+          "name": "Hayley Spelman",
+          "character": "Other Mommy",
+          "profile": "/cGy1nKhFlCmsN1SpPZE0GHxOX9M.jpg"
+        },
+        {
+          "name": "Rosie Anne O'Gorman",
+          "character": "Tube Kid 1",
+          "profile": null
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1170608",
+      "title": "Dune - Parte tre",
+      "originalTitle": "Dune: Part Three",
+      "release": "2026-12-16",
+      "director": "Denis Villeneuve",
+      "genres": [
+        "Fantascienza",
+        "Avventura"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 140,
+      "trailer": "https://www.youtube.com/watch?v=BlAyKxScwyk",
+      "cast": [
+        "Timothée Chalamet",
+        "Zendaya",
+        "Jason Momoa",
+        "Florence Pugh",
+        "Rebecca Ferguson",
+        "Isaach de Bankolé",
+        "Charlotte Rampling",
+        "Anya Taylor-Joy",
+        "Robert Pattinson",
+        "Javier Bardem",
+        "Nakoa-Wolf Momoa",
+        "Ida Brooke"
+      ],
+      "plot": "Paul Atreides è diventato Imperatore dell’universo. Ma il suo dominio è minacciato dai numerosi nemici e pur avendo previsto questo futuro, Paul lo considera il meno distruttivo possibile per l’umanità. Sposato con la principessa Irulan ma innamorato di Chani, Paul non riesce ad avere figli a causa di un complotto delle Bene Gesserit. Intanto queste, insieme alla Gilda Spaziale e ai Tleilaxu, tramano per eliminarlo.",
+      "source": "tmdb:1170608",
+      "lista": "cinema",
+      "tmdbId": 1170608,
+      "imdbId": "tt31378509",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-12-16",
+      "streaming": [],
+      "poster": "/qgIxezW3yRGmVFnk3gsQaM35Qjx.jpg",
+      "backdrop": "/bU206dN0ucfOFRK17OXabkdHKFC.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 12.7768,
+      "budget": null,
+      "revenue": null,
+      "tagline": "L'epica conclusione.",
+      "castDetail": [
+        {
+          "name": "Timothée Chalamet",
+          "character": "Paul Atreides",
+          "profile": "/axENiFIrSz5B7UuWkMT7PDe7CaO.jpg"
+        },
+        {
+          "name": "Zendaya",
+          "character": "Chani",
+          "profile": "/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+        },
+        {
+          "name": "Jason Momoa",
+          "character": "Hayt",
+          "profile": "/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+        },
+        {
+          "name": "Florence Pugh",
+          "character": "Princess Irulan",
+          "profile": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+        },
+        {
+          "name": "Rebecca Ferguson",
+          "character": "Lady Jessica",
+          "profile": "/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
+        },
+        {
+          "name": "Isaach de Bankolé",
+          "character": "Farok",
+          "profile": "/aGjABQBgTA3tduuh54hzWx0aQ44.jpg"
+        },
+        {
+          "name": "Charlotte Rampling",
+          "character": "Reverend Mother Mohiam",
+          "profile": "/Htvl9mN6mlf2a18RAFzNXF3RiG.jpg"
+        },
+        {
+          "name": "Anya Taylor-Joy",
+          "character": "Alia Atreides",
+          "profile": "/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+          "name": "Robert Pattinson",
+          "character": "Scytale",
+          "profile": "/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+        },
+        {
+          "name": "Javier Bardem",
+          "character": "Stilgar",
+          "profile": "/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+        },
+        {
+          "name": "Nakoa-Wolf Momoa",
+          "character": "Leto II",
+          "profile": "/y5dhw5L3M0ZVgaJm7qA67cQGOsJ.jpg"
+        },
+        {
+          "name": "Ida Brooke",
+          "character": "Ghanima",
+          "profile": "/e9kGzuYnYRMvRcPo0tBmIV2Phhy.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-858024",
+      "tmdbId": 858024,
+      "title": "Hamnet - Nel nome del figlio",
+      "originalTitle": null,
+      "release": "2026-02-05",
+      "director": "Chloé Zhao",
+      "genres": [
+        "Dramma",
+        "Romance"
+      ],
+      "countries": [
+        "Gran Bretagna",
+        "USA"
+      ],
+      "runtime": 126,
+      "trailer": "https://www.youtube.com/watch?v=q5Ubbd7f5as",
+      "cast": [
+        "Jessie Buckley",
+        "Paul Mescal",
+        "Emily Watson",
+        "Joe Alwyn",
+        "Jacobi Jupe",
+        "Noah Jupe",
+        "Olivia Lynes",
+        "Justine Mitchell",
+        "David Wilmot",
+        "Louisa Harland",
+        "Freya Hannan-Mills",
+        "Bodhi Rae Breathnach"
+      ],
+      "plot": "In un bosco, una giovane donna dorme rannicchiata nella culla formata dalla radice emersa di un albero secolare: è vestita di rosso cupo, accompagnata da un falco che risponde ai suoi richiami, conosce erbe e pozioni, si dice non sia nata da sua madre ma da una donna venuta da lontano. Si chiama Agnes e quando Will la vede se ne innamora subito. Will è il giovane William Shakespeare, che riesce a sposarla nonostante l’ostilità delle famiglie e ad avere con lei tre figli, Susannah e i gemelli Judith e Hamnet. Ma un lutto li colpisce, quando il drammaturgo lavora già a Londra, e Hamnet diventa Hamlet. Tratta dal romanzo del 2020 di Maggie O’Farrell, la storia di Agnes (più che di William), intessuta di magia e femminilità.",
+      "lista": "visto",
+      "source": "tmdb:858024",
+      "imdbId": "tt14905854",
+      "rtScore": 87,
+      "metascore": 84,
+      "imdbRating": 7.8,
+      "imdbVotes": 109507,
+      "releaseGlobale": "2025-11-26",
+      "streaming": [],
+      "poster": "/ro2a5k5dx8RWXGY0TmhqxTAffaI.jpg",
+      "backdrop": "/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg",
+      "tmdbRating": 7.719,
+      "tmdbVotes": 1474,
+      "popularity": 19.7234,
+      "budget": 30000000,
+      "revenue": 107756183,
+      "tagline": "Tieni il cuore aperto.",
+      "castDetail": [
+        {
+          "name": "Jessie Buckley",
+          "character": "Agnes",
+          "profile": "/7iUfpW6pTAwK2dkL47Y2rrNTlRs.jpg"
+        },
+        {
+          "name": "Paul Mescal",
+          "character": "Will",
+          "profile": "/hPcyXGZ0qNL9Sm2LKlDzO54Pa8g.jpg"
+        },
+        {
+          "name": "Emily Watson",
+          "character": "Mary",
+          "profile": "/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg"
+        },
+        {
+          "name": "Joe Alwyn",
+          "character": "Bartholomew",
+          "profile": "/kcnfW2d3BwT5Sl9ncsXZtECgu2a.jpg"
+        },
+        {
+          "name": "Jacobi Jupe",
+          "character": "Hamnet",
+          "profile": "/wVpax8MOwdelnQILiDNoDkTzebU.jpg"
+        },
+        {
+          "name": "Noah Jupe",
+          "character": "Hamlet",
+          "profile": "/cBhJisZrIsZzamiUCVjOZODcqOK.jpg"
+        },
+        {
+          "name": "Olivia Lynes",
+          "character": "Judith",
+          "profile": "/cao5MdKpOR0uCDIymGdIP4kG0rD.jpg"
+        },
+        {
+          "name": "Justine Mitchell",
+          "character": "Joan",
+          "profile": "/b8dmEYP6RbwLPL3HdKRcBTfEUPw.jpg"
+        },
+        {
+          "name": "David Wilmot",
+          "character": "John",
+          "profile": "/epb46N0iJyAmSOguMdFn6qQGSsy.jpg"
+        },
+        {
+          "name": "Louisa Harland",
+          "character": "Rowan",
+          "profile": "/8uH0t3Y7saXoPTYiSGy8ZQn6s8B.jpg"
+        },
+        {
+          "name": "Freya Hannan-Mills",
+          "character": "Eliza",
+          "profile": "/eV70wCE8cte5KwXoLiJ1HzsQOuT.jpg"
+        },
+        {
+          "name": "Bodhi Rae Breathnach",
+          "character": "Susanna",
+          "profile": "/v4PXpYOKUQtcUCp85KAW2bIiS51.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1314481",
+      "tmdbId": 1314481,
+      "title": "Il diavolo veste Prada 2",
+      "originalTitle": null,
+      "release": "2026-04-29",
+      "director": "David Frankel",
+      "genres": [
+        "Commedia",
+        "Dramma"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 119,
+      "trailer": "https://www.youtube.com/watch?v=zbjennafkiM",
+      "cast": [
+        "Anne Hathaway",
+        "Meryl Streep",
+        "Emily Blunt",
+        "Stanley Tucci",
+        "Kenneth Branagh",
+        "Justin Theroux",
+        "Lucy Liu",
+        "Tracie Thoms",
+        "Tibor Feldman",
+        "B.J. Novak",
+        "Patrick Brammall",
+        "Simone Ashley"
+      ],
+      "plot": "Andy Sachs torna a Runway mentre Miranda Priestly naviga in un nuovo panorama mediatico mantenendo la sua posizione in Runway. Entrambe riallacciano i contatti con l'ex assistente Emily Charlton, ora a capo di un marchio di lusso con finanziamenti che potrebbero garantire la sopravvivenza di Runway.",
+      "lista": "visto",
+      "source": "tmdb:1314481",
+      "imdbId": "tt33612209",
+      "rtScore": null,
+      "metascore": 63,
+      "imdbRating": 6.5,
+      "imdbVotes": 73728,
+      "releaseGlobale": "2026-04-29",
+      "streaming": [],
+      "poster": "/xASsfTW9eBs0PT6d6YbvJ6e5jxH.jpg",
+      "backdrop": "/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "tmdbRating": 7.158,
+      "tmdbVotes": 1717,
+      "popularity": 154.3469,
+      "budget": 100000000,
+      "revenue": 689469075,
+      "tagline": "Le icone regnano per sempre.",
+      "castDetail": [
+        {
+          "name": "Anne Hathaway",
+          "character": "Andy",
+          "profile": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+          "name": "Meryl Streep",
+          "character": "Miranda",
+          "profile": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg"
+        },
+        {
+          "name": "Emily Blunt",
+          "character": "Emily",
+          "profile": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+        },
+        {
+          "name": "Stanley Tucci",
+          "character": "Nigel",
+          "profile": "/q4TanMDI5Rgsvw4SfyNbPBh4URr.jpg"
+        },
+        {
+          "name": "Kenneth Branagh",
+          "character": "Stuart",
+          "profile": "/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
+        },
+        {
+          "name": "Justin Theroux",
+          "character": "Benji",
+          "profile": "/vnI9L0rXBAw1HeC0Q8hJGeJMGAW.jpg"
+        },
+        {
+          "name": "Lucy Liu",
+          "character": "Sasha",
+          "profile": "/9nbtjqsx3De7hO2XDtrBQ7M9VCH.jpg"
+        },
+        {
+          "name": "Tracie Thoms",
+          "character": "Lily",
+          "profile": "/9PKUJJtqFRbZDhme6uDzIu0mRIE.jpg"
+        },
+        {
+          "name": "Tibor Feldman",
+          "character": "Irv",
+          "profile": "/b6tVKhCkNWltObwyHpGfBLuaPt6.jpg"
+        },
+        {
+          "name": "B.J. Novak",
+          "character": "Jay",
+          "profile": "/o8Xf1khxhKGTz3QAplXD35opRA8.jpg"
+        },
+        {
+          "name": "Patrick Brammall",
+          "character": "Peter",
+          "profile": "/l4IlGBxkYcCwqtfuKfWyHa9JCn6.jpg"
+        },
+        {
+          "name": "Simone Ashley",
+          "character": "Amari",
+          "profile": "/uL7t73kzhrRLY9ilNze1dYhHfg3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1339713",
+      "tmdbId": 1339713,
+      "title": "Obsession",
+      "originalTitle": null,
+      "release": "2026-05-14",
+      "director": "Curry Barker",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "countries": [
+        "USA",
+        "Gran Bretagna"
+      ],
+      "runtime": 110,
+      "trailer": "https://www.youtube.com/watch?v=T7bMHs737HQ",
+      "cast": [
+        "Michael Johnston",
+        "Inde Navarrette",
+        "Cooper Tomlinson",
+        "Megan Lawless",
+        "Andy Richter",
+        "Haley Fitzgerald",
+        "Darin Toonder",
+        "Anthony Pavone",
+        "Justice",
+        "Anthony Casabianca",
+        "Chloe Breen",
+        "Malcolm Kelner"
+      ],
+      "plot": "Dopo aver spezzato il misterioso bastoncino del desiderio per conquistare il cuore della ragazza che ama un romantico senza speranza ottiene esattamente ciò che ha chiesto ma presto scopre che alcuni desideri hanno un prezzo sinistro e pericoloso.",
+      "lista": "visto",
+      "source": "tmdb:1339713",
+      "imdbId": "tt37287335",
+      "rtScore": 94,
+      "metascore": 77,
+      "imdbRating": 8,
+      "imdbVotes": 176988,
+      "releaseGlobale": "2026-05-13",
+      "streaming": [],
+      "poster": "/KUzJSsW6pFy1Dbw7rp1PKrzvfL.jpg",
+      "backdrop": "/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+      "tmdbRating": 8.3,
+      "tmdbVotes": 3868,
+      "popularity": 369.7891,
+      "budget": 750000,
+      "revenue": 458878945,
+      "tagline": "Attenzione a ciò che desideri...",
+      "castDetail": [
+        {
+          "name": "Michael Johnston",
+          "character": "Bear",
+          "profile": "/fbpcCkBzu43kMdlXxEAMuLhseL8.jpg"
+        },
+        {
+          "name": "Inde Navarrette",
+          "character": "Nikki",
+          "profile": "/8mYBaOximzwBgXOYRzbS6eUnoMX.jpg"
+        },
+        {
+          "name": "Cooper Tomlinson",
+          "character": "Ian",
+          "profile": "/vBMQbYT1DyWPCUp11dIiqZR9zhd.jpg"
+        },
+        {
+          "name": "Megan Lawless",
+          "character": "Sarah",
+          "profile": "/6qW63YEgB1qro01sM7T2HvhtFkh.jpg"
+        },
+        {
+          "name": "Andy Richter",
+          "character": "Carter",
+          "profile": "/5Qr7N6TzC8cI0ULxDm6EC5GpZ4C.jpg"
+        },
+        {
+          "name": "Haley Fitzgerald",
+          "character": "Viola",
+          "profile": "/xbKqZ5Epz0IaSCPLXDnByDACw2X.jpg"
+        },
+        {
+          "name": "Darin Toonder",
+          "character": "Harry",
+          "profile": "/bD7Y9T7Y6XwDXjGJ8Suabyt1ZGo.jpg"
+        },
+        {
+          "name": "Anthony Pavone",
+          "character": "Reggie",
+          "profile": "/hxiqY9gHgwXGYnXSD11Wacm5Nmi.jpg"
+        },
+        {
+          "name": "Justice",
+          "character": "Joe",
+          "profile": "/YFxKf2HHJvyavQf54NO5wXFOJX.jpg"
+        },
+        {
+          "name": "Anthony Casabianca",
+          "character": "Chris",
+          "profile": "/xNJUKqKQhMeyZ74erQvETr3AqV0.jpg"
+        },
+        {
+          "name": "Chloe Breen",
+          "character": "Ruthie",
+          "profile": "/oKBTQeGcQBM5aHNHwAqVWPjDVfz.jpg"
+        },
+        {
+          "name": "Malcolm Kelner",
+          "character": "Bartender",
+          "profile": "/xlojlX1dlu1OY0Vf2owDWv5PV3l.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1083381",
+      "tmdbId": 1083381,
+      "title": "Backrooms",
+      "originalTitle": null,
+      "release": "2026-05-27",
+      "director": "Kane Parsons",
+      "genres": [
+        "Horror",
+        "Mistero",
+        "Fantascienza"
+      ],
+      "countries": [
+        "USA",
+        "Canada"
+      ],
+      "runtime": 126,
+      "trailer": "https://www.youtube.com/watch?v=Glc2LWw_S5g",
+      "cast": [
+        "Chiwetel Ejiofor",
+        "Renate Reinsve",
+        "Finn Bennett",
+        "Lukita Maxwell",
+        "Mark Duplass",
+        "Avan Jogia",
+        "Robert Bobroczkyi",
+        "Ember Ambrose",
+        "Krista Kosonen",
+        "Philip Granger",
+        "Katharine Isabelle",
+        "Peter New"
+      ],
+      "plot": "Se non fai attenzione e superi la barriera della realtà, entrerai nelle backrooms. Se finisci lì dentro, resta vigile, perché i passi che echeggiano in quelle stanze potrebbero non essere solo i tuoi…",
+      "lista": "visto",
+      "source": "tmdb:1083381",
+      "imdbId": "tt26657236",
+      "rtScore": null,
+      "metascore": 77,
+      "imdbRating": 7,
+      "imdbVotes": 100148,
+      "releaseGlobale": "2026-05-27",
+      "streaming": [],
+      "poster": "/mene1ewQ03sW3aievfnaCyEZD8t.jpg",
+      "backdrop": "/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
+      "tmdbRating": 7.075,
+      "tmdbVotes": 2225,
+      "popularity": 317.4788,
+      "budget": 10000000,
+      "revenue": 389741657,
+      "tagline": "Non dovresti essere qui.",
+      "castDetail": [
+        {
+          "name": "Chiwetel Ejiofor",
+          "character": "Clark",
+          "profile": "/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg"
+        },
+        {
+          "name": "Renate Reinsve",
+          "character": "Mary",
+          "profile": "/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+        },
+        {
+          "name": "Finn Bennett",
+          "character": "Bobby",
+          "profile": "/p4ya77nmLlhS2cyPKUZi9zVD4Mu.jpg"
+        },
+        {
+          "name": "Lukita Maxwell",
+          "character": "Kat",
+          "profile": "/g5g6XxUAtSdPfsJrSoFkl7vH51d.jpg"
+        },
+        {
+          "name": "Mark Duplass",
+          "character": "Phil",
+          "profile": "/lRDf99rAfcdqt8Cqk4LsIT7XSD2.jpg"
+        },
+        {
+          "name": "Avan Jogia",
+          "character": "Naren Warne",
+          "profile": "/7BX0Lg39bHlgtvWZpszTr1YjTAW.jpg"
+        },
+        {
+          "name": "Robert Bobroczkyi",
+          "character": "Pirate Clark",
+          "profile": "/3SK7NuuBKR5PSJwsQ7HO4qHIM9C.jpg"
+        },
+        {
+          "name": "Ember Ambrose",
+          "character": "Young Mary",
+          "profile": "/w7h6l4ltuWaMYanGgzwyhAHGL2y.jpg"
+        },
+        {
+          "name": "Krista Kosonen",
+          "character": "Nora",
+          "profile": "/7iW2mxbxBgV5sX2y0fSY78lewW4.jpg"
+        },
+        {
+          "name": "Philip Granger",
+          "character": "Meterman",
+          "profile": "/bkrnrtSiUnumWVpAOy5QDcOePiA.jpg"
+        },
+        {
+          "name": "Katharine Isabelle",
+          "character": "Robin",
+          "profile": "/c9db3Cq3BQhWXCmVthyGQBN1W95.jpg"
+        },
+        {
+          "name": "Peter New",
+          "character": "Big Wayne",
+          "profile": "/bT71ieZH2qhgxLNTPyorMlVp3PN.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1275779",
+      "tmdbId": 1275779,
+      "title": "Disclosure Day",
+      "originalTitle": null,
+      "release": "2026-06-10",
+      "director": "Steven Spielberg",
+      "genres": [
+        "Fantascienza",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 147,
+      "trailer": "https://www.youtube.com/watch?v=POR6dISht_8",
+      "cast": [
+        "Emily Blunt",
+        "Josh O'Connor",
+        "Colin Firth",
+        "Colman Domingo",
+        "Eve Hewson",
+        "Wyatt Russell",
+        "Elizabeth Marvel",
+        "Henry Lloyd-Hughes",
+        "Courtney Grace",
+        "Jeremy Shamos",
+        "Michael Gaston",
+        "Gabby Beans"
+      ],
+      "plot": "Se scoprissi che non siamo soli, se qualcuno te lo mostrasse, te lo dimostrasse, questo ti spaventerebbe?",
+      "lista": "visto",
+      "source": "tmdb:1275779",
+      "imdbId": "tt15047880",
+      "rtScore": null,
+      "metascore": 74,
+      "imdbRating": 6.7,
+      "imdbVotes": 77197,
+      "releaseGlobale": "2026-06-10",
+      "streaming": [],
+      "poster": "/2HfLCkrCc7mnT15lp8tfZag1a9L.jpg",
+      "backdrop": "/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
+      "tmdbRating": 7.409,
+      "tmdbVotes": 1965,
+      "popularity": 498.8136,
+      "budget": 115000000,
+      "revenue": 239022890,
+      "tagline": "Meritiamo di sapere",
+      "castDetail": [
+        {
+          "name": "Emily Blunt",
+          "character": "Margaret Fairchild",
+          "profile": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
+        },
+        {
+          "name": "Josh O'Connor",
+          "character": "Daniel Kellner",
+          "profile": "/iFGxCv7wMaComYR40Mt7fwbfY1k.jpg"
+        },
+        {
+          "name": "Colin Firth",
+          "character": "Noah Scanlon",
+          "profile": "/z6wxnkqSTnzO1tcBui0ss7ehdm9.jpg"
+        },
+        {
+          "name": "Colman Domingo",
+          "character": "Hugo Wakefield",
+          "profile": "/t0cgfvtA7Thxnrtj5baRi656zlc.jpg"
+        },
+        {
+          "name": "Eve Hewson",
+          "character": "Jane Blakenship",
+          "profile": "/1OlMfQrXEujIPTBUWt3AM0J0hJa.jpg"
+        },
+        {
+          "name": "Wyatt Russell",
+          "character": "Jackson",
+          "profile": "/zIldBzXdBWskPZB7x35G2hYEVDo.jpg"
+        },
+        {
+          "name": "Elizabeth Marvel",
+          "character": "Sister Maura",
+          "profile": "/zJaDO2YI0XHeUDB5onVSgAVrvg2.jpg"
+        },
+        {
+          "name": "Henry Lloyd-Hughes",
+          "character": "Casper Boyd",
+          "profile": "/m8zSYF7KmQS0x0o7wnWSuWLc0LW.jpg"
+        },
+        {
+          "name": "Courtney Grace",
+          "character": "NBC Anchor",
+          "profile": "/hYt3QKqpmU6NYjIKZ3Cb3H6OARq.jpg"
+        },
+        {
+          "name": "Jeremy Shamos",
+          "character": "Claypool",
+          "profile": "/4nEMfWgNBdBhzdzNGCOHyW941EC.jpg"
+        },
+        {
+          "name": "Michael Gaston",
+          "character": "General Dobbs",
+          "profile": "/lXhqiW4J1n9bnbfwz0Kdf2sjGLU.jpg"
+        },
+        {
+          "name": "Gabby Beans",
+          "character": "Angela Childs",
+          "profile": "/3njrvTJttrEIVNv5DjoP1OlBP5D.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1368337",
+      "tmdbId": 1368337,
+      "title": "Odissea",
+      "originalTitle": null,
+      "release": "2026-07-16",
+      "director": "Christopher Nolan",
+      "genres": [
+        "Avventura",
+        "Azione",
+        "Fantasy"
+      ],
+      "countries": [
+        "Gran Bretagna",
+        "USA"
+      ],
+      "runtime": 180,
+      "trailer": "https://www.youtube.com/watch?v=A7OOx5-0iq8",
+      "cast": [
+        "Matt Damon",
+        "Tom Holland",
+        "Anne Hathaway",
+        "Robert Pattinson",
+        "Himesh Patel",
+        "John Leguizamo",
+        "Charlize Theron",
+        "Travis Scott",
+        "Corey Hawkins",
+        "Jarreth J. Merz",
+        "Niko Nicotera",
+        "Elliot Page"
+      ],
+      "plot": "Ogni leggenda ha un prezzo. Ogni ritorno richiede un sacrificio. Mentre il mare diventa il suo più grande nemico, Ulisse affronta un cammino fatto di illusioni, battaglie e prove impossibili. Un'epica odissea che mette alla prova il coraggio di un uomo contro il volere degli dèi.",
+      "lista": "visto",
+      "source": "tmdb:1368337",
+      "imdbId": "tt33764258",
+      "rtScore": null,
+      "metascore": 89,
+      "imdbRating": 8.3,
+      "imdbVotes": 67786,
+      "releaseGlobale": "2026-07-15",
+      "streaming": [],
+      "poster": "/qQhInj9fw3S2bMbiEujVldthgKe.jpg",
+      "backdrop": "/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
+      "tmdbRating": 7.95,
+      "tmdbVotes": 1723,
+      "popularity": 1116.8359,
+      "budget": 250000000,
+      "revenue": 639631800,
+      "tagline": "Ogni leggenda ha un inizio. Ogni eroe trova la sua strada.",
+      "castDetail": [
+        {
+          "name": "Matt Damon",
+          "character": "Odysseus",
+          "profile": "/aCvBXTAR9B1qRjIRzMBYhhbm1fR.jpg"
+        },
+        {
+          "name": "Tom Holland",
+          "character": "Telemachus",
+          "profile": "/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+          "name": "Anne Hathaway",
+          "character": "Penelope",
+          "profile": "/g2ozigjyCoSZmMnwo4fyhhJjslM.jpg"
+        },
+        {
+          "name": "Robert Pattinson",
+          "character": "Antinous",
+          "profile": "/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+        },
+        {
+          "name": "Himesh Patel",
+          "character": "Eurylochus",
+          "profile": "/4mfOQgnwmewNURfQApyyHxt1qUF.jpg"
+        },
+        {
+          "name": "John Leguizamo",
+          "character": "Eumaeus",
+          "profile": "/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg"
+        },
+        {
+          "name": "Charlize Theron",
+          "character": "Calypso",
+          "profile": "/gd7ShD0yt4bsR2STeQ19KQ6hvXL.jpg"
+        },
+        {
+          "name": "Travis Scott",
+          "character": "Bard",
+          "profile": "/eBdm7HQS6lLGg4BocgfoJ5qB9yp.jpg"
+        },
+        {
+          "name": "Corey Hawkins",
+          "character": "Polybus",
+          "profile": "/wRt0Bc0chN5BSjvYzmg2evgqNzp.jpg"
+        },
+        {
+          "name": "Jarreth J. Merz",
+          "character": "Leodes",
+          "profile": "/ze8WDEujZmTXdCLcUy0IaymwlcS.jpg"
+        },
+        {
+          "name": "Niko Nicotera",
+          "character": "Peisander",
+          "profile": "/ffSAiwXMmvQP1vJuPguLznNpPOI.jpg"
+        },
+        {
+          "name": "Elliot Page",
+          "character": "Sinon",
+          "profile": "/nXO8DE4biVXY4UDYP0NdIY1zvXS.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1212763",
+      "tmdbId": 1212763,
+      "title": "La casa - Il rogo del Male",
+      "originalTitle": null,
+      "release": "2026-07-08",
+      "director": "Sébastien Vaniček",
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 110,
+      "trailer": "https://www.youtube.com/watch?v=fvI4FzSJT3s",
+      "cast": [
+        "Souheila Yacoub",
+        "Tandi Wright",
+        "Hunter Doohan",
+        "Luciane Buchanan",
+        "Erroll Shand",
+        "Maude Davey",
+        "George Pullar",
+        "Victory Ndukwe",
+        "Keanu Karim",
+        "Michael Hurst",
+        "Alain Chabat",
+        "Lara Macgregor"
+      ],
+      "plot": "Dopo la perdita del marito, una donna cerca conforto presso i suoceri nella loro isolata casa di famiglia. Mentre uno dopo l'altro vengono trasformati in \"Deadites\" - rendendo l'incontro un infernale riunione di famiglia - lei scoprirà che i voti pronunciati in vita... continuano a vivere anche oltre la morte.",
+      "lista": "visto",
+      "source": "tmdb:1212763",
+      "imdbId": "tt31170389",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-07-07",
+      "streaming": [],
+      "poster": "/kLxEGoygDHbOvxJIclXZbieoX45.jpg",
+      "backdrop": "/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
+      "tmdbRating": 6.8,
+      "tmdbVotes": 218,
+      "popularity": 51.5569,
+      "budget": 20000000,
+      "revenue": 64750797,
+      "tagline": "Ogni famiglia ha i suoi demoni.",
+      "castDetail": [
+        {
+          "name": "Souheila Yacoub",
+          "character": "Alice",
+          "profile": "/ljuwA97evcoadIE7VlV1AXpKi1j.jpg"
+        },
+        {
+          "name": "Tandi Wright",
+          "character": "Susan",
+          "profile": "/zluVB3mzZVlv8D013OgeQLhzNEw.jpg"
+        },
+        {
+          "name": "Hunter Doohan",
+          "character": "Joseph",
+          "profile": "/uLZmUQknSsImU6dG03F6EeXhE4g.jpg"
+        },
+        {
+          "name": "Luciane Buchanan",
+          "character": "Thya",
+          "profile": "/9fTzSU4310StDoO9T0nQyGOLurn.jpg"
+        },
+        {
+          "name": "Erroll Shand",
+          "character": "Edgar",
+          "profile": "/75nc5lUcp1So9RTNNr08NZ0oQDG.jpg"
+        },
+        {
+          "name": "Maude Davey",
+          "character": "Polly",
+          "profile": "/gJsnWVfgcyFrTYPVvcJrvIjIH1k.jpg"
+        },
+        {
+          "name": "George Pullar",
+          "character": "Will",
+          "profile": "/lF86e5h2iMS8IaIuExv1p81mi7R.jpg"
+        },
+        {
+          "name": "Victory Ndukwe",
+          "character": "Leo",
+          "profile": "/fAIXv88uXtJp1dH5qoMpsZxn8w1.jpg"
+        },
+        {
+          "name": "Keanu Karim",
+          "character": "Jared",
+          "profile": "/dobjH9GFqBRhYJejTUBMaHCqWmH.jpg"
+        },
+        {
+          "name": "Michael Hurst",
+          "character": "Benjamin Price (voice)",
+          "profile": "/tBYX46fSi8jtp196U8L7Vd37KZW.jpg"
+        },
+        {
+          "name": "Alain Chabat",
+          "character": "Alice's Father (voice)",
+          "profile": "/xRjymE6LIJd0useKWN2R1WgKDRy.jpg"
+        },
+        {
+          "name": "Lara Macgregor",
+          "character": "Manager",
+          "profile": "/j9YK2pAWU2klaCZcRpYDmWEnS2o.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-687163",
+      "tmdbId": 687163,
+      "title": "L'ultima missione: Project Hail Mary",
+      "originalTitle": null,
+      "release": "2026-03-19",
+      "director": "Phil Lord",
+      "genres": [
+        "Fantascienza",
+        "Avventura"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 156,
+      "trailer": "https://www.youtube.com/watch?v=i6duonsTFFc",
+      "cast": [
+        "Ryan Gosling",
+        "Sandra Hüller",
+        "James Ortiz",
+        "Lionel Boyce",
+        "Milana Vayntrub",
+        "Ken Leung",
+        "Priya Kansara",
+        "Mia Soteriou",
+        "Annelle Olaleye",
+        "Maya Eva Hosein",
+        "Bastian Antonio Fuentes",
+        "Alice Brittain"
+      ],
+      "plot": "L’insegnante di scienze Ryland Grace si sveglia su un’astronave lontano anni luce da casa senza alcun ricordo di chi sia o di come sia arrivato lì. Con il riaffiorare della sua memoria, torna alla luce lo scopo della sua missione: risolvere l’enigma della misteriosa sostanza che sta causando il collasso del Sole. Dovrà fare affidamento sulle sue conoscenze scientifiche e sulle sue capacità di pensare fuori dagli schemi per salvare dall’estinzione la vita sulla Terra, mentre un'inaspettata amicizia gli farà capire che non è solo in questa impresa.",
+      "lista": "visto",
+      "source": "tmdb:687163",
+      "imdbId": "tt12042730",
+      "rtScore": 95,
+      "metascore": 77,
+      "imdbRating": 8.2,
+      "imdbVotes": 433769,
+      "releaseGlobale": "2026-03-15",
+      "streaming": [
+        "Amazon Prime Video",
+        "MGM Plus Amazon Channel",
+        "Amazon Prime Video with Ads"
+      ],
+      "poster": "/xfwpfBtZ255ceVKEj2CK7mmYjF6.jpg",
+      "backdrop": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "tmdbRating": 8.661,
+      "tmdbVotes": 6551,
+      "popularity": 193.4652,
+      "budget": 200000000,
+      "revenue": 684117347,
+      "tagline": "Credi nell'impossibile.",
+      "castDetail": [
+        {
+          "name": "Ryan Gosling",
+          "character": "Ryland Grace",
+          "profile": "/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg"
+        },
+        {
+          "name": "Sandra Hüller",
+          "character": "Eva Stratt",
+          "profile": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg"
+        },
+        {
+          "name": "James Ortiz",
+          "character": "Rocky (voice)",
+          "profile": "/unzBwVsoq8rAH8BAYlPR1zsWQ4E.jpg"
+        },
+        {
+          "name": "Lionel Boyce",
+          "character": "Carl",
+          "profile": "/hpIxX5nkfA3pWCW8rYkEUCSBVyS.jpg"
+        },
+        {
+          "name": "Milana Vayntrub",
+          "character": "Olesya Ilyukhina",
+          "profile": "/i5Cou9ExwTZvRRtl79V75CsI7oC.jpg"
+        },
+        {
+          "name": "Ken Leung",
+          "character": "Yao",
+          "profile": "/hpatUP6u74gkpDRmn9voNY9V43O.jpg"
+        },
+        {
+          "name": "Priya Kansara",
+          "character": "Mary (voice)",
+          "profile": "/zv9kpaQ8AVBfjI2LAAZV58NeVQg.jpg"
+        },
+        {
+          "name": "Mia Soteriou",
+          "character": "Dr. Browne",
+          "profile": "/bU4Twfk4as290gPFouByj7Wjd2.jpg"
+        },
+        {
+          "name": "Annelle Olaleye",
+          "character": "Olivia",
+          "profile": "/V0UqW30EQaHjGhwDnb6dT0AWmz.jpg"
+        },
+        {
+          "name": "Maya Eva Hosein",
+          "character": "Rekha",
+          "profile": "/lDHbsnyUoBzmtbMevNl4F2n8B8B.jpg"
+        },
+        {
+          "name": "Bastian Antonio Fuentes",
+          "character": "Parker",
+          "profile": "/u7SDAocZ7ZCMOCejLRZtZFdb2Bl.jpg"
+        },
+        {
+          "name": "Alice Brittain",
+          "character": "Hardware Store Cashier",
+          "profile": "/qOlSX2GtTU1Rhn5iYf4K0bqQJgu.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1316092",
+      "tmdbId": 1316092,
+      "title": "Cime tempestose",
+      "originalTitle": null,
+      "release": "2026-02-12",
+      "director": "Emerald Fennell",
+      "genres": [
+        "Romance",
+        "Dramma"
+      ],
+      "countries": [
+        "USA",
+        "Gran Bretagna"
+      ],
+      "runtime": 137,
+      "trailer": "https://www.youtube.com/watch?v=jqehZet6PEY",
+      "cast": [
+        "Margot Robbie",
+        "Jacob Elordi",
+        "Hong Chau",
+        "Alison Oliver",
+        "Shazad Latif",
+        "Martin Clunes",
+        "Ewan Mitchell",
+        "Amy Morgan",
+        "Jessica Knappett",
+        "Charlotte Mellington",
+        "Owen Cooper",
+        "Vy Nguyen"
+      ],
+      "plot": "Una storia d'amore appassionata e tumultuosa ambientata sullo sfondo delle brughiere dello Yorkshire, che esplora la relazione intensa e distruttiva tra Heathcliff e Catherine Earnshaw.",
+      "lista": "visto",
+      "source": "tmdb:1316092",
+      "imdbId": "tt32897959",
+      "rtScore": 57,
+      "metascore": 55,
+      "imdbRating": 6.2,
+      "imdbVotes": 57394,
+      "releaseGlobale": "2026-02-11",
+      "streaming": [
+        "HBO Max Amazon Channel",
+        "HBO Max"
+      ],
+      "poster": "/bWniBa1w4Cb327bNSMJtqZXCp0H.jpg",
+      "backdrop": "/nHKscpZcAPkh97OsJJjyE5yaVE0.jpg",
+      "tmdbRating": 6.7,
+      "tmdbVotes": 1218,
+      "popularity": 19.5903,
+      "budget": 80000000,
+      "revenue": 241601072,
+      "tagline": "Lasciali Andare",
+      "castDetail": [
+        {
+          "name": "Margot Robbie",
+          "character": "Cathy",
+          "profile": "/kIWyhpBvgB9PwJ45QiHoUENd8W3.jpg"
+        },
+        {
+          "name": "Jacob Elordi",
+          "character": "Heathcliff",
+          "profile": "/1csUnKCfwqcsd796N8uPQoDRA6x.jpg"
+        },
+        {
+          "name": "Hong Chau",
+          "character": "Nelly",
+          "profile": "/yGEw6uiSUBo838HkiCARs4BR40y.jpg"
+        },
+        {
+          "name": "Alison Oliver",
+          "character": "Isabella",
+          "profile": "/smN2B7M8SzM62vx6wJRcqSCEg1H.jpg"
+        },
+        {
+          "name": "Shazad Latif",
+          "character": "Edgar",
+          "profile": "/n8vJ1AHhv294hGqZxhjM95OvpxT.jpg"
+        },
+        {
+          "name": "Martin Clunes",
+          "character": "Mr. Earnshaw",
+          "profile": "/xoCgVr1h3uhES9MnKCoyd05bW1v.jpg"
+        },
+        {
+          "name": "Ewan Mitchell",
+          "character": "Joseph",
+          "profile": "/v1PqysDnx5umfA2DqGyjwuAxc9C.jpg"
+        },
+        {
+          "name": "Amy Morgan",
+          "character": "Zillah",
+          "profile": "/7KtHxjYwVjLuVE5ysAtDW3Qn1bv.jpg"
+        },
+        {
+          "name": "Jessica Knappett",
+          "character": "Mrs Burton",
+          "profile": "/mV2zsSc7CLxikkrmNf81JmLClVj.jpg"
+        },
+        {
+          "name": "Charlotte Mellington",
+          "character": "Young Cathy",
+          "profile": "/mw79hdtCu9WqNH44IQUeBeAtOjn.jpg"
+        },
+        {
+          "name": "Owen Cooper",
+          "character": "Young Heathcliff",
+          "profile": "/zdV9mPv6QD89jgdaqW3w9TEn5bA.jpg"
+        },
+        {
+          "name": "Vy Nguyen",
+          "character": "Young Nelly",
+          "profile": "/oMyVY7yW1iNxbnnqNMscJIj5NJl.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1317288",
+      "tmdbId": 1317288,
+      "title": "Marty Supreme",
+      "originalTitle": null,
+      "release": "2026-01-22",
+      "director": "Josh Safdie",
+      "genres": [
+        "Dramma",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 149,
+      "trailer": "https://www.youtube.com/watch?v=nEZq1gcyoD0",
+      "cast": [
+        "Timothée Chalamet",
+        "Gwyneth Paltrow",
+        "Odessa A'zion",
+        "Kevin O'Leary",
+        "Tyler, The Creator",
+        "Fran Drescher",
+        "Abel Ferrara",
+        "Emory Cohen",
+        "Géza Röhrig",
+        "川口功人",
+        "Larry Sloman",
+        "Luke Manley"
+      ],
+      "plot": "Marty Mauser (Timothée Chalamet) è un venditore di scarpe con un’irrefrenabile ossessione per il ping pong che si muove nella New York degli anni ’50 fra truffe, scommesse, passioni proibite e sogni di gloria. Un’esistenza rocambolesca per un personaggio larger than life, eccentrico e ambiziosissimo, smodato e leggendario.",
+      "lista": "visto",
+      "source": "tmdb:1317288",
+      "imdbId": "tt32916440",
+      "rtScore": 93,
+      "metascore": 89,
+      "imdbRating": 7.7,
+      "imdbVotes": 164546,
+      "releaseGlobale": "2025-12-19",
+      "streaming": [
+        "iWonder Full Amazon channel",
+        "HBO Max Amazon Channel",
+        "HBO Max"
+      ],
+      "poster": "/et9WEOYIel2xTEPL1xwBkifgO2V.jpg",
+      "backdrop": "/6h7w8R4BA7vubEmEEW5vYEjuoz6.jpg",
+      "tmdbRating": 7.369,
+      "tmdbVotes": 1998,
+      "popularity": 22.7606,
+      "budget": 65000000,
+      "revenue": 191303074,
+      "tagline": "Sogna in grande",
+      "castDetail": [
+        {
+          "name": "Timothée Chalamet",
+          "character": "Marty Mauser",
+          "profile": "/axENiFIrSz5B7UuWkMT7PDe7CaO.jpg"
+        },
+        {
+          "name": "Gwyneth Paltrow",
+          "character": "Kay Stone",
+          "profile": "/x040uB0CDrHjVAUSONw8bbWMvDC.jpg"
+        },
+        {
+          "name": "Odessa A'zion",
+          "character": "Rachel Mizler",
+          "profile": "/5Q0Z5O3nkZH5JvueTyc2q0anw2B.jpg"
+        },
+        {
+          "name": "Kevin O'Leary",
+          "character": "Milton Rockwell",
+          "profile": "/eUDfTddvXHOAZR5Sh1hs3IVF5mb.jpg"
+        },
+        {
+          "name": "Tyler, The Creator",
+          "character": "Wally",
+          "profile": "/jdAYV2hhjsffcRBTPqCMzHLIiM1.jpg"
+        },
+        {
+          "name": "Fran Drescher",
+          "character": "Rebecca Mauser",
+          "profile": "/6IQlygYDyxuIRD5j9lPluknYoJp.jpg"
+        },
+        {
+          "name": "Abel Ferrara",
+          "character": "Ezra Mishkin",
+          "profile": "/wdOxXWyxE3HjrtdeOJvc9xB5eUv.jpg"
+        },
+        {
+          "name": "Emory Cohen",
+          "character": "Ira Mizler",
+          "profile": "/mtummZcNxmcJQ1JIoQUcV3Fwb3.jpg"
+        },
+        {
+          "name": "Géza Röhrig",
+          "character": "Béla Kletzki",
+          "profile": "/3XrYcL5wC1wQnmqJautgZK3XuiM.jpg"
+        },
+        {
+          "name": "川口功人",
+          "character": "Koto Endo",
+          "profile": "/aTR2fKtjr2mTXTtU5ywNAKJv1jG.jpg"
+        },
+        {
+          "name": "Larry Sloman",
+          "character": "Murray Norkin",
+          "profile": "/enSAk6TAQYApYPBo5fVQUf26wcP.jpg"
+        },
+        {
+          "name": "Luke Manley",
+          "character": "Dion Galanis",
+          "profile": "/xseCUIslZFDykrgxRV6k7tuzlsF.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-680493",
+      "tmdbId": 680493,
+      "title": "Return to Silent Hill",
+      "originalTitle": null,
+      "release": "2026-01-22",
+      "director": "Christophe Gans",
+      "genres": [
+        "Mistero",
+        "Dramma",
+        "Horror"
+      ],
+      "countries": [
+        "Francia",
+        "Giappone",
+        "USA",
+        "Gran Bretagna",
+        "Germania"
+      ],
+      "runtime": 106,
+      "trailer": "https://www.youtube.com/watch?v=xc3zOGBnJ18",
+      "cast": [
+        "Jeremy Irvine",
+        "Hannah Emily Anderson",
+        "Ljiljana Velimirov",
+        "Giulia Pelagatti",
+        "Evie Templeton",
+        "Robert Strange",
+        "Pearse Egan",
+        "Nicola Alexis",
+        "Eve Macklin",
+        "Emily Carding",
+        "Lara Duru",
+        "Karya Duru"
+      ],
+      "plot": "Quando una lettera lo richiama a Silent Hill alla ricerca del suo amore perduto, James ritrova una città totalmente trasformata, abitata da mostri che lo portano a dubitare della sua sanità mentale.",
+      "lista": "visto",
+      "source": "tmdb:680493",
+      "imdbId": "tt22868010",
+      "rtScore": 18,
+      "metascore": 34,
+      "imdbRating": 4,
+      "imdbVotes": 17409,
+      "releaseGlobale": "2026-01-21",
+      "streaming": [
+        "MIDNIGHT FACTORY Amazon Channel"
+      ],
+      "poster": "/28ygujLDfyuRjxtF2PmblovDjsI.jpg",
+      "backdrop": "/v0NEB75SZjxY8GS3ho8WeEvjIT3.jpg",
+      "tmdbRating": 5.4,
+      "tmdbVotes": 751,
+      "popularity": 15.9675,
+      "budget": 23000000,
+      "revenue": 47976996,
+      "tagline": "Il senso di colpa è un posto che non potrai mai lasciare.",
+      "castDetail": [
+        {
+          "name": "Jeremy Irvine",
+          "character": "James Sunderland",
+          "profile": "/wnyLs0r9j1IB4zK2QBkgg2TyAzZ.jpg"
+        },
+        {
+          "name": "Hannah Emily Anderson",
+          "character": "Mary Crane  / Angela / Maria / Moth Mary",
+          "profile": "/fSyNGF4pZQj9Ne9IKv9kfimECzk.jpg"
+        },
+        {
+          "name": "Ljiljana Velimirov",
+          "character": "Armless",
+          "profile": "/4SWSRd4dRUILJtrU6jsiwdEInSb.jpg"
+        },
+        {
+          "name": "Giulia Pelagatti",
+          "character": "Armless / Spider Lady",
+          "profile": "/x24E5woRH2JYkRvOcRKGBMGuCI5.jpg"
+        },
+        {
+          "name": "Evie Templeton",
+          "character": "Laura",
+          "profile": "/1JV3FEULVnROl4APfkUprqTrFF6.jpg"
+        },
+        {
+          "name": "Robert Strange",
+          "character": "Pyramid Head",
+          "profile": "/4GBjA1itRhsKaPaOrVE1YN9qOqc.jpg"
+        },
+        {
+          "name": "Pearse Egan",
+          "character": "Eddie",
+          "profile": "/bzHkytLIEk4T4arzd7h5BRLufov.jpg"
+        },
+        {
+          "name": "Nicola Alexis",
+          "character": "M",
+          "profile": "/jPynKGMPaArRB4SAr6OIGHWQRl.jpg"
+        },
+        {
+          "name": "Eve Macklin",
+          "character": "Kaitlyn",
+          "profile": "/7e1bpd3iTst0PvCk4A7LVfUgNut.jpg"
+        },
+        {
+          "name": "Emily Carding",
+          "character": "Dara",
+          "profile": "/zW0SKNWWlEFrLm5XAZh24rL0E6b.jpg"
+        },
+        {
+          "name": "Lara Duru",
+          "character": "Meyers Twin",
+          "profile": "/AoNaXZCfDs7A6AvCUYxmY9Npesl.jpg"
+        },
+        {
+          "name": "Karya Duru",
+          "character": "Meyers Twin",
+          "profile": "/sz21OipX3iSbdULxvaYbL1yFQDh.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1684016",
+      "tmdbId": 1684016,
+      "title": "Katy Perry: The Lifetimes Tour - Live from Paris",
+      "originalTitle": null,
+      "release": "2026-09-02",
+      "director": "Paul Dugdale",
+      "genres": [
+        "Documentario",
+        "Musica"
+      ],
+      "countries": [
+        "USA",
+        "Francia"
+      ],
+      "runtime": 119,
+      "trailer": null,
+      "cast": [
+        "Katy Perry"
+      ],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:1684016",
+      "imdbId": "tt38882652",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-09-02",
+      "streaming": [],
+      "poster": "/hMhQBN3fyGtR3zlO8GntrpYzrKp.jpg",
+      "backdrop": "/1BfOqbDhvtmAv7SwyobM5eTjQMm.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 2.1314,
+      "budget": null,
+      "revenue": null,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Katy Perry",
+          "character": "Self",
+          "profile": "/9OOOpZpIi4VSHYBed7HP6axBir6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1084244",
+      "tmdbId": 1084244,
+      "title": "Toy Story 5",
+      "originalTitle": null,
+      "release": "2026-06-18",
+      "director": "Andrew Stanton",
+      "genres": [
+        "Animazione",
+        "Famiglia",
+        "Commedia",
+        "Avventura"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 102,
+      "trailer": "https://www.youtube.com/watch?v=52hxgmyUzQY",
+      "cast": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Joan Cusack",
+        "Greta Lee",
+        "Conan O'Brien",
+        "Craig Robinson",
+        "Shelby Rabara",
+        "Tony Hale",
+        "Scarlett Spears",
+        "Jay Hernandez",
+        "Lori Alan",
+        "Bonnie Hunt"
+      ],
+      "plot": "Quando Bonnie riceve in regalo un tablet Lilypad e ne diventa ossessionata, per Buzz, Woody, Jessie e il resto della banda, il lavoro si complica enormemente: dovranno affrontare una nuova, temibile minaccia al mondo del gioco.",
+      "lista": "casa",
+      "source": "tmdb:1084244",
+      "imdbId": "tt29355505",
+      "rtScore": 92,
+      "metascore": 73,
+      "imdbRating": 7.5,
+      "imdbVotes": 40356,
+      "releaseGlobale": "2026-06-17",
+      "streaming": [],
+      "poster": "/i7eQGriXCmNpScSVzepNHn9nMPM.jpg",
+      "backdrop": "/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
+      "tmdbRating": 7.426,
+      "tmdbVotes": 719,
+      "popularity": 326.1932,
+      "budget": 250000000,
+      "revenue": 1022055658,
+      "tagline": "Ciao! Giochiamo!",
+      "castDetail": [
+        {
+          "name": "Tom Hanks",
+          "character": "Woody (voice)",
+          "profile": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+          "name": "Tim Allen",
+          "character": "Buzz Lightyear (voice)",
+          "profile": "/woWhZzFILVhYMAvsPL171HjMY0y.jpg"
+        },
+        {
+          "name": "Joan Cusack",
+          "character": "Jessie (voice)",
+          "profile": "/59UIeHZFYrKyP20lXqijtfTXglO.jpg"
+        },
+        {
+          "name": "Greta Lee",
+          "character": "Lilypad (voice)",
+          "profile": "/6SydTis4XUcovlwIGskT59JowLX.jpg"
+        },
+        {
+          "name": "Conan O'Brien",
+          "character": "Smarty Pants (voice)",
+          "profile": "/deRbViPut0t80miscBpP2DhBJU5.jpg"
+        },
+        {
+          "name": "Craig Robinson",
+          "character": "Atlas (voice)",
+          "profile": "/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg"
+        },
+        {
+          "name": "Shelby Rabara",
+          "character": "Snappy (voice)",
+          "profile": "/ouMiEKlhCj2LFKEQtI6fGRMDemF.jpg"
+        },
+        {
+          "name": "Tony Hale",
+          "character": "Forky (voice)",
+          "profile": "/ar4uapp4w5wMkThZcqWUNMSTO8z.jpg"
+        },
+        {
+          "name": "Scarlett Spears",
+          "character": "Bonnie (voice)",
+          "profile": "/h0loJ4v3wbUfUA6dxUYv7B6fET1.jpg"
+        },
+        {
+          "name": "Jay Hernandez",
+          "character": "Bonnie’s Dad (voice)",
+          "profile": "/rh4pzTAJvy0i84HYV4xZxCXuXgV.jpg"
+        },
+        {
+          "name": "Lori Alan",
+          "character": "Bonnie's Mom (voice)",
+          "profile": "/cavATg4fX0zAl2MHwlt1IZei7EI.jpg"
+        },
+        {
+          "name": "Bonnie Hunt",
+          "character": "Dolly (voice)",
+          "profile": "/tT9C6uLztgN8OxJULq6F9iEzqlA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-936075",
+      "tmdbId": 936075,
+      "title": "Michael",
+      "originalTitle": null,
+      "release": "2026-04-23",
+      "director": "Antoine Fuqua",
+      "genres": [
+        "Musica",
+        "Dramma"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 127,
+      "trailer": "https://www.youtube.com/watch?v=MDfdC2ubOek",
+      "cast": [
+        "Jaafar Jackson",
+        "Colman Domingo",
+        "Nia Long",
+        "Juliano Krue Valdi",
+        "KeiLyn Durrel Jones",
+        "Miles Teller",
+        "Larenz Tate",
+        "Laura Harrier",
+        "Mike Myers",
+        "Kendrick Sampson",
+        "Trey Horton",
+        "Rhyan Hill"
+      ],
+      "plot": "Il film racconta la vita di Michael Jackson oltre la musica, tracciando il suo viaggio dalla scoperta del suo straordinario talento come protagonista dei Jackson Five, all'artista visionario la cui ambizione creativa ha alimentato un'incessante ricerca per diventare il più grande intrattenitore del mondo. Evidenziando sia la sua vita fuori dal palco che alcune delle performance più iconiche degli inizi della sua carriera da solista, il film offre al pubblico un posto in prima fila a Michael Jackson come mai prima d'ora. È qui che inizia la sua storia.",
+      "lista": "casa",
+      "source": "tmdb:936075",
+      "imdbId": "tt11378946",
+      "rtScore": 38,
+      "metascore": 39,
+      "imdbRating": 7.5,
+      "imdbVotes": 144205,
+      "releaseGlobale": "2026-04-22",
+      "streaming": [],
+      "poster": "/xUjMqG7GH6md8qX5e3MyLAzAYSZ.jpg",
+      "backdrop": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "tmdbRating": 8.696,
+      "tmdbVotes": 3754,
+      "popularity": 129.1904,
+      "budget": 250000000,
+      "revenue": 1010218278,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Jaafar Jackson",
+          "character": "Michael",
+          "profile": "/tVSzFjQxOrLOcvnzFto0772Q9Bw.jpg"
+        },
+        {
+          "name": "Colman Domingo",
+          "character": "Joseph Jackson",
+          "profile": "/t0cgfvtA7Thxnrtj5baRi656zlc.jpg"
+        },
+        {
+          "name": "Nia Long",
+          "character": "Katherine Jackson",
+          "profile": "/heVQkCGKUuKKRjRJaZIBrEKGhYA.jpg"
+        },
+        {
+          "name": "Juliano Krue Valdi",
+          "character": "Young Michael",
+          "profile": "/1rQYmcxdPD1IwHpa78DcfVEu1EN.jpg"
+        },
+        {
+          "name": "KeiLyn Durrel Jones",
+          "character": "Bill Bray",
+          "profile": "/4wDO3Zt9KJg9CARCEgjuVdhWa8x.jpg"
+        },
+        {
+          "name": "Miles Teller",
+          "character": "John Branca",
+          "profile": "/kDf3sW3USjEBDQ3Ua7lbwOfwty6.jpg"
+        },
+        {
+          "name": "Larenz Tate",
+          "character": "Berry Gordy",
+          "profile": "/6BWajF1sbuwsvXHmdQDxP5MfZ5R.jpg"
+        },
+        {
+          "name": "Laura Harrier",
+          "character": "Suzanne de Passe",
+          "profile": "/hYS8z1DxP6jvsBNXMRALiSI3nhw.jpg"
+        },
+        {
+          "name": "Mike Myers",
+          "character": "Walter Yetnikoff",
+          "profile": "/gjfDl52Kk02MPgUYFjs9bOy33OY.jpg"
+        },
+        {
+          "name": "Kendrick Sampson",
+          "character": "Quincy Jones",
+          "profile": "/AoZGTujNZEfabaXR5kUwmDUmxfe.jpg"
+        },
+        {
+          "name": "Trey Horton",
+          "character": "Marlon Jackson",
+          "profile": "/bS5tAhkEYanomvhQURQTMnOjg79.jpg"
+        },
+        {
+          "name": "Rhyan Hill",
+          "character": "Tito Jackson",
+          "profile": "/iPNBMJL9kKtUYmqJzbarQfQcPp4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1472638",
+      "tmdbId": 1472638,
+      "title": "Buen Camino",
+      "originalTitle": null,
+      "release": "2025-12-25",
+      "director": "Gennaro Nunziante",
+      "genres": [
+        "Commedia",
+        "Famiglia",
+        "Avventura"
+      ],
+      "countries": [
+        "Italia"
+      ],
+      "runtime": 90,
+      "trailer": "https://www.youtube.com/watch?v=kBQTlzAUEdc",
+      "cast": [
+        "Checco Zalone",
+        "Beatriz Arjona",
+        "Letizia Arnò",
+        "Martina Colombari",
+        "Hossein Taheri",
+        "Alfonso Santagata",
+        "Mariana Rodríguez",
+        "Cecilia Gragnani",
+        "Beatrice Abbro",
+        "Maurizio Bousso",
+        "Andrea Cosentino",
+        "Claudia Ferri"
+      ],
+      "plot": "Checco, erede ricchissimo e viziato è costretto a lasciare la sua vita dorata per mettersi sulle tracce della figlia adolescente. È così che finisce, suo malgrado, sul Cammino di Santiago: un’occasione per conoscersi davvero.",
+      "lista": "casa",
+      "source": "tmdb:1472638",
+      "imdbId": "tt38350059",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": 6.4,
+      "imdbVotes": 2705,
+      "releaseGlobale": "2025-12-25",
+      "streaming": [
+        "Netflix"
+      ],
+      "poster": "/gYvlK73gKsJAaGjndyyiaZerEFb.jpg",
+      "backdrop": "/7Whk4F7xQYF5eUwJp50Oa8GvpVd.jpg",
+      "tmdbRating": 6.264,
+      "tmdbVotes": 591,
+      "popularity": 2.9207,
+      "budget": 28100000,
+      "revenue": 73797878,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Checco Zalone",
+          "character": "Checco",
+          "profile": "/jmJ65jTHlK2KbBV8U9DCaCl7GpH.jpg"
+        },
+        {
+          "name": "Beatriz Arjona",
+          "character": "Alma",
+          "profile": "/jxIFEzPxyPWKzw9MMD2pf7hHyz1.jpg"
+        },
+        {
+          "name": "Letizia Arnò",
+          "character": "Cristal",
+          "profile": "/vJsIGRIFxwbRZqSMk7sF8ESH96z.jpg"
+        },
+        {
+          "name": "Martina Colombari",
+          "character": "Linda",
+          "profile": "/l8cIpBwZZWSKxfuMyUhQMo4mlfK.jpg"
+        },
+        {
+          "name": "Hossein Taheri",
+          "character": "Tarek",
+          "profile": "/oCw19EurCQB7joUCsNQbVKKa6B9.jpg"
+        },
+        {
+          "name": "Alfonso Santagata",
+          "character": "Nonno Eugenio",
+          "profile": "/hHIXOihizxRtUBbMvx5zCVOmSik.jpg"
+        },
+        {
+          "name": "Mariana Rodríguez",
+          "character": "Martina",
+          "profile": "/j8bgDwHN7Y60KANFQAOJt4OFAMa.jpg"
+        },
+        {
+          "name": "Cecilia Gragnani",
+          "character": "Elizabeth",
+          "profile": "/cBdXHAOcLj5QEXvk5HZ9Nbwy0vC.jpg"
+        },
+        {
+          "name": "Beatrice Abbro",
+          "character": "Corina",
+          "profile": null
+        },
+        {
+          "name": "Maurizio Bousso",
+          "character": "Maurice",
+          "profile": "/nfBOYTpNTS4yqrQHsPNjirK7Sif.jpg"
+        },
+        {
+          "name": "Andrea Cosentino",
+          "character": "Logopedista",
+          "profile": null
+        },
+        {
+          "name": "Claudia Ferri",
+          "character": "Tenente Marsilio",
+          "profile": "/mWFY9va5C9w7MRZZzfd0nGk0i1r.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-83533",
+      "tmdbId": 83533,
+      "title": "Avatar: Fuoco e cenere",
+      "originalTitle": null,
+      "release": "2025-12-19",
+      "director": "James Cameron",
+      "genres": [
+        "Fantascienza",
+        "Avventura",
+        "Fantasy"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 197,
+      "trailer": "https://www.youtube.com/watch?v=J00FN6ZF31k",
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldaña",
+        "Sigourney Weaver",
+        "Stephen Lang",
+        "Oona Chaplin",
+        "Jack Champion",
+        "Kate Winslet",
+        "Cliff Curtis",
+        "Joel David Moore",
+        "CCH Pounder",
+        "Edie Falco",
+        "Brendan Cowell"
+      ],
+      "plot": "In seguito alla devastante guerra contro la RDA e alla perdita del loro figlio maggiore, Jake Sully e Neytiri affrontano una nuova minaccia su Pandora: il Popolo della Cenere, una tribù Na'vi violenta e assetata di potere guidata dagli spietati Varang. La famiglia di Jake deve lottare per la propria sopravvivenza e per il futuro di Pandora in un conflitto che li spinge ai loro limiti emotivi e fisici.",
+      "lista": "casa",
+      "source": "tmdb:83533",
+      "imdbId": "tt1757678",
+      "rtScore": 66,
+      "metascore": 61,
+      "imdbRating": 7.2,
+      "imdbVotes": 191187,
+      "releaseGlobale": "2025-12-17",
+      "streaming": [
+        "Disney Plus"
+      ],
+      "poster": "/xxiIVbzr9YCfKTftTqN3mojUkKM.jpg",
+      "backdrop": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+      "tmdbRating": 7.636,
+      "tmdbVotes": 3971,
+      "popularity": 114.8893,
+      "budget": 350000000,
+      "revenue": 1490477656,
+      "tagline": "Il mondo di Pandora cambierà per sempre.",
+      "castDetail": [
+        {
+          "name": "Sam Worthington",
+          "character": "Jake",
+          "profile": "/vM1WIfYQ1HUBtlVPwB9Hp9fLcn8.jpg"
+        },
+        {
+          "name": "Zoe Saldaña",
+          "character": "Neytiri",
+          "profile": "/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg"
+        },
+        {
+          "name": "Sigourney Weaver",
+          "character": "Kiri",
+          "profile": "/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+        },
+        {
+          "name": "Stephen Lang",
+          "character": "Quaritch",
+          "profile": "/gnO5VfkDgA2fsHweD0622LUY3Hu.jpg"
+        },
+        {
+          "name": "Oona Chaplin",
+          "character": "Varang",
+          "profile": "/uYnBSVKcFgw48Wxts01Dh5Gxlar.jpg"
+        },
+        {
+          "name": "Jack Champion",
+          "character": "Spider",
+          "profile": "/7qgRRgap16cVI85WsBdzFLOzYiP.jpg"
+        },
+        {
+          "name": "Kate Winslet",
+          "character": "Ronal",
+          "profile": "/6qNnMsKtKz9si5rabpUEG85UfHp.jpg"
+        },
+        {
+          "name": "Cliff Curtis",
+          "character": "Tonowari",
+          "profile": "/dfaElGoyJWseFWxXwEMLL9WTi7V.jpg"
+        },
+        {
+          "name": "Joel David Moore",
+          "character": "Norm",
+          "profile": "/mMVhVglj6BZFuvqAXnEibce08k7.jpg"
+        },
+        {
+          "name": "CCH Pounder",
+          "character": "Mo'at",
+          "profile": "/mr6BLDN75T8DJl9dNK3hN4YwqJa.jpg"
+        },
+        {
+          "name": "Edie Falco",
+          "character": "General Ardmore",
+          "profile": "/jS2Hnr5OmntpX0J7EpH70zAG0mz.jpg"
+        },
+        {
+          "name": "Brendan Cowell",
+          "character": "Scoresby",
+          "profile": "/9Bjc4wYjqAJXMwmy6rKsYq2PeWV.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1084242",
+      "tmdbId": 1084242,
+      "title": "Zootropolis 2",
+      "originalTitle": null,
+      "release": "2025-11-26",
+      "director": "Jared Bush",
+      "genres": [
+        "Animazione",
+        "Avventura",
+        "Commedia",
+        "Mistero",
+        "Famiglia"
+      ],
+      "countries": [
+        "USA",
+        "Canada"
+      ],
+      "runtime": 108,
+      "trailer": "https://www.youtube.com/watch?v=JjP1f8XuczI",
+      "cast": [
+        "Ginnifer Goodwin",
+        "Jason Bateman",
+        "Ke Huy Quan",
+        "Fortune Feimster",
+        "Andy Samberg",
+        "David Strathairn",
+        "Idris Elba",
+        "Shakira",
+        "Patrick Warburton",
+        "Quinta Brunson",
+        "Danny Trejo",
+        "Nate Torrence"
+      ],
+      "plot": "Dopo aver risolto il caso più importante nella storia di Zootropolis, i poliziotti alle prime armi Judy Hopps e Nick Wilde scoprono che la loro collaborazione non è così solida come pensavano quando il capo Bogo ordina loro di unirsi al programma di consulenza \"Partners in Crisis\". Ma non ci vuole molto perché la loro collaborazione venga messa a dura prova quando si ritrovano sulle tracce tortuose di un mistero legato all'arrivo di un serpente velenoso nella metropoli degli animali.",
+      "lista": "casa",
+      "source": "tmdb:1084242",
+      "imdbId": "tt26443597",
+      "rtScore": 92,
+      "metascore": 73,
+      "imdbRating": 7.3,
+      "imdbVotes": 141989,
+      "releaseGlobale": "2025-11-26",
+      "streaming": [],
+      "poster": "/lVesXbaSnCh0e27punAv4ZKWkxk.jpg",
+      "backdrop": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "tmdbRating": 7.683,
+      "tmdbVotes": 3167,
+      "popularity": 51.7414,
+      "budget": 150000000,
+      "revenue": 1868208796,
+      "tagline": "Zootropolis sta per cambiare per sssssempre",
+      "castDetail": [
+        {
+          "name": "Ginnifer Goodwin",
+          "character": "Judy Hopps (voice)",
+          "profile": "/eByMpalFhQxUYuzA0srCN8rnfOZ.jpg"
+        },
+        {
+          "name": "Jason Bateman",
+          "character": "Nick Wilde (voice)",
+          "profile": "/wS22fofYtUf4aGXACFwhkTjUk6a.jpg"
+        },
+        {
+          "name": "Ke Huy Quan",
+          "character": "Gary De'Snake (voice)",
+          "profile": "/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg"
+        },
+        {
+          "name": "Fortune Feimster",
+          "character": "Nibbles Maplestick (voice)",
+          "profile": "/9f2p2T61K4pIvKQMLRlow8znkXU.jpg"
+        },
+        {
+          "name": "Andy Samberg",
+          "character": "Pawbert Lynxley (voice)",
+          "profile": "/jMXU5oG3i93SH1yhkpbBGskFiJl.jpg"
+        },
+        {
+          "name": "David Strathairn",
+          "character": "Milton Lynxley (voice)",
+          "profile": "/w5YM2cGefPnkoyIXCi2UrCQW53r.jpg"
+        },
+        {
+          "name": "Idris Elba",
+          "character": "Chief Bogo (voice)",
+          "profile": "/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        },
+        {
+          "name": "Shakira",
+          "character": "Gazelle (voice)",
+          "profile": "/AcOA8MbRrDswt6w3TmCBYl7TNOu.jpg"
+        },
+        {
+          "name": "Patrick Warburton",
+          "character": "Mayor Winddancer (voice)",
+          "profile": "/eLqDtbFYmlTxov9vT9Dwldn839v.jpg"
+        },
+        {
+          "name": "Quinta Brunson",
+          "character": "Dr. Fuzzby (voice)",
+          "profile": "/4x2ltnaGHF9rhaDRlkyNs7HOUI8.jpg"
+        },
+        {
+          "name": "Danny Trejo",
+          "character": "Jesús (voice)",
+          "profile": "/7JrUkRGBscZ1Hy5JinaaXjjzSCF.jpg"
+        },
+        {
+          "name": "Nate Torrence",
+          "character": "Clawhauser (voice)",
+          "profile": "/yT9o149xPygdY0NsF9sNgiQwuru.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1325734",
+      "tmdbId": 1325734,
+      "title": "The Drama - Un segreto è per sempre",
+      "originalTitle": null,
+      "release": "2026-04-02",
+      "director": "Kristoffer Borgli",
+      "genres": [
+        "Romance",
+        "Commedia",
+        "Dramma"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 106,
+      "trailer": "https://www.youtube.com/watch?v=9O0_pVjK17A",
+      "cast": [
+        "Zendaya",
+        "Robert Pattinson",
+        "Alana Haim",
+        "Mamoudou Athie",
+        "Hailey Benton Gates",
+        "Sydney Lemmon",
+        "Hannah Gross",
+        "Anna Baryshnikov",
+        "Jordyn Curet",
+        "Michael Abbott Jr.",
+        "Zoë Winters",
+        "Dee Nelson"
+      ],
+      "plot": "Una coppia, nei giorni che precedono le nozze, attraversa una profonda crisi scaturita da una serie di rivelazioni inaspettate, che smentiscono quello che uno dei due futuri coniugi pensava di sapere dell'altro.",
+      "lista": "casa",
+      "source": "tmdb:1325734",
+      "imdbId": "tt33071426",
+      "rtScore": null,
+      "metascore": 59,
+      "imdbRating": 7.2,
+      "imdbVotes": 81611,
+      "releaseGlobale": "2026-04-01",
+      "streaming": [],
+      "poster": "/3zdr031LjTG71QyeC7mWdyU19bE.jpg",
+      "backdrop": "/gQxnJoswBzsENExzygVnFiemvK7.jpg",
+      "tmdbRating": 6.929,
+      "tmdbVotes": 1375,
+      "popularity": 37.3078,
+      "budget": 28000000,
+      "revenue": 132227793,
+      "tagline": "Conosci davvero chi ami?",
+      "castDetail": [
+        {
+          "name": "Zendaya",
+          "character": "Emma",
+          "profile": "/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+        },
+        {
+          "name": "Robert Pattinson",
+          "character": "Charlie",
+          "profile": "/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+        },
+        {
+          "name": "Alana Haim",
+          "character": "Rachel",
+          "profile": "/uOU4uueRxH5BYhzNjzPxJOxZStJ.jpg"
+        },
+        {
+          "name": "Mamoudou Athie",
+          "character": "Mike",
+          "profile": "/dUsJ41XjNUEHGQjQcGjBsytrGqo.jpg"
+        },
+        {
+          "name": "Hailey Benton Gates",
+          "character": "Misha",
+          "profile": "/q3GFo0wx7e0iz7P22dd9sSXZSwn.jpg"
+        },
+        {
+          "name": "Sydney Lemmon",
+          "character": "Pauline",
+          "profile": "/heGyUuth1HInFdywZ6y8gqjf0q6.jpg"
+        },
+        {
+          "name": "Hannah Gross",
+          "character": "Alice",
+          "profile": "/p94oyYrrywfSH3vkimTL1cbaWQt.jpg"
+        },
+        {
+          "name": "Anna Baryshnikov",
+          "character": "Sam",
+          "profile": "/wFMmvPSSciGgRm5Vm1seX0xPjHE.jpg"
+        },
+        {
+          "name": "Jordyn Curet",
+          "character": "Young Emma",
+          "profile": "/sUGk173dPdlR6OXQEape7EW2XT1.jpg"
+        },
+        {
+          "name": "Michael Abbott Jr.",
+          "character": "Blake",
+          "profile": "/lL6epnepASAxQolqXeNve8hEcaR.jpg"
+        },
+        {
+          "name": "Zoë Winters",
+          "character": "Frances",
+          "profile": "/3Ej5luqqvdD3hZXAzFZbdRxj7CQ.jpg"
+        },
+        {
+          "name": "Dee Nelson",
+          "character": "Jill",
+          "profile": "/kfmANsOBqw6MUsa0ZJj7nkhjpJM.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1273221",
+      "tmdbId": 1273221,
+      "title": "Scary Movie",
+      "originalTitle": null,
+      "release": "2026-06-04",
+      "director": "Michael Tiddes",
+      "genres": [
+        "Commedia"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 96,
+      "trailer": "https://www.youtube.com/watch?v=3jqd5-T1GLo",
+      "cast": [
+        "Marlon Wayans",
+        "Shawn Wayans",
+        "Anna Faris",
+        "Regina Hall",
+        "Olivia Rose Keegan",
+        "Savannah Lee Nassif",
+        "Cameron Scott Roberts",
+        "Sydney Park",
+        "Gregg Wayans",
+        "Benny Zielke",
+        "Ruby Snowber",
+        "Dave Sheridan"
+      ],
+      "plot": "Ventisei anni dopo essere sfuggiti a un killer mascherato fin troppo familiare, i Core Four tornano nel mirino dell’assassino — e nessun franchise horror è al sicuro.",
+      "lista": "casa",
+      "source": "tmdb:1273221",
+      "imdbId": "tt32093575",
+      "rtScore": null,
+      "metascore": 38,
+      "imdbRating": 5.2,
+      "imdbVotes": 30613,
+      "releaseGlobale": "2026-06-03",
+      "streaming": [],
+      "poster": "/AaTg95kewgcTNyGYxm3VmH3RSj5.jpg",
+      "backdrop": "/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "tmdbRating": 6.504,
+      "tmdbVotes": 1228,
+      "popularity": 205.3708,
+      "budget": 30000000,
+      "revenue": 231229179,
+      "tagline": "Niente è sacro. Nessun cliché sopravvive. Ogni limite viene superato.",
+      "castDetail": [
+        {
+          "name": "Marlon Wayans",
+          "character": "Shorty / 'Joe' / 'Tiffany' / Count Brolock",
+          "profile": "/7LYnX3vluHFBs1WCRKUjSIEDEkn.jpg"
+        },
+        {
+          "name": "Shawn Wayans",
+          "character": "Ray",
+          "profile": "/Cat25uXhB680QLmvg9Tu16W563.jpg"
+        },
+        {
+          "name": "Anna Faris",
+          "character": "Cindy",
+          "profile": "/tptTb0BQwCpKWETNqzkZzzf5qSZ.jpg"
+        },
+        {
+          "name": "Regina Hall",
+          "character": "Brenda",
+          "profile": "/jiFZ4xNrvUUZLBHnJu71CvdN4kj.jpg"
+        },
+        {
+          "name": "Olivia Rose Keegan",
+          "character": "Sara",
+          "profile": "/9obcJcki6P3eGdXZ8mHnNKOVUIk.jpg"
+        },
+        {
+          "name": "Savannah Lee Nassif",
+          "character": "Tuesday",
+          "profile": "/ciJxFnNoJrePA6gvWcEJrS6HXVB.jpg"
+        },
+        {
+          "name": "Cameron Scott Roberts",
+          "character": "Jack",
+          "profile": "/uXSh5Zss83nUNcV28sC38WbWIkD.jpg"
+        },
+        {
+          "name": "Sydney Park",
+          "character": "DEI",
+          "profile": "/6Gr0aT1Hux2P3KM35IXdXbXZABk.jpg"
+        },
+        {
+          "name": "Gregg Wayans",
+          "character": "Brad",
+          "profile": "/lNsrZObXzbBA7jzTCBI4BFwQYdV.jpg"
+        },
+        {
+          "name": "Benny Zielke",
+          "character": "Jess",
+          "profile": "/8ul4eT5RAGvVXcCbrkqNqdqvRHU.jpg"
+        },
+        {
+          "name": "Ruby Snowber",
+          "character": "Elle",
+          "profile": "/5DNdyn09THeVZNrSSWW1wDyuZJs.jpg"
+        },
+        {
+          "name": "Dave Sheridan",
+          "character": "Doofy / Ghostface (voice)",
+          "profile": "/qJF27jpleZBQOikOuYL7rfh9CPM.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1226863",
+      "tmdbId": 1226863,
+      "title": "Super Mario Galaxy - Il film",
+      "originalTitle": null,
+      "release": "2026-04-01",
+      "director": "Aaron Horvath",
+      "genres": [
+        "Famiglia",
+        "Commedia",
+        "Avventura",
+        "Fantasy",
+        "Animazione"
+      ],
+      "countries": [
+        "Giappone",
+        "USA"
+      ],
+      "runtime": 98,
+      "trailer": "https://www.youtube.com/watch?v=9BqzYJ1rHbw",
+      "cast": [
+        "Chris Pratt",
+        "Anya Taylor-Joy",
+        "Charlie Day",
+        "Jack Black",
+        "Donald Glover",
+        "Benny Safdie",
+        "Brie Larson",
+        "Keegan-Michael Key",
+        "Glen Powell",
+        "Luis Guzmán",
+        "Issa Rae",
+        "Kevin Michael Richardson"
+      ],
+      "plot": "Mario e Luigi, i gemelli idraulici, applicano il loro motto \"Let's-a-go\" per risolvere i problemi di ogni giorno nella loro nuova casa del Regno dei Funghi. Mentre sono impegnati ad aiutare la Principessa Peach e a riportare sulla retta via Bowser, rimpicciolito e imprigionato, incontrano un nuovo compagno: Yoshi. La festa di compleanno della Principessa Peach dà luogo a un'avventura galattica, che vede i due fratelli lanciarsi nello spazio per fermare i loschi piani di Bowser Jr. e salvare la principessa Rosalinda.",
+      "lista": "casa",
+      "source": "tmdb:1226863",
+      "imdbId": "tt28650488",
+      "rtScore": null,
+      "metascore": 37,
+      "imdbRating": 6.3,
+      "imdbVotes": 55972,
+      "releaseGlobale": "2026-04-01",
+      "streaming": [],
+      "poster": "/3OfIG4QIEkumrWQXrcCq8bUlv01.jpg",
+      "backdrop": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
+      "tmdbRating": 8.264,
+      "tmdbVotes": 3256,
+      "popularity": 101.3804,
+      "budget": 110000000,
+      "revenue": 1011157101,
+      "tagline": "La galassia ti attende.",
+      "castDetail": [
+        {
+          "name": "Chris Pratt",
+          "character": "Mario (voice)",
+          "profile": "/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+          "name": "Anya Taylor-Joy",
+          "character": "Princess Peach (voice)",
+          "profile": "/qYNofOjlRke2MlJVihmJmEdQI4v.jpg"
+        },
+        {
+          "name": "Charlie Day",
+          "character": "Luigi (voice)",
+          "profile": "/c0HNhjChGybnHa4eoLyqO4dDu1j.jpg"
+        },
+        {
+          "name": "Jack Black",
+          "character": "Bowser (voice)",
+          "profile": "/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+        },
+        {
+          "name": "Donald Glover",
+          "character": "Yoshi (voice)",
+          "profile": "/jqVkQfeeEmdga1G0jpBwwXXwwSK.jpg"
+        },
+        {
+          "name": "Benny Safdie",
+          "character": "Bowser Jr. (voice)",
+          "profile": "/u10A5DpUYRB1zMF7YoGYcyvhois.jpg"
+        },
+        {
+          "name": "Brie Larson",
+          "character": "Rosalina (voice)",
+          "profile": "/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+        },
+        {
+          "name": "Keegan-Michael Key",
+          "character": "Toad (voice)",
+          "profile": "/xmdzYXP9j87a43FSiL138nLesuS.jpg"
+        },
+        {
+          "name": "Glen Powell",
+          "character": "Fox McCloud (voice)",
+          "profile": "/fUnIaJkdgvQTztyR1nLeUceSzly.jpg"
+        },
+        {
+          "name": "Luis Guzmán",
+          "character": "Wart (voice)",
+          "profile": "/kSdxUckOJj9R5VKrLUnRy14YhNV.jpg"
+        },
+        {
+          "name": "Issa Rae",
+          "character": "Honey Queen (voice)",
+          "profile": "/uFjimuDgBv8kckApr19t8DykxPH.jpg"
+        },
+        {
+          "name": "Kevin Michael Richardson",
+          "character": "Kamek (voice)",
+          "profile": "/xXt9Nh7RAT5bOen66TaXreNYmCl.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1215532",
+      "tmdbId": 1215532,
+      "title": "Hopper - Il segreto della marmotta",
+      "originalTitle": null,
+      "release": "2026-05-14",
+      "director": "Benjamin Mousquet",
+      "genres": [
+        "Animazione",
+        "Avventura",
+        "Commedia",
+        "Famiglia"
+      ],
+      "countries": [
+        "Belgio",
+        "Francia"
+      ],
+      "runtime": 88,
+      "trailer": "https://www.youtube.com/watch?v=J4arlV9xO-U",
+      "cast": [
+        "Jordan Tartakow",
+        "Laila Berzins",
+        "Joe Ochman",
+        "Xanthe Huynh",
+        "Odessa Lurlean",
+        "Dino Andrade",
+        "Todd Haberkorn",
+        "Christopher Bass",
+        "Wally Wingert",
+        "Brent Mukai",
+        "Byron Patrick",
+        "Michael Sorich"
+      ],
+      "plot": "Continuano le avventure dell'esploratore Hopper, sempre alla scoperta di mondi nuovi e affascinanti insieme agli inseparabili compagni Meg e Abe.  Tuttavia, il suo destino rischia di cambiare radicalmente quando incontra Gina, una misteriosa sconosciuta che si rivela essere sua sorella. Per la prima volta, Hopper scopre di non essere l’unico della sua specie. Diviso tra la lealtà verso il padre adottivo e il desiderio di aiutare i suoi simili, Hopper si ritrova a dover seguire il suo cuore e partire per una nuova avventura. Decide cosi di accompagnare Gina in una missione pericolosa: trovare l’unico potere capace di salvarli da una grave minaccia. La ricerca conduce i protagonisti sulle tracce della leggendaria marmotta in grado di manipolare il tempo. Tra superstizioni, enigmi e rivelazioni sul passato e futuro, Hopper, Abe e Meg affrontano un viaggio epico ricco di insidie, scoperte e colpi di scena.",
+      "lista": "casa",
+      "source": "tmdb:1215532",
+      "imdbId": "tt31260224",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": 13,
+      "releaseGlobale": "2025-09-19",
+      "streaming": [],
+      "poster": "/bl96nTxJhqadBkUXKkgcSU5AxRG.jpg",
+      "backdrop": "/fnuJV4WwxGM8w784lGV7j32JVsG.jpg",
+      "tmdbRating": 7.4,
+      "tmdbVotes": 8,
+      "popularity": 4.7251,
+      "budget": null,
+      "revenue": 8708076,
+      "tagline": "Il destino del mondo è nelle sue zampe!",
+      "castDetail": [
+        {
+          "name": "Jordan Tartakow",
+          "character": "Chickenhare (voice)",
+          "profile": "/ocv0tLJM8hXu7alqkfE4faIZICX.jpg"
+        },
+        {
+          "name": "Laila Berzins",
+          "character": "Meg (voice)",
+          "profile": "/6FIOa6WKq8zEVQW3v6Y7lZiMTOE.jpg"
+        },
+        {
+          "name": "Joe Ochman",
+          "character": "Abe (voice)",
+          "profile": "/yCKPrJxK7KsJ3yLbnTXzV4n4wp6.jpg"
+        },
+        {
+          "name": "Xanthe Huynh",
+          "character": "Gina (voice)",
+          "profile": "/8XNUF4NGUysOcYLOyANKuCzLwFV.jpg"
+        },
+        {
+          "name": "Odessa Lurlean",
+          "character": "Crolloq (voice)",
+          "profile": null
+        },
+        {
+          "name": "Dino Andrade",
+          "character": "Miggie (voice)",
+          "profile": "/eoP6UUSYeuGmgnJ1DQYZRHRgXdn.jpg"
+        },
+        {
+          "name": "Todd Haberkorn",
+          "character": "Rolf (voice)",
+          "profile": "/tT8YzZMfNXXJhhS7KyYRdxgoZcN.jpg"
+        },
+        {
+          "name": "Christopher Bass",
+          "character": "Groundhog (voice)",
+          "profile": "/AtZ0cQFdzgXXwIc9U2ZfLLJxxoS.jpg"
+        },
+        {
+          "name": "Wally Wingert",
+          "character": "King Peter (voice)",
+          "profile": "/5B9STa1OwelvyUs37SWUIFzhIhB.jpg"
+        },
+        {
+          "name": "Brent Mukai",
+          "character": "Grong (voice)",
+          "profile": "/2i4RPM659pvrhtYG9Wr30OcEDqX.jpg"
+        },
+        {
+          "name": "Byron Patrick",
+          "character": "Carl (voice)",
+          "profile": null
+        },
+        {
+          "name": "Michael Sorich",
+          "character": "King Barthemelow (voice)",
+          "profile": "/fiuJUfRiESALcUXW7BHsOJ12yfQ.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1102883",
+      "tmdbId": 1102883,
+      "title": "Mother Mary",
+      "originalTitle": null,
+      "release": "2026-05-14",
+      "director": "David Lowery",
+      "genres": [
+        "Musica",
+        "Dramma",
+        "Thriller"
+      ],
+      "countries": [
+        "USA",
+        "Germania",
+        "Irlanda",
+        "Finland"
+      ],
+      "runtime": 112,
+      "trailer": "https://www.youtube.com/watch?v=sNIUIKZ2vxM",
+      "cast": [
+        "Anne Hathaway",
+        "Michaela Coel",
+        "Hunter Schafer",
+        "FKA twigs",
+        "Sian Clifford",
+        "Kaia Gerber",
+        "Alba Baptista",
+        "Atheena Frizzell",
+        "Jessica Brown Findlay",
+        "Isaura Barbé-Brown",
+        "Jeanne Nicole Ní Áinle",
+        "Taylor Sieve"
+      ],
+      "plot": "Alla vigilia del suo grande rientro in scena, l’iconica pop star Mother Mary riavvicina Sam, un tempo sua migliore amica e costumista e ora stilista affermata, per chiederle di confezionarle un nuovo abito. L’incontro riaprirà la strada a sentimenti forti e mai sopiti, ferite e tensioni irrisolte.",
+      "lista": "casa",
+      "source": "tmdb:1102883",
+      "imdbId": "tt27200708",
+      "rtScore": null,
+      "metascore": 60,
+      "imdbRating": 4,
+      "imdbVotes": 563,
+      "releaseGlobale": "2026-04-16",
+      "streaming": [],
+      "poster": "/GKGvadeAmAkkY2MHLzYDUP685R.jpg",
+      "backdrop": "/pRrH098VPYiUtDwKOm2mVXVQZdf.jpg",
+      "tmdbRating": 5.495,
+      "tmdbVotes": 105,
+      "popularity": 9.8889,
+      "budget": 20000000,
+      "revenue": 2980376,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Anne Hathaway",
+          "character": "Mother Mary",
+          "profile": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+          "name": "Michaela Coel",
+          "character": "Sam Anselm",
+          "profile": "/rbN1F0R8DMUh6IYwl0owyD8LukN.jpg"
+        },
+        {
+          "name": "Hunter Schafer",
+          "character": "Hilda",
+          "profile": "/AilBKow2NuvPBQbvGRx69RxKUBi.jpg"
+        },
+        {
+          "name": "FKA twigs",
+          "character": "Imogen",
+          "profile": "/8bUUu7jPEY1aQgAtJXM2NyYpfgN.jpg"
+        },
+        {
+          "name": "Sian Clifford",
+          "character": "Jade",
+          "profile": "/rIqcwewXdkrDTMTwX56QPa7MNTC.jpg"
+        },
+        {
+          "name": "Kaia Gerber",
+          "character": "Nikki",
+          "profile": "/wO3y1JaO32GhqTVE7AE3ABkz1o7.jpg"
+        },
+        {
+          "name": "Alba Baptista",
+          "character": "Miel Contrera",
+          "profile": "/gV5LYhN7BRc7xjySFek9gdm5tNA.jpg"
+        },
+        {
+          "name": "Atheena Frizzell",
+          "character": "Emily",
+          "profile": "/lHMiMYEXUMoemgqcuzz8t2Lhp62.jpg"
+        },
+        {
+          "name": "Jessica Brown Findlay",
+          "character": "Tessa",
+          "profile": "/zaqkavcb9ur0W1h1QAxJfKnCJ2h.jpg"
+        },
+        {
+          "name": "Isaura Barbé-Brown",
+          "character": "Kyla",
+          "profile": "/wJTO31JEvUP2WUOrpWFaMY6KhxF.jpg"
+        },
+        {
+          "name": "Jeanne Nicole Ní Áinle",
+          "character": "Mala",
+          "profile": null
+        },
+        {
+          "name": "Taylor Sieve",
+          "character": "Red Woman",
+          "profile": null
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1327819",
+      "tmdbId": 1327819,
+      "title": "Jumpers - Un salto tra gli animali",
+      "originalTitle": null,
+      "release": "2026-03-05",
+      "director": "Daniel Chong",
+      "genres": [
+        "Avventura",
+        "Animazione",
+        "Commedia",
+        "Famiglia",
+        "Fantascienza"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 105,
+      "trailer": "https://www.youtube.com/watch?v=2uY7k1iStq4",
+      "cast": [
+        "Piper Curda",
+        "Bobby Moynihan",
+        "Jon Hamm",
+        "Kathy Najimy",
+        "Dave Franco",
+        "Eduardo Franco",
+        "Aparna Nancherla",
+        "Tom Law",
+        "Sam Richardson",
+        "Melissa Villaseñor",
+        "Isiah Whitlock Jr.",
+        "Steve Purcell"
+      ],
+      "plot": "Gli scienziati hanno scoperto come far “saltare” la coscienza umana in animali robotici realistici, permettendo alle persone di comunicare con gli animali, come animali! L'amante degli animali Mabel coglie l'opportunità per usare la tecnologia, svelando misteri nel mondo animale oltre qualsiasi cosa potesse immaginare.",
+      "lista": "casa",
+      "source": "tmdb:1327819",
+      "imdbId": "tt26443616",
+      "rtScore": 94,
+      "metascore": 73,
+      "imdbRating": 7.4,
+      "imdbVotes": 37622,
+      "releaseGlobale": "2026-03-04",
+      "streaming": [
+        "Disney Plus"
+      ],
+      "poster": "/k6gJLmAVZlEkFTv40YcPIaSBGkn.jpg",
+      "backdrop": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "tmdbRating": 8.186,
+      "tmdbVotes": 2043,
+      "popularity": 67.2446,
+      "budget": 150000000,
+      "revenue": 389547783,
+      "tagline": "Sii naturale.",
+      "castDetail": [
+        {
+          "name": "Piper Curda",
+          "character": "Mabel (voice)",
+          "profile": "/oyitEBcracNWMuF8Frhsqkjgzuc.jpg"
+        },
+        {
+          "name": "Bobby Moynihan",
+          "character": "King George (voice)",
+          "profile": "/gOvwNz5joi5yWJ7dAhuF8WA2aas.jpg"
+        },
+        {
+          "name": "Jon Hamm",
+          "character": "Mayor Jerry Generazzo (voice)",
+          "profile": "/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg"
+        },
+        {
+          "name": "Kathy Najimy",
+          "character": "Dr. Sam (voice)",
+          "profile": "/nqbZF7Igr0SC8Xq8y0jwmx0mLDN.jpg"
+        },
+        {
+          "name": "Dave Franco",
+          "character": "Insect King (voice)",
+          "profile": "/d0I1BgNBAVvLJEDSfmyNVjYWPZE.jpg"
+        },
+        {
+          "name": "Eduardo Franco",
+          "character": "Loaf (voice)",
+          "profile": "/FOnx5Rg8L7xvEWkBhNoXwhELd6.jpg"
+        },
+        {
+          "name": "Aparna Nancherla",
+          "character": "Nisha (voice)",
+          "profile": "/vwpktqJnQCAGEfq2EKUjB8ZdnhI.jpg"
+        },
+        {
+          "name": "Tom Law",
+          "character": "Tom Lizard (voice)",
+          "profile": null
+        },
+        {
+          "name": "Sam Richardson",
+          "character": "Conner (voice)",
+          "profile": "/hUN7IIbegvL7aSqQI5KRWoqqJLm.jpg"
+        },
+        {
+          "name": "Melissa Villaseñor",
+          "character": "Ellen (voice)",
+          "profile": "/144VoO4M5sU0Mn4lpTOYQFAgNVO.jpg"
+        },
+        {
+          "name": "Isiah Whitlock Jr.",
+          "character": "Bird King (voice)",
+          "profile": "/8OIhQb53rMX7VcTLZbAMeVd7tHc.jpg"
+        },
+        {
+          "name": "Steve Purcell",
+          "character": "Amphibian King (voice)",
+          "profile": "/8wdCJVDq7v4g5N9Qkv8D87B3Xne.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1517606",
+      "tmdbId": 1517606,
+      "title": "Notte prima degli esami 3.0",
+      "originalTitle": null,
+      "release": "2026-03-19",
+      "director": "Tommaso Renzoni",
+      "genres": [
+        "Commedia"
+      ],
+      "countries": [
+        "Italia"
+      ],
+      "runtime": 95,
+      "trailer": "https://www.youtube.com/watch?v=WmCQS9XbXeI",
+      "cast": [
+        "Tommaso Cassissa",
+        "Sabrina Ferilli",
+        "Adriano Moretti",
+        "Alice Lupparelli",
+        "Alice Maselli",
+        "Ditonellapiaga",
+        "Aleandro Falciglia",
+        "Bea Barret",
+        "Christian Dei",
+        "Teresa Piergentili",
+        "Pascale Reynaud",
+        "Sebastiano Somma"
+      ],
+      "plot": "Alla vigilia della maturità, un gruppo di liceali romani si ritrova a vivere la sua ultima grande avventura insieme: amori segreti, tradimenti, amicizie messe alla prova e piani disperati per ingannare la prof più temuta della scuola. Tra feste clandestine, motorini che sfrecciano nella notte e un viaggio improvvisato fino a Napoli, Giulio e i suoi amici dovranno affrontare il passaggio all’età adulta scoprendo che crescere significa anche sbagliare, perdonare e avere il coraggio di dire finalmente la verità.",
+      "lista": "casa",
+      "source": "tmdb:1517606",
+      "imdbId": "tt38281842",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseGlobale": "2026-03-19",
+      "streaming": [],
+      "poster": "/akMWdGoPmiBNBTCX3WpMLr8q2u3.jpg",
+      "backdrop": "/wOkBd4oxrMjjrVczY0ycyH6FWr7.jpg",
+      "tmdbRating": 6.633,
+      "tmdbVotes": 15,
+      "popularity": 2.5126,
+      "budget": null,
+      "revenue": null,
+      "tagline": null,
+      "castDetail": [
+        {
+          "name": "Tommaso Cassissa",
+          "character": "Giulio Sabatini",
+          "profile": "/o5aat5l2vXeczhL5O4IAO0oVPe7.jpg"
+        },
+        {
+          "name": "Sabrina Ferilli",
+          "character": "professoressa Martinelli",
+          "profile": "/qb6NEkjxcO9JeApIphcQPevm5SL.jpg"
+        },
+        {
+          "name": "Adriano Moretti",
+          "character": null,
+          "profile": null
+        },
+        {
+          "name": "Alice Lupparelli",
+          "character": null,
+          "profile": "/96Att0IUfJvSQ0Wojvgju3XlF4E.jpg"
+        },
+        {
+          "name": "Alice Maselli",
+          "character": null,
+          "profile": "/mbHYicAllFGQzJeApSiYFENYP1X.jpg"
+        },
+        {
+          "name": "Ditonellapiaga",
+          "character": null,
+          "profile": "/z6blqzokSPjFgX0XPDHzoDXKGFU.jpg"
+        },
+        {
+          "name": "Aleandro Falciglia",
+          "character": null,
+          "profile": null
+        },
+        {
+          "name": "Bea Barret",
+          "character": null,
+          "profile": null
+        },
+        {
+          "name": "Christian Dei",
+          "character": null,
+          "profile": "/v4VyIcv0kPc4eNQrG0d6P4NvHWl.jpg"
+        },
+        {
+          "name": "Teresa Piergentili",
+          "character": null,
+          "profile": "/fO8o83tbPbcMGwy6smMFmBTiIbE.jpg"
+        },
+        {
+          "name": "Pascale Reynaud",
+          "character": null,
+          "profile": "/tIqGRwdX6TP5sL4ZhluCcuFhwSU.jpg"
+        },
+        {
+          "name": "Sebastiano Somma",
+          "character": null,
+          "profile": "/dui14fo0bk5fGvNc6gmN09xGf24.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1159559",
+      "tmdbId": 1159559,
+      "title": "Scream 7",
+      "originalTitle": null,
+      "release": "2026-02-25",
+      "director": "Kevin Williamson",
+      "genres": [
+        "Horror",
+        "Mistero",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 114,
+      "trailer": "https://www.youtube.com/watch?v=IDUVYbbUUTs",
+      "cast": [
+        "Neve Campbell",
+        "Courteney Cox",
+        "Isabel May",
+        "Jasmin Savoy Brown",
+        "Mason Gooding",
+        "Roger L. Jackson",
+        "Anna Camp",
+        "Joel McHale",
+        "Celeste O'Connor",
+        "Sam Rechner",
+        "Asa Germann",
+        "Mckenna Grace"
+      ],
+      "plot": "Quando un nuovo assassino mascherato da Ghostface semina il terrore nella tranquilla cittadina dove Sidney Prescott (Neve Campbell) ha ricostruito la sua vita, i suoi incubi più profondi diventano realtà: la prossima vittima designata è sua figlia (Isabel May). Decisa a proteggere ciò che ama, Sidney dovrà riaprire le porte del suo passato e affrontare, una volta per tutte, l’orrore che pensava di aver lasciato alle spalle.",
+      "lista": "casa",
+      "source": "tmdb:1159559",
+      "imdbId": "tt27047903",
+      "rtScore": 30,
+      "metascore": 35,
+      "imdbRating": 5.5,
+      "imdbVotes": 50291,
+      "releaseGlobale": "2026-02-25",
+      "streaming": [],
+      "poster": "/3b10Tv8RvLf2RmVK9zJ01ewSTVh.jpg",
+      "backdrop": "/3eUyLEF5M0ky3h6KJsWiWzaakB8.jpg",
+      "tmdbRating": 6.227,
+      "tmdbVotes": 1181,
+      "popularity": 26.3971,
+      "budget": 45000000,
+      "revenue": 207999405,
+      "tagline": "La paura torna a casa",
+      "castDetail": [
+        {
+          "name": "Neve Campbell",
+          "character": "Sidney Evans",
+          "profile": "/zQzNg6Kiufj2VCltprI6jilNtl3.jpg"
+        },
+        {
+          "name": "Courteney Cox",
+          "character": "Gale Weathers",
+          "profile": "/qyGgNpvXFGHAxdG4ieFmRL3JiWq.jpg"
+        },
+        {
+          "name": "Isabel May",
+          "character": "Tatum Evans",
+          "profile": "/RJ4djIbfvUHXCCgniiAi0ebhED.jpg"
+        },
+        {
+          "name": "Jasmin Savoy Brown",
+          "character": "Mindy Meeks-Martin",
+          "profile": "/yWaCA2iKmVps20SFxwiB1DvbN6j.jpg"
+        },
+        {
+          "name": "Mason Gooding",
+          "character": "Chad Meeks-Martin",
+          "profile": "/bmlry1xqBzNgv8Chm783ss93Cvg.jpg"
+        },
+        {
+          "name": "Roger L. Jackson",
+          "character": "'The Voice' (voice)",
+          "profile": "/kDAoLRPVKgfTXRhDep0JNouhyAV.jpg"
+        },
+        {
+          "name": "Anna Camp",
+          "character": "Jessica Bowden",
+          "profile": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "name": "Joel McHale",
+          "character": "Mark Evans",
+          "profile": "/7iwIiaYhIPaiAyiaZOc2Gl1ZAY4.jpg"
+        },
+        {
+          "name": "Celeste O'Connor",
+          "character": "Chloe Parker",
+          "profile": "/jI3pNOhj9Gr7ym9cUcv8vsI0lCF.jpg"
+        },
+        {
+          "name": "Sam Rechner",
+          "character": "Ben Brown",
+          "profile": "/cjFwkjJY7G2MxNnTzPuM1rPXG3G.jpg"
+        },
+        {
+          "name": "Asa Germann",
+          "character": "Lucas Bowden",
+          "profile": "/kVUVy9wL2LYkt69EOxgqywMZSqJ.jpg"
+        },
+        {
+          "name": "Mckenna Grace",
+          "character": "Hannah Thurman",
+          "profile": "/liUIubLxm7uaClq1ASwDOx0mwnq.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1208348",
+      "tmdbId": 1208348,
+      "title": "Rental Family - Nelle vite degli altri",
+      "originalTitle": null,
+      "release": "2026-02-19",
+      "director": "Hikari",
+      "genres": [
+        "Commedia",
+        "Dramma"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 110,
+      "trailer": "https://www.youtube.com/watch?v=lbzrNeXJmOc",
+      "cast": [
+        "Brendan Fraser",
+        "平岳大",
+        "Mari Yamamoto",
+        "Shannon Mahina Gorman",
+        "Akira Emoto",
+        "Paolo Andrea Di Pietro",
+        "尾関伸嗣",
+        "Takao Kin",
+        "Risa Kameda",
+        "Yuma Sonan",
+        "Kana Kitty",
+        "古川がん"
+      ],
+      "plot": "Philip Vandarpleog è un attore americano che vive da otto anni a Tokyo, in Giappone, che considera ormai casa propria. Un tempo celebre perché interpretava un grosso tubetto di dentifricio, supereroe di una pubblicità popolarissima, adesso passa da un’audizione all’altra, mentre il suo agente lo manda a fare la comparsa in eventi come matrimoni e funerali. Ed è proprio a un finto funerale che Philip incontra Shinji, il capo di Rental Family, un’agenzia che procura attori per impersonare parenti e amici che non esistono, e lo scrittura: Philip diventa un giornalista amico di un anziano attore, il padre assente di una bambina sino-americana, il compagno di giochi di un appassionato di videogame.",
+      "lista": "casa",
+      "source": "tmdb:1208348",
+      "imdbId": "tt14142060",
+      "rtScore": 87,
+      "metascore": 64,
+      "imdbRating": 7.6,
+      "imdbVotes": 50994,
+      "releaseGlobale": "2025-11-20",
+      "streaming": [
+        "Disney Plus"
+      ],
+      "poster": "/4OchXepJLKSeFrLdd3Rk6Wj0H5R.jpg",
+      "backdrop": "/euoXeFAOt9o7yAWA9zGZk7DdZWZ.jpg",
+      "tmdbRating": 7.728,
+      "tmdbVotes": 930,
+      "popularity": 6.5581,
+      "budget": null,
+      "revenue": 26585129,
+      "tagline": "Felicità su misura per te!",
+      "castDetail": [
+        {
+          "name": "Brendan Fraser",
+          "character": "Phillip Vanderploeg",
+          "profile": "/tFj5PaWWQbb8rHBBhu1EHklznph.jpg"
+        },
+        {
+          "name": "平岳大",
+          "character": "Shinji Tada",
+          "profile": "/f8UK7xqwkfpIZiECcDgc0AErkj6.jpg"
+        },
+        {
+          "name": "Mari Yamamoto",
+          "character": "Aiko Nakajima",
+          "profile": "/n0kSgZvoFD6ENdja5MDhAMDbDwT.jpg"
+        },
+        {
+          "name": "Shannon Mahina Gorman",
+          "character": "Mia Kawasaki",
+          "profile": "/cDnGx1RkYG4gQObcL3aqP4VPT5V.jpg"
+        },
+        {
+          "name": "Akira Emoto",
+          "character": "Kikuo Hasegawa",
+          "profile": "/qQHdGgAL7idxy79oWHjYON6bYQm.jpg"
+        },
+        {
+          "name": "Paolo Andrea Di Pietro",
+          "character": "Handsome Actor",
+          "profile": "/pnsPTQv0k6GVxRjgnBGVLUwOgci.jpg"
+        },
+        {
+          "name": "尾関伸嗣",
+          "character": "Casting Director",
+          "profile": "/7KyN7b1ocVswsU2IhCLRNz3aYTU.jpg"
+        },
+        {
+          "name": "Takao Kin",
+          "character": "Bartender",
+          "profile": null
+        },
+        {
+          "name": "Risa Kameda",
+          "character": "Neighbor Girlfriend",
+          "profile": null
+        },
+        {
+          "name": "Yuma Sonan",
+          "character": "Neighbor Boyfriend",
+          "profile": null
+        },
+        {
+          "name": "Kana Kitty",
+          "character": "Neighbor Business Woman",
+          "profile": null
+        },
+        {
+          "name": "古川がん",
+          "character": "Neighbor Old Man",
+          "profile": "/4jmUBXk0KJ6vOZt2qpXTckZyOpa.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-840464",
+      "tmdbId": 840464,
+      "title": "Greenland 2: Migration",
+      "originalTitle": null,
+      "release": "2026-01-26",
+      "director": "Ric Roman Waugh",
+      "genres": [
+        "Avventura",
+        "Thriller",
+        "Fantascienza"
+      ],
+      "countries": [
+        "Gran Bretagna",
+        "USA"
+      ],
+      "runtime": 98,
+      "trailer": "https://www.youtube.com/watch?v=QxTewhj2rfI",
+      "cast": [
+        "Gerard Butler",
+        "Morena Baccarin",
+        "Roman Griffin Davis",
+        "Tommie Earl Jenkins",
+        "Trond Fausa Aurvåg",
+        "Amber Rose Revah",
+        "Gina Gangar",
+        "Antonio De Lima",
+        "Peter Polycarpou",
+        "Beruce Khan",
+        "Megan Jacobs Shrivastava",
+        "Mitu Panicucci"
+      ],
+      "plot": "Avendo trovato la sicurezza del bunker della Groenlandia dopo che la cometa Clarke ha decimato la Terra, la famiglia Garrity deve ora rischiare tutto per intraprendere un pericoloso viaggio attraverso la terra desolata d'Europa per trovare una nuova casa.",
+      "lista": "casa",
+      "source": "tmdb:840464",
+      "imdbId": "tt14850054",
+      "rtScore": null,
+      "metascore": 49,
+      "imdbRating": 5.2,
+      "imdbVotes": 26853,
+      "releaseGlobale": "2026-01-07",
+      "streaming": [
+        "Sky Go"
+      ],
+      "poster": "/oEmubwIZivvNUpfVwTf6lHtpWNf.jpg",
+      "backdrop": "/cLFbDVfhllIMybpo2fkGNzehiQG.jpg",
+      "tmdbRating": 6.424,
+      "tmdbVotes": 1388,
+      "popularity": 44.1322,
+      "budget": 90000000,
+      "revenue": 44856736,
+      "tagline": "La fine del mondo è solo l'inizio.",
+      "castDetail": [
+        {
+          "name": "Gerard Butler",
+          "character": "John Garrity",
+          "profile": "/i54XoxYieuff2w6MwyfwVUBvmR0.jpg"
+        },
+        {
+          "name": "Morena Baccarin",
+          "character": "Allison Garrity",
+          "profile": "/4gyHyg6FJ1oFczOm5pmMkdEEo2J.jpg"
+        },
+        {
+          "name": "Roman Griffin Davis",
+          "character": "Nathan Garrity",
+          "profile": "/jEox6Bq4TlINrnp5EUjqSlDK3eP.jpg"
+        },
+        {
+          "name": "Tommie Earl Jenkins",
+          "character": "General Sharpe",
+          "profile": "/6eFBQr5dBHp7KGm4evTENGUHvOT.jpg"
+        },
+        {
+          "name": "Trond Fausa Aurvåg",
+          "character": "Adam Shaw",
+          "profile": "/rFWC22ZScaQwA85NBo7l1j9XQdo.jpg"
+        },
+        {
+          "name": "Amber Rose Revah",
+          "character": "Dr Casey Amina",
+          "profile": "/cThPovs1j59Vs5iejgLqUZRBchv.jpg"
+        },
+        {
+          "name": "Gina Gangar",
+          "character": "Elizabeth Price",
+          "profile": "/kXKKYAUqhcG49tNt7lcUMC2xne7.jpg"
+        },
+        {
+          "name": "Antonio De Lima",
+          "character": "Charles Williams",
+          "profile": null
+        },
+        {
+          "name": "Peter Polycarpou",
+          "character": "Dr Haugen",
+          "profile": "/2lt53oJXRYt3FGzSvCbQmtVfLN2.jpg"
+        },
+        {
+          "name": "Beruce Khan",
+          "character": "Mr Singh",
+          "profile": "/m8U9jbt4SzFJlYWhryG8AxxUAuZ.jpg"
+        },
+        {
+          "name": "Megan Jacobs Shrivastava",
+          "character": "Female Student",
+          "profile": "/m3AQQcNO6xpttIkdCNv4PIUIS90.jpg"
+        },
+        {
+          "name": "Mitu Panicucci",
+          "character": "Snarky Student",
+          "profile": "/155b3szkM6GBUKVgcPQ7SiUjOiW.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1198994",
+      "tmdbId": 1198994,
+      "title": "Send Help",
+      "originalTitle": null,
+      "release": "2026-01-29",
+      "director": "Sam Raimi",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Commedia"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 113,
+      "trailer": "https://www.youtube.com/watch?v=sSk9O013Suo",
+      "cast": [
+        "Rachel McAdams",
+        "Dylan O'Brien",
+        "Edyll Ismail",
+        "Dennis Haysbert",
+        "Xavier Samuel",
+        "Chris Pang",
+        "ธเนศ วรากุลนุเคราะห์",
+        "Emma Raimi",
+        "Kristy Best",
+        "Francesca Waters",
+        "Olivia Sawyer",
+        "Brad Flett"
+      ],
+      "plot": "Due colleghi un tempo rivali si ritrovano improvvisamente naufraghi su un'isola deserta dopo essere gli unici sopravvissuti a un disastro aereo. Costretti a collaborare per sopravvivere, Linda e Bradley dovranno affrontare vecchi rancori e mettere alla prova la propria forza di volontà per riuscire a salvarsi.",
+      "lista": "casa",
+      "source": "tmdb:1198994",
+      "imdbId": "tt8036976",
+      "rtScore": 92,
+      "metascore": 75,
+      "imdbRating": 6.9,
+      "imdbVotes": 71618,
+      "releaseGlobale": "2026-01-22",
+      "streaming": [
+        "Disney Plus"
+      ],
+      "poster": "/2edNFsucd6n8EMOi7dvVhDw0g4A.jpg",
+      "backdrop": "/bpp58yHuQmpt6xwggI63mVRw7po.jpg",
+      "tmdbRating": 7.049,
+      "tmdbVotes": 2048,
+      "popularity": 40.3081,
+      "budget": 40000000,
+      "revenue": 94041481,
+      "tagline": "Lei è Linda Liddle... ufficio strategy and planning. Ora è il capo.",
+      "castDetail": [
+        {
+          "name": "Rachel McAdams",
+          "character": "Linda Liddle",
+          "profile": "/2DPh6KoNg0p57vvGc6N468zr3ct.jpg"
+        },
+        {
+          "name": "Dylan O'Brien",
+          "character": "Bradley Preston",
+          "profile": "/xN3GdvIlqsR838gDoblhPH0numP.jpg"
+        },
+        {
+          "name": "Edyll Ismail",
+          "character": "Zuri",
+          "profile": "/lCpAsh5kViYm6tx7lKyIyeefScd.jpg"
+        },
+        {
+          "name": "Dennis Haysbert",
+          "character": "Franklin",
+          "profile": "/lcnjaw2CFN6q9eaes1jTYrUB0rb.jpg"
+        },
+        {
+          "name": "Xavier Samuel",
+          "character": "Donovan",
+          "profile": "/gHvKqCXfpzaGp46gqsy9MVDfmSf.jpg"
+        },
+        {
+          "name": "Chris Pang",
+          "character": "Chase",
+          "profile": "/rd1ScdIuW0Wo4qdjIDsnXeZDr8a.jpg"
+        },
+        {
+          "name": "ธเนศ วรากุลนุเคราะห์",
+          "character": "Boat Captain",
+          "profile": "/jQBCefKZTK1U1BusbpH0OWpYjXB.jpg"
+        },
+        {
+          "name": "Emma Raimi",
+          "character": "River",
+          "profile": "/lrzUm5whjsyqOfADa8cJYVl6del.jpg"
+        },
+        {
+          "name": "Kristy Best",
+          "character": "Polly Perera",
+          "profile": "/59SfxmgV30kqIlsgNfYG20EimHu.jpg"
+        },
+        {
+          "name": "Francesca Waters",
+          "character": "Barbara",
+          "profile": "/z0zXS5qNuts4sJmf1KFNhmDWMIZ.jpg"
+        },
+        {
+          "name": "Olivia Sawyer",
+          "character": "Applicant",
+          "profile": "/ySOw6VloUnCFUi3apHvcJcOGiWr.jpg"
+        },
+        {
+          "name": "Brad Flett",
+          "character": "Trainer",
+          "profile": null
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1236153",
+      "tmdbId": 1236153,
+      "title": "Mercy - Sotto accusa",
+      "originalTitle": null,
+      "release": "2026-01-22",
+      "director": "Timur Bekmambetov",
+      "genres": [
+        "Fantascienza",
+        "Azione",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 100,
+      "trailer": "https://www.youtube.com/watch?v=svuS3bkrrY4",
+      "cast": [
+        "Chris Pratt",
+        "Rebecca Ferguson",
+        "Kali Reis",
+        "Kylie Rogers",
+        "Chris Sullivan",
+        "Jeff Pierre",
+        "Annabelle Wallis",
+        "Rafi Gavron",
+        "Kenneth Choi",
+        "Jamie McBride",
+        "Ross Gosla",
+        "Mark Daneri"
+      ],
+      "plot": "Ambientato in un futuro prossimo in cui i crimini capitali sono in aumento, un detective viene accusato di un crimine violento ed è costretto a dimostrare la sua innocenza.",
+      "lista": "casa",
+      "source": "tmdb:1236153",
+      "imdbId": "tt31050594",
+      "rtScore": null,
+      "metascore": 34,
+      "imdbRating": 6.2,
+      "imdbVotes": 56372,
+      "releaseGlobale": "2026-01-19",
+      "streaming": [
+        "Amazon Prime Video",
+        "MGM Plus Amazon Channel",
+        "Amazon Prime Video with Ads"
+      ],
+      "poster": "/zhNy3atrXo4DOwmbWbWJx1qy9Wh.jpg",
+      "backdrop": "/gIClklFGYBe0uiOoiP2vtocJbss.jpg",
+      "tmdbRating": 7.093,
+      "tmdbVotes": 1523,
+      "popularity": 23.1481,
+      "budget": 60000000,
+      "revenue": 54708061,
+      "tagline": "90 minuti per dimostrare la tua innocenza o affrontare l'esecuzione.",
+      "castDetail": [
+        {
+          "name": "Chris Pratt",
+          "character": "Chris Raven",
+          "profile": "/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+          "name": "Rebecca Ferguson",
+          "character": "Judge Maddox",
+          "profile": "/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
+        },
+        {
+          "name": "Kali Reis",
+          "character": "Jacqueline 'Jaq' Diallo",
+          "profile": "/ruLDXHnKA4aHEQCcFGDAJ7bLTdt.jpg"
+        },
+        {
+          "name": "Kylie Rogers",
+          "character": "Britt Raven",
+          "profile": "/9c9CPWTT8a2GXMab8vuSxCJ0CcW.jpg"
+        },
+        {
+          "name": "Chris Sullivan",
+          "character": "Rob Nelson",
+          "profile": "/gKZ9xSFrDzUPv27iAkMpH6Qf0Sk.jpg"
+        },
+        {
+          "name": "Jeff Pierre",
+          "character": "Patrick Burke",
+          "profile": "/mKaKc7dviX6q0d7EJpzyHgtdBC7.jpg"
+        },
+        {
+          "name": "Annabelle Wallis",
+          "character": "Nicole Raven",
+          "profile": "/2ZmO2Zz9TcR0rmSJHOkivcu0heR.jpg"
+        },
+        {
+          "name": "Rafi Gavron",
+          "character": "Holt Charles",
+          "profile": "/avCWoO9fLwEhbT6cvu0TJcSj49g.jpg"
+        },
+        {
+          "name": "Kenneth Choi",
+          "character": "Ray Vale",
+          "profile": "/3606Uo4fiUtV9Y6eOwpM48qpSgJ.jpg"
+        },
+        {
+          "name": "Jamie McBride",
+          "character": "Dan Vogel",
+          "profile": "/3rQFX5gCPj0x0lQlMcP0z02ML0y.jpg"
+        },
+        {
+          "name": "Ross Gosla",
+          "character": "David Webb",
+          "profile": "/tyx28OqSnMszsOyMxNVg3wgx3EL.jpg"
+        },
+        {
+          "name": "Mark Daneri",
+          "character": "Jeff Martin",
+          "profile": "/wTDm4zmREXxDK1QVh5vl13OqabU.jpg"
+        }
+      ]
+    }
+  ],
+  "enrichedAt": "2026-07-29T19:09:49.702Z"
+}

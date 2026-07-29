@@ -1,0 +1,14 @@
+{
+  "name": "Cineteca",
+  "short_name": "Cineteca",
+  "description": "La mia biblioteca cinematografica personale",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#05060B",
+  "theme_color": "#05060B",
+  "icons": [
+    { "src": "assets/icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

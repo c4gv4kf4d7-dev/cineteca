@@ -1,0 +1,171 @@
+/* ══════════════════════════════════════════════════════════
+   detail.js — scheda film a tutto schermo
+   ══════════════════════════════════════════════════════════ */
+
+const Detail = (() => {
+  const sheet = document.getElementById('sheet');
+  const body  = document.getElementById('sheet-body');
+  let currentId = null;
+  let lastFocus = null;
+
+  /* ── apertura / chiusura ─────────────────────────────── */
+  function open(id) {
+    currentId = id;
+    lastFocus = document.activeElement;
+    render();
+    sheet.hidden = false;
+    document.body.classList.add('is-locked');
+    sheet.querySelector('.sheet-panel').scrollTop = 0;
+    sheet.querySelector('.sheet-close').focus();
+  }
+
+  function close() {
+    sheet.hidden = true;
+    document.body.classList.remove('is-locked');
+    currentId = null;
+    if (lastFocus) lastFocus.focus();
+  }
+
+  const isOpen = () => !sheet.hidden;
+
+  /* ── rendering ───────────────────────────────────────── */
+  function render() {
+    const m = Store.byId(currentId);
+    if (!m) return close();
+    const u = m.user;
+
+    const bd = F.backdrop(m) || F.poster(m, 'w780');
+    const fatti = [
+      m.releaseDate && { t: F.dataLunga(m.releaseDate), accent: true },
+      { t: F.attesa(m.releaseDate) },
+      F.durata(m.runtime) && { t: F.durata(m.runtime) },
+      ...m.genres.map(g => ({ t: g })),
+      m.countries.length && { t: m.countries.join(' · ') },
+      m.director && { t: `regia di ${m.director}` }
+    ].filter(Boolean);
+
+    body.innerHTML = `
+      <div class="d-hero">
+        ${bd ? `<img src="${bd}" alt="" loading="lazy">` : ''}
+        <div class="d-head">
+          <h2 id="sheet-title">${F.esc(m.title)}</h2>
+          ${m.originalTitle && m.originalTitle !== m.title
+            ? `<p class="d-orig">${F.esc(m.originalTitle)}</p>` : ''}
+          <div class="d-facts">
+            ${fatti.map(f => `<span class="fact${f.accent ? ' fact-accent' : ''}">${F.esc(f.t)}</span>`).join('')}
+          </div>
+        </div>
+      </div>
+
+      <div class="d-body">
+        <div class="d-actions">
+          ${m.trailer ? `<a class="btn btn-primary" href="${F.esc(m.trailer)}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg> Guarda il trailer</a>` : ''}
+          <button class="btn btn-ghost${u.seen ? ' btn-on' : ''}" data-act="seen">
+            <svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            ${u.seen ? 'Visto' : 'Segna come visto'}
+          </button>
+          <button class="btn btn-ghost" data-act="fav">
+            <svg viewBox="0 0 24 24" ${u.fav ? 'fill="currentColor"' : ''}><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 8a4 4 0 0 1 7-2.6c0 5-7 9.4-7 9.4z"/></svg>
+            ${u.fav ? 'Nei preferiti' : 'Aggiungi ai preferiti'}
+          </button>
+        </div>
+
+        ${m.plot ? `<section class="d-section">
+          <h4>Trama</h4>
+          <p class="d-plot">${F.esc(m.plot)}</p>
+        </section>` : ''}
+
+        ${m.streaming?.length ? `<section class="d-section">
+          <h4>Dove vederlo in abbonamento</h4>
+          <div class="d-facts">
+            ${F.piattaforme(m.streaming).map(p => `<span class="fact fact-accent">${F.esc(p)}</span>`).join('')}
+          </div>
+        </section>` : ''}
+
+        ${statsBlock(m)}
+        ${castBlock(m)}
+
+        <section class="d-section">
+          <h4>Il mio voto</h4>
+          <div class="rate" data-act="rate">
+            ${[1,2,3,4,5].map(n =>
+              `<button class="star${n <= u.myRating ? ' is-on' : ''}" data-star="${n}"
+                       aria-label="${n} stelle">★</button>`).join('')}
+            ${u.myRating ? `<button class="rate-clear" data-star="0">azzera</button>` : ''}
+          </div>
+        </section>
+
+        <section class="d-section">
+          <h4>Note personali</h4>
+          <textarea class="note" data-act="note" placeholder="Con chi lo vuoi vedere, in che sala, cosa ti aspetti…">${F.esc(u.note)}</textarea>
+        </section>
+      </div>`;
+  }
+
+  function statsBlock(m) {
+    const cells = [
+      m.rtScore != null && { v: `${m.rtScore}%`, l: 'Rotten Tomatoes', cls: m.rtScore >= 60 ? 'stat-good' : 'stat-rotten' },
+      m.imdbRating && { v: m.imdbRating.toFixed(1), l: 'IMDb', cls: 'stat-hot' },
+      m.metascore != null && { v: String(m.metascore), l: 'Metacritic' },
+      m.tmdbRating && { v: m.tmdbRating.toFixed(1), l: 'voto TMDB', cls: 'stat-good' },
+      m.tmdbVotes  && { v: m.tmdbVotes.toLocaleString('it-IT'), l: 'votanti TMDB' },
+      m.popularity && { v: Math.round(m.popularity).toLocaleString('it-IT'), l: 'popolarità' },
+      F.durata(m.runtime) && { v: F.durata(m.runtime), l: 'durata', cls: 'stat-accent' },
+      F.soldi(m.budget)  && { v: F.soldi(m.budget),  l: 'budget', cls: 'stat-hot' },
+      F.soldi(m.revenue) && { v: F.soldi(m.revenue), l: 'incasso', cls: 'stat-good' },
+      m.releaseDate && { v: String(F.giorniA(m.releaseDate)), l: 'giorni all\'uscita', cls: 'stat-accent' }
+    ].filter(Boolean);
+
+    if (!cells.length) return '';
+    return `<section class="d-section">
+      <h4>Numeri</h4>
+      <div class="d-stats">
+        ${cells.map(c => `<div class="stat ${c.cls || ''}"><b>${F.esc(c.v)}</b><span>${F.esc(c.l)}</span></div>`).join('')}
+      </div>
+    </section>`;
+  }
+
+  function castBlock(m) {
+    const people = (m.castDetail && m.castDetail.length)
+      ? m.castDetail
+      : m.cast.map(nome => ({ name: nome, character: null, profile: null }));
+    if (!people.length) return '';
+
+    return `<section class="d-section">
+      <h4>Cast</h4>
+      <div class="cast">
+        ${people.slice(0, 12).map(p => {
+          const img = F.profilo(p.profile);
+          return `<figure>
+            <div class="ph">${img
+              ? `<img src="${img}" alt="" loading="lazy">`
+              : `<i>${F.esc(F.iniziali(p.name))}</i>`}</div>
+            <b>${F.esc(p.name)}</b>
+            ${p.character ? `<span>${F.esc(p.character)}</span>` : ''}
+          </figure>`;
+        }).join('')}
+      </div>
+    </section>`;
+  }
+
+  /* ── interazioni ─────────────────────────────────────── */
+  sheet.addEventListener('click', e => {
+    if (e.target.closest('[data-close]')) return close();
+
+    const star = e.target.closest('[data-star]');
+    if (star) { Store.setRating(currentId, Number(star.dataset.star)); return render(); }
+
+    const btn = e.target.closest('[data-act]');
+    if (!btn) return;
+    if (btn.dataset.act === 'seen') { Store.toggleSeen(currentId); render(); }
+    if (btn.dataset.act === 'fav')  { Store.toggleFav(currentId);  render(); }
+  });
+
+  /* Le note si salvano da sole quando esci dal campo. */
+  sheet.addEventListener('change', e => {
+    if (e.target.matches('[data-act="note"]')) Store.setNote(currentId, e.target.value.trim());
+  });
+
+  return { open, close, isOpen };
+})();

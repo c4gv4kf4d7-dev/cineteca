@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CINETECA — la mia biblioteca cinematografica</title>
+<meta name="theme-color" content="#05060B">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/styles.css?v=202607300430">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="5.4" r="2.1"/><circle cx="12" cy="18.6" r="2.1"/><circle cx="5.4" cy="12" r="2.1"/><circle cx="18.6" cy="12" r="2.1"/></svg>
+    <span class="brand-text">CINETECA</span>
+  </div>
+
+  <label class="search" role="search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+    <input id="q" type="search" placeholder="Cerca titolo, regista, attore…" autocomplete="off" spellcheck="false">
+    <kbd>/</kbd>
+  </label>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab is-active" data-view="library">Libreria</button>
+    <button class="tab" data-view="stats">Statistiche</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ══════════ LIBRERIA ══════════ -->
+  <section id="view-library" class="view is-active">
+
+    <section id="hero" class="hero" hidden></section>
+
+    <div class="controls">
+      <div class="chips chips-big" id="filter-status" role="group" aria-label="Dove vedere">
+        <button class="chip is-active" data-status="cinema">🎟️ Cinema</button>
+        <button class="chip" data-status="casa">🛋️ Divano</button>
+        <button class="chip" data-status="seen">✓ Visti</button>
+      </div>
+
+      <div class="controls-right">
+        <label class="select">
+          <span>Ordina</span>
+          <select id="sort">
+            <option value="release">Data di uscita</option>
+            <option value="title">Titolo A→Z</option>
+            <option value="rt">Rotten Tomatoes</option>
+            <option value="rating">Voto TMDB</option>
+            <option value="myRating">Voto mio</option>
+            <option value="runtime">Durata</option>
+            <option value="added">Aggiunta recente</option>
+          </select>
+        </label>
+        <div class="segmented" id="layout" role="group" aria-label="Layout">
+          <button class="seg is-active" data-layout="grid" title="Griglia locandine" aria-label="Griglia locandine">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="9"/><rect x="3" y="15" width="7" height="6"/><rect x="14" y="15" width="7" height="6"/></svg>
+          </button>
+          <button class="seg" data-layout="list" title="Elenco dettagliato" aria-label="Elenco dettagliato">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p class="resultbar"><span id="count"></span></p>
+
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden>Nessun film corrisponde ai filtri.</p>
+  </section>
+
+  <!-- ══════════ STATISTICHE ══════════ -->
+  <section id="view-stats" class="view">
+    <div id="stats"></div>
+  </section>
+</main>
+
+<!-- ══════════ DETTAGLIO ══════════ -->
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-scrim" data-close></div>
+  <article class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <button class="sheet-close" data-close aria-label="Chiudi">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div id="sheet-body"></div>
+  </article>
+</div>
+
+<footer class="footer">
+  <span id="footer-meta"></span>
+  <p class="credits">
+    Dati e immagini di <a href="https://www.themoviedb.org" target="_blank" rel="noopener">TMDB</a>
+    e <a href="https://www.omdbapi.com" target="_blank" rel="noopener">OMDb</a>.
+    Punteggi Rotten Tomatoes, Metacritic e IMDb via OMDb.
+    Questo prodotto usa l'API di TMDB ma non è approvato né certificato da TMDB.
+  </p>
+</footer>
+
+<script src="js/store.js?v=202607300430"></script>
+<script src="js/format.js?v=202607300430"></script>
+<script src="js/stats.js?v=202607300430"></script>
+<script src="js/detail.js?v=202607300430"></script>
+<script src="js/app.js?v=202607300430"></script>
+</body>
+</html>
