@@ -346,6 +346,97 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .ph-numbers i{ display:block; margin-top:3px; font-style:normal; font-size:10px; letter-spacing:.06em; text-transform:none; color:var(--ink-3); }
 .ph-foot{ margin:clamp(18px,2.6vw,28px) 0 0; font-size:13.5px; color:var(--ink-3); }
 
+/* ── barre con locandina ─────────────────────────────── */
+.cbars{ display:flex; flex-direction:column; gap:9px; }
+.cbar{
+  display:flex; align-items:center; gap:13px; width:100%; padding:8px 10px; text-align:left;
+  border:1px solid transparent; border-radius:var(--r-m); transition:background .2s, border-color .2s;
+}
+.cbar:hover{ background:var(--panel); border-color:var(--line); }
+.cbar-pos{ flex:none; width:22px; font-family:var(--ff-mono); font-size:12px; color:var(--ink-3); text-align:right; }
+.cbar-ph{ flex:none; width:34px; aspect-ratio:2/3; border-radius:5px; overflow:hidden; background:#12141F; }
+.cbar-ph img{ width:100%; height:100%; object-fit:cover; }
+.cbar-main{ flex:1; min-width:0; }
+.cbar-top{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:6px; }
+.cbar-top b{ font-size:13.5px; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.cbar-top i{ flex:none; font-style:normal; font-family:var(--ff-mono); font-size:12.5px; color:var(--ink-2); }
+.cbar-track{ display:block; height:7px; border-radius:999px; background:rgba(255,255,255,.06); overflow:hidden; }
+.cbar-fill{ display:block; height:100%; border-radius:999px; animation:grow .8s cubic-bezier(.2,.8,.3,1) both; }
+.cbar-sotto{ display:block; margin-top:5px; font-family:var(--ff-mono); font-size:10.5px; color:var(--ink-3); }
+
+/* ── manubri ─────────────────────────────────────────── */
+.dumb-legenda{ display:flex; flex-wrap:wrap; gap:16px; margin-bottom:18px; font-size:11.5px; color:var(--ink-2); }
+.dumb-legenda span{ display:flex; align-items:center; gap:7px; }
+.dumb-legenda i{ width:9px; height:9px; border-radius:50%; }
+.dumb-riga{
+  display:grid; grid-template-columns:minmax(90px,170px) 1fr 42px; align-items:center; gap:14px;
+  width:100%; padding:7px 8px; border-radius:var(--r-s); text-align:left; transition:background .2s;
+}
+.dumb-riga:hover{ background:var(--panel); }
+.dumb-nome{ font-size:12.5px; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.dumb-scala{ position:relative; height:16px; }
+.dumb-scala::before{ content:""; position:absolute; left:0; right:0; top:50%; height:1px; background:var(--line); }
+.dumb-link{ position:absolute; top:50%; height:2px; margin-top:-1px; background:var(--line-2); }
+.dumb-punto{
+  position:absolute; top:50%; width:11px; height:11px; margin:-5.5px 0 0 -5.5px;
+  border-radius:50%; border:1.5px solid var(--bg-2);
+}
+.dumb-delta{ font-family:var(--ff-mono); font-size:11.5px; color:var(--ink-3); text-align:right; }
+
+/* ── dispersione ─────────────────────────────────────── */
+.disp{ position:relative; aspect-ratio:16/10; margin:6px 0 34px; }
+.disp-svg{ position:absolute; inset:0; width:100%; height:100%; }
+.disp-griglia{ stroke:rgba(255,255,255,.06); stroke-width:.25; }
+.disp-pari{ stroke:var(--line-2); stroke-width:.4; stroke-dasharray:2 2; }
+.disp-punti{ position:absolute; inset:0; }
+.disp-p{
+  position:absolute; width:13px; height:13px; margin:0 0 -6.5px -6.5px; border-radius:50%;
+  border:2px solid var(--bg-2); transition:transform .2s;
+}
+.disp-p.is-su{ background:var(--good); }
+.disp-p.is-giu{ background:var(--rotten); }
+.disp-p:hover{ transform:scale(1.5); z-index:5; }
+.disp-tip{
+  position:absolute; bottom:150%; left:50%; transform:translateX(-50%);
+  padding:7px 11px; border-radius:8px; white-space:nowrap; pointer-events:none;
+  background:#12141F; border:1px solid var(--line-2); font-size:11.5px; font-weight:600;
+  opacity:0; transition:opacity .2s; z-index:10;
+}
+.disp-tip i{ display:block; font-style:normal; font-family:var(--ff-mono); font-size:10.5px; color:var(--ink-3); margin-top:2px; }
+.disp-p:hover .disp-tip{ opacity:1; }
+.disp-x, .disp-y, .disp-pari-et{
+  position:absolute; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3);
+}
+.disp-x{ bottom:-20px; right:0; }
+.disp-y{ top:0; left:-6px; transform:rotate(-90deg); transform-origin:left top; }
+.disp-pari-et{ top:2px; right:2px; text-transform:none; letter-spacing:.05em; }
+
+/* ── istogramma ──────────────────────────────────────── */
+.isto{ display:flex; gap:6px; align-items:flex-end; height:170px; }
+.isto-col{ flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; gap:6px; height:100%; }
+.isto-v{ font-family:var(--ff-mono); font-size:12px; color:var(--ink); height:15px; }
+.isto-b{
+  width:100%; border-radius:5px 5px 2px 2px;
+  background:linear-gradient(to top,var(--accent-2),var(--accent));
+  animation:cresci .7s cubic-bezier(.2,.8,.3,1) both;
+}
+@keyframes cresci{ from{ height:0 !important; } }
+.isto-col.is-vuoto .isto-b{ background:rgba(255,255,255,.08); }
+.isto-e{ font-size:10px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); text-align:center; }
+
+/* ── anello ──────────────────────────────────────────── */
+.anello{ display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+.anello svg{ width:170px; height:170px; flex:none; }
+.anello-n{ text-anchor:middle; fill:var(--ink); font-size:19px; font-weight:800; font-family:var(--ff); }
+.anello-e{ text-anchor:middle; fill:var(--ink-3); font-size:7px; letter-spacing:.2em; text-transform:uppercase; font-family:var(--ff); }
+.anello-leg{ display:flex; flex-direction:column; gap:9px; font-size:12.5px; color:var(--ink-2); }
+.anello-leg span{ display:flex; align-items:center; gap:9px; }
+.anello-leg i{ width:10px; height:10px; border-radius:3px; flex:none; }
+.anello-leg b{ color:var(--ink-3); font-family:var(--ff-mono); font-size:11.5px; }
+
+/* ── griglie a due colonne ───────────────────────────── */
+.firme, .anatomia{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(20px,3vw,44px); }
+
 /* podio */
 /* Senza tetto, su schermo largo le locandine del podio diventano enormi. */
 .podio{
@@ -365,6 +456,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .pod-score{ font-family:var(--ff-mono); font-size:19px; color:var(--good); font-variant-numeric:tabular-nums; }
 .pod-1 .pod-score{ font-size:24px; color:var(--hot); }
 .pod-title{ font-size:12.5px; font-weight:600; line-height:1.3; color:var(--ink-2); }
+.pod-detail{ font-family:var(--ff-mono); font-size:10px; color:var(--ink-3); line-height:1.5; }
 .pod-2, .pod-3{ padding-bottom:clamp(8px,1.6vw,22px); }
 
 /* volti */

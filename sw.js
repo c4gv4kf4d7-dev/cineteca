@@ -1,8 +1,8 @@
 /* Service worker minimo: guscio in cache, dati sempre freschi. */
-const CACHE = 'cineteca-v12';
+const CACHE = 'cineteca-v14';
 const SHELL = [
   './', './index.html', './css/styles.css',
-  './js/store.js', './js/format.js', './js/stats.js', './js/detail.js', './js/app.js',
+  './js/store.js', './js/format.js', './js/charts.js', './js/stats.js', './js/detail.js', './js/app.js',
   './manifest.webmanifest'
 ];
 
