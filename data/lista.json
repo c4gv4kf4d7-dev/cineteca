@@ -115,6 +115,42 @@
       "tmdbId": 787699,
       "titolo": "Wonka",
       "rivedere": true
+    },
+    {
+      "tmdbId": 335787,
+      "titolo": "Uncharted"
+    },
+    {
+      "tmdbId": 361743,
+      "titolo": "Top Gun: Maverick"
+    },
+    {
+      "tmdbId": 135397,
+      "titolo": "Jurassic World"
+    },
+    {
+      "tmdbId": 351286,
+      "titolo": "Jurassic World – Il regno distrutto"
+    },
+    {
+      "tmdbId": 507086,
+      "titolo": "Jurassic World - Il dominio"
+    },
+    {
+      "tmdbId": 19995,
+      "titolo": "Avatar"
+    },
+    {
+      "tmdbId": 76600,
+      "titolo": "Avatar: La via dell'acqua"
+    },
+    {
+      "tmdbId": 414906,
+      "titolo": "The Batman"
+    },
+    {
+      "tmdbId": 335984,
+      "titolo": "Blade Runner 2049"
     }
   ],
   "cinema": [
@@ -263,6 +299,14 @@
     {
       "tmdbId": 466420,
       "titolo": "Killers of the Flower Moon"
+    },
+    {
+      "tmdbId": 614934,
+      "titolo": "Elvis"
+    },
+    {
+      "tmdbId": 791177,
+      "titolo": "Bones and All"
     }
   ]
 }

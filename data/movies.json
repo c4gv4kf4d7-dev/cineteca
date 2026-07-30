@@ -17,7 +17,7 @@
         "USA"
       ],
       "runtime": 106,
-      "trailer": "https://www.youtube.com/watch?v=pZ-ZVkePQsM",
+      "trailer": "https://www.comingsoon.it/film/deep-water/65949/video/?vid=49826",
       "cast": [
         "Aaron Eckhart",
         "Ben Kingsley",
@@ -2742,22 +2742,22 @@
           "attore": "Ryan Gosling"
         },
         {
-          "tmdbId": 335984,
-          "titolo": "Blade Runner 2049",
-          "poster": "/4XJQG11Ytl8mKfgbl2jkoY5ZuFX.jpg",
-          "anno": 2017,
-          "voto": 7.6,
-          "votanti": 15368,
-          "tipo": "attore",
-          "attore": "Ryan Gosling"
-        },
-        {
           "tmdbId": 64690,
           "titolo": "Drive",
           "poster": "/scTZGnrw4Rh9qm94LID6uxiTUHN.jpg",
           "anno": 2011,
           "voto": 7.584,
           "votanti": 13789,
+          "tipo": "attore",
+          "attore": "Ryan Gosling"
+        },
+        {
+          "tmdbId": 11036,
+          "titolo": "Le pagine della nostra vita",
+          "poster": "/pu5Q3YuYgSkfkVIdkChJVZjAaI5.jpg",
+          "anno": 2004,
+          "voto": 7.891,
+          "votanti": 12692,
           "tipo": "attore",
           "attore": "Ryan Gosling"
         },
@@ -8771,22 +8771,22 @@
           "attore": "Ryan Gosling"
         },
         {
-          "tmdbId": 335984,
-          "titolo": "Blade Runner 2049",
-          "poster": "/4XJQG11Ytl8mKfgbl2jkoY5ZuFX.jpg",
-          "anno": 2017,
-          "voto": 7.6,
-          "votanti": 15368,
-          "tipo": "attore",
-          "attore": "Ryan Gosling"
-        },
-        {
           "tmdbId": 64690,
           "titolo": "Drive",
           "poster": "/scTZGnrw4Rh9qm94LID6uxiTUHN.jpg",
           "anno": 2011,
           "voto": 7.584,
           "votanti": 13789,
+          "tipo": "attore",
+          "attore": "Ryan Gosling"
+        },
+        {
+          "tmdbId": 11036,
+          "titolo": "Le pagine della nostra vita",
+          "poster": "/pu5Q3YuYgSkfkVIdkChJVZjAaI5.jpg",
+          "anno": 2004,
+          "voto": 7.891,
+          "votanti": 12692,
           "tipo": "attore",
           "attore": "Ryan Gosling"
         }
@@ -9249,7 +9249,7 @@
           "titolo": "Harry Potter e il calice di fuoco",
           "poster": "/ghM7AvW4MWY9casNIjltqzCMjJQ.jpg",
           "anno": 2005,
-          "voto": 7.8,
+          "voto": 7.803,
           "votanti": 22388,
           "tipo": "attore",
           "attore": "Ralph Fiennes"
@@ -9259,7 +9259,7 @@
           "titolo": "Harry Potter e i Doni della Morte - Parte 2",
           "poster": "/mZDiE6gowRmcdm9ON5GPDRvmFRq.jpg",
           "anno": 2011,
-          "voto": 8.1,
+          "voto": 8.081,
           "votanti": 22182,
           "tipo": "attore",
           "attore": "Ralph Fiennes"
@@ -9269,7 +9269,7 @@
           "titolo": "Harry Potter e l'ordine della fenice",
           "poster": "/iXg8dcylRbYNREcdU1Y2EGxpxxe.jpg",
           "anno": 2007,
-          "voto": 7.7,
+          "voto": 7.673,
           "votanti": 20992,
           "tipo": "attore",
           "attore": "Ralph Fiennes"
@@ -11879,7 +11879,2503 @@
           "profile": "/fZenco7DivoGTfCkbyubgW18BId.jpg"
         }
       ]
+    },
+    {
+      "id": "tmdb-335787",
+      "tmdbId": 335787,
+      "title": "Uncharted",
+      "originalTitle": null,
+      "release": "2022-02-17",
+      "director": "Ruben Fleischer",
+      "genres": [
+        "Azione",
+        "Avventura",
+        "Mistero"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 116,
+      "trailer": "https://www.youtube.com/watch?v=thqBKakK9CU",
+      "cast": [
+        "Tom Holland",
+        "Mark Wahlberg",
+        "Sophia Ali",
+        "Tati Gabrielle",
+        "Antonio Banderas",
+        "Steven Waddington",
+        "Rudy Pankow",
+        "Tiernan Jones",
+        "Pingi Moli",
+        "Jesús Evita",
+        "Georgia Goodman",
+        "Diarmaid Murtagh"
+      ],
+      "plot": "Basato su una delle serie di videogiochi più vendute e acclamate dalla critica, Uncharted presenta al pubblico il giovane e furbo Nathan Drake nella sua prima avventura alla ricerca del tesoro con l’arguto partner Victor \"Sully\" Sullivan. In un’epica avventura piena di azione che attraversa il mondo intero, i due protagonisti partono alla pericolosa ricerca del \"più grande tesoro mai trovato\", inseguendo indizi che potrebbero condurli al fratello di Nathan, scomparso da tempo.",
+      "lista": "visto",
+      "source": "tmdb:335787",
+      "imdbId": "tt1464335",
+      "rtScore": null,
+      "metascore": 45,
+      "imdbRating": 6.3,
+      "imdbVotes": 298712,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2022-02-10",
+      "releaseUS": "2022-02-18",
+      "streaming": [
+        "Amazon Prime Video",
+        "Now TV",
+        "HBO Max Amazon Channel",
+        "HBO Max",
+        "Amazon Prime Video with Ads"
+      ],
+      "poster": "/aHWy5ipM0qGSgyi9R3PAxIYne13.jpg",
+      "backdrop": "/fwrqW8Lp5VQuppFrODd4iJ8LySE.jpg",
+      "tmdbRating": 6.881,
+      "tmdbVotes": 7008,
+      "popularity": 13.7342,
+      "budget": 120000000,
+      "revenue": 407141258,
+      "tagline": "La fortuna aiuta gli audaci.",
+      "scoperte": [
+        {
+          "tmdbId": 338970,
+          "titolo": "Tomb Raider",
+          "poster": "/Au8mBURHNFCtknbz89mVxjqcxq1.jpg",
+          "anno": 2018,
+          "voto": 6.365,
+          "votanti": 8422,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 166426,
+          "titolo": "Pirati dei Caraibi - La vendetta di Salazar",
+          "poster": "/vvglsPQgyGogyTu2e59dJYGlJNE.jpg",
+          "anno": 2017,
+          "voto": 6.661,
+          "votanti": 12930,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 2059,
+          "titolo": "Il mistero dei Templari",
+          "poster": "/oXl50kzOSkPFmcK7BnVO8lWSP3V.jpg",
+          "anno": 2004,
+          "voto": 6.654,
+          "votanti": 6950,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 14207,
+          "titolo": "The Librarian - Alla ricerca della lancia perduta",
+          "poster": "/jgAN5yvso8ho9A8jMGGlIkCIwv.jpg",
+          "anno": 2004,
+          "voto": 6.291,
+          "votanti": 717,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 752623,
+          "titolo": "The Lost City",
+          "poster": "/yqjxKX0Kv3fTj3KezH3MqaBNchc.jpg",
+          "anno": 2022,
+          "voto": 6.454,
+          "votanti": 4050,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 9543,
+          "titolo": "Prince of Persia - Le sabbie del tempo",
+          "poster": "/8NYXMJ4G5fWQyv2UM2SKzfBx3Rn.jpg",
+          "anno": 2010,
+          "voto": 6.309,
+          "votanti": 7239,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 217,
+          "titolo": "Indiana Jones e il regno del teschio di cristallo",
+          "poster": "/qkQf6FVvtRKKk1JQAWTJZDPiy5r.jpg",
+          "anno": 2008,
+          "voto": 6.029,
+          "votanti": 9112,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 1098006,
+          "titolo": "Fountain of Youth - L’eterna giovinezza",
+          "poster": "/kCWGK8QoK8ZPt6sju8pjohG4oxv.jpg",
+          "anno": 2025,
+          "voto": 6.255,
+          "votanti": 967,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 299536,
+          "titolo": "Avengers: Infinity War",
+          "poster": "/t24aimjQLa0dyoZQEbSws7XK1U0.jpg",
+          "anno": 2018,
+          "voto": 8.24,
+          "votanti": 32396,
+          "tipo": "attore",
+          "attore": "Tom Holland"
+        },
+        {
+          "tmdbId": 299534,
+          "titolo": "Avengers: Endgame",
+          "poster": "/hj1xaEUGMiUxaFYoutlljtlkHSG.jpg",
+          "anno": 2019,
+          "voto": 8.238,
+          "votanti": 28141,
+          "tipo": "attore",
+          "attore": "Tom Holland"
+        },
+        {
+          "tmdbId": 271110,
+          "titolo": "Captain America: Civil War",
+          "poster": "/zV6uLEHFFjrGBAogwU9CoHSmPPY.jpg",
+          "anno": 2016,
+          "voto": 7.449,
+          "votanti": 24221,
+          "tipo": "attore",
+          "attore": "Tom Holland"
+        },
+        {
+          "tmdbId": 1422,
+          "titolo": "The Departed - Il bene e il male",
+          "poster": "/oTIEFn7Xf3bZ6HZP3yRF8CzzmYQ.jpg",
+          "anno": 2006,
+          "voto": 8.16,
+          "votanti": 16406,
+          "tipo": "attore",
+          "attore": "Mark Wahlberg"
+        },
+        {
+          "tmdbId": 72105,
+          "titolo": "Ted",
+          "poster": "/uZwB6tkS7LketzEwaBhVke8qkk3.jpg",
+          "anno": 2012,
+          "voto": 6.455,
+          "votanti": 13302,
+          "tipo": "attore",
+          "attore": "Mark Wahlberg"
+        },
+        {
+          "tmdbId": 91314,
+          "titolo": "Transformers 4 - L'era dell'estinzione",
+          "poster": "/3kJGXe6E8sd8rYqBb4nmSSIzYNl.jpg",
+          "anno": 2014,
+          "voto": 5.97,
+          "votanti": 8849,
+          "tipo": "attore",
+          "attore": "Mark Wahlberg"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Tom Holland",
+          "character": "Nathan Drake",
+          "profile": "/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+        },
+        {
+          "name": "Mark Wahlberg",
+          "character": "Victor 'Sully' Sullivan",
+          "profile": "/1Oc3XSLyb8hxmjmlgFENu582Kqw.jpg"
+        },
+        {
+          "name": "Sophia Ali",
+          "character": "Chloe Frazer",
+          "profile": "/45B39NY2LEYewNUiWtvFb7LrDct.jpg"
+        },
+        {
+          "name": "Tati Gabrielle",
+          "character": "Jo Braddock",
+          "profile": "/txZTL1HkPVxliTilbjlwR51VIt6.jpg"
+        },
+        {
+          "name": "Antonio Banderas",
+          "character": "Santiago Moncada",
+          "profile": "/fce7zl6elUzsv7wudHFc7RgFtjD.jpg"
+        },
+        {
+          "name": "Steven Waddington",
+          "character": "The Scotsman",
+          "profile": "/hTsS9lg5Qi8KeWXmnMn45LfnIAx.jpg"
+        },
+        {
+          "name": "Rudy Pankow",
+          "character": "Young Sam",
+          "profile": "/204FlvdJL9mLRkJP1tuJpg01Ml8.jpg"
+        },
+        {
+          "name": "Tiernan Jones",
+          "character": "Young Nate",
+          "profile": "/zCNVm88bV9ZcjwbY63QB9hAgfnB.jpg"
+        },
+        {
+          "name": "Pingi Moli",
+          "character": "Hugo",
+          "profile": "/r6ODWBrRMz68zdU96JFXksYrxFs.jpg"
+        },
+        {
+          "name": "Jesús Evita",
+          "character": "Guard at Museum",
+          "profile": "/uSLTwsiaHJP6TASHkmauBavWKuH.jpg"
+        },
+        {
+          "name": "Georgia Goodman",
+          "character": "Sister Bernadette",
+          "profile": "/igrVZq0JVIkFW1TbgaOG9ESd9pR.jpg"
+        },
+        {
+          "name": "Diarmaid Murtagh",
+          "character": "Police Officer",
+          "profile": "/QHWy0m8t0JrxSwlxcWZrawfUdi.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-361743",
+      "tmdbId": 361743,
+      "title": "Top Gun: Maverick",
+      "originalTitle": null,
+      "release": "2022-05-25",
+      "director": "Joseph Kosinski",
+      "genres": [
+        "Azione",
+        "Dramma"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 131,
+      "trailer": "https://www.youtube.com/watch?v=95j_EVjYI_M",
+      "cast": [
+        "Tom Cruise",
+        "Miles Teller",
+        "Jennifer Connelly",
+        "Bashir Salahuddin",
+        "Jon Hamm",
+        "Charles Parnell",
+        "Monica Barbaro",
+        "Lewis Pullman",
+        "Jay Ellis",
+        "Danny Ramirez",
+        "Glen Powell",
+        "Val Kilmer"
+      ],
+      "plot": "Dopo più di trent’anni di servizio nella Marina, il capitano Pete “Maverick” Mitchell si ritrova a essere quello che sognava, un pilota collaudatore che può spingersi oltre ogni limite, schivando l’avanzamento di carriera che metterebbe un freno alla sua libertà. Quando viene richiamato a addestrare i migliori allievi Top Gun per una missione di altissima specializzazione, Maverick incontra il tenente Bradley Bradshaw, nome in codice “Rooster”, figlio del compianto “Goose”. Alle prese con un futuro incerto e con i fantasmi del passato, Maverick deve confrontarsi con le sue paure più profonde, fino alla missione che richiederà il sacrificio ultimo di quelli che sceglieranno di parteciparvi.",
+      "lista": "visto",
+      "source": "tmdb:361743",
+      "imdbId": "tt1745960",
+      "rtScore": 96,
+      "metascore": 78,
+      "imdbRating": 8.2,
+      "imdbVotes": 892240,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2022-05-21",
+      "releaseUS": "2022-05-27",
+      "streaming": [
+        "Paramount Plus",
+        "Infinity Selection Amazon Channel",
+        "Paramount+ Amazon Channel"
+      ],
+      "poster": "/ygjXVgEALlUA5U8Ov5DhSJqJjUe.jpg",
+      "backdrop": "/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg",
+      "tmdbRating": 8.157,
+      "tmdbVotes": 11244,
+      "popularity": 34.4922,
+      "budget": 170000000,
+      "revenue": 1488732821,
+      "tagline": "Feel the need... The need for speed.",
+      "scoperte": [
+        {
+          "tmdbId": 8963,
+          "titolo": "Allarme rosso",
+          "poster": "/lqUtv5NYqm9n8tEq9gOzWfqvNPY.jpg",
+          "anno": 1995,
+          "voto": 7.182,
+          "votanti": 2021,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 17761,
+          "titolo": "Prigionieri del cielo",
+          "poster": "/nBmSCNRdrnNSpdcJVdqYPe4rAIW.jpg",
+          "anno": 1954,
+          "voto": 5.9,
+          "votanti": 84,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 516486,
+          "titolo": "Greyhound: il nemico invisibile",
+          "poster": "/iJBLPfZkYF5tphFeEULjOMCgwlR.jpg",
+          "anno": 2020,
+          "voto": 7.414,
+          "votanti": 3371,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 10724,
+          "titolo": "Firefox - Volpe di fuoco",
+          "poster": "/7LsJPnSmgapYPdLdR2ZuSb5TVWP.jpg",
+          "anno": 1982,
+          "voto": 6.068,
+          "votanti": 630,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 8665,
+          "titolo": "K-19",
+          "poster": "/5jlRQSlxMNGlst7cXJYQJsM9mcz.jpg",
+          "anno": 2002,
+          "voto": 6.575,
+          "votanti": 1200,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 44833,
+          "titolo": "Battleship",
+          "poster": "/8mx8Rs7C9YYaIWOFk9bQvCO3GHD.jpg",
+          "anno": 2012,
+          "voto": 5.9,
+          "votanti": 6061,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 881,
+          "titolo": "Codice d'onore",
+          "poster": "/6nRfKEnhK0zAJEsKYqMKYKlo7z9.jpg",
+          "anno": 1992,
+          "voto": 7.6,
+          "votanti": 4228,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 296098,
+          "titolo": "Il ponte delle spie",
+          "poster": "/qXPfoEA7qHJxTHm9Tny7cXCHprF.jpg",
+          "anno": 2015,
+          "voto": 7.243,
+          "votanti": 7332,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 137113,
+          "titolo": "Edge of Tomorrow - Senza domani",
+          "poster": "/AbzpU4ookiyWFmiq1bTZwjNl7Y1.jpg",
+          "anno": 2014,
+          "voto": 7.642,
+          "votanti": 15263,
+          "tipo": "attore",
+          "attore": "Tom Cruise"
+        },
+        {
+          "tmdbId": 75612,
+          "titolo": "Oblivion",
+          "poster": "/rFl1MCcqwnkfaVUYB0GxDhx0UJK.jpg",
+          "anno": 2013,
+          "voto": 6.687,
+          "votanti": 11643,
+          "tipo": "attore",
+          "attore": "Tom Cruise"
+        },
+        {
+          "tmdbId": 56292,
+          "titolo": "Mission: Impossible - Protocollo fantasma",
+          "poster": "/3Dw9tQDGQniwUyxCVIr0XzBPCd9.jpg",
+          "anno": 2011,
+          "voto": 7.115,
+          "votanti": 10870,
+          "tipo": "attore",
+          "attore": "Tom Cruise"
+        },
+        {
+          "tmdbId": 244786,
+          "titolo": "Whiplash",
+          "poster": "/jQwkXN38AGrK2s3LJqxZow1Ic7z.jpg",
+          "anno": 2014,
+          "voto": 8.374,
+          "votanti": 16845,
+          "tipo": "attore",
+          "attore": "Miles Teller"
+        },
+        {
+          "tmdbId": 157350,
+          "titolo": "Divergent",
+          "poster": "/wSan6AKkI0qeDVBHpLJnaZA3es1.jpg",
+          "anno": 2014,
+          "voto": 6.903,
+          "votanti": 13583,
+          "tipo": "attore",
+          "attore": "Miles Teller"
+        },
+        {
+          "tmdbId": 262500,
+          "titolo": "Insurgent",
+          "poster": "/6pbp5Jx6Q8ZfEbNuddoib6fq3wr.jpg",
+          "anno": 2015,
+          "voto": 6.359,
+          "votanti": 10508,
+          "tipo": "attore",
+          "attore": "Miles Teller"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Tom Cruise",
+          "character": "Capt. Pete 'Maverick' Mitchell",
+          "profile": "/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
+        },
+        {
+          "name": "Miles Teller",
+          "character": "Lt. Bradley 'Rooster' Bradshaw",
+          "profile": "/kDf3sW3USjEBDQ3Ua7lbwOfwty6.jpg"
+        },
+        {
+          "name": "Jennifer Connelly",
+          "character": "Penny Benjamin",
+          "profile": "/wdmcJagSRJ65AuJ4IUCzuHAdvgy.jpg"
+        },
+        {
+          "name": "Bashir Salahuddin",
+          "character": "Wo-1. Bernie 'Hondo' Coleman",
+          "profile": "/ZL5MRzjd6kWkvQXqh5mgPY1CKP.jpg"
+        },
+        {
+          "name": "Jon Hamm",
+          "character": "Adm. Beau 'Cyclone' Simpson",
+          "profile": "/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg"
+        },
+        {
+          "name": "Charles Parnell",
+          "character": "Adm. Solomon 'Warlock' Bates",
+          "profile": "/wLywO5xtR97YKtkYb57hXEFpL7j.jpg"
+        },
+        {
+          "name": "Monica Barbaro",
+          "character": "Lt. Natasha 'Phoenix' Trace",
+          "profile": "/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+        },
+        {
+          "name": "Lewis Pullman",
+          "character": "Lt. Robert 'Bob' Floyd",
+          "profile": "/i2wJQ2eaVuTPaA84jzxNtxs54mO.jpg"
+        },
+        {
+          "name": "Jay Ellis",
+          "character": "Lt. Reuben 'Payback' Fitch",
+          "profile": "/78JH7CfMrWrI3Vx2XLbx0GW4c2X.jpg"
+        },
+        {
+          "name": "Danny Ramirez",
+          "character": "Lt. Mickey 'Fanboy' Garcia",
+          "profile": "/7ZvcfWA5O5ULiupbHZtGGEPwnpI.jpg"
+        },
+        {
+          "name": "Glen Powell",
+          "character": "Lt. Jake 'Hangman' Seresin",
+          "profile": "/fUnIaJkdgvQTztyR1nLeUceSzly.jpg"
+        },
+        {
+          "name": "Val Kilmer",
+          "character": "Adm. Tom 'Iceman' Kazansky",
+          "profile": "/sWH9jTD0bC5gWhhceUlzfNiNup0.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-135397",
+      "tmdbId": 135397,
+      "title": "Jurassic World",
+      "originalTitle": null,
+      "release": "2015-06-11",
+      "director": "Colin Trevorrow",
+      "genres": [
+        "Avventura",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 124,
+      "trailer": "https://www.youtube.com/watch?v=Mgv1X7DOqK0",
+      "cast": [
+        "Chris Pratt",
+        "Bryce Dallas Howard",
+        "Irrfan Khan",
+        "Vincent D'Onofrio",
+        "Ty Simpkins",
+        "Nick Robinson",
+        "Jake Johnson",
+        "Omar Sy",
+        "BD Wong",
+        "Judy Greer",
+        "Lauren Lapkus",
+        "Brian Tee"
+      ],
+      "plot": "Ventidue anni dopo gli eventi di Jurassic Park, Isla Nublar dispone di un parco a tema di dinosauri completamente rifatto che calamita milioni di turisti: il Jurassic World, proprio come il sogno originale dell'ormai deceduto magnate John Hammond, costruito sui resti del parco originale. Tra i membri dello staff vi è Owen Grady, un ex militare che svolge ricerche comportamentali su un branco di quattro velociraptor.  Passati alcuni anni dall'apertura, il numero di turisti in visita al Jurassic World inizia a calare. Per ravvivarne l'interesse, la responsabile delle operazioni e il genetista capo decidono di creare un nuovo dinosauro, combinando i DNA di diverse specie, e di chiamarlo Indominus Rex. Poco prima dell'inaugurazione, l'Indominus Rex riesce a fuggire e inizia a scatenare il caos.",
+      "lista": "visto",
+      "source": "tmdb:135397",
+      "imdbId": "tt0369610",
+      "rtScore": 72,
+      "metascore": 59,
+      "imdbRating": 6.9,
+      "imdbVotes": 723175,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2015-06-06",
+      "releaseUS": "2015-06-12",
+      "streaming": [
+        "Netflix",
+        "Amazon Prime Video",
+        "Sky Go",
+        "Now TV",
+        "Amazon Prime Video with Ads"
+      ],
+      "poster": "/rd7Baw7ne9zFOnyD0XZvc5fkC9A.jpg",
+      "backdrop": "/dF6FjTZzRTENfB4R17HDN20jLT2.jpg",
+      "tmdbRating": 6.703,
+      "tmdbVotes": 21726,
+      "popularity": 18.0479,
+      "budget": 150000000,
+      "revenue": 1671537444,
+      "tagline": "Il parco è aperto.",
+      "scoperte": [
+        {
+          "tmdbId": 329,
+          "titolo": "Jurassic Park",
+          "poster": "/y6JuwymU5jzxKx4oLTrlpFZg0vj.jpg",
+          "anno": 1993,
+          "voto": 7.975,
+          "votanti": 18092,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 330,
+          "titolo": "Il mondo perduto - Jurassic Park",
+          "poster": "/5nTnULjzDUKbLAzoFjuMPNTwnOv.jpg",
+          "anno": 1997,
+          "voto": 6.568,
+          "votanti": 9338,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 823464,
+          "titolo": "Godzilla e Kong - Il nuovo impero",
+          "poster": "/bliMVin0cfdWAwOME4G1Se4b7hq.jpg",
+          "anno": 2024,
+          "voto": 7.048,
+          "votanti": 4767,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 696806,
+          "titolo": "The Adam Project",
+          "poster": "/xBg84sOXWi1Au13PSNibwvFioda.jpg",
+          "anno": 2022,
+          "voto": 6.989,
+          "votanti": 5027,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 700391,
+          "titolo": "65 - Fuga dalla Terra",
+          "poster": "/5xVipKDChjbXcvqDTMWHkL0fZDt.jpg",
+          "anno": 2023,
+          "voto": 5.947,
+          "votanti": 2896,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 9341,
+          "titolo": "The Core",
+          "poster": "/j0w3WQUfnX8HkVrWZlkYRca0BZD.jpg",
+          "anno": 2003,
+          "voto": 5.84,
+          "votanti": 2205,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 91314,
+          "titolo": "Transformers 4 - L'era dell'estinzione",
+          "poster": "/3kJGXe6E8sd8rYqBb4nmSSIzYNl.jpg",
+          "anno": 2014,
+          "voto": 5.97,
+          "votanti": 8849,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 262543,
+          "titolo": "Automata",
+          "poster": "/tcaVcwCZgXLzNblC0LResj6N8pe.jpg",
+          "anno": 2014,
+          "voto": 5.894,
+          "votanti": 1823,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 299536,
+          "titolo": "Avengers: Infinity War",
+          "poster": "/t24aimjQLa0dyoZQEbSws7XK1U0.jpg",
+          "anno": 2018,
+          "voto": 8.24,
+          "votanti": 32395,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 118340,
+          "titolo": "Guardiani della Galassia",
+          "poster": "/km1QPJeX93KCp6fqAcBf4Urijtc.jpg",
+          "anno": 2014,
+          "voto": 7.907,
+          "votanti": 29963,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 299534,
+          "titolo": "Avengers: Endgame",
+          "poster": "/hj1xaEUGMiUxaFYoutlljtlkHSG.jpg",
+          "anno": 2019,
+          "voto": 8.238,
+          "votanti": 28140,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 559,
+          "titolo": "Spider-Man 3",
+          "poster": "/qMbJaYKpMwWX621micQWiAYAGdi.jpg",
+          "anno": 2007,
+          "voto": 6.468,
+          "votanti": 15415,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        },
+        {
+          "tmdbId": 453,
+          "titolo": "A Beautiful Mind",
+          "poster": "/bsVAjDLllFLEkuS1HwU96bbvkw5.jpg",
+          "anno": 2001,
+          "voto": 7.854,
+          "votanti": 11202,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        },
+        {
+          "tmdbId": 24021,
+          "titolo": "The Twilight Saga - Eclipse",
+          "poster": "/smOfIKy6RASxhjjMDK5Tje55xT5.jpg",
+          "anno": 2010,
+          "voto": 6.2,
+          "votanti": 9310,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Chris Pratt",
+          "character": "Owen",
+          "profile": "/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+          "name": "Bryce Dallas Howard",
+          "character": "Claire",
+          "profile": "/6yhDkPXythZavS6Wk57XQ2sg5AW.jpg"
+        },
+        {
+          "name": "Irrfan Khan",
+          "character": "Masrani",
+          "profile": "/qkA9PpWJRw3rNjVkWfNZdwLvRZx.jpg"
+        },
+        {
+          "name": "Vincent D'Onofrio",
+          "character": "Hoskins",
+          "profile": "/qkyiLolEqYMGH25xD4sFIXAjZQB.jpg"
+        },
+        {
+          "name": "Ty Simpkins",
+          "character": "Gray",
+          "profile": "/8FyJcMFmPdCSfz2Zc5ZcAKrIorj.jpg"
+        },
+        {
+          "name": "Nick Robinson",
+          "character": "Zach",
+          "profile": "/vWFoPTd8G7DIDXYmiTiq4oaYG5G.jpg"
+        },
+        {
+          "name": "Jake Johnson",
+          "character": "Lowery",
+          "profile": "/3UNfW2qZgRkW81neNVfQvaRC92K.jpg"
+        },
+        {
+          "name": "Omar Sy",
+          "character": "Barry",
+          "profile": "/Uuy6WuizieB4fOIGFp0gY90Yq2.jpg"
+        },
+        {
+          "name": "BD Wong",
+          "character": "Dr. Henry Wu",
+          "profile": "/w7Hs9m6ocS2qlibvrLOvmyCKbAN.jpg"
+        },
+        {
+          "name": "Judy Greer",
+          "character": "Karen",
+          "profile": "/pTLjIjh83R424RGxIfq4U0yx947.jpg"
+        },
+        {
+          "name": "Lauren Lapkus",
+          "character": "Vivian",
+          "profile": "/zevTufkY38eRvWPslh5c1azdhQN.jpg"
+        },
+        {
+          "name": "Brian Tee",
+          "character": "Hamada",
+          "profile": "/ieqbktfBwcHkeikMfNDW94Yffzp.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-351286",
+      "tmdbId": 351286,
+      "title": "Jurassic World – Il regno distrutto",
+      "originalTitle": null,
+      "release": "2018-06-07",
+      "director": "J. A. Bayona",
+      "genres": [
+        "Avventura",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 124,
+      "trailer": "https://www.youtube.com/watch?v=xoGgcdpIQ3I",
+      "cast": [
+        "Chris Pratt",
+        "Bryce Dallas Howard",
+        "Rafe Spall",
+        "Justice Smith",
+        "Daniella Pineda",
+        "James Cromwell",
+        "Toby Jones",
+        "Ted Levine",
+        "Jeff Goldblum",
+        "BD Wong",
+        "Geraldine Chaplin",
+        "Isabella Sermon"
+      ],
+      "plot": "Sono passati tre anni da quando il parco tematico di Jurassic World è stato distrutto dai dinosauri scappati dalle gabbie di contenimento; Isla Nublar adesso è un luogo selvaggio abbandonato dagli umani dove i dinosauri sopravvissuti cercano riparo nella giungla.  Al risveglio del vulcano, inattivo fino a quel momento, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) intraprendono una campagna per salvaguardare le specie di dinosauri ancora in vita da un evento di distruzione di massa. Owen è intento a cercare Blue, il suo principale velociraptor ancora disperso nella foresta, mentre Claire nel frattempo ha sviluppato un rispetto nei confronti di queste creature, divenute ormai la sua missione.  Giunti sull’isola proprio mentre la lava inizia a scorrere i due scoprono anche una cospirazione di portata globale che potrebbe far ritornare l’intero pianeta a un rovinoso stato di disordine come non si vedeva dalla preistoria.",
+      "lista": "visto",
+      "source": "tmdb:351286",
+      "imdbId": "tt4881806",
+      "rtScore": 47,
+      "metascore": 51,
+      "imdbRating": 6.2,
+      "imdbVotes": 384056,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2018-06-06",
+      "releaseUS": "2018-06-22",
+      "streaming": [
+        "Netflix",
+        "Amazon Prime Video",
+        "Sky Go",
+        "Now TV",
+        "Amazon Prime Video with Ads"
+      ],
+      "poster": "/4iGHioQuva4Q3KkeYNgohMP9kaR.jpg",
+      "backdrop": "/6WA9stUMbIkEPxn3D5SWlA8FIi7.jpg",
+      "tmdbRating": 6.531,
+      "tmdbVotes": 12873,
+      "popularity": 14.0145,
+      "budget": 170000000,
+      "revenue": 1310469037,
+      "tagline": "La vita vince sempre",
+      "scoperte": [
+        {
+          "tmdbId": 329,
+          "titolo": "Jurassic Park",
+          "poster": "/y6JuwymU5jzxKx4oLTrlpFZg0vj.jpg",
+          "anno": 1993,
+          "voto": 7.975,
+          "votanti": 18093,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 68726,
+          "titolo": "Pacific Rim",
+          "poster": "/iIc9wYoYhY0sNKJrj2C2rukslYe.jpg",
+          "anno": 2013,
+          "voto": 6.939,
+          "votanti": 13577,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 127585,
+          "titolo": "X-Men - Giorni di un futuro passato",
+          "poster": "/rqXB6fgPqUPInS2H88q1eRWmCq6.jpg",
+          "anno": 2014,
+          "voto": 7.534,
+          "votanti": 16415,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 9341,
+          "titolo": "The Core",
+          "poster": "/j0w3WQUfnX8HkVrWZlkYRca0BZD.jpg",
+          "anno": 2003,
+          "voto": 5.84,
+          "votanti": 2205,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 700391,
+          "titolo": "65 - Fuga dalla Terra",
+          "poster": "/5xVipKDChjbXcvqDTMWHkL0fZDt.jpg",
+          "anno": 2023,
+          "voto": 5.947,
+          "votanti": 2896,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 87101,
+          "titolo": "Terminator Genisys",
+          "poster": "/5OFFIRECtbhSEsPv2Zpg8Txg4I0.jpg",
+          "anno": 2015,
+          "voto": 5.959,
+          "votanti": 9061,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 667538,
+          "titolo": "Transformers: Il risveglio",
+          "poster": "/7Yw8QjweGRaCidbTUZDD7mR2TPT.jpg",
+          "anno": 2023,
+          "voto": 7.168,
+          "votanti": 5341,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 118340,
+          "titolo": "Guardiani della Galassia",
+          "poster": "/km1QPJeX93KCp6fqAcBf4Urijtc.jpg",
+          "anno": 2014,
+          "voto": 7.907,
+          "votanti": 29963,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 299536,
+          "titolo": "Avengers: Infinity War",
+          "poster": "/t24aimjQLa0dyoZQEbSws7XK1U0.jpg",
+          "anno": 2018,
+          "voto": 8.24,
+          "votanti": 32395,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 299534,
+          "titolo": "Avengers: Endgame",
+          "poster": "/hj1xaEUGMiUxaFYoutlljtlkHSG.jpg",
+          "anno": 2019,
+          "voto": 8.238,
+          "votanti": 28140,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 559,
+          "titolo": "Spider-Man 3",
+          "poster": "/qMbJaYKpMwWX621micQWiAYAGdi.jpg",
+          "anno": 2007,
+          "voto": 6.468,
+          "votanti": 15415,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        },
+        {
+          "tmdbId": 453,
+          "titolo": "A Beautiful Mind",
+          "poster": "/bsVAjDLllFLEkuS1HwU96bbvkw5.jpg",
+          "anno": 2001,
+          "voto": 7.854,
+          "votanti": 11202,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        },
+        {
+          "tmdbId": 24021,
+          "titolo": "The Twilight Saga - Eclipse",
+          "poster": "/smOfIKy6RASxhjjMDK5Tje55xT5.jpg",
+          "anno": 2010,
+          "voto": 6.2,
+          "votanti": 9310,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Chris Pratt",
+          "character": "Owen Grady",
+          "profile": "/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+          "name": "Bryce Dallas Howard",
+          "character": "Claire Dearing",
+          "profile": "/6yhDkPXythZavS6Wk57XQ2sg5AW.jpg"
+        },
+        {
+          "name": "Rafe Spall",
+          "character": "Eli Mills",
+          "profile": "/zcqUqAvO7RQnitcCNNfTVPaiQtS.jpg"
+        },
+        {
+          "name": "Justice Smith",
+          "character": "Franklin Webb",
+          "profile": "/htJrcOzYkLVcnF4ExT4O1bDN5e5.jpg"
+        },
+        {
+          "name": "Daniella Pineda",
+          "character": "Zia Rodriguez",
+          "profile": "/o8h5qbyy8A0zKTRN57YOlQOafyQ.jpg"
+        },
+        {
+          "name": "James Cromwell",
+          "character": "Benjamin Lockwood",
+          "profile": "/vpNQQbM5PtxsYmVm4oh79SGFyUK.jpg"
+        },
+        {
+          "name": "Toby Jones",
+          "character": "Mr. Eversoll",
+          "profile": "/1qNisdp4f1KstdfvAgYXMdrhwfk.jpg"
+        },
+        {
+          "name": "Ted Levine",
+          "character": "Ken Wheatley",
+          "profile": "/451KSkowLW6M2Au0wBKZZcidgGm.jpg"
+        },
+        {
+          "name": "Jeff Goldblum",
+          "character": "Ian Malcolm",
+          "profile": "/kcyEPgYtBP5Pm6LLeLGfXKjYovL.jpg"
+        },
+        {
+          "name": "BD Wong",
+          "character": "Dr. Wu",
+          "profile": "/w7Hs9m6ocS2qlibvrLOvmyCKbAN.jpg"
+        },
+        {
+          "name": "Geraldine Chaplin",
+          "character": "Iris",
+          "profile": "/teiPgoY0Fgyw4Xs07IGDsJmcsjL.jpg"
+        },
+        {
+          "name": "Isabella Sermon",
+          "character": "Maisie Lockwood",
+          "profile": "/8M6kYKV3lLjcmhOSeC5ts7tKeb8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-507086",
+      "tmdbId": 507086,
+      "title": "Jurassic World - Il dominio",
+      "originalTitle": null,
+      "release": "2022-06-02",
+      "director": "Colin Trevorrow",
+      "genres": [
+        "Avventura",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 146,
+      "trailer": "https://www.youtube.com/watch?v=iRC7X8k7nNU",
+      "cast": [
+        "Chris Pratt",
+        "Bryce Dallas Howard",
+        "Laura Dern",
+        "Sam Neill",
+        "Jeff Goldblum",
+        "DeWanda Wise",
+        "Mamoudou Athie",
+        "Isabella Sermon",
+        "Campbell Scott",
+        "BD Wong",
+        "Omar Sy",
+        "Justice Smith"
+      ],
+      "plot": "Il Dominio si svolge quattro anni dopo la distruzione di Isla Nublar. I dinosauri ora vivono e cacciano insieme agli umani in tutto il mondo. Questo equilibrio fragile rimodellerà il futuro e determinerà, una volta per tutte, se gli esseri umani rimarranno i predatori dominanti su un pianeta che ora condividono con le creature più temibili della storia.",
+      "lista": "visto",
+      "source": "tmdb:507086",
+      "imdbId": "tt8041270",
+      "rtScore": 28,
+      "metascore": 38,
+      "imdbRating": 5.6,
+      "imdbVotes": 245361,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2022-06-01",
+      "releaseUS": "2022-06-10",
+      "streaming": [
+        "Sky Go",
+        "Now TV"
+      ],
+      "poster": "/1apKwfmbMA7hdCWmyGd12brQ7i2.jpg",
+      "backdrop": "/698FjyzLdpgXmUSr63LaRwblTmx.jpg",
+      "tmdbRating": 6.602,
+      "tmdbVotes": 7162,
+      "popularity": 18.1139,
+      "budget": 658800000,
+      "revenue": 1004004592,
+      "tagline": "L'epica conclusione dell'era Giurassica",
+      "scoperte": [
+        {
+          "tmdbId": 700391,
+          "titolo": "65 - Fuga dalla Terra",
+          "poster": "/5xVipKDChjbXcvqDTMWHkL0fZDt.jpg",
+          "anno": 2023,
+          "voto": 5.947,
+          "votanti": 2896,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 823464,
+          "titolo": "Godzilla e Kong - Il nuovo impero",
+          "poster": "/bliMVin0cfdWAwOME4G1Se4b7hq.jpg",
+          "anno": 2024,
+          "voto": 7.048,
+          "votanti": 4767,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 443791,
+          "titolo": "Underwater",
+          "poster": "/j87zErBsZODFNV2h2gM9WGjqK3s.jpg",
+          "anno": 2020,
+          "voto": 6.288,
+          "votanti": 3533,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 9341,
+          "titolo": "The Core",
+          "poster": "/j0w3WQUfnX8HkVrWZlkYRca0BZD.jpg",
+          "anno": 2003,
+          "voto": 5.84,
+          "votanti": 2205,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 329,
+          "titolo": "Jurassic Park",
+          "poster": "/y6JuwymU5jzxKx4oLTrlpFZg0vj.jpg",
+          "anno": 1993,
+          "voto": 7.975,
+          "votanti": 18092,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 427641,
+          "titolo": "Rampage - Furia animale",
+          "poster": "/gDXbAh3HKXwn8pKf1vvjcJGQ6Ii.jpg",
+          "anno": 2018,
+          "voto": 6.47,
+          "votanti": 7632,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 262504,
+          "titolo": "Allegiant",
+          "poster": "/x4pzvmWqSdFxpM0t3OupqeYlAYM.jpg",
+          "anno": 2016,
+          "voto": 6.1,
+          "votanti": 7037,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 268896,
+          "titolo": "Pacific Rim - La rivolta",
+          "poster": "/8u4veueqCrCczz1ktTCjavIVUiV.jpg",
+          "anno": 2018,
+          "voto": 6.125,
+          "votanti": 5409,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 299536,
+          "titolo": "Avengers: Infinity War",
+          "poster": "/t24aimjQLa0dyoZQEbSws7XK1U0.jpg",
+          "anno": 2018,
+          "voto": 8.24,
+          "votanti": 32395,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 118340,
+          "titolo": "Guardiani della Galassia",
+          "poster": "/km1QPJeX93KCp6fqAcBf4Urijtc.jpg",
+          "anno": 2014,
+          "voto": 7.907,
+          "votanti": 29963,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 299534,
+          "titolo": "Avengers: Endgame",
+          "poster": "/hj1xaEUGMiUxaFYoutlljtlkHSG.jpg",
+          "anno": 2019,
+          "voto": 8.238,
+          "votanti": 28140,
+          "tipo": "attore",
+          "attore": "Chris Pratt"
+        },
+        {
+          "tmdbId": 559,
+          "titolo": "Spider-Man 3",
+          "poster": "/qMbJaYKpMwWX621micQWiAYAGdi.jpg",
+          "anno": 2007,
+          "voto": 6.468,
+          "votanti": 15415,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        },
+        {
+          "tmdbId": 453,
+          "titolo": "A Beautiful Mind",
+          "poster": "/bsVAjDLllFLEkuS1HwU96bbvkw5.jpg",
+          "anno": 2001,
+          "voto": 7.854,
+          "votanti": 11202,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        },
+        {
+          "tmdbId": 24021,
+          "titolo": "The Twilight Saga - Eclipse",
+          "poster": "/smOfIKy6RASxhjjMDK5Tje55xT5.jpg",
+          "anno": 2010,
+          "voto": 6.2,
+          "votanti": 9310,
+          "tipo": "attore",
+          "attore": "Bryce Dallas Howard"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Chris Pratt",
+          "character": "Owen Grady",
+          "profile": "/cRH6HPAQ98PlOwwEvhYO4CM9lwu.jpg"
+        },
+        {
+          "name": "Bryce Dallas Howard",
+          "character": "Claire Dearing",
+          "profile": "/6yhDkPXythZavS6Wk57XQ2sg5AW.jpg"
+        },
+        {
+          "name": "Laura Dern",
+          "character": "Ellie Sattler",
+          "profile": "/gB9PnGEvxKg33OSlcqptQwTBwPE.jpg"
+        },
+        {
+          "name": "Sam Neill",
+          "character": "Alan Grant",
+          "profile": "/iIfuxalf37xUayuGyK0zG7z6WEZ.jpg"
+        },
+        {
+          "name": "Jeff Goldblum",
+          "character": "Ian Malcolm",
+          "profile": "/kcyEPgYtBP5Pm6LLeLGfXKjYovL.jpg"
+        },
+        {
+          "name": "DeWanda Wise",
+          "character": "Kayla Watts",
+          "profile": "/daQjduDoTzaDTC6SIsGWs55dzcM.jpg"
+        },
+        {
+          "name": "Mamoudou Athie",
+          "character": "Ramsay Cole",
+          "profile": "/dUsJ41XjNUEHGQjQcGjBsytrGqo.jpg"
+        },
+        {
+          "name": "Isabella Sermon",
+          "character": "Maisie Lockwood / Young Charlotte Lockwood",
+          "profile": "/8M6kYKV3lLjcmhOSeC5ts7tKeb8.jpg"
+        },
+        {
+          "name": "Campbell Scott",
+          "character": "Lewis Dodgson",
+          "profile": "/1kj769jco2U73xasSEu0TyX9I5w.jpg"
+        },
+        {
+          "name": "BD Wong",
+          "character": "Henry Wu",
+          "profile": "/w7Hs9m6ocS2qlibvrLOvmyCKbAN.jpg"
+        },
+        {
+          "name": "Omar Sy",
+          "character": "Barry Sembène",
+          "profile": "/Uuy6WuizieB4fOIGFp0gY90Yq2.jpg"
+        },
+        {
+          "name": "Justice Smith",
+          "character": "Franklin Webb",
+          "profile": "/htJrcOzYkLVcnF4ExT4O1bDN5e5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-19995",
+      "tmdbId": 19995,
+      "title": "Avatar",
+      "originalTitle": null,
+      "release": "2010-01-15",
+      "director": "James Cameron",
+      "genres": [
+        "Azione",
+        "Fantascienza",
+        "Avventura"
+      ],
+      "countries": [
+        "USA",
+        "Gran Bretagna"
+      ],
+      "runtime": 162,
+      "trailer": "https://www.youtube.com/watch?v=sBLr5IEJ2ZM",
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldaña",
+        "Sigourney Weaver",
+        "Stephen Lang",
+        "Michelle Rodriguez",
+        "Giovanni Ribisi",
+        "Joel David Moore",
+        "CCH Pounder",
+        "Wes Studi",
+        "Laz Alonso",
+        "Dileep Rao",
+        "Matt Gerald"
+      ],
+      "plot": "Jake Sully è un marine costretto su una sedia a rotelle che accetta di trasferirsi sul pianeta Pandora in sostituzione del fratello morto, la cui missione era quella di esplorare il pianeta. Essendo l'atmosfera del pianeta tossica per gli umani sono stati creati degli esseri simili ai nativi Na'vi che possono essere 'guidati' dagli umani. Pandora è un enorme giacimento di un minerale prezioso per la Terra dove le fonti di energia sono azzerate. Gli indigeni Na'vi non hanno intenzione di essere colonizzati. Il compito iniziale dell'avatar di Jake sarà quello di conoscerne usi e costumi e di farsi accettare all'interno delle comunità indigene. Jake conosce così Neytiri, una guerriera Na'vi figlia del capo tribù. Da lei impara a divenire un guerriero molto diverso dal marine che è stato e se ne innamora ricambiato.",
+      "lista": "visto",
+      "source": "tmdb:19995",
+      "imdbId": "tt0499549",
+      "rtScore": 81,
+      "metascore": 83,
+      "imdbRating": 7.9,
+      "imdbVotes": 1486308,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2009-12-16",
+      "releaseUS": "2009-12-18",
+      "streaming": [
+        "Disney Plus"
+      ],
+      "poster": "/cu6CTvQqVvaTUmWNGWydpf7EzmV.jpg",
+      "backdrop": "/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
+      "tmdbRating": 7.61,
+      "tmdbVotes": 34303,
+      "popularity": 55.8806,
+      "budget": 237000000,
+      "revenue": 2923706026,
+      "tagline": "Entra nel mondo di Pandora.",
+      "scoperte": [
+        {
+          "tmdbId": 602,
+          "titolo": "Independence Day",
+          "poster": "/dXaARuPnIVEQWM8TkPSJ8LBpc16.jpg",
+          "anno": 1996,
+          "voto": 6.917,
+          "votanti": 10571,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 848326,
+          "titolo": "Rebel Moon - Parte 1: Figlia del fuoco",
+          "poster": "/iPaU3xGg3bEck3LJora4T64XTVN.jpg",
+          "anno": 2023,
+          "voto": 6.22,
+          "votanti": 2629,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 934632,
+          "titolo": "Rebel Moon - Parte 2: La sfregiatrice",
+          "poster": "/jxxv8VOTIPimq7RclxNKzi9zvgj.jpg",
+          "anno": 2024,
+          "voto": 6.079,
+          "votanti": 1533,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 2114,
+          "titolo": "Final Fantasy",
+          "poster": "/einX0OLe6tex4m6HCy9JZCgLG6B.jpg",
+          "anno": 2001,
+          "voto": 6.204,
+          "votanti": 1624,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 49521,
+          "titolo": "L'uomo d'acciaio",
+          "poster": "/fkVXpwwVZvCUqmdhqeDiVJOHBn6.jpg",
+          "anno": 2013,
+          "voto": 6.654,
+          "votanti": 16379,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 330459,
+          "titolo": "Rogue One: A Star Wars Story",
+          "poster": "/mAFxtF1STaqs4Qu2OkH7rEhCrQB.jpg",
+          "anno": 2016,
+          "voto": 7.509,
+          "votanti": 16552,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 49529,
+          "titolo": "John Carter",
+          "poster": "/5XmErjIN8WnOIDR8qF5qq9VKUEk.jpg",
+          "anno": 2012,
+          "voto": 6.377,
+          "votanti": 6181,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 399579,
+          "titolo": "Alita - Angelo della battaglia",
+          "poster": "/98FJV1G1YEYTJ3nkJkBMPgPsMHc.jpg",
+          "anno": 2019,
+          "voto": 7.268,
+          "votanti": 10196,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 324786,
+          "titolo": "La battaglia di Hacksaw Ridge",
+          "poster": "/hmaWy0tZlYoZoMpGId6MVIImIGG.jpg",
+          "anno": 2016,
+          "voto": 8.193,
+          "votanti": 15042,
+          "tipo": "attore",
+          "attore": "Sam Worthington"
+        },
+        {
+          "tmdbId": 534,
+          "titolo": "Terminator Salvation",
+          "poster": "/mF8c3XXuagWfMkr0qlZmWNLkU0F.jpg",
+          "anno": 2009,
+          "voto": 6.096,
+          "votanti": 7126,
+          "tipo": "attore",
+          "attore": "Sam Worthington"
+        },
+        {
+          "tmdbId": 18823,
+          "titolo": "Scontro tra titani",
+          "poster": "/tVmlDunOpACiUvSJGPSjiWZAwdS.jpg",
+          "anno": 2010,
+          "voto": 5.924,
+          "votanti": 6752,
+          "tipo": "attore",
+          "attore": "Sam Worthington"
+        },
+        {
+          "tmdbId": 299536,
+          "titolo": "Avengers: Infinity War",
+          "poster": "/t24aimjQLa0dyoZQEbSws7XK1U0.jpg",
+          "anno": 2018,
+          "voto": 8.24,
+          "votanti": 32397,
+          "tipo": "attore",
+          "attore": "Zoe Saldaña"
+        },
+        {
+          "tmdbId": 118340,
+          "titolo": "Guardiani della Galassia",
+          "poster": "/km1QPJeX93KCp6fqAcBf4Urijtc.jpg",
+          "anno": 2014,
+          "voto": 7.907,
+          "votanti": 29965,
+          "tipo": "attore",
+          "attore": "Zoe Saldaña"
+        },
+        {
+          "tmdbId": 299534,
+          "titolo": "Avengers: Endgame",
+          "poster": "/hj1xaEUGMiUxaFYoutlljtlkHSG.jpg",
+          "anno": 2019,
+          "voto": 8.238,
+          "votanti": 28141,
+          "tipo": "attore",
+          "attore": "Zoe Saldaña"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Sam Worthington",
+          "character": "Jake Sully",
+          "profile": "/vM1WIfYQ1HUBtlVPwB9Hp9fLcn8.jpg"
+        },
+        {
+          "name": "Zoe Saldaña",
+          "character": "Neytiri",
+          "profile": "/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg"
+        },
+        {
+          "name": "Sigourney Weaver",
+          "character": "Dr. Grace Augustine",
+          "profile": "/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+        },
+        {
+          "name": "Stephen Lang",
+          "character": "Colonel Miles Quaritch",
+          "profile": "/gnO5VfkDgA2fsHweD0622LUY3Hu.jpg"
+        },
+        {
+          "name": "Michelle Rodriguez",
+          "character": "Trudy Chacon",
+          "profile": "/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        },
+        {
+          "name": "Giovanni Ribisi",
+          "character": "Parker Selfridge",
+          "profile": "/8EAiS9D3YtGOrwNM0OrwmDpWK7s.jpg"
+        },
+        {
+          "name": "Joel David Moore",
+          "character": "Norm Spellman",
+          "profile": "/mMVhVglj6BZFuvqAXnEibce08k7.jpg"
+        },
+        {
+          "name": "CCH Pounder",
+          "character": "Mo'at",
+          "profile": "/mr6BLDN75T8DJl9dNK3hN4YwqJa.jpg"
+        },
+        {
+          "name": "Wes Studi",
+          "character": "Eytukan",
+          "profile": "/28vlZlyIVR4B1p5knjbzj4CtNPE.jpg"
+        },
+        {
+          "name": "Laz Alonso",
+          "character": "Tsu'Tey",
+          "profile": "/nmgOd3X2Xn3jIp9OLCRJzLExRWN.jpg"
+        },
+        {
+          "name": "Dileep Rao",
+          "character": "Dr. Max Patel",
+          "profile": "/jRNn8SZqFXuI5wOOlHwYsWh0hXs.jpg"
+        },
+        {
+          "name": "Matt Gerald",
+          "character": "Corporal Lyle Wainfleet",
+          "profile": "/six7c3aZpiEomHjj4ZYokq8Vgtx.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-76600",
+      "tmdbId": 76600,
+      "title": "Avatar: La via dell'acqua",
+      "originalTitle": null,
+      "release": "2022-12-14",
+      "director": "James Cameron",
+      "genres": [
+        "Azione",
+        "Avventura",
+        "Fantascienza"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 190,
+      "trailer": "https://www.youtube.com/watch?v=MLp7-KB-xdk",
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldaña",
+        "Sigourney Weaver",
+        "Stephen Lang",
+        "Kate Winslet",
+        "Cliff Curtis",
+        "Joel David Moore",
+        "CCH Pounder",
+        "Edie Falco",
+        "Jemaine Clement",
+        "Giovanni Ribisi",
+        "Britain Dalton"
+      ],
+      "plot": "Jake vive felicemente la sua vita insieme a Neytiri ma Pandora nasconde ancora numerosi misteri. Quando una vecchia, familiare minaccia torna ad affacciarsi per terminare quel che era stato iniziato un tempo, Jake dovrà nuovamente collaborare con l'esercito dei Na'vi per proteggere il loro incredibile pianeta. In veste di patriarca si ritroverà a dover combattere una dura guerra contro gli umani. Jake e Neytiri saranno pertanto costretti a lasciare la loro casa ed esplorare varie regioni di Pandora...",
+      "lista": "visto",
+      "source": "tmdb:76600",
+      "imdbId": "tt1630029",
+      "rtScore": 76,
+      "metascore": 67,
+      "imdbRating": 7.5,
+      "imdbVotes": 601100,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2022-12-14",
+      "releaseUS": "2022-12-16",
+      "streaming": [
+        "Disney Plus"
+      ],
+      "poster": "/idul2fSUPkk0EHP92EzmES6KGW4.jpg",
+      "backdrop": "/kJsPVzdyBrYHLomuNv5SJDXUQ2f.jpg",
+      "tmdbRating": 7.593,
+      "tmdbVotes": 14409,
+      "popularity": 32.4207,
+      "budget": 460000000,
+      "revenue": 2334484620,
+      "tagline": "Ritorno a Pandora.",
+      "scoperte": [
+        {
+          "tmdbId": 1892,
+          "titolo": "Il ritorno dello Jedi",
+          "poster": "/rMcCqpaWEUBmATmpZilDTKOyVbL.jpg",
+          "anno": 1983,
+          "voto": 7.91,
+          "votanti": 17088,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 283995,
+          "titolo": "Guardiani della Galassia Vol. 2",
+          "poster": "/zB9PgHUepL1aP6TJyZYuKTTUgWD.jpg",
+          "anno": 2017,
+          "voto": 7.61,
+          "votanti": 23119,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 8247,
+          "titolo": "Jumper - Senza confini",
+          "poster": "/g1RV7CDr4cl1UAM1KNyqkW4S56e.jpg",
+          "anno": 2008,
+          "voto": 6.169,
+          "votanti": 6310,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 188927,
+          "titolo": "Star Trek Beyond",
+          "poster": "/m8PQxOsXRP8lh1nEdUnVmA5ooJ5.jpg",
+          "anno": 2016,
+          "voto": 6.793,
+          "votanti": 7169,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 385128,
+          "titolo": "Fast & Furious 9: The Fast Saga",
+          "poster": "/o17wrpF3m9w2blQjglcFd5japvV.jpg",
+          "anno": 2021,
+          "voto": 6.991,
+          "votanti": 7776,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 299534,
+          "titolo": "Avengers: Endgame",
+          "poster": "/hj1xaEUGMiUxaFYoutlljtlkHSG.jpg",
+          "anno": 2019,
+          "voto": 8.238,
+          "votanti": 28141,
+          "tipo": "attore",
+          "attore": "Zoe Saldaña"
+        },
+        {
+          "tmdbId": 363088,
+          "titolo": "Ant-Man and the Wasp",
+          "poster": "/lNs2tFWH7OMJzhF2sLBsQA2MNrM.jpg",
+          "anno": 2018,
+          "voto": 6.902,
+          "votanti": 14303,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 54138,
+          "titolo": "Into Darkness - Star Trek",
+          "poster": "/dOWUALwIPVfSSHzWdSD0MGkAhnt.jpg",
+          "anno": 2013,
+          "voto": 7.324,
+          "votanti": 9752,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 324786,
+          "titolo": "La battaglia di Hacksaw Ridge",
+          "poster": "/hmaWy0tZlYoZoMpGId6MVIImIGG.jpg",
+          "anno": 2016,
+          "voto": 8.193,
+          "votanti": 15042,
+          "tipo": "attore",
+          "attore": "Sam Worthington"
+        },
+        {
+          "tmdbId": 534,
+          "titolo": "Terminator Salvation",
+          "poster": "/mF8c3XXuagWfMkr0qlZmWNLkU0F.jpg",
+          "anno": 2009,
+          "voto": 6.096,
+          "votanti": 7126,
+          "tipo": "attore",
+          "attore": "Sam Worthington"
+        },
+        {
+          "tmdbId": 18823,
+          "titolo": "Scontro tra titani",
+          "poster": "/tVmlDunOpACiUvSJGPSjiWZAwdS.jpg",
+          "anno": 2010,
+          "voto": 5.924,
+          "votanti": 6752,
+          "tipo": "attore",
+          "attore": "Sam Worthington"
+        },
+        {
+          "tmdbId": 299536,
+          "titolo": "Avengers: Infinity War",
+          "poster": "/t24aimjQLa0dyoZQEbSws7XK1U0.jpg",
+          "anno": 2018,
+          "voto": 8.24,
+          "votanti": 32397,
+          "tipo": "attore",
+          "attore": "Zoe Saldaña"
+        },
+        {
+          "tmdbId": 118340,
+          "titolo": "Guardiani della Galassia",
+          "poster": "/km1QPJeX93KCp6fqAcBf4Urijtc.jpg",
+          "anno": 2014,
+          "voto": 7.907,
+          "votanti": 29965,
+          "tipo": "attore",
+          "attore": "Zoe Saldaña"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Sam Worthington",
+          "character": "Jake Sully",
+          "profile": "/vM1WIfYQ1HUBtlVPwB9Hp9fLcn8.jpg"
+        },
+        {
+          "name": "Zoe Saldaña",
+          "character": "Neytiri",
+          "profile": "/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg"
+        },
+        {
+          "name": "Sigourney Weaver",
+          "character": "Kiri",
+          "profile": "/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+        },
+        {
+          "name": "Stephen Lang",
+          "character": "Colonel Miles Quaritch",
+          "profile": "/gnO5VfkDgA2fsHweD0622LUY3Hu.jpg"
+        },
+        {
+          "name": "Kate Winslet",
+          "character": "Ronal",
+          "profile": "/6qNnMsKtKz9si5rabpUEG85UfHp.jpg"
+        },
+        {
+          "name": "Cliff Curtis",
+          "character": "Tonowari",
+          "profile": "/dfaElGoyJWseFWxXwEMLL9WTi7V.jpg"
+        },
+        {
+          "name": "Joel David Moore",
+          "character": "Norm Spellman",
+          "profile": "/mMVhVglj6BZFuvqAXnEibce08k7.jpg"
+        },
+        {
+          "name": "CCH Pounder",
+          "character": "Mo'at",
+          "profile": "/mr6BLDN75T8DJl9dNK3hN4YwqJa.jpg"
+        },
+        {
+          "name": "Edie Falco",
+          "character": "General Frances Ardmore",
+          "profile": "/jS2Hnr5OmntpX0J7EpH70zAG0mz.jpg"
+        },
+        {
+          "name": "Jemaine Clement",
+          "character": "Dr. Ian Garvin",
+          "profile": "/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg"
+        },
+        {
+          "name": "Giovanni Ribisi",
+          "character": "Parker Selfridge",
+          "profile": "/8EAiS9D3YtGOrwNM0OrwmDpWK7s.jpg"
+        },
+        {
+          "name": "Britain Dalton",
+          "character": "Lo'ak",
+          "profile": "/asX3eJr9oHNs1ZgRYGwsZRAntqS.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-414906",
+      "tmdbId": 414906,
+      "title": "The Batman",
+      "originalTitle": null,
+      "release": "2022-03-03",
+      "director": "Matt Reeves",
+      "genres": [
+        "Crime",
+        "Mistero",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 176,
+      "trailer": "https://www.youtube.com/watch?v=JKjSqs5czLA",
+      "cast": [
+        "Robert Pattinson",
+        "Zoë Kravitz",
+        "Jeffrey Wright",
+        "Colin Farrell",
+        "Paul Dano",
+        "John Turturro",
+        "Andy Serkis",
+        "Peter Sarsgaard",
+        "Barry Keoghan",
+        "Jayme Lawson",
+        "Gil Perez-Abraham",
+        "Peter McDonald"
+      ],
+      "plot": "Quando un killer prende di mira l’élite di Gotham con una serie di malvagi stratagemmi, una scia di indizi criptici spinge il più grande detective del mondo a indagare nei bassifondi, incontrando personaggi come Selina Kyle alias Catwoman, Oswald Cobblepot alias il Pinguino, Carmine Falcone e Edward Nashton alias l’Enigmista. Mentre le prove iniziano a condurlo più vicino alla soluzione e la portata dei piani del malfattore diventa chiara, Batman deve stringere nuove alleanze, smascherare il colpevole e rendere giustizia all’abuso di potere e alla corruzione che da tempo affliggono Gotham City.",
+      "lista": "visto",
+      "source": "tmdb:414906",
+      "imdbId": "tt1877830",
+      "rtScore": 85,
+      "metascore": 72,
+      "imdbRating": 7.8,
+      "imdbVotes": 923764,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2022-03-01",
+      "releaseUS": "2022-03-04",
+      "streaming": [
+        "Sky Go",
+        "Timvision",
+        "Infinity Selection Amazon Channel",
+        "HBO Max Amazon Channel",
+        "HBO Max"
+      ],
+      "poster": "/kfrNjwHRw0ORsPx8Scr3JJQuy1I.jpg",
+      "backdrop": "/IYUD7rAIXzBM91TT3Z5fILUS7n.jpg",
+      "tmdbRating": 7.664,
+      "tmdbVotes": 12204,
+      "popularity": 27.229,
+      "budget": 185000000,
+      "revenue": 772775278,
+      "tagline": "Smaschera la verità.",
+      "scoperte": [
+        {
+          "tmdbId": 155,
+          "titolo": "Il cavaliere oscuro",
+          "poster": "/qIhsgno1mjbzUbs4H6DaRjhskAR.jpg",
+          "anno": 2008,
+          "voto": 8.534,
+          "votanti": 36216,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 14919,
+          "titolo": "Batman - La maschera del fantasma",
+          "poster": "/mDKnRads66zjq4CmcUtF8FSt47.jpg",
+          "anno": 1993,
+          "voto": 7.5,
+          "votanti": 1269,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 40662,
+          "titolo": "Batman: Under the Red Hood",
+          "poster": "/7lmHqHg1rG9b4U8MjuyQjmJ7Qm0.jpg",
+          "anno": 2010,
+          "voto": 7.8,
+          "votanti": 1752,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 49026,
+          "titolo": "Il cavaliere oscuro - Il ritorno",
+          "poster": "/p2JzxFRAlbxS4EvWMo4yiYZXu1W.jpg",
+          "anno": 2012,
+          "voto": 7.796,
+          "votanti": 24605,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 16995,
+          "titolo": "State of Play",
+          "poster": "/vZJvGx0nGokBCqPMAf9SPdnTESM.jpg",
+          "anno": 2009,
+          "voto": 6.811,
+          "votanti": 2175,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 11963,
+          "titolo": "I tre giorni del Condor",
+          "poster": "/dkD7mG3OISe0XYhEDoVjq1gLmsv.jpg",
+          "anno": 1975,
+          "voto": 7.272,
+          "votanti": 1383,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 242643,
+          "titolo": "Batman: Assault on Arkham",
+          "poster": "/b9KxvIAZkl2f57kjObj8Z9z9LhL.jpg",
+          "anno": 2014,
+          "voto": 7.3,
+          "votanti": 1198,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 9944,
+          "titolo": "Il rapporto Pelican",
+          "poster": "/vH5VLtc7fUBGNFRnNiT63KjnAw8.jpg",
+          "anno": 1993,
+          "voto": 6.592,
+          "votanti": 1794,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 674,
+          "titolo": "Harry Potter e il calice di fuoco",
+          "poster": "/ghM7AvW4MWY9casNIjltqzCMjJQ.jpg",
+          "anno": 2005,
+          "voto": 7.803,
+          "votanti": 22388,
+          "tipo": "attore",
+          "attore": "Robert Pattinson"
+        },
+        {
+          "tmdbId": 8966,
+          "titolo": "Twilight",
+          "poster": "/n8nYzzKGP30M6u8sUon1YJmCgm8.jpg",
+          "anno": 2008,
+          "voto": 6.3,
+          "votanti": 14513,
+          "tipo": "attore",
+          "attore": "Robert Pattinson"
+        },
+        {
+          "tmdbId": 577922,
+          "titolo": "Tenet",
+          "poster": "/iKXqUiLFDgeIGozRR6JYRvFmD5A.jpg",
+          "anno": 2020,
+          "voto": 7.174,
+          "votanti": 11290,
+          "tipo": "attore",
+          "attore": "Robert Pattinson"
+        },
+        {
+          "tmdbId": 76341,
+          "titolo": "Mad Max: Fury Road",
+          "poster": "/5gbm8m1gYvOmVGRcxteiplDLWdg.jpg",
+          "anno": 2015,
+          "voto": 7.635,
+          "votanti": 24299,
+          "tipo": "attore",
+          "attore": "Zoë Kravitz"
+        },
+        {
+          "tmdbId": 259316,
+          "titolo": "Animali fantastici e dove trovarli",
+          "poster": "/w5tKxNmdf3yI5lXSDa5vs6YwxHN.jpg",
+          "anno": 2016,
+          "voto": 7.309,
+          "votanti": 19821,
+          "tipo": "attore",
+          "attore": "Zoë Kravitz"
+        },
+        {
+          "tmdbId": 324857,
+          "titolo": "Spider-Man - Un nuovo universo",
+          "poster": "/ps86PNqw9qCEA9eJD53t6RuiCkW.jpg",
+          "anno": 2018,
+          "voto": 8.393,
+          "votanti": 17494,
+          "tipo": "attore",
+          "attore": "Zoë Kravitz"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Robert Pattinson",
+          "character": "Bruce Wayne / The Batman",
+          "profile": "/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+        },
+        {
+          "name": "Zoë Kravitz",
+          "character": "Selina Kyle",
+          "profile": "/n0mhAgmY6eJQmA7kaugsTZEJgHo.jpg"
+        },
+        {
+          "name": "Jeffrey Wright",
+          "character": "Lt. James Gordon",
+          "profile": "/quunS3w4QtALMDnvA0y81Y2pO9N.jpg"
+        },
+        {
+          "name": "Colin Farrell",
+          "character": "Oz / The Penguin",
+          "profile": "/5FdalJbrbZ5UCsED5rFrXpvbqJa.jpg"
+        },
+        {
+          "name": "Paul Dano",
+          "character": "The Riddler",
+          "profile": "/gOD5bO0hKnzzJm7sJeGeEJjfBBw.jpg"
+        },
+        {
+          "name": "John Turturro",
+          "character": "Carmine Falcone",
+          "profile": "/6O9W9cJW0kCqMzYeLupV9oH0ftn.jpg"
+        },
+        {
+          "name": "Andy Serkis",
+          "character": "Alfred",
+          "profile": "/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg"
+        },
+        {
+          "name": "Peter Sarsgaard",
+          "character": "District Attorney Gil Colson",
+          "profile": "/5UANyM4co2nwYPgSEmGeNlZRm7V.jpg"
+        },
+        {
+          "name": "Barry Keoghan",
+          "character": "Unseen Arkham Prisoner",
+          "profile": "/ngoitknM6hw8fffLywyvjzy6Iti.jpg"
+        },
+        {
+          "name": "Jayme Lawson",
+          "character": "Bella Reál",
+          "profile": "/1PQmquJ3LRnTnUnut0UZBLZuBuO.jpg"
+        },
+        {
+          "name": "Gil Perez-Abraham",
+          "character": "Officer Martinez",
+          "profile": "/qHSIqXt9uZtrHLv7vhAnQpxcLrw.jpg"
+        },
+        {
+          "name": "Peter McDonald",
+          "character": "Kenzie",
+          "profile": "/ahacAWWP4zzuVumOUB8hZoJcHTA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-614934",
+      "tmdbId": 614934,
+      "title": "Elvis",
+      "originalTitle": null,
+      "release": "2022-06-22",
+      "director": "Baz Luhrmann",
+      "genres": [
+        "Musica",
+        "Storia",
+        "Dramma"
+      ],
+      "countries": [
+        "Australia",
+        "USA"
+      ],
+      "runtime": 159,
+      "trailer": "https://www.youtube.com/watch?v=QO1_4KC3_n4",
+      "cast": [
+        "Austin Butler",
+        "Tom Hanks",
+        "Olivia DeJonge",
+        "Helen Thomson",
+        "Richard Roxburgh",
+        "Kelvin Harrison Jr.",
+        "David Wenham",
+        "Kodi Smit-McPhee",
+        "Luke Bracey",
+        "Dacre Montgomery",
+        "Leon Ford",
+        "Gary Clark Jr."
+      ],
+      "plot": "Nascita, crescita, apoteosi e inizio di declino di Elvis Aaron Presley, il mito di più generazioni, vengono raccontati e riletti dal punto di vista del suo manager di tutta una vita: il Colonnello Tom Parker. È lui che accompagna, con voce narrante e presenza in scena, la dirompente ascesa di un'icona assoluta della musica e del costume mentre si impegna, apertamente ma anche in segretezza, per condizionarne la vita con il fine di salvaguardare la propria.",
+      "lista": "casa",
+      "source": "tmdb:614934",
+      "imdbId": "tt3704428",
+      "rtScore": 77,
+      "metascore": 64,
+      "imdbRating": 7.3,
+      "imdbVotes": 259379,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2022-06-22",
+      "releaseUS": "2022-06-24",
+      "streaming": [
+        "Netflix",
+        "HBO Max"
+      ],
+      "poster": "/qBOKWqAFbveZ4ryjJJwbie6tXkQ.jpg",
+      "backdrop": "/rLo9T9jEg67UZPq3midjLnTUYYi.jpg",
+      "tmdbRating": 7.454,
+      "tmdbVotes": 3943,
+      "popularity": 5.9998,
+      "budget": 85000000,
+      "revenue": 288670284,
+      "tagline": "L'uomo. La leggenda. Il Re del Rock & Roll.",
+      "scoperte": [],
+      "castDetail": [
+        {
+          "name": "Austin Butler",
+          "character": "Elvis Presley",
+          "profile": "/atdAs4pFGjUQ4m2W8kJYly7N6cC.jpg"
+        },
+        {
+          "name": "Tom Hanks",
+          "character": "Colonel Tom Parker",
+          "profile": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+          "name": "Olivia DeJonge",
+          "character": "Priscilla",
+          "profile": "/gQ43hkgb3jJRBjCtRwx7zEHexic.jpg"
+        },
+        {
+          "name": "Helen Thomson",
+          "character": "Gladys Presley",
+          "profile": "/uTKMoAEGLbkCHWCuBKbKMM3mR80.jpg"
+        },
+        {
+          "name": "Richard Roxburgh",
+          "character": "Vernon Presley",
+          "profile": "/de1XpxnOuW4v4fFWFEjmBqmHaRf.jpg"
+        },
+        {
+          "name": "Kelvin Harrison Jr.",
+          "character": "B.B. King",
+          "profile": "/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
+        },
+        {
+          "name": "David Wenham",
+          "character": "Hank Snow",
+          "profile": "/F7CWSqUE75HtrcdqIQ7UMZ9aTX.jpg"
+        },
+        {
+          "name": "Kodi Smit-McPhee",
+          "character": "Jimmie Rodgers Snow",
+          "profile": "/sesCWba9NwPDYDZzbVLs7OgLOti.jpg"
+        },
+        {
+          "name": "Luke Bracey",
+          "character": "Jerry Schilling",
+          "profile": "/ot2h7IrXpC8XSnIZDSVsj2FQ5cx.jpg"
+        },
+        {
+          "name": "Dacre Montgomery",
+          "character": "Steve Binder",
+          "profile": "/v5zhoNq2RgnUEtSLAFLOPLTJWCT.jpg"
+        },
+        {
+          "name": "Leon Ford",
+          "character": "Tom Diskin",
+          "profile": "/djxNCzu1MYxz6D2XV5I1yCsw1e.jpg"
+        },
+        {
+          "name": "Gary Clark Jr.",
+          "character": "Arthur 'Big Boy' Crudup",
+          "profile": "/w0ePaQi3UUOaejzNGmHpc2V87lK.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-791177",
+      "tmdbId": 791177,
+      "title": "Bones and All",
+      "originalTitle": null,
+      "release": "2022-11-24",
+      "director": "Luca Guadagnino",
+      "genres": [
+        "Horror",
+        "Romance",
+        "Dramma"
+      ],
+      "countries": [
+        "Italia",
+        "USA"
+      ],
+      "runtime": 130,
+      "trailer": "https://www.youtube.com/watch?v=zMrTn5lCyL0",
+      "cast": [
+        "Taylor Russell",
+        "Timothée Chalamet",
+        "Mark Rylance",
+        "Anna Cobb",
+        "André Holland",
+        "David Gordon Green",
+        "Michael Stuhlbarg",
+        "Jessica Harper",
+        "Chloë Sevigny",
+        "Kendle Coffey",
+        "Ellie Parker",
+        "Madeleine Hall"
+      ],
+      "plot": "Il film racconta la storia di un primo amore, quello che porta Maren, una giovane donna che impara a sopravvivere ai margini della società, e Lee, un reietto vagabondo dall’animo combattivo, a unirsi e intraprendere un’odissea di centinaia di chilometri nell'America di Ronald Reagan, tra botole, passaggi segreti e stradine di provincia. Tuttavia, per quanto si sforzino, qualunque strada sembra riportarli al loro tremendo passato, fino al momento finale che deciderà se il loro amore sia realmente in grado di sopravvivere al loro essere altro rispetto al mondo che li circonda.",
+      "lista": "casa",
+      "source": "tmdb:791177",
+      "imdbId": "tt10168670",
+      "rtScore": 82,
+      "metascore": 74,
+      "imdbRating": 6.8,
+      "imdbVotes": 69236,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2022-11-18",
+      "releaseUS": "2022-11-23",
+      "streaming": [
+        "Amazon Prime Video",
+        "HBO Max Amazon Channel",
+        "HBO Max",
+        "Amazon Prime Video with Ads"
+      ],
+      "poster": "/rWOZ9DVtdbRMgEq3XAnSerUnGiq.jpg",
+      "backdrop": "/8sPxa4sdRvjgRG3GgkO8RQxUR9P.jpg",
+      "tmdbRating": 6.994,
+      "tmdbVotes": 1661,
+      "popularity": 6.2606,
+      "budget": 16000000,
+      "revenue": 15234907,
+      "tagline": "You can’t run from who you are.",
+      "scoperte": [],
+      "castDetail": [
+        {
+          "name": "Taylor Russell",
+          "character": "Maren",
+          "profile": "/wxY9vztrc69MolSJ1LDNg7sEADU.jpg"
+        },
+        {
+          "name": "Timothée Chalamet",
+          "character": "Lee",
+          "profile": "/axENiFIrSz5B7UuWkMT7PDe7CaO.jpg"
+        },
+        {
+          "name": "Mark Rylance",
+          "character": "Sully",
+          "profile": "/bztEZRyXrvW3Pg1fexNASXlZrq7.jpg"
+        },
+        {
+          "name": "Anna Cobb",
+          "character": "Kayla",
+          "profile": "/pmSivf6G2okIe8YyPxIjYccvoou.jpg"
+        },
+        {
+          "name": "André Holland",
+          "character": "Maren's Father",
+          "profile": "/riYqFOgYLYH4Hw8p2JYTw5lXGDE.jpg"
+        },
+        {
+          "name": "David Gordon Green",
+          "character": "Brad",
+          "profile": "/iLNt8WmQmlVJHO5N5V7EmvXoXxQ.jpg"
+        },
+        {
+          "name": "Michael Stuhlbarg",
+          "character": "Jake",
+          "profile": "/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg"
+        },
+        {
+          "name": "Jessica Harper",
+          "character": "Barbara Kerns",
+          "profile": "/sSTbKuf4bY83cSRx9lmVdGobcsg.jpg"
+        },
+        {
+          "name": "Chloë Sevigny",
+          "character": "Janelle",
+          "profile": "/eM7KGAMCmZCzYDFV8gaSfknN675.jpg"
+        },
+        {
+          "name": "Kendle Coffey",
+          "character": "Sherry",
+          "profile": "/9adMovd5wC5H3m6aFkYb7KCS4TB.jpg"
+        },
+        {
+          "name": "Ellie Parker",
+          "character": "Jackie",
+          "profile": "/3hrwrekrOaHZV0oiqQVgqkoLjJs.jpg"
+        },
+        {
+          "name": "Madeleine Hall",
+          "character": "Kim",
+          "profile": "/rLz7kc4iA6nbkN5Mjz2PXaw28S.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-335984",
+      "tmdbId": 335984,
+      "title": "Blade Runner 2049",
+      "originalTitle": null,
+      "release": "2017-10-05",
+      "director": "Denis Villeneuve",
+      "genres": [
+        "Fantascienza",
+        "Dramma"
+      ],
+      "countries": [
+        "Canada",
+        "Gran Bretagna",
+        "USA"
+      ],
+      "runtime": 164,
+      "trailer": "https://www.youtube.com/watch?v=pXTedlp2SeE",
+      "cast": [
+        "Ryan Gosling",
+        "Harrison Ford",
+        "Ana de Armas",
+        "Dave Bautista",
+        "Robin Wright",
+        "Sylvia Hoeks",
+        "Mackenzie Davis",
+        "Jared Leto",
+        "Carla Juri",
+        "Hiam Abbass",
+        "Lennie James",
+        "David Dastmalchian"
+      ],
+      "plot": "Trent'anni dopo gli eventi del primo film, un nuovo blade runner, l'Agente K della Polizia di Los Angeles  scopre un segreto sepolto da tempo che ha il potenziale di far precipitare nel caos quello che è rimasto della società. La scoperta di K lo spinge verso la ricerca di Rick Deckard, un ex-blade runner della polizia di Los Angeles sparito nel nulla da 30 anni.",
+      "lista": "visto",
+      "source": "tmdb:335984",
+      "imdbId": "tt1856101",
+      "rtScore": 88,
+      "metascore": 81,
+      "imdbRating": 8,
+      "imdbVotes": 751317,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2017-10-04",
+      "releaseUS": "2017-10-06",
+      "streaming": [
+        "Netflix",
+        "Amazon Prime Video",
+        "Infinity Selection Amazon Channel",
+        "HBO Max",
+        "Amazon Prime Video with Ads"
+      ],
+      "poster": "/4XJQG11Ytl8mKfgbl2jkoY5ZuFX.jpg",
+      "backdrop": "/gNdLJU9TxrpGx4dkZidjys3fyy0.jpg",
+      "tmdbRating": 7.6,
+      "tmdbVotes": 15368,
+      "popularity": 27.0959,
+      "budget": 150000000,
+      "revenue": 259239658,
+      "tagline": "Chi sono io?",
+      "scoperte": [
+        {
+          "tmdbId": 78,
+          "titolo": "Blade Runner",
+          "poster": "/2mPclQ5v9YK0eqCefvav3YsYPYI.jpg",
+          "anno": 1982,
+          "voto": 7.935,
+          "votanti": 15166,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 500664,
+          "titolo": "Upgrade",
+          "poster": "/a2fNteyZIxHNJoI7e6LZNScx7MV.jpg",
+          "anno": 2018,
+          "voto": 7.505,
+          "votanti": 5104,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 733317,
+          "titolo": "Killerobots",
+          "poster": "/mZGXpmubSRHi0FTkSm99r4dMeFC.jpg",
+          "anno": 2020,
+          "voto": 6.39,
+          "votanti": 430,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 198184,
+          "titolo": "Humandroid",
+          "poster": "/qwPivsWL5CWgbGlGGogQUDnapzj.jpg",
+          "anno": 2015,
+          "voto": 6.79,
+          "votanti": 8556,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 290859,
+          "titolo": "Terminator - Destino oscuro",
+          "poster": "/hXVLMqC4Hd50uYURQUESuxc0CLU.jpg",
+          "anno": 2019,
+          "voto": 6.421,
+          "votanti": 5754,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 534,
+          "titolo": "Terminator Salvation",
+          "poster": "/mF8c3XXuagWfMkr0qlZmWNLkU0F.jpg",
+          "anno": 2009,
+          "voto": 6.096,
+          "votanti": 7126,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 5549,
+          "titolo": "RoboCop 2",
+          "poster": "/r3WRiqrwcZkDYXqap5kSmXcFS5J.jpg",
+          "anno": 1990,
+          "voto": 6,
+          "votanti": 2163,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 280,
+          "titolo": "Terminator 2 - Il giorno del giudizio",
+          "poster": "/orzgtkWWEHlSMcFm1p74ZvGqdz0.jpg",
+          "anno": 1991,
+          "voto": 8.159,
+          "votanti": 14539,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 313369,
+          "titolo": "La La Land",
+          "poster": "/cWYy1YTVaZRAuxLtX1tYNvtzAt1.jpg",
+          "anno": 2016,
+          "voto": 7.897,
+          "votanti": 18266,
+          "tipo": "attore",
+          "attore": "Ryan Gosling"
+        },
+        {
+          "tmdbId": 64690,
+          "titolo": "Drive",
+          "poster": "/scTZGnrw4Rh9qm94LID6uxiTUHN.jpg",
+          "anno": 2011,
+          "voto": 7.584,
+          "votanti": 13789,
+          "tipo": "attore",
+          "attore": "Ryan Gosling"
+        },
+        {
+          "tmdbId": 11036,
+          "titolo": "Le pagine della nostra vita",
+          "poster": "/pu5Q3YuYgSkfkVIdkChJVZjAaI5.jpg",
+          "anno": 2004,
+          "voto": 7.891,
+          "votanti": 12692,
+          "tipo": "attore",
+          "attore": "Ryan Gosling"
+        },
+        {
+          "tmdbId": 11,
+          "titolo": "Guerre stellari",
+          "poster": "/fVqKwpvobwWy0P1UImZWIDuw4RI.jpg",
+          "anno": 1977,
+          "voto": 8.206,
+          "votanti": 22558,
+          "tipo": "attore",
+          "attore": "Harrison Ford"
+        },
+        {
+          "tmdbId": 140607,
+          "titolo": "Star Wars: Il risveglio della Forza",
+          "poster": "/uEDFRwKiTOsIsN5dkEPCj1laIAK.jpg",
+          "anno": 2015,
+          "voto": 7.248,
+          "votanti": 20692,
+          "tipo": "attore",
+          "attore": "Harrison Ford"
+        },
+        {
+          "tmdbId": 1891,
+          "titolo": "L'Impero colpisce ancora",
+          "poster": "/6vzDHECuUbKiqSSXHcIKb9LPcQs.jpg",
+          "anno": 1980,
+          "voto": 8.392,
+          "votanti": 18596,
+          "tipo": "attore",
+          "attore": "Harrison Ford"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Ryan Gosling",
+          "character": "'K'",
+          "profile": "/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg"
+        },
+        {
+          "name": "Harrison Ford",
+          "character": "Rick Deckard",
+          "profile": "/pjBMJVPpcZK23Vt1nzr1zEBTWrP.jpg"
+        },
+        {
+          "name": "Ana de Armas",
+          "character": "Joi",
+          "profile": "/eDuBeSHV0R7vuCnHHXrfa7d7IfB.jpg"
+        },
+        {
+          "name": "Dave Bautista",
+          "character": "Sapper Morton",
+          "profile": "/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+        },
+        {
+          "name": "Robin Wright",
+          "character": "Lieutenant Joshi",
+          "profile": "/d3rIv0y2p0jMsQ7ViR7O1606NZa.jpg"
+        },
+        {
+          "name": "Sylvia Hoeks",
+          "character": "Luv",
+          "profile": "/wKC9LgqgJRCXuzs1kUKaK7Uicv.jpg"
+        },
+        {
+          "name": "Mackenzie Davis",
+          "character": "Mariette",
+          "profile": "/CEpYCoD6erYRYekmFHuQAULLD5.jpg"
+        },
+        {
+          "name": "Jared Leto",
+          "character": "Niander Wallace",
+          "profile": "/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg"
+        },
+        {
+          "name": "Carla Juri",
+          "character": "Dr. Ana Stelline",
+          "profile": "/7Tu9PCmTyLD1wWP8PGCzZpuImre.jpg"
+        },
+        {
+          "name": "Hiam Abbass",
+          "character": "Freysa",
+          "profile": "/hkzC5aJKTiuCchBpybaHDVngYZW.jpg"
+        },
+        {
+          "name": "Lennie James",
+          "character": "Mister Cotton",
+          "profile": "/lUcouck90jXNzyJr5uBJJiYMHAN.jpg"
+        },
+        {
+          "name": "David Dastmalchian",
+          "character": "Coco",
+          "profile": "/nER1Vzhk51pGHb60KBF1Ja5tEXA.jpg"
+        }
+      ]
     }
   ],
-  "enrichedAt": "2026-07-30T17:21:08.920Z"
+  "enrichedAt": "2026-07-30T17:32:58.548Z"
 }
