@@ -8,6 +8,17 @@
 const PerTe = (() => {
   const root = document.getElementById('perte');
 
+  let notizie = null;   // caricate una volta sola, alla prima apertura
+
+  async function caricaNotizie() {
+    if (notizie !== null) return notizie;
+    try {
+      const res = await fetch(`data/notizie.json?t=${Date.now()}`);
+      notizie = res.ok ? await res.json() : { notizie: [] };
+    } catch { notizie = { notizie: [] }; }
+    return notizie;
+  }
+
   function render() {
     try { disegna(); }
     catch (err) {
@@ -29,7 +40,47 @@ const PerTe = (() => {
     root.innerHTML = ritratto(esito.profilo, esito.visti)
       + coda('Se stasera vai al cinema', Consiglia.classifica(tutti, { lista: 'cinema', quanti: 4 }).voci)
       + coda('Se stasera resti sul divano', Consiglia.classifica(tutti, { lista: 'casa', quanti: 6 }).voci)
-      + affinita(tutti);
+      + affinita(tutti)
+      + '<div id="rassegna"></div>';
+
+    // La rassegna arriva da un file a parte: la innesto quando è pronta.
+    caricaNotizie().then(n => {
+      const box = document.getElementById('rassegna');
+      if (box) box.innerHTML = rassegna(n);
+    });
+  }
+
+  /* ── si parla di loro ────────────────────────────────── */
+  function rassegna(dati) {
+    const voci = (dati?.notizie || []).slice(0, 12);
+    if (!voci.length) return '';
+
+    const quando = iso => {
+      if (!iso) return '';
+      const g = Math.round((Date.now() - new Date(iso)) / 86400000);
+      return g <= 0 ? 'oggi' : g === 1 ? 'ieri' : `${g} giorni fa`;
+    };
+
+    return `<section class="s-block">
+      <h3>Si parla di loro</h3>
+      <div class="rassegna">
+        ${voci.map(n => `
+          <a class="news" href="${F.esc(n.link)}" target="_blank" rel="noopener">
+            <span class="news-top">
+              <span class="news-fonte">${F.esc(n.fonte)}</span>
+              <span class="news-quando">${F.esc(quando(n.data))}</span>
+            </span>
+            <b class="news-titolo">${F.esc(n.titolo)}</b>
+            <span class="news-chi">
+              ${n.citati.slice(0, 3).map(c =>
+                `<i class="news-tag news-${c.tipo}">${F.esc(c.nome)}</i>`).join('')}
+            </span>
+          </a>`).join('')}
+      </div>
+      <p class="nota">Da ${F.esc((dati.fonti || []).join(', '))}.
+      Tengo solo gli articoli che nominano un film, un regista o un attore che hai in libreria —
+      aggiornati l'ultima volta ${F.esc(quando(dati.aggiornato))}.</p>
+    </section>`;
   }
 
   /* ── chi sei, secondo i tuoi film ────────────────────── */

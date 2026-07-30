@@ -127,7 +127,7 @@ function piattaforme(d) {
 }
 
 /* ── arricchimento di un singolo film ────────────────── */
-async function arricchisci(film) {
+async function arricchisci(film, giaInLibreria = new Set()) {
   // Se l'ID è già stato verificato a mano, niente ricerca: nessun rischio di sbagliare film.
   const hit = film.tmdbId ? { id: film.tmdbId } : await trova(film);
   if (!hit) {
@@ -198,8 +198,58 @@ async function arricchisci(film) {
     budget:     d.budget  || null,
     revenue:    d.revenue || null,
     tagline,
+    scoperte: await scoperte(d, giaInLibreria),
     castDetail
   };
+}
+
+/* ── scoperte: film FUORI dalla libreria da proporre ─────
+   Due strade complementari: i film che TMDB associa a questo,
+   e le altre interpretazioni dei suoi attori principali.
+   ──────────────────────────────────────────────────────── */
+function scheda(x, extra = {}) {
+  return {
+    tmdbId: x.id,
+    titolo: x.title,
+    poster: x.poster_path || null,
+    anno: x.release_date ? Number(x.release_date.slice(0, 4)) : null,
+    voto: x.vote_average || null,
+    votanti: x.vote_count || 0,
+    ...extra
+  };
+}
+
+async function scoperte(d, giaInLibreria) {
+  const fuori = x => x.id !== d.id && !giaInLibreria.has(x.id)
+    && x.poster_path && (x.vote_count || 0) >= 50;
+
+  const trovate = new Map();
+
+  /* 1. i consigli di TMDB per questo film */
+  try {
+    const { results = [] } = await tmdb(`/movie/${d.id}/recommendations`);
+    for (const x of results.filter(fuori).slice(0, 8)) {
+      trovate.set(x.id, scheda(x, { tipo: 'simile' }));
+    }
+  } catch { /* pazienza */ }
+
+  /* 2. le altre interpretazioni dei due attori di punta */
+  for (const attore of (d.credits?.cast || []).slice(0, 2)) {
+    try {
+      const cr = await tmdb(`/person/${attore.id}/movie_credits`);
+      const suoi = (cr.cast || [])
+        .filter(fuori)
+        .filter(x => (x.popularity || 0) > 5)
+        .sort((a, b) => (b.vote_count || 0) - (a.vote_count || 0))
+        .slice(0, 3);
+      for (const x of suoi) {
+        // Se un film arriva da entrambe le strade, l'attore è l'aggancio più parlante.
+        trovate.set(x.id, scheda(x, { tipo: 'attore', attore: attore.name }));
+      }
+    } catch { /* pazienza */ }
+  }
+
+  return [...trovate.values()].slice(0, 14);
 }
 
 /* ── main ────────────────────────────────────────────── */
@@ -215,11 +265,17 @@ try {
   precedenti = new Map(vecchio.movies.map(m => [m.id, m]));
 } catch { /* prima esecuzione */ }
 
+/* Serve per non proporre come "scoperta" un film che hai già in lista. */
+const giaInLibreria = new Set([
+  ...seed.movies.map(m => m.tmdbId).filter(Boolean),
+  ...[...precedenti.values()].map(m => m.tmdbId).filter(Boolean)
+]);
+
 console.log(`Arricchisco ${seed.movies.length} film…`);
 const movies = [];
 for (const film of seed.movies) {
   try {
-    movies.push(await arricchisci(film));
+    movies.push(await arricchisci(film, giaInLibreria));
   } catch (err) {
     const vecchio = precedenti.get(film.id);
     console.warn(`  ✗ ${film.title}: ${err.message} — ${vecchio ? 'tengo i dati precedenti' : 'tengo i dati di Notion'}`);

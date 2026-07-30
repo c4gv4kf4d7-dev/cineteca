@@ -340,6 +340,23 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .d-perche-frase i{ color:var(--ink); font-style:italic; }
 .d-perche-coda{ margin:12px 0 0; font-size:13px; line-height:1.6; color:var(--ink-3); }
 
+/* scoperte: film fuori libreria */
+.d-scoperte-intro{ margin:-4px 0 15px; font-size:14.5px; line-height:1.6; color:var(--ink-2); }
+.d-scoperte-intro b{ color:var(--accent); font-weight:650; }
+.scoperte{ display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:11px; }
+.scop{
+  display:flex; align-items:center; gap:12px; padding:9px; text-decoration:none; color:inherit;
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--r-m);
+  transition:background .2s, border-color .2s, transform .2s;
+}
+.scop:hover{ background:var(--panel-2); border-color:var(--line-2); transform:translateY(-3px); }
+.scop-ph{ flex:none; width:42px; aspect-ratio:2/3; border-radius:6px; overflow:hidden; background:#12141F; }
+.scop-ph img{ width:100%; height:100%; object-fit:cover; }
+.scop-body{ min-width:0; }
+.scop-body b{ display:block; font-size:13px; font-weight:600; line-height:1.3; margin-bottom:3px; }
+.scop-meta{ display:block; font-family:var(--ff-mono); font-size:10.5px; color:var(--ink-3); }
+.scop-perche{ display:block; margin-top:3px; font-size:11px; color:var(--accent); }
+
 .d-section h4{
   margin:0 0 13px; font-size:11px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-3);
   display:flex; align-items:center; gap:12px;
@@ -406,6 +423,42 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .ph-numbers i{ display:block; margin-top:3px; font-style:normal; font-size:10px; letter-spacing:.06em; text-transform:none; color:var(--ink-3); }
 .ph-foot{ margin:clamp(18px,2.6vw,28px) 0 0; font-size:13.5px; color:var(--ink-3); }
 
+/* ── pannello novità ─────────────────────────────────── */
+.novita{
+  margin:8px 0 24px; padding:18px 20px;
+  border:1px solid rgba(255,60,80,.28); border-radius:var(--r-l);
+  background:linear-gradient(135deg, rgba(255,60,80,.09), rgba(183,140,255,.05) 60%, transparent);
+  animation:fade .5s ease both;
+}
+.nov-head{ display:flex; align-items:center; gap:12px; margin-bottom:13px; }
+.nov-et{
+  display:inline-flex; align-items:center; gap:7px;
+  font-size:10.5px; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:#FF5C7A;
+}
+.nov-et .live-dot{ background:#FF5C7A; }
+.nov-quando{ font-family:var(--ff-mono); font-size:11px; color:var(--ink-3); }
+.nov-chiudi{
+  margin-left:auto; padding:6px 14px; border-radius:999px;
+  border:1px solid var(--line-2); font-size:12px; font-weight:600; color:var(--ink-2);
+  transition:.2s;
+}
+.nov-chiudi:hover{ background:var(--panel-2); color:var(--ink); }
+.nov-lista{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px; }
+.nov-riga button{
+  display:flex; align-items:flex-start; gap:11px; width:100%; padding:7px 8px; text-align:left;
+  border-radius:var(--r-s); font-size:13.5px; line-height:1.5; color:var(--ink-2); transition:background .2s;
+}
+.nov-riga button:hover{ background:var(--panel); color:var(--ink); }
+.nov-riga b{ color:var(--ink); font-weight:650; }
+.nov-icona{
+  flex:none; display:grid; place-items:center; width:22px; height:22px; border-radius:6px;
+  background:var(--panel-2); font-size:11px; color:var(--ink-3);
+}
+.nov-voto .nov-icona{ color:var(--hot); }
+.nov-incasso .nov-icona{ color:var(--good); }
+.nov-streaming .nov-icona{ color:var(--accent); }
+.nov-altro{ margin:10px 0 0 41px; font-size:12px; color:var(--ink-3); }
+
 /* ── per te ──────────────────────────────────────────── */
 .ritratto{
   margin:8px 0 34px; padding:clamp(22px,3vw,38px);
@@ -435,6 +488,29 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   border-radius:999px; background:rgba(77,227,255,.1); border:1px solid rgba(77,227,255,.25);
   font-family:var(--ff-mono); font-size:14px; font-weight:600; color:var(--accent);
 }
+
+/* ── rassegna stampa ─────────────────────────────────── */
+.rassegna{ display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:11px; }
+.news{
+  display:flex; flex-direction:column; gap:9px; padding:15px; text-decoration:none; color:inherit;
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--r-m);
+  transition:background .2s, border-color .2s, transform .2s;
+}
+.news:hover{ background:var(--panel-2); border-color:var(--line-2); transform:translateY(-3px); }
+.news-top{ display:flex; align-items:center; gap:10px; }
+.news-fonte{
+  padding:3px 9px; border-radius:999px; background:rgba(77,227,255,.12);
+  font-size:9.5px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+}
+.news-quando{ font-family:var(--ff-mono); font-size:10.5px; color:var(--ink-3); }
+.news-titolo{ font-size:14px; font-weight:650; line-height:1.42; }
+.news-chi{ display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; }
+.news-tag{
+  font-style:normal; padding:3px 9px; border-radius:999px;
+  border:1px solid var(--line); font-size:11px; color:var(--ink-3);
+}
+.news-tag.news-film{ color:var(--hot); border-color:rgba(255,194,77,.3); }
+.news-tag.news-regista{ color:var(--accent-2); border-color:rgba(183,140,255,.3); }
 
 /* ── barre con locandina ─────────────────────────────── */
 .cbars{ display:flex; flex-direction:column; gap:9px; }

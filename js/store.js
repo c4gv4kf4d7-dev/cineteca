@@ -37,8 +37,16 @@ const Store = (() => {
   /* ── stato per singolo film ──────────────────────────── */
   const blank = () => ({ seen: false, fav: false, myRating: 0, note: '', addedAt: null, seenAt: null });
 
+  /* Valore di partenza del film: quelli dell'archivio nascono già visti.
+     Deve valere anche alla prima modifica, altrimenti mettere una stella
+     a un film visto lo farebbe tornare "da vedere". */
+  function predefinito(id) {
+    const m = catalog.find(x => x.id === id);
+    return { ...blank(), seen: m?.lista === 'visto' };
+  }
+
   function userState(id) {
-    return { ...blank(), ...(state.movies[id] || {}) };
+    return { ...predefinito(id), ...(state.movies[id] || {}) };
   }
 
   function patch(id, changes) {
@@ -83,20 +91,33 @@ const Store = (() => {
     return { enriched: Boolean(data.enrichedAt), enrichedAt: data.enrichedAt || null, source: data.generatedFrom };
   }
 
-  async function init() {
-    load();
-    return refresh();
+  /* Fino alla v2 il valore di partenza "visto" non veniva applicato
+     quando si creava il record: mettere una stella a un film
+     dell'archivio lo faceva tornare "da vedere". Qui li recupero. */
+  function riparaArchivio() {
+    if (state.schema >= 2) return;
+    let riparati = 0;
+    for (const m of catalog) {
+      const r = state.movies[m.id];
+      if (m.lista === 'visto' && r && r.seen === false && !r.seenAt) {
+        r.seen = true;
+        riparati++;
+      }
+    }
+    state.schema = 2;
+    if (riparati) console.info(`Ripristinati ${riparati} film dell'archivio tornati per errore fra i "da vedere".`);
+    save();
   }
 
-  /* film = dati catalogo + stato personale, sempre uniti.
-     I film dell'archivio partono già come visti, ma se li tocchi
-     una volta comanda la tua scelta, non più il valore di partenza. */
-  const all = () => catalog.map(m => {
-    const toccato = Boolean(state.movies[m.id]);
-    const user = userState(m.id);
-    if (!toccato && m.lista === 'visto') user.seen = true;
-    return { ...m, user };
-  });
+  async function init() {
+    load();
+    const info = await refresh();
+    riparaArchivio();
+    return info;
+  }
+
+  /* film = dati catalogo + stato personale, sempre uniti */
+  const all = () => catalog.map(m => ({ ...m, user: userState(m.id) }));
   const byId = id => all().find(m => m.id === id) || null;
 
   const subscribe = fn => { listeners.add(fn); return () => listeners.delete(fn); };

@@ -243,6 +243,7 @@
       meta = info;
       render();
       aggiornaFooter();
+      Novita.render(Store.all());
       setInterval(tickCountdown, 1000);
     })
     .catch(err => {

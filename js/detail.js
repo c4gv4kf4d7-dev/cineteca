@@ -106,10 +106,58 @@ const Detail = (() => {
       </div>`;
   }
 
+  /* ── su un film già visto: dove andare adesso ──────────
+     Propone titoli che NON hai in libreria, agganciandosi
+     al tuo voto. Se l'hai detestato, tacere è meglio che
+     insistere con altri film uguali. */
+  function scoperte(m) {
+    const pool = m.scoperte || [];
+    if (!pool.length) return '';
+
+    const voto = m.user.myRating;
+    if (voto && voto <= 2) return '';
+
+    // Le altre interpretazioni degli attori parlano più dei "film simili".
+    const ordinate = [...pool].sort((a, b) =>
+      (b.tipo === 'attore') - (a.tipo === 'attore') || (b.votanti || 0) - (a.votanti || 0));
+    const scelte = ordinate.slice(0, 3);
+
+    const conAttore = scelte.find(s => s.tipo === 'attore');
+    const titolo = !voto ? 'Visto questo, potresti andare qui'
+      : voto >= 5 ? 'Se lo hai amato'
+      : voto === 4 ? 'Se ti è piaciuto'
+      : 'Restando da queste parti';
+
+    const apertura = voto >= 4 && conAttore
+      ? `Non perderti un'altra interpretazione di <b>${F.esc(conAttore.attore)}</b>.`
+      : voto >= 4
+        ? 'Questi tre gli somigliano, e non ce li hai in libreria.'
+        : 'Tre titoli vicini che non hai ancora in lista.';
+
+    return `<section class="d-section">
+      <h4>${F.esc(titolo)}</h4>
+      <p class="d-scoperte-intro">${apertura}</p>
+      <div class="scoperte">
+        ${scelte.map(s => `
+          <a class="scop" href="https://www.themoviedb.org/movie/${s.tmdbId}"
+             target="_blank" rel="noopener">
+            <span class="scop-ph">${s.poster
+              ? `<img src="${F.profilo(s.poster, 'w185')}" alt="" loading="lazy">` : ''}</span>
+            <span class="scop-body">
+              <b>${F.esc(s.titolo)}</b>
+              <span class="scop-meta">${s.anno || '—'}${s.voto ? ` · ${s.voto.toFixed(1)}` : ''}</span>
+              <span class="scop-perche">${s.tipo === 'attore'
+                ? `con ${F.esc(s.attore)}` : 'stessa famiglia'}</span>
+            </span>
+          </a>`).join('')}
+      </div>
+    </section>`;
+  }
+
   /* Solo per i film che non hai ancora visto: su quelli visti
      il posto del consiglio lo prende il tuo giudizio. */
   function perche(m) {
-    if (m.user.seen) return '';
+    if (m.user.seen) return scoperte(m);
     const p = Consiglia.perche(m, Store.all());
     if (!p) return '';
 
