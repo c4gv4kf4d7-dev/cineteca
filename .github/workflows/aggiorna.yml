@@ -1,0 +1,76 @@
+name: Aggiornamento quotidiano
+
+# GitHub programma in UTC, quindi due appuntamenti: 05:00 UTC copre
+# l'ora legale italiana, 06:00 UTC quella solare. Il primo passo
+# controlla che a Roma siano davvero le 7 e ferma l'altro.
+on:
+  schedule:
+    - cron: '0 5 * * *'
+    - cron: '0 6 * * *'
+  workflow_dispatch:        # per lanciarlo a mano quando serve
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aggiornamento
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    steps:
+      - name: È davvero mattina a Roma?
+        id: ora
+        run: |
+          ORA=$(TZ=Europe/Rome date +%H)
+          echo "A Roma sono le $ORA."
+          if [ "$ORA" = "07" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "procedi=si" >> "$GITHUB_OUTPUT"
+          else
+            echo "procedi=no" >> "$GITHUB_OUTPUT"
+            echo "Non sono le 7: questa esecuzione si ferma qui."
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.ora.outputs.procedi == 'si'
+
+      - uses: actions/setup-node@v4
+        if: steps.ora.outputs.procedi == 'si'
+        with:
+          node-version: '22'
+
+      - name: Arricchisci il catalogo (TMDB + OMDb)
+        if: steps.ora.outputs.procedi == 'si'
+        env:
+          TMDB_KEY: ${{ secrets.TMDB_KEY }}
+          OMDB_KEY: ${{ secrets.OMDB_KEY }}
+        run: node tools/enrich.mjs
+
+      - name: Raccogli la rassegna stampa
+        if: steps.ora.outputs.procedi == 'si'
+        run: node tools/notizie.mjs
+
+      - name: Date ancora senza uscita italiana
+        if: steps.ora.outputs.procedi == 'si'
+        run: node tools/date-da-controllare.mjs
+
+      - name: Pubblica se qualcosa è cambiato
+        if: steps.ora.outputs.procedi == 'si'
+        run: |
+          git config user.name  "Cineteca bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Nessuna novità: niente da pubblicare."
+          else
+            # La versione degli asset cambia solo quando cambiano i dati,
+            # così il service worker dei client si accorge dell'aggiornamento.
+            V=$(date -u +%Y%m%d%H%M)
+            sed -i -E "s/v=[0-9]{8,12}/v=$V/g" index.html
+            sed -i -E "s/cineteca-v[0-9]+/cineteca-v$V/" sw.js
+            git add index.html sw.js
+            git commit -m "Aggiornamento quotidiano: voti, incassi, streaming, notizie"
+            git push
+            echo "Pubblicato."
+          fi
