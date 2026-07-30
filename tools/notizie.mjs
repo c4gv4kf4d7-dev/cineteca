@@ -16,20 +16,19 @@ import { dirname, join } from 'node:path';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
+/* Solo testate italiane: le notizie in inglese non le vuole leggere.
+   Poche e buone — la copertura la dà il numero di articoli, non di siti. */
 const FONTI = [
-  { nome: 'BadTaste',       url: 'https://www.badtaste.it/feed/',              lingua: 'it' },
-  { nome: 'MoviePlayer',    url: 'https://www.movieplayer.it/rss/news.xml',    lingua: 'it' },
-  { nome: 'Everyeye',       url: 'https://cinema.everyeye.it/rss/news.xml',    lingua: 'it' },
-  { nome: 'Ciak',           url: 'https://www.ciakmagazine.it/feed/',          lingua: 'it' },
-  { nome: 'Fumettologica',  url: 'https://fumettologica.it/feed/',             lingua: 'it' },
-  { nome: 'ScreenWeek',     url: 'https://www.screenweek.it/feed',             lingua: 'it' },
-  { nome: 'Cinefilos',      url: 'https://www.cinefilos.it/feed',              lingua: 'it' },
-  { nome: 'La Scimmia',     url: 'https://www.lascimmiapensa.com/feed/',       lingua: 'it' },
-  { nome: 'Variety',        url: 'https://variety.com/v/film/feed/',           lingua: 'en' },
-  { nome: 'Deadline',       url: 'https://deadline.com/v/film/feed/',          lingua: 'en' },
-  { nome: 'IndieWire',      url: 'https://www.indiewire.com/feed/',            lingua: 'en' },
-  { nome: 'THR',            url: 'https://www.hollywoodreporter.com/c/movies/feed/', lingua: 'en' }
+  { nome: 'BadTaste',       url: 'https://www.badtaste.it/feed/' },
+  { nome: 'MoviePlayer',    url: 'https://www.movieplayer.it/rss/news.xml' },
+  { nome: 'ScreenWeek',     url: 'https://www.screenweek.it/feed' },
+  { nome: 'Everyeye',       url: 'https://cinema.everyeye.it/rss/news.xml' },
+  { nome: 'Cinefilos',      url: 'https://www.cinefilos.it/feed' },
+  { nome: 'Fumettologica',  url: 'https://fumettologica.it/feed/' }
 ];
+
+const MAX_SOGGETTI = 10;   // quanti temi mostrare, oltre ai 3 in evidenza
+const MAX_PER_SOGGETTO = 3;
 
 const GIORNI = 21;      // oltre, un articolo non è più notizia
 const MEMORIA = 30;     // per quanto conservo l'archivio accumulato
@@ -132,9 +131,29 @@ function alias(titolo) {
   return [...varianti].filter(v => v.length >= 5);
 }
 
-function entita(movies) {
-  const e = new Map();
+/* Chi vale la pena sorvegliare, e con quanta larghezza.
 
+   Il difetto della versione precedente era proprio qui: teneva
+   d'occhio ogni attore di ogni film, quindi qualunque articolo che
+   nominasse un attore qualsiasi entrava. Risultato: pettegolezzi,
+   reality, film che non c'entrano nulla.
+
+   Ora la soglia è netta:
+   · i FILM in libreria: sempre
+   · i REGISTI: solo se ne hai visti almeno due
+   · gli ATTORI: solo i ricorrenti, almeno tre film                */
+function entita(movies) {
+  const visti = movies.filter(m => m.lista === 'visto');
+
+  const conteggio = (lista, chiave) => {
+    const c = new Map();
+    for (const m of lista) for (const k of chiave(m)) if (k) c.set(k, (c.get(k) || 0) + 1);
+    return c;
+  };
+  const registiVisti = conteggio(visti, m => [m.director]);
+  const attoriVisti  = conteggio(visti, m => (m.castDetail || []).slice(0, 6).map(c => c.name));
+
+  const e = new Map();
   const aggiungi = (nome, tipo, film, varianti = null) => {
     if (!nome || nome.length < 5) return;
     const k = normalizza(nome);
@@ -143,7 +162,6 @@ function entita(movies) {
     const v = e.get(k);
     v.film.add(film.title);
     for (const a of varianti || []) v.alias.add(a);
-    // Chi gravita attorno a questo titolo: serve a disambiguare più sotto.
     if (tipo === 'film') {
       if (film.director) v.compagni.add(normalizza(film.director));
       for (const c of (film.castDetail || []).slice(0, 8)) v.compagni.add(normalizza(c.name));
@@ -154,9 +172,13 @@ function entita(movies) {
     aggiungi(m.title, 'film', m, alias(m.title));
     if (m.originalTitle && m.originalTitle !== m.title)
       aggiungi(m.originalTitle, 'film', m, alias(m.originalTitle));
-    aggiungi(m.director, 'regista', m);
-    for (const c of (m.castDetail || []).slice(0, 8)) aggiungi(c.name, 'attore', m);
+    if (m.director && (registiVisti.get(m.director) || 0) >= 2) aggiungi(m.director, 'regista', m);
+    for (const c of (m.castDetail || []).slice(0, 6))
+      if ((attoriVisti.get(c.name) || 0) >= 3) aggiungi(c.name, 'attore', m);
   }
+
+  console.log(`  registi sorvegliati: ${[...e.values()].filter(v => v.tipo === 'regista').map(v => v.nome).join(', ') || '—'}`);
+  console.log(`  attori sorvegliati:  ${[...e.values()].filter(v => v.tipo === 'attore').map(v => v.nome).join(', ') || '—'}`);
   return e;
 }
 
@@ -220,11 +242,20 @@ for (const a of articoli) {
   const parolaPesante = PESANTI.some(p => soloTitolo.includes(p));
   const parlaDiPrevendite = SPIE_PREVENDITA.some(p => testo.includes(p));
 
+  /* Un articolo entra solo se il soggetto è nel TITOLO: se il tuo film
+     è nominato di sfuggita a metà sommario, non è una notizia su di lui. */
+  if (!inTitolo.length) continue;
+
+  // Il soggetto è il film citato nel titolo; se non c'è, la persona.
+  const principale = inTitolo.find(c => c.tipo === 'film') || inTitolo[0];
+
   notizie.push({
     ...a,
-    citati: citati.map(c => ({ nome: c.nome, tipo: c.tipo, film: [...c.film] })),
-    rilievo: inTitolo.length * 3 + citati.length + (parolaPesante ? 4 : 0) + (parlaDiPrevendite ? 6 : 0),
-    servizio: parolaPesante && inTitolo.length > 0,
+    soggetto: principale.nome,
+    soggettoTipo: principale.tipo,
+    citati: inTitolo.map(c => ({ nome: c.nome, tipo: c.tipo })),
+    rilievo: (principale.tipo === 'film' ? 6 : 2) + inTitolo.length
+      + (parolaPesante ? 4 : 0) + (parlaDiPrevendite ? 6 : 0),
     prevendite: parlaDiPrevendite,
     vistoIl: new Date().toISOString()
   });
@@ -238,6 +269,10 @@ try {
   const vecchio = JSON.parse(await readFile(join(ROOT, 'data', 'notizie.json'), 'utf8'));
   archivio = vecchio.notizie || [];
 } catch { /* prima esecuzione */ }
+
+// Le testate rimosse dall'elenco non devono sopravvivere nell'archivio.
+const attive = new Set(FONTI.map(f => f.nome));
+archivio = archivio.filter(n => attive.has(n.fonte) && n.soggetto);
 
 const perLink = new Map(archivio.map(n => [n.link, n]));
 let inedite = 0;
@@ -275,7 +310,28 @@ const evidenza = tutte
 const inEvidenza = new Set(evidenza.map(n => n.link));
 for (const n of tutte) n.evidenza = inEvidenza.has(n.link);
 
-const finali = tutte.slice(0, 80);
+/* Raggruppo per soggetto e taglio: dieci temi, poche notizie ciascuno.
+   Otto pezzi su Spider-Man sono un tema solo, non otto notizie. */
+const perSoggetto = new Map();
+for (const n of tutte) {
+  if (n.evidenza) continue;                       // le ancorate stanno per conto loro
+  if (!perSoggetto.has(n.soggetto)) perSoggetto.set(n.soggetto, []);
+  perSoggetto.get(n.soggetto).push(n);
+}
+
+const gruppi = [...perSoggetto.entries()]
+  .map(([soggetto, voci]) => ({
+    soggetto,
+    tipo: voci[0].soggettoTipo,
+    quante: voci.length,
+    // Il pezzo più rilevante apre il gruppo, poi i più recenti.
+    voci: [voci.sort((a, b) => b.rilievo - a.rilievo)[0],
+           ...voci.slice(1).sort((a, b) => eta(b) - eta(a))].slice(0, MAX_PER_SOGGETTO)
+  }))
+  .sort((a, b) => eta(b.voci[0]) - eta(a.voci[0]))
+  .slice(0, MAX_SOGGETTI);
+
+const finali = [...evidenza, ...gruppi.flatMap(g => g.voci)];
 
 /* ── segnalazioni di prevendita ──────────────────────────
    Nessuna API le espone: le annunciano le testate. Qui isolo
@@ -303,10 +359,13 @@ await writeFile(join(ROOT, 'data', 'notizie.json'),
     aggiornato: new Date().toISOString(),
     fonti: FONTI.map(f => f.nome),
     segnalazioniPrevendita: segnalazioni,
+    evidenza: evidenza.map(n => n.link),
+    gruppi: gruppi.map(g => ({ soggetto: g.soggetto, tipo: g.tipo, quante: g.quante,
+                               link: g.voci.map(v => v.link) })),
     notizie: finali
   }, null, 2) + '\n');
 
-console.log(`\n✅ data/notizie.json — ${finali.length} in archivio (${inedite} nuove) su ${articoli.length} articoli letti.`);
+console.log(`\n✅ data/notizie.json — ${finali.length} notizie in ${gruppi.length} temi + ${evidenza.length} in evidenza, su ${articoli.length} articoli letti.`);
 if (segnalazioni.length) {
   console.log('\n🎫 POSSIBILI PREVENDITE — da verificare e registrare a mano:');
   segnalazioni.forEach(s =>

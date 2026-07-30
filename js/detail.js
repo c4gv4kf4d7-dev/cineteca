@@ -88,15 +88,21 @@ const Detail = (() => {
             <svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
             ${u.seen ? 'Visto' : 'Segna come visto'}
           </button>
-          <button class="btn btn-ghost" data-act="fav">
-            <svg viewBox="0 0 24 24" ${u.fav ? 'fill="currentColor"' : ''}><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 8a4 4 0 0 1 7-2.6c0 5-7 9.4-7 9.4z"/></svg>
-            ${u.fav ? 'Nei preferiti' : 'Aggiungi ai preferiti'}
-          </button>
-          <button class="btn btn-ghost${u.rewatch ? ' btn-rewatch' : ''}" data-act="rewatch">
+          <button class="btn${u.rewatch ? ' btn-rewatch' : ' btn-ghost'}" data-act="rewatch">
             <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg>
             ${u.rewatch ? 'Da rivedere' : 'Voglio rivederlo'}
           </button>
         </div>
+
+        <section class="d-section d-voto">
+          <h4>Il mio voto</h4>
+          <div class="rate" data-act="rate">
+            ${[1,2,3,4,5].map(n =>
+              `<button class="star${n <= u.myRating ? ' is-on' : ''}" data-star="${n}"
+                       aria-label="${n} stelle">★</button>`).join('')}
+            ${u.myRating ? `<button class="rate-clear" data-star="0">azzera</button>` : ''}
+          </div>
+        </section>
 
         ${perche(m)}
 
@@ -115,20 +121,6 @@ const Detail = (() => {
         ${statsBlock(m)}
         ${castBlock(m)}
 
-        <section class="d-section">
-          <h4>Il mio voto</h4>
-          <div class="rate" data-act="rate">
-            ${[1,2,3,4,5].map(n =>
-              `<button class="star${n <= u.myRating ? ' is-on' : ''}" data-star="${n}"
-                       aria-label="${n} stelle">★</button>`).join('')}
-            ${u.myRating ? `<button class="rate-clear" data-star="0">azzera</button>` : ''}
-          </div>
-        </section>
-
-        <section class="d-section">
-          <h4>Note personali</h4>
-          <textarea class="note" data-act="note" placeholder="Con chi lo vuoi vedere, in che sala, cosa ti aspetti…">${F.esc(u.note)}</textarea>
-        </section>
       </div>`;
   }
 
@@ -257,13 +249,7 @@ const Detail = (() => {
     const btn = e.target.closest('[data-act]');
     if (!btn) return;
     if (btn.dataset.act === 'seen')    { Store.toggleSeen(currentId);    render(); }
-    if (btn.dataset.act === 'fav')     { Store.toggleFav(currentId);     render(); }
     if (btn.dataset.act === 'rewatch') { Store.toggleRewatch(currentId); render(); }
-  });
-
-  /* Le note si salvano da sole quando esci dal campo. */
-  sheet.addEventListener('change', e => {
-    if (e.target.matches('[data-act="note"]')) Store.setNote(currentId, e.target.value.trim());
   });
 
   return { open, close, isOpen };

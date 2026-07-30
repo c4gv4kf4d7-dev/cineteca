@@ -8,17 +8,6 @@
 const PerTe = (() => {
   const root = document.getElementById('perte');
 
-  let notizie = null;   // caricate una volta sola, alla prima apertura
-
-  async function caricaNotizie() {
-    if (notizie !== null) return notizie;
-    try {
-      const res = await fetch(`data/notizie.json?t=${Date.now()}`);
-      notizie = res.ok ? await res.json() : { notizie: [] };
-    } catch { notizie = { notizie: [] }; }
-    return notizie;
-  }
-
   function render() {
     try { disegna(); }
     catch (err) {
@@ -37,24 +26,10 @@ const PerTe = (() => {
       return;
     }
 
-    // Al cinema conta solo ciò che è raggiungibile a breve: proporre
-    // un film fra cinque mesi non è un consiglio, è un promemoria.
-    const inSalaPresto = Consiglia.classifica(tutti, { lista: 'cinema', quanti: 40 }).voci
-      .filter(v => { const g = F.giorniA(v.film.releaseDate); return g != null && g <= 45; })
-      .slice(0, 4);
-
     root.innerHTML = ritratto(esito.profilo, esito.visti)
-      + coda('Tra poco al cinema', inSalaPresto, tutti)
       + coda('Se stasera resti sul divano', Consiglia.classifica(tutti, { lista: 'casa', quanti: 3 }).voci, tutti)
       + daRivedere(tutti)
-      + affinita(tutti)
-      + '<div id="rassegna"></div>';
-
-    // La rassegna arriva da un file a parte: la innesto quando è pronta.
-    caricaNotizie().then(n => {
-      const box = document.getElementById('rassegna');
-      if (box) box.innerHTML = rassegna(n);
-    });
+      + affinita(tutti);
   }
 
   /* ── i film che aspetti di rivedere ──────────────────── */
@@ -88,92 +63,6 @@ const PerTe = (() => {
         ? `<b>${disponibili.length}</b> ${disponibili.length === 1 ? 'è già disponibile' : 'sono già disponibili'} in streaming.`
         : 'Nessuno è ancora arrivato in streaming.'}
       ${attesa.length ? `Ti avviso qui appena ${attesa.length === 1 ? 'sbarca' : 'sbarcano'} da qualche parte.` : ''}</p>
-    </section>`;
-  }
-
-  /* ── si parla di loro ────────────────────────────────── */
-  const LETTE = 'cineteca:notizie-lette';
-
-  const giaLette = () => {
-    try { return new Set(JSON.parse(localStorage.getItem(LETTE)) || []); }
-    catch { return new Set(); }
-  };
-
-  const segnaLette = links => {
-    try { localStorage.setItem(LETTE, JSON.stringify([...links].slice(-300))); } catch { /* pazienza */ }
-  };
-
-  function rassegna(dati) {
-    const tutte = dati?.notizie || [];
-    if (!tutte.length) return '';
-
-    const lette = giaLette();
-    const quando = iso => {
-      if (!iso) return '';
-      const g = Math.round((Date.now() - new Date(iso)) / 86400000);
-      return g <= 0 ? 'oggi' : g === 1 ? 'ieri' : `${g} giorni fa`;
-    };
-
-    const ancorate = tutte.filter(n => n.evidenza);
-
-    /* Raggruppo per soggetto: leggere sei pezzi su Odissea sparsi fra
-       gli altri è faticoso, vicini raccontano una storia sola.
-       I gruppi restano in ordine cronologico, dal più fresco. */
-    const quando_ms = n => new Date(n.data || n.vistoIl).getTime();
-    const soggetto = n => {
-      const film = n.citati.find(c => c.tipo === 'film');
-      return film ? film.nome : (n.citati[0]?.nome || 'Varie');
-    };
-
-    const gruppi = new Map();
-    for (const n of [...tutte].sort((a, b) => quando_ms(b) - quando_ms(a))) {
-      const k = soggetto(n);
-      if (!gruppi.has(k)) gruppi.set(k, []);
-      gruppi.get(k).push(n);
-    }
-
-    const ordinati = [...gruppi.entries()]
-      .sort((a, b) => quando_ms(b[1][0]) - quando_ms(a[1][0]));
-
-    const scheda = n => `
-      <a class="news${n.evidenza ? ' news-evidenza' : ''}${lette.has(n.link) ? '' : ' news-nuova'}"
-         href="${F.esc(n.link)}" target="_blank" rel="noopener">
-        <span class="news-top">
-          ${n.evidenza ? '<span class="news-pin">★ da non perdere</span>' : ''}
-          <span class="news-fonte">${F.esc(n.fonte)}</span>
-          <span class="news-quando">${F.esc(quando(n.data))}</span>
-        </span>
-        <b class="news-titolo">${F.esc(n.titolo)}</b>
-        <span class="news-chi">
-          ${n.citati.slice(0, 3).map(c =>
-            `<i class="news-tag news-${c.tipo}">${F.esc(c.nome)}</i>`).join('')}
-        </span>
-      </a>`;
-
-    // Aprire la sezione conta come lettura: la prossima volta non sono più "nuove".
-    setTimeout(() => segnaLette(new Set([...lette, ...tutte.map(n => n.link)])), 2500);
-
-    return `${ancorate.length ? `<section class="s-block">
-      <h3>Da non perdere questa settimana</h3>
-      <div class="rassegna">${ancorate.map(scheda).join('')}</div>
-      <p class="nota">Le tre notizie più importanti degli ultimi sette giorni restano qui
-      finché non invecchiano, anche se non apri l'app per qualche giorno.</p>
-    </section>` : ''}
-
-    <section class="s-block">
-      <h3>Si parla di loro</h3>
-      ${ordinati.map(([tema, voci]) => `
-        <div class="tema">
-          <h4 class="tema-titolo">
-            ${F.esc(tema)}
-            ${voci.length > 1 ? `<span class="tema-n">${voci.length} notizie</span>` : ''}
-          </h4>
-          <div class="rassegna">${voci.map(scheda).join('')}</div>
-        </div>`).join('')}
-      <p class="nota">Da ${F.esc((dati.fonti || []).join(', '))}.
-      Tengo solo gli articoli che nominano un film, un regista o un attore che hai in libreria,
-      raggruppati per soggetto e dal più recente. Archivio di ${tutte.length} notizie,
-      aggiornato ${F.esc(quando(dati.aggiornato))}.</p>
     </section>`;
   }
 

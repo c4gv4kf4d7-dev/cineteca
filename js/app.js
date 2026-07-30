@@ -85,10 +85,9 @@
           ? `<img src="${img}" alt="Locandina di ${F.esc(m.title)}" loading="lazy">`
           : `<span class="poster-fallback"><b>${F.esc(m.title)}</b><span>${F.esc(F.dataBreve(m.releaseDate))}</span></span>`}
         <span class="poster-top">
-          ${m.user.seen
-            ? `<span class="badge badge-seen">VISTO</span>${
-                m.user.rewatch ? '<span class="badge badge-rewatch">↻ DA RIVEDERE</span>' : ''}`
-            : '<span></span>'}
+          ${m.user.rewatch
+            ? '<span class="badge badge-rewatch">↻ DA RIVEDERE</span>'
+            : m.user.seen ? '<span class="badge badge-seen">VISTO</span>' : '<span></span>'}
           ${voto ? `<span class="badge ${voto.cls}">${F.esc(voto.testo)}</span>` : ''}
         </span>
         ${prev ? `<span class="poster-prev">
@@ -99,10 +98,6 @@
           <span class="badge ${uscita.live ? 'badge-live' : uscita.hot ? 'badge-hot' : 'badge-soon'}">${
             uscita.live ? '<i class="live-dot"></i>' : ''}${F.esc(uscita.testo)}</span>
         </span>
-      </button>
-      <button class="fav${m.user.fav ? ' is-on' : ''}" data-fav="${F.esc(m.id)}"
-              aria-label="${m.user.fav ? 'Togli dai' : 'Aggiungi ai'} preferiti">
-        <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 8a4 4 0 0 1 7-2.6c0 5-7 9.4-7 9.4z"/></svg>
       </button>
       <div class="card-meta">
         <h3>${F.esc(m.title)}</h3>
@@ -189,9 +184,6 @@
     const open = e.target.closest('[data-open]');
     if (open) return Detail.open(open.dataset.open);
 
-    const fav = e.target.closest('[data-fav]');
-    if (fav) { Store.toggleFav(fav.dataset.fav); return; }
-
     const status = e.target.closest('[data-status]');
     if (status) { filtro.status = status.dataset.status; syncChips('#filter-status', 'status'); return render(); }
 
@@ -205,6 +197,7 @@
         v.classList.toggle('is-active', v.id === `view-${tab.dataset.view}`));
       if (tab.dataset.view === 'stats') Stats.render();
       if (tab.dataset.view === 'perte') PerTe.render();
+      if (tab.dataset.view === 'notizie') Notizie.render();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   });
