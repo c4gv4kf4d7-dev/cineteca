@@ -35,8 +35,12 @@ const Detail = (() => {
     const u = m.user;
 
     const bd = F.backdrop(m) || F.poster(m, 'w780');
+    const dataNonIT = m.releaseFonte === 'US' || m.releaseFonte === 'globale';
+
     const fatti = [
       m.releaseDate && { t: F.dataLunga(m.releaseDate), accent: true },
+      dataNonIT && { t: m.releaseFonte === 'US' ? 'data USA, non confermata in Italia'
+                                                : 'data internazionale, non confermata in Italia', avviso: true },
       { t: F.attesa(m.releaseDate) },
       F.durata(m.runtime) && { t: F.durata(m.runtime) },
       ...m.genres.map(g => ({ t: g })),
@@ -53,7 +57,8 @@ const Detail = (() => {
           ${m.originalTitle && m.originalTitle !== m.title
             ? `<p class="d-orig">${F.esc(m.originalTitle)}</p>` : ''}
           <div class="d-facts">
-            ${fatti.map(f => `<span class="fact${f.accent ? ' fact-accent' : ''}">${F.esc(f.t)}</span>`).join('')}
+            ${fatti.map(f => `<span class="fact${f.accent ? ' fact-accent' : ''}${
+              f.avviso ? ' fact-avviso' : ''}">${f.avviso ? '⚠ ' : ''}${F.esc(f.t)}</span>`).join('')}
           </div>
         </div>
       </div>

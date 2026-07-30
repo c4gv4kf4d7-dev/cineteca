@@ -32,7 +32,9 @@
       "metascore": 53,
       "imdbRating": 5.5,
       "imdbVotes": 7157,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-04-30",
+      "releaseUS": "2026-05-01",
       "streaming": [],
       "poster": "/ejYdwL5CAtekoZ3zV4hYRAQUmgN.jpg",
       "backdrop": "/szKv713FcUXx6hcfdY369vtkmzr.jpg",
@@ -278,7 +280,9 @@
       "metascore": 76,
       "imdbRating": 7.3,
       "imdbVotes": 16522,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-04-29",
+      "releaseUS": "2026-05-01",
       "streaming": [],
       "poster": "/nhF54SQmeaMUODgRKEuMMJoTysT.jpg",
       "backdrop": "/asD57THSyXt4SC7SwVpe4R0xjRC.jpg",
@@ -479,7 +483,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-08-12",
+      "releaseUS": "2026-08-14",
       "streaming": [],
       "poster": "/3sBzqJcVjl4VKb9ULS569IIiUwu.jpg",
       "backdrop": "/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
@@ -713,7 +719,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-08-19",
+      "releaseUS": "2026-08-21",
       "streaming": [],
       "poster": "/eszahdPOeElmK3DSNXW44Qb0aNh.jpg",
       "backdrop": "/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
@@ -875,7 +883,9 @@
       "lista": "cinema",
       "tmdbId": 1677927,
       "imdbId": null,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-06-13",
+      "releaseUS": null,
       "streaming": [],
       "poster": "/szWNSL9PfUtGPDODYp0hgBVr45a.jpg",
       "backdrop": "/9Dygx7zaog5DJbGtnAak6ixZQaf.jpg",
@@ -1023,7 +1033,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-08-26",
+      "releaseUS": "2026-08-28",
       "streaming": [],
       "poster": "/2QUzsotrBTMF78xwmePCTX7EqpX.jpg",
       "backdrop": "/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
@@ -1244,7 +1256,9 @@
       "metascore": 73,
       "imdbRating": 7.6,
       "imdbVotes": 300921,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2016-07-20",
+      "releaseUS": "2016-07-22",
       "streaming": [],
       "poster": "/oekUlBFR85PejJK3z5jWyy3KyCG.jpg",
       "backdrop": "/brnfCYyz8EMbBrHgmh8sCwBi5i1.jpg",
@@ -1449,7 +1463,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-09-16",
+      "releaseUS": "2026-09-18",
       "streaming": [],
       "poster": "/zP83bIkBViw5b1s9bDemYJ3AAgX.jpg",
       "backdrop": "/ddfXMkaPViSrg0P5aoYGFMc58x2.jpg",
@@ -1647,7 +1663,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-10-08",
+      "releaseUS": "2026-10-09",
       "streaming": [],
       "poster": "/ir1esRZZk49yKaLAVQd2FgvLxLf.jpg",
       "backdrop": "/wpx3J1ZuIZgWc9rzdfcj7fDru58.jpg",
@@ -1882,7 +1900,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "manuale",
       "releaseGlobale": "2026-12-16",
+      "releaseUS": "2026-12-18",
       "streaming": [],
       "poster": "/qgIxezW3yRGmVFnk3gsQaM35Qjx.jpg",
       "backdrop": "/bU206dN0ucfOFRK17OXabkdHKFC.jpg",
@@ -2119,7 +2139,9 @@
       "metascore": 84,
       "imdbRating": 7.8,
       "imdbVotes": 109507,
+      "releaseFonte": "IT",
       "releaseGlobale": "2025-11-26",
+      "releaseUS": "2025-12-05",
       "streaming": [],
       "poster": "/ro2a5k5dx8RWXGY0TmhqxTAffaI.jpg",
       "backdrop": "/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg",
@@ -2364,7 +2386,9 @@
       "metascore": 63,
       "imdbRating": 6.5,
       "imdbVotes": 73728,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-04-29",
+      "releaseUS": "2026-05-01",
       "streaming": [],
       "poster": "/xASsfTW9eBs0PT6d6YbvJ6e5jxH.jpg",
       "backdrop": "/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
@@ -2601,7 +2625,9 @@
       "metascore": 77,
       "imdbRating": 8,
       "imdbVotes": 176988,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-05-13",
+      "releaseUS": "2026-05-15",
       "streaming": [],
       "poster": "/KUzJSsW6pFy1Dbw7rp1PKrzvfL.jpg",
       "backdrop": "/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
@@ -2798,7 +2824,9 @@
       "metascore": 77,
       "imdbRating": 7,
       "imdbVotes": 100148,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-05-27",
+      "releaseUS": "2026-05-29",
       "streaming": [],
       "poster": "/mene1ewQ03sW3aievfnaCyEZD8t.jpg",
       "backdrop": "/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
@@ -3033,7 +3061,9 @@
       "metascore": 74,
       "imdbRating": 6.7,
       "imdbVotes": 77197,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-06-10",
+      "releaseUS": "2026-06-12",
       "streaming": [],
       "poster": "/2HfLCkrCc7mnT15lp8tfZag1a9L.jpg",
       "backdrop": "/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
@@ -3280,7 +3310,9 @@
       "metascore": 89,
       "imdbRating": 8.3,
       "imdbVotes": 67786,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-07-15",
+      "releaseUS": "2026-07-17",
       "streaming": [],
       "poster": "/qQhInj9fw3S2bMbiEujVldthgKe.jpg",
       "backdrop": "/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
@@ -3524,7 +3556,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-07-07",
+      "releaseUS": "2026-07-10",
       "streaming": [],
       "poster": "/kLxEGoygDHbOvxJIclXZbieoX45.jpg",
       "backdrop": "/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
@@ -3759,7 +3793,9 @@
       "metascore": 77,
       "imdbRating": 8.2,
       "imdbVotes": 433769,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-03-15",
+      "releaseUS": "2026-03-20",
       "streaming": [
         "Amazon Prime Video",
         "MGM Plus Amazon Channel",
@@ -3999,7 +4035,9 @@
       "metascore": 55,
       "imdbRating": 6.2,
       "imdbVotes": 57394,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-02-11",
+      "releaseUS": "2026-02-13",
       "streaming": [
         "HBO Max Amazon Channel",
         "HBO Max"
@@ -4247,7 +4285,9 @@
       "metascore": 89,
       "imdbRating": 7.7,
       "imdbVotes": 164546,
+      "releaseFonte": "IT",
       "releaseGlobale": "2025-12-19",
+      "releaseUS": "2025-12-25",
       "streaming": [
         "iWonder Full Amazon channel",
         "HBO Max Amazon Channel",
@@ -4501,7 +4541,9 @@
       "metascore": 34,
       "imdbRating": 4,
       "imdbVotes": 17409,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-01-21",
+      "releaseUS": "2026-01-23",
       "streaming": [
         "MIDNIGHT FACTORY Amazon Channel"
       ],
@@ -4719,7 +4761,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "globale",
       "releaseGlobale": "2026-09-02",
+      "releaseUS": null,
       "streaming": [],
       "poster": "/hMhQBN3fyGtR3zlO8GntrpYzrKp.jpg",
       "backdrop": "/1BfOqbDhvtmAv7SwyobM5eTjQMm.jpg",
@@ -4861,7 +4905,9 @@
       "metascore": 73,
       "imdbRating": 7.5,
       "imdbVotes": 40356,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-06-17",
+      "releaseUS": "2026-06-19",
       "streaming": [],
       "poster": "/i7eQGriXCmNpScSVzepNHn9nMPM.jpg",
       "backdrop": "/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
@@ -4882,21 +4928,21 @@
           "tipo": "simile"
         },
         {
-          "tmdbId": 499088,
-          "titolo": "L'ape Maia - Le Olimpiadi di miele",
-          "poster": "/kFQgJLzAC5RPJJqIRYEpK1rSEhK.jpg",
-          "anno": 2018,
-          "voto": 6.609,
-          "votanti": 69,
-          "tipo": "simile"
-        },
-        {
           "tmdbId": 25475,
           "titolo": "Trilli e il tesoro perduto",
           "poster": "/9oemCBs0xvtxWL8VfH2DxvsVhg3.jpg",
           "anno": 2009,
           "voto": 6.847,
           "votanti": 1129,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 499088,
+          "titolo": "L'ape Maia - Le Olimpiadi di miele",
+          "poster": "/kFQgJLzAC5RPJJqIRYEpK1rSEhK.jpg",
+          "anno": 2018,
+          "voto": 6.609,
+          "votanti": 69,
           "tipo": "simile"
         },
         {
@@ -4914,7 +4960,7 @@
           "poster": "/vpf4HPCNSzwqWgbzlWXZPnpzmiI.jpg",
           "anno": 2012,
           "voto": 6.645,
-          "votanti": 6639,
+          "votanti": 6640,
           "tipo": "simile"
         },
         {
@@ -4922,8 +4968,8 @@
           "titolo": "Toy Story 2 - Woody & Buzz alla riscossa",
           "poster": "/lHloXovbVaQ1tbOB1UaVQm6GgXo.jpg",
           "anno": 1999,
-          "voto": 7.6,
-          "votanti": 15130,
+          "voto": 7.618,
+          "votanti": 15131,
           "tipo": "simile"
         },
         {
@@ -5096,7 +5142,9 @@
       "metascore": 39,
       "imdbRating": 7.5,
       "imdbVotes": 144205,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-04-22",
+      "releaseUS": "2026-04-24",
       "streaming": [],
       "poster": "/xUjMqG7GH6md8qX5e3MyLAzAYSZ.jpg",
       "backdrop": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
@@ -5312,7 +5360,9 @@
       "metascore": null,
       "imdbRating": 6.4,
       "imdbVotes": 2705,
+      "releaseFonte": "IT",
       "releaseGlobale": "2025-12-25",
+      "releaseUS": null,
       "streaming": [
         "Netflix"
       ],
@@ -5500,7 +5550,9 @@
       "metascore": 61,
       "imdbRating": 7.2,
       "imdbVotes": 191187,
+      "releaseFonte": "IT",
       "releaseGlobale": "2025-12-17",
+      "releaseUS": "2025-12-19",
       "streaming": [
         "Disney Plus"
       ],
@@ -5732,7 +5784,9 @@
       "metascore": 73,
       "imdbRating": 7.3,
       "imdbVotes": 141989,
+      "releaseFonte": "IT",
       "releaseGlobale": "2025-11-26",
+      "releaseUS": "2025-11-26",
       "streaming": [],
       "poster": "/lVesXbaSnCh0e27punAv4ZKWkxk.jpg",
       "backdrop": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
@@ -5959,7 +6013,9 @@
       "metascore": 59,
       "imdbRating": 7.2,
       "imdbVotes": 81611,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-04-01",
+      "releaseUS": "2026-04-03",
       "streaming": [],
       "poster": "/3zdr031LjTG71QyeC7mWdyU19bE.jpg",
       "backdrop": "/gQxnJoswBzsENExzygVnFiemvK7.jpg",
@@ -6203,7 +6259,9 @@
       "metascore": 38,
       "imdbRating": 5.2,
       "imdbVotes": 30613,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-06-03",
+      "releaseUS": "2026-06-05",
       "streaming": [],
       "poster": "/AaTg95kewgcTNyGYxm3VmH3RSj5.jpg",
       "backdrop": "/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
@@ -6414,7 +6472,9 @@
       "metascore": 37,
       "imdbRating": 6.3,
       "imdbVotes": 55972,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-04-01",
+      "releaseUS": "2026-04-01",
       "streaming": [],
       "poster": "/3OfIG4QIEkumrWQXrcCq8bUlv01.jpg",
       "backdrop": "/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
@@ -6662,7 +6722,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": 13,
+      "releaseFonte": "IT",
       "releaseGlobale": "2025-09-19",
+      "releaseUS": null,
       "streaming": [],
       "poster": "/bl96nTxJhqadBkUXKkgcSU5AxRG.jpg",
       "backdrop": "/fnuJV4WwxGM8w784lGV7j32JVsG.jpg",
@@ -6851,7 +6913,9 @@
       "metascore": 60,
       "imdbRating": 4,
       "imdbVotes": 563,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-04-16",
+      "releaseUS": "2026-04-17",
       "streaming": [],
       "poster": "/GKGvadeAmAkkY2MHLzYDUP685R.jpg",
       "backdrop": "/pRrH098VPYiUtDwKOm2mVXVQZdf.jpg",
@@ -7099,7 +7163,9 @@
       "metascore": 73,
       "imdbRating": 7.4,
       "imdbVotes": 37622,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-03-04",
+      "releaseUS": "2026-03-06",
       "streaming": [
         "Disney Plus"
       ],
@@ -7335,7 +7401,9 @@
       "metascore": null,
       "imdbRating": null,
       "imdbVotes": null,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-03-19",
+      "releaseUS": null,
       "streaming": [],
       "poster": "/akMWdGoPmiBNBTCX3WpMLr8q2u3.jpg",
       "backdrop": "/wOkBd4oxrMjjrVczY0ycyH6FWr7.jpg",
@@ -7531,7 +7599,9 @@
       "metascore": 35,
       "imdbRating": 5.5,
       "imdbVotes": 50291,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-02-25",
+      "releaseUS": "2026-02-27",
       "streaming": [],
       "poster": "/3b10Tv8RvLf2RmVK9zJ01ewSTVh.jpg",
       "backdrop": "/3eUyLEF5M0ky3h6KJsWiWzaakB8.jpg",
@@ -7738,7 +7808,9 @@
       "metascore": 64,
       "imdbRating": 7.6,
       "imdbVotes": 50994,
+      "releaseFonte": "IT",
       "releaseGlobale": "2025-11-20",
+      "releaseUS": "2025-11-21",
       "streaming": [
         "Disney Plus"
       ],
@@ -7977,7 +8049,9 @@
       "metascore": 49,
       "imdbRating": 5.2,
       "imdbVotes": 26853,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-01-07",
+      "releaseUS": "2026-01-09",
       "streaming": [
         "Sky Go"
       ],
@@ -8225,7 +8299,9 @@
       "metascore": 75,
       "imdbRating": 6.9,
       "imdbVotes": 71618,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-01-22",
+      "releaseUS": "2026-01-30",
       "streaming": [
         "Disney Plus"
       ],
@@ -8473,7 +8549,9 @@
       "metascore": 34,
       "imdbRating": 6.2,
       "imdbVotes": 56372,
+      "releaseFonte": "IT",
       "releaseGlobale": "2026-01-19",
+      "releaseUS": "2026-01-23",
       "streaming": [
         "Amazon Prime Video",
         "MGM Plus Amazon Channel",
@@ -8683,7 +8761,960 @@
           "profile": "/wTDm4zmREXxDK1QVh5vl13OqabU.jpg"
         }
       ]
+    },
+    {
+      "id": "tmdb-1329016",
+      "tmdbId": 1329016,
+      "title": "Tony - Diario di un giovane cuoco",
+      "originalTitle": null,
+      "release": "2026-08-27",
+      "director": "Matt Johnson",
+      "genres": [
+        "Dramma",
+        "Commedia"
+      ],
+      "countries": [
+        "USA",
+        "Canada"
+      ],
+      "runtime": 106,
+      "trailer": "https://www.youtube.com/watch?v=YOspkwoNT50",
+      "cast": [
+        "Dominic Sessa",
+        "Antonio Banderas",
+        "Emilia Jones",
+        "Leo Woodall",
+        "Stavros Halkias",
+        "Michael Jibrin",
+        "Monica Raymund",
+        "Rich Sommer",
+        "Dagmara Dominczyk",
+        "Liam Fitch",
+        "Caroline Portu",
+        "Joe Burns"
+      ],
+      "plot": "Quando il diciannovenne Anthony Bourdain arriva a Provincetown, finisce per ritrovarsi nel mondo caotico della cucina di un ristorante, dando il via a un'estate che segnerà il corso della sua vita.",
+      "lista": "cinema",
+      "source": "tmdb:1329016",
+      "imdbId": "tt33095251",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2026-08-07",
+      "releaseUS": "2026-08-21",
+      "streaming": [],
+      "poster": "/nJwhcJyoUipwf5TKf2mE460Tf98.jpg",
+      "backdrop": "/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 4.5916,
+      "budget": null,
+      "revenue": null,
+      "tagline": "Prima di essere Anthony Bourdain, era solo Tony.",
+      "scoperte": [
+        {
+          "tmdbId": 727293,
+          "titolo": "Il bar delle grandi speranze - The Tender Bar",
+          "poster": "/54BoppfgFI6hjZ7AuQ4MVHQUc8c.jpg",
+          "anno": 2021,
+          "voto": 6.565,
+          "votanti": 620,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 597231,
+          "titolo": "Standing Up, Falling Down",
+          "poster": "/sPf007Zt2zdPk62FfeNYnxBbXUG.jpg",
+          "anno": 2020,
+          "voto": 6.268,
+          "votanti": 56,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 829774,
+          "titolo": "Somewhere in Queens",
+          "poster": "/zXr6AziPii0NFpbTANNpLrOPxRP.jpg",
+          "anno": 2023,
+          "voto": 6.3,
+          "votanti": 84,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 30309,
+          "titolo": "Le donne vere hanno le curve",
+          "poster": "/ziemD3ATULYKt399FkO1ZhAwrOH.jpg",
+          "anno": 2002,
+          "voto": 6.087,
+          "votanti": 104,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 484718,
+          "titolo": "Il principe cerca figlio",
+          "poster": "/hPpStkyT4O5dVSq23oQzKZDA3Jw.jpg",
+          "anno": 2021,
+          "voto": 6.331,
+          "votanti": 2415,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 37094,
+          "titolo": "Un giorno di ordinaria follia",
+          "poster": "/iuSIdDaI38VDf0bdRMhORWrIzyU.jpg",
+          "anno": 1993,
+          "voto": 7.397,
+          "votanti": 4152,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 542178,
+          "titolo": "The French Dispatch of the Liberty, Kansas Evening Sun",
+          "poster": "/hb6P5EJmGzsGwc5aGsreyTfgpYH.jpg",
+          "anno": 2021,
+          "voto": 7.009,
+          "votanti": 3025,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 28059,
+          "titolo": "SubUrbia",
+          "poster": "/7PdRbG09K9JHYyOwwCSn3OdJb0N.jpg",
+          "anno": 1997,
+          "voto": 6.181,
+          "votanti": 135,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 840430,
+          "titolo": "The Holdovers - Lezioni di vita",
+          "poster": "/mgvP049dSB4RV7XT3GN1gH8RbPi.jpg",
+          "anno": 2023,
+          "voto": 7.646,
+          "votanti": 2569,
+          "tipo": "attore",
+          "attore": "Dominic Sessa"
+        },
+        {
+          "tmdbId": 425274,
+          "titolo": "L'illusione perfetta - Now You See Me: Now You Don't",
+          "poster": "/cZRWBcAIfln9PpmSE6wCwf4KGLB.jpg",
+          "anno": 2025,
+          "voto": 6.481,
+          "votanti": 1694,
+          "tipo": "attore",
+          "attore": "Dominic Sessa"
+        },
+        {
+          "tmdbId": 1261825,
+          "titolo": "Oh. What. Fun.",
+          "poster": "/qynCyBKCJUUcj4wo4PE2aQVvote.jpg",
+          "anno": 2025,
+          "voto": 5.641,
+          "votanti": 256,
+          "tipo": "attore",
+          "attore": "Dominic Sessa"
+        },
+        {
+          "tmdbId": 809,
+          "titolo": "Shrek 2",
+          "poster": "/zbwUtXXHcNEa3uBCCnp22vDSzWW.jpg",
+          "anno": 2004,
+          "voto": 7.327,
+          "votanti": 13594,
+          "tipo": "attore",
+          "attore": "Antonio Banderas"
+        },
+        {
+          "tmdbId": 810,
+          "titolo": "Shrek terzo",
+          "poster": "/bCYjGayLDyKZgYyQDVjqzJEpvQ2.jpg",
+          "anno": 2007,
+          "voto": 6.313,
+          "votanti": 9881,
+          "tipo": "attore",
+          "attore": "Antonio Banderas"
+        },
+        {
+          "tmdbId": 315162,
+          "titolo": "Il gatto con gli stivali 2 - L'ultimo desiderio",
+          "poster": "/v8xkTiSL2q680uCFuhc50mSea7q.jpg",
+          "anno": 2022,
+          "voto": 8.212,
+          "votanti": 9049,
+          "tipo": "attore",
+          "attore": "Antonio Banderas"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Dominic Sessa",
+          "character": "Tony",
+          "profile": "/cTYdhJrye7oTREIkQaLAuLoJ8Rt.jpg"
+        },
+        {
+          "name": "Antonio Banderas",
+          "character": "Chef",
+          "profile": "/fce7zl6elUzsv7wudHFc7RgFtjD.jpg"
+        },
+        {
+          "name": "Emilia Jones",
+          "character": "Nancy",
+          "profile": "/xHzb3lgOAwTl2NoGtc3mmY0u8ii.jpg"
+        },
+        {
+          "name": "Leo Woodall",
+          "character": "Sal",
+          "profile": "/yv2JjEVm1jLR44ynkyYfhWP4I6r.jpg"
+        },
+        {
+          "name": "Stavros Halkias",
+          "character": "Stavros",
+          "profile": "/9QB7YGMk6O7hRgGWvK0OimTVzl7.jpg"
+        },
+        {
+          "name": "Michael Jibrin",
+          "character": "Tyrone",
+          "profile": "/uyaW8ltNwdyRIR906uY1gzt4NE7.jpg"
+        },
+        {
+          "name": "Monica Raymund",
+          "character": "Mary",
+          "profile": "/cG8OzzgiAEOO5q1Jw4pC1cdJf7E.jpg"
+        },
+        {
+          "name": "Rich Sommer",
+          "character": "Pierre",
+          "profile": "/cfbJ3nyiyRpSq2mLrbbrbg1k3Dh.jpg"
+        },
+        {
+          "name": "Dagmara Dominczyk",
+          "character": "Gladys",
+          "profile": "/i1f78OP3G6pksgCcu6AxPgZYEmv.jpg"
+        },
+        {
+          "name": "Liam Fitch",
+          "character": "Christopher",
+          "profile": null
+        },
+        {
+          "name": "Caroline Portu",
+          "character": "Robin",
+          "profile": "/oNlhhmgVoXldGlTHj1r28pfxUO6.jpg"
+        },
+        {
+          "name": "Joe Burns",
+          "character": "Pizza Guy",
+          "profile": "/9We8KHrdKCx1LGd15r7mXktPADs.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1400940",
+      "tmdbId": 1400940,
+      "title": "Clayface",
+      "originalTitle": null,
+      "release": "2026-10-22",
+      "director": "James Watkins",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Fantascienza"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": null,
+      "trailer": "https://www.youtube.com/watch?v=_NDnErD0tjI",
+      "cast": [
+        "Tom Rhys Harries",
+        "Naomi Ackie",
+        "Eddie Marsan",
+        "Max Minghella",
+        "David Dencik",
+        "Francesca Corney",
+        "Ruby Sear",
+        "Wil Coban",
+        "Joshua James",
+        "Jake Curran",
+        "Nancy Carroll",
+        "Olivia-Mai Barrett"
+      ],
+      "plot": "La terrificante discesa di un uomo, da astro nascente di Hollywood a mostro assetato di vendetta, in una storia che esplora la perdita di identità e umanità, l’amore corrosivo e il lato oscuro dell’ambizione scientifica.",
+      "lista": "cinema",
+      "source": "tmdb:1400940",
+      "imdbId": "tt34890576",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2026-10-21",
+      "releaseUS": "2026-10-23",
+      "streaming": [],
+      "poster": "/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+      "backdrop": "/1A7s8zG4PF6YoJrncrTO6N4r0Sx.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 15.0129,
+      "budget": 40000000,
+      "revenue": null,
+      "tagline": "Guarda la paura in faccia",
+      "scoperte": [
+        {
+          "tmdbId": 9383,
+          "titolo": "L'uomo senza ombra",
+          "poster": "/4JPGontWB3J7X6ONpdJvGdDlGtV.jpg",
+          "anno": 2000,
+          "voto": 5.967,
+          "votanti": 2854,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 608654,
+          "titolo": "The Banana Splits Movie",
+          "poster": "/vG9FY2wHVwOOQfqNlUt2LbRzRNl.jpg",
+          "anno": 2019,
+          "voto": 6.502,
+          "votanti": 268,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 614205,
+          "titolo": "Dark Light",
+          "poster": "/468foMrROMKsaF8HWmQaZ5nhDrR.jpg",
+          "anno": 2019,
+          "voto": 6.25,
+          "votanti": 184,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 819876,
+          "titolo": "Crimes of the Future",
+          "poster": "/2t0wMbtRouKvVlUQVoYAfxAt3e8.jpg",
+          "anno": 2022,
+          "voto": 6.009,
+          "votanti": 1299,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 1142414,
+          "titolo": "Cheat",
+          "poster": "/46Um9OTHNA390mMxwpSSc2m35Zp.jpg",
+          "anno": 2023,
+          "voto": 6.915,
+          "votanti": 71,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 354251,
+          "titolo": "Southbound - Autostrada per l'inferno",
+          "poster": "/5mWmxHUxbbFB8AfAooHZZJVTZgE.jpg",
+          "anno": 2015,
+          "voto": 5.916,
+          "votanti": 687,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 715123,
+          "titolo": "Books of Blood",
+          "poster": "/j78WBcSrSEqrBECfGyimQ6UbHoy.jpg",
+          "anno": 2020,
+          "voto": 6.256,
+          "votanti": 527,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 10596,
+          "titolo": "The Replicant",
+          "poster": "/5epfetW0HvZ0ULPsxUvTgNTPvPg.jpg",
+          "anno": 2001,
+          "voto": 5.8,
+          "votanti": 541,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 522627,
+          "titolo": "The Gentlemen",
+          "poster": "/dF4EwB8oyrgKQnjOwUWGbF3yNTH.jpg",
+          "anno": 2020,
+          "voto": 7.661,
+          "votanti": 6714,
+          "tipo": "attore",
+          "attore": "Tom Rhys Harries"
+        },
+        {
+          "tmdbId": 717930,
+          "titolo": "Operazione Kandahar",
+          "poster": "/lxtt48VB2DddM1qAwHcGHctNOq8.jpg",
+          "anno": 2023,
+          "voto": 6.776,
+          "votanti": 1277,
+          "tipo": "attore",
+          "attore": "Tom Rhys Harries"
+        },
+        {
+          "tmdbId": 975511,
+          "titolo": "Itaca - Il ritorno",
+          "poster": "/uPxrcqE3DnjDimvTiEbUxiAZiiR.jpg",
+          "anno": 2024,
+          "voto": 6.524,
+          "votanti": 476,
+          "tipo": "attore",
+          "attore": "Tom Rhys Harries"
+        },
+        {
+          "tmdbId": 181812,
+          "titolo": "Star Wars: L'ascesa di Skywalker",
+          "poster": "/3drtqLOARQEuFgEmGRlMlWpV3Eb.jpg",
+          "anno": 2019,
+          "voto": 6.262,
+          "votanti": 10962,
+          "tipo": "attore",
+          "attore": "Naomi Ackie"
+        },
+        {
+          "tmdbId": 696506,
+          "titolo": "Mickey 17",
+          "poster": "/2JQBZs01ahsOiANQ7Fs8MN9zBY4.jpg",
+          "anno": 2025,
+          "voto": 6.839,
+          "votanti": 3725,
+          "tipo": "attore",
+          "attore": "Naomi Ackie"
+        },
+        {
+          "tmdbId": 840705,
+          "titolo": "Blink Twice",
+          "poster": "/78z5K6xXTAWtLqpbyIJxxyaFMJi.jpg",
+          "anno": 2024,
+          "voto": 6.678,
+          "votanti": 1965,
+          "tipo": "attore",
+          "attore": "Naomi Ackie"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Tom Rhys Harries",
+          "character": "Matt Hagen / Clayface",
+          "profile": "/elxvpHPqOxGcKe6U2hcArIcpyWo.jpg"
+        },
+        {
+          "name": "Naomi Ackie",
+          "character": "Caitlyn Corr",
+          "profile": "/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
+        },
+        {
+          "name": "Eddie Marsan",
+          "character": null,
+          "profile": "/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
+        },
+        {
+          "name": "Max Minghella",
+          "character": "John Borrelli",
+          "profile": "/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg"
+        },
+        {
+          "name": "David Dencik",
+          "character": null,
+          "profile": "/2BPsGhw8lGhe6HNs1aLu4Q1XeVn.jpg"
+        },
+        {
+          "name": "Francesca Corney",
+          "character": null,
+          "profile": "/p2B2dYAvl0TMUtbrZxzOdNgBbSE.jpg"
+        },
+        {
+          "name": "Ruby Sear",
+          "character": "Theresa",
+          "profile": "/hNlLm6NaHPjakDJhPEY1suGcxKi.jpg"
+        },
+        {
+          "name": "Wil Coban",
+          "character": "Bones",
+          "profile": "/73REwJckTBMNJoiGIrrGhcCdTqf.jpg"
+        },
+        {
+          "name": "Joshua James",
+          "character": "Corey Bowery",
+          "profile": "/jw1n2Pzi2LJvyu6OkXTHMXPV7Q4.jpg"
+        },
+        {
+          "name": "Jake Curran",
+          "character": "Patches",
+          "profile": "/pC6ozticiOmovaPpwqKVOMhn0b9.jpg"
+        },
+        {
+          "name": "Nancy Carroll",
+          "character": null,
+          "profile": "/lXTNopDRBsDLTlXTREvuBT3KMIt.jpg"
+        },
+        {
+          "name": "Olivia-Mai Barrett",
+          "character": null,
+          "profile": "/gWZRzvOnUxZmvdzHuxBvIS0BEJP.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1300968",
+      "tmdbId": 1300968,
+      "title": "Hunger Games - L'alba sulla mietitura",
+      "originalTitle": null,
+      "release": "2026-11-19",
+      "director": "Francis Lawrence",
+      "genres": [
+        "Fantascienza",
+        "Azione",
+        "Avventura"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": null,
+      "trailer": "https://www.youtube.com/watch?v=JHh7_klJXgk",
+      "cast": [
+        "Joseph Zada",
+        "Mckenna Grace",
+        "Jesse Plemons",
+        "Elle Fanning",
+        "Ralph Fiennes",
+        "Maya Hawke",
+        "Lili Taylor",
+        "Glenn Close",
+        "Kieran Culkin",
+        "Kelvin Harrison Jr.",
+        "Ben Wang",
+        "Whitney Peak"
+      ],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:1300968",
+      "imdbId": "tt32558705",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2026-11-18",
+      "releaseUS": "2026-11-20",
+      "streaming": [],
+      "poster": "/uR1lZA2ET3gf7uGVgbRwSeSkEsU.jpg",
+      "backdrop": "/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 7.2194,
+      "budget": 150000000,
+      "revenue": null,
+      "tagline": "Questi giochi saranno diversi",
+      "scoperte": [
+        {
+          "tmdbId": 131634,
+          "titolo": "Hunger Games: Il canto della rivolta - Parte 2",
+          "poster": "/aQvME1wpAZpjdyg5Xfe35lINmwt.jpg",
+          "anno": 2015,
+          "voto": 6.902,
+          "votanti": 13451,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 262504,
+          "titolo": "Allegiant",
+          "poster": "/x4pzvmWqSdFxpM0t3OupqeYlAYM.jpg",
+          "anno": 2016,
+          "voto": 6.1,
+          "votanti": 7037,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 101299,
+          "titolo": "Hunger Games: La ragazza di fuoco",
+          "poster": "/oFQj7SBn9pGGc6ZuadhmQoSYWaD.jpg",
+          "anno": 2013,
+          "voto": 7.429,
+          "votanti": 18586,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 695721,
+          "titolo": "Hunger Games - La ballata dell'usignolo e del serpente",
+          "poster": "/bk2Bh5mD3uvyKDaXKTAOGfoCTq5.jpg",
+          "anno": 2023,
+          "voto": 6.969,
+          "votanti": 3582,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 131631,
+          "titolo": "Hunger Games: Il canto della rivolta - Parte 1",
+          "poster": "/9LZSYohDOJkLU2TyRvPM1zIo62e.jpg",
+          "anno": 2014,
+          "voto": 6.818,
+          "votanti": 16843,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 428078,
+          "titolo": "Macchine mortali",
+          "poster": "/yX19mO9iZuWPxVv1iBd27PKIg43.jpg",
+          "anno": 2018,
+          "voto": 6.245,
+          "votanti": 5243,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 262500,
+          "titolo": "Insurgent",
+          "poster": "/6pbp5Jx6Q8ZfEbNuddoib6fq3wr.jpg",
+          "anno": 2015,
+          "voto": 6.359,
+          "votanti": 10508,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 157350,
+          "titolo": "Divergent",
+          "poster": "/wSan6AKkI0qeDVBHpLJnaZA3es1.jpg",
+          "anno": 2014,
+          "voto": 6.903,
+          "votanti": 13583,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 333339,
+          "titolo": "Ready Player One",
+          "poster": "/zkTYffo4PeN759mJchu2JpXY97I.jpg",
+          "anno": 2018,
+          "voto": 7.589,
+          "votanti": 17124,
+          "tipo": "attore",
+          "attore": "Mckenna Grace"
+        },
+        {
+          "tmdbId": 299537,
+          "titolo": "Captain Marvel",
+          "poster": "/ndo3IkcvMhhE4g6ZIlxZpwdT5ve.jpg",
+          "anno": 2019,
+          "voto": 6.778,
+          "votanti": 16901,
+          "tipo": "attore",
+          "attore": "Mckenna Grace"
+        },
+        {
+          "tmdbId": 47933,
+          "titolo": "Independence Day - Rigenerazione",
+          "poster": "/h2nnrzJMtCu6ekgYSB8TC6LqzNo.jpg",
+          "anno": 2016,
+          "voto": 5.368,
+          "votanti": 6530,
+          "tipo": "attore",
+          "attore": "Mckenna Grace"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Joseph Zada",
+          "character": "Haymitch Abernathy",
+          "profile": "/8RnNxrgffoNOu7ZHPSGvYnfjtdI.jpg"
+        },
+        {
+          "name": "Mckenna Grace",
+          "character": "Maysilee Donner / Merrilee Donner",
+          "profile": "/liUIubLxm7uaClq1ASwDOx0mwnq.jpg"
+        },
+        {
+          "name": "Jesse Plemons",
+          "character": "Plutarch Heavensbee",
+          "profile": "/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+        },
+        {
+          "name": "Elle Fanning",
+          "character": "Effie Trinket",
+          "profile": "/ucC5faqfEYVhoC25M6Hi3znZmab.jpg"
+        },
+        {
+          "name": "Ralph Fiennes",
+          "character": "President Coriolanus Snow",
+          "profile": "/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
+        },
+        {
+          "name": "Maya Hawke",
+          "character": "Wiress",
+          "profile": "/evjbbHM1bzA6Ma5Ptjwa4WkYkkj.jpg"
+        },
+        {
+          "name": "Lili Taylor",
+          "character": "Mags Flanagan",
+          "profile": "/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg"
+        },
+        {
+          "name": "Glenn Close",
+          "character": "Drusilla Sickle",
+          "profile": "/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
+        },
+        {
+          "name": "Kieran Culkin",
+          "character": "Caesar Flickerman",
+          "profile": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
+        },
+        {
+          "name": "Kelvin Harrison Jr.",
+          "character": "Beetee Latier",
+          "profile": "/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
+        },
+        {
+          "name": "Ben Wang",
+          "character": "Wyatt Callow",
+          "profile": "/5A6JgNR9nlFVjuzJ1oOXyj2hfJo.jpg"
+        },
+        {
+          "name": "Whitney Peak",
+          "character": "Lenore Dove Baird",
+          "profile": "/4m7VqGrpiMk4w5KN2I7OVbT7ppn.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-806704",
+      "tmdbId": 806704,
+      "title": "The Batman: Part II",
+      "originalTitle": null,
+      "release": "2028-02-18",
+      "director": "Matt Reeves",
+      "genres": [
+        "Mistero",
+        "Dramma",
+        "Crime"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": null,
+      "trailer": null,
+      "cast": [
+        "Robert Pattinson",
+        "Jeffrey Wright",
+        "Andy Serkis",
+        "Colin Farrell",
+        "Jayme Lawson",
+        "Gil Perez-Abraham",
+        "Scarlett Johansson",
+        "Sebastian Stan",
+        "Charles Dance",
+        "Sebastian Koch",
+        "Brian Tyree Henry",
+        "Barry Keoghan"
+      ],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:806704",
+      "imdbId": "tt19850008",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseFonte": "US",
+      "releaseGlobale": "2028-02-17",
+      "releaseUS": "2028-02-18",
+      "streaming": [],
+      "poster": "/caeBJHLNld1h14uvcLvzyHf3Rlk.jpg",
+      "backdrop": "/4uaHnYDDpUTj0nCg6YqBKab50YW.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 6.3378,
+      "budget": null,
+      "revenue": null,
+      "tagline": null,
+      "scoperte": [
+        {
+          "tmdbId": 736074,
+          "titolo": "Batman: The Long Halloween, Part Two",
+          "poster": "/5X1n5q08mZ7NpNpxehMFODxfNYq.jpg",
+          "anno": 2021,
+          "voto": 7.396,
+          "votanti": 588,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 40662,
+          "titolo": "Batman: Under the Red Hood",
+          "poster": "/7lmHqHg1rG9b4U8MjuyQjmJ7Qm0.jpg",
+          "anno": 2010,
+          "voto": 7.762,
+          "votanti": 1752,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 69735,
+          "titolo": "Batman: Year One",
+          "poster": "/mLZRhulJcDsxZWTdfx0trtk6y07.jpg",
+          "anno": 2011,
+          "voto": 7.2,
+          "votanti": 1058,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 736073,
+          "titolo": "Batman: The Long Halloween, Part One",
+          "poster": "/sR7gppb0YGjwLvE6Vnj6wYv5MnW.jpg",
+          "anno": 2021,
+          "voto": 7.45,
+          "votanti": 716,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 272,
+          "titolo": "Batman Begins",
+          "poster": "/2eNeMwCncDvcJZ4AqKndWX71wDc.jpg",
+          "anno": 2005,
+          "voto": 7.729,
+          "votanti": 22846,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 414906,
+          "titolo": "The Batman",
+          "poster": "/kfrNjwHRw0ORsPx8Scr3JJQuy1I.jpg",
+          "anno": 2022,
+          "voto": 7.7,
+          "votanti": 12200,
+          "tipo": "attore",
+          "attore": "Robert Pattinson"
+        },
+        {
+          "tmdbId": 49026,
+          "titolo": "Il cavaliere oscuro - Il ritorno",
+          "poster": "/p2JzxFRAlbxS4EvWMo4yiYZXu1W.jpg",
+          "anno": 2012,
+          "voto": 7.796,
+          "votanti": 24602,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 21683,
+          "titolo": "Batman - Il mistero di Batwoman",
+          "poster": "/rlRI18lawXmAmUgZJe4Y85msyYf.jpg",
+          "anno": 2003,
+          "voto": 6.717,
+          "votanti": 453,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 674,
+          "titolo": "Harry Potter e il calice di fuoco",
+          "poster": "/ghM7AvW4MWY9casNIjltqzCMjJQ.jpg",
+          "anno": 2005,
+          "voto": 7.803,
+          "votanti": 22388,
+          "tipo": "attore",
+          "attore": "Robert Pattinson"
+        },
+        {
+          "tmdbId": 8966,
+          "titolo": "Twilight",
+          "poster": "/n8nYzzKGP30M6u8sUon1YJmCgm8.jpg",
+          "anno": 2008,
+          "voto": 6.3,
+          "votanti": 14513,
+          "tipo": "attore",
+          "attore": "Robert Pattinson"
+        },
+        {
+          "tmdbId": 101299,
+          "titolo": "Hunger Games: La ragazza di fuoco",
+          "poster": "/oFQj7SBn9pGGc6ZuadhmQoSYWaD.jpg",
+          "anno": 2013,
+          "voto": 7.429,
+          "votanti": 18586,
+          "tipo": "attore",
+          "attore": "Jeffrey Wright"
+        },
+        {
+          "tmdbId": 131631,
+          "titolo": "Hunger Games: Il canto della rivolta - Parte 1",
+          "poster": "/9LZSYohDOJkLU2TyRvPM1zIo62e.jpg",
+          "anno": 2014,
+          "voto": 6.818,
+          "votanti": 16843,
+          "tipo": "attore",
+          "attore": "Jeffrey Wright"
+        },
+        {
+          "tmdbId": 131634,
+          "titolo": "Hunger Games: Il canto della rivolta - Parte 2",
+          "poster": "/aQvME1wpAZpjdyg5Xfe35lINmwt.jpg",
+          "anno": 2015,
+          "voto": 6.902,
+          "votanti": 13451,
+          "tipo": "attore",
+          "attore": "Jeffrey Wright"
+        }
+      ],
+      "castDetail": [
+        {
+          "name": "Robert Pattinson",
+          "character": "Bruce Wayne / The Batman",
+          "profile": "/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+        },
+        {
+          "name": "Jeffrey Wright",
+          "character": "Lt. James Gordon",
+          "profile": "/quunS3w4QtALMDnvA0y81Y2pO9N.jpg"
+        },
+        {
+          "name": "Andy Serkis",
+          "character": "Alfred",
+          "profile": "/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg"
+        },
+        {
+          "name": "Colin Farrell",
+          "character": "Oz / The Penguin",
+          "profile": "/5FdalJbrbZ5UCsED5rFrXpvbqJa.jpg"
+        },
+        {
+          "name": "Jayme Lawson",
+          "character": "Bella Reál",
+          "profile": "/1PQmquJ3LRnTnUnut0UZBLZuBuO.jpg"
+        },
+        {
+          "name": "Gil Perez-Abraham",
+          "character": "Officer Martinez",
+          "profile": "/qHSIqXt9uZtrHLv7vhAnQpxcLrw.jpg"
+        },
+        {
+          "name": "Scarlett Johansson",
+          "character": "Gilda Dent",
+          "profile": "/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+          "name": "Sebastian Stan",
+          "character": "Harvey Dent",
+          "profile": "/v20RLWst39klatsqUgSrwHxhwee.jpg"
+        },
+        {
+          "name": "Charles Dance",
+          "character": "Christopher Dent",
+          "profile": "/3xHwq5lchAI6mfW0aGQOEijexv6.jpg"
+        },
+        {
+          "name": "Sebastian Koch",
+          "character": null,
+          "profile": "/3n3BP3FmuFinFokeGx0cHhM4XBH.jpg"
+        },
+        {
+          "name": "Brian Tyree Henry",
+          "character": null,
+          "profile": "/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg"
+        },
+        {
+          "name": "Barry Keoghan",
+          "character": "Joker",
+          "profile": "/ngoitknM6hw8fffLywyvjzy6Iti.jpg"
+        }
+      ]
     }
   ],
-  "enrichedAt": "2026-07-30T08:01:48.493Z"
+  "enrichedAt": "2026-07-30T08:20:31.089Z"
 }

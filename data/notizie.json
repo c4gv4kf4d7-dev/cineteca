@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-07-30T08:04:59.459Z",
+  "aggiornato": "2026-07-30T08:21:11.273Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -88,6 +88,49 @@
       "rilievo": 8
     },
     {
+      "titolo": "‘Tony’ Review: Dominic Sessa Shines in a Briny, Bittersweet Coming-of-Age Comedy That Just Happens to Be About a Young Anthony Bourdain",
+      "link": "https://www.indiewire.com/criticism/movies/tony-movie-review-anthony-bourdain-1235207248/",
+      "sommario": "Matt Johnson's most straightforward movie is a summery ode to pretentious young louts everywhere.",
+      "data": "2026-07-29T16:00:00.000Z",
+      "fonte": "IndieWire",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Matt Johnson",
+          "tipo": "regista",
+          "film": [
+            "Tony - Diario di un giovane cuoco"
+          ]
+        },
+        {
+          "nome": "Dominic Sessa",
+          "tipo": "attore",
+          "film": [
+            "Tony - Diario di un giovane cuoco"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
+      "titolo": "Antonio Banderas tra squali e tensione: il nuovo thriller poliziesco",
+      "link": "https://www.badtaste.it/articoli/antonio-banderas-tra-squali-e-tensione-il-nuovo-thriller-poliziesco",
+      "sommario": "Antonio Banderas spietato boss narcos in 'Sopra e sotto': il trailer",
+      "data": "2026-07-30T07:58:16.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Antonio Banderas",
+          "tipo": "attore",
+          "film": [
+            "Tony - Diario di un giovane cuoco"
+          ]
+        }
+      ],
+      "rilievo": 4
+    },
+    {
       "titolo": "Tom Holland ammette la sua gaffe peggiore con la Marvel: \"Un errore che ancora mi tormenta\"",
       "link": "https://www.badtaste.it/articoli/tom-holland-ammette-la-sua-gaffe-peggiore-con-la-marvel-un-errore-che-ancora-mi-tormenta",
       "sommario": "Tom Holland svela lo spoiler Marvel che vorrebbe cancellare: il retroscena su 'Infinity War' e la nuova gaffe sul red carpet di Spider-Man",
@@ -154,24 +197,6 @@
           "tipo": "attore",
           "film": [
             "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 4
-    },
-    {
-      "titolo": "Terminator 2 torna al cinema in Italia in 4K: Lucky Red riporta il capolavoro di James Cameron sul grande schermo",
-      "link": "https://www.badtaste.it/articoli/terminator-2-torna-al-cinema-in-italia-in-4k-lucky-red-riporta-il-capolavoro-di-james-cameron-sul-grande-schermo",
-      "sommario": "Dal 28 al 30 agosto Terminator 2: Il giorno del giudizio torna nelle sale italiane in 4K grazie a Lucky Red per il 35° anniversario.",
-      "data": "2026-07-29T15:00:19.000Z",
-      "fonte": "BadTaste",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "James Cameron",
-          "tipo": "regista",
-          "film": [
-            "Avatar: Fuoco e cenere"
           ]
         }
       ],

@@ -94,8 +94,10 @@
       </button>
       <div class="card-meta">
         <h3>${F.esc(m.title)}</h3>
-        <p>${F.esc(F.dataBreve(m.releaseDate))} · ${F.esc(m.genres[0] || '—')}${
-          F.durata(m.runtime) ? ` · ${F.durata(m.runtime)}` : ''}</p>
+        <p>${F.esc(F.dataBreve(m.releaseDate))}${
+          m.releaseFonte === 'US' || m.releaseFonte === 'globale'
+            ? '<span class="stimata" title="Data non ancora confermata per l\'Italia">≈</span>' : ''
+          } · ${F.esc(m.genres[0] || '—')}${F.durata(m.runtime) ? ` · ${F.durata(m.runtime)}` : ''}</p>
         ${m.streaming?.length ? `<p class="su">${F.esc(F.piattaforme(m.streaming).join(' · '))}</p>` : ''}
       </div>
     </div>`;

@@ -109,13 +109,31 @@ async function voti(imdbId) {
   };
 }
 
-/* Data di uscita italiana (tipo 3 = sala, 4 = digitale/home).
-   È quella che conta: TMDB come release_date espone la prima al mondo. */
-function uscitaItaliana(d) {
-  const it = (d.release_dates?.results || []).find(r => r.iso_3166_1 === 'IT');
-  if (!it) return null;
-  const preferita = it.release_dates.find(x => x.type === 3) || it.release_dates[0];
-  return preferita ? preferita.release_date.slice(0, 10) : null;
+/* Data di uscita in un paese, per tipo TMDB:
+   1 première · 2 limitata · 3 sala · 4 digitale · 5 fisico · 6 TV.
+   Una première non è un'uscita: se c'è solo quella, il paese non conta. */
+const TIPI_VALIDI = [3, 2, 4, 6];
+
+function uscitaPaese(d, paese) {
+  const p = (d.release_dates?.results || []).find(r => r.iso_3166_1 === paese);
+  if (!p) return null;
+  for (const tipo of TIPI_VALIDI) {
+    const trovata = p.release_dates.find(x => x.type === tipo);
+    if (trovata) return trovata.release_date.slice(0, 10);
+  }
+  return null;
+}
+
+/* Vale l'italiana. Se manca si ripiega sull'americana, ma il film
+   resta marchiato come "data non confermata per l'Italia": va
+   ricontrollato appena TMDB pubblica quella vera. */
+function decidiUscita(film, d) {
+  if (film.release) return { data: film.release, fonte: 'manuale' };
+  const it = uscitaPaese(d, 'IT');
+  if (it) return { data: it, fonte: 'IT' };
+  const us = uscitaPaese(d, 'US');
+  if (us) return { data: us, fonte: 'US' };
+  return { data: d.release_date || null, fonte: d.release_date ? 'globale' : null };
 }
 
 /* Dove si può vedere in Italia, in abbonamento. */
@@ -163,15 +181,16 @@ async function arricchisci(film, giaInLibreria = new Set()) {
     console.warn(`    ! OMDb non raggiungibile per ${film.title}: ${err.message}`);
   }
 
-  const uscitaIT = uscitaItaliana(d);
+  const uscita = decidiUscita(film, d);
   const streaming = piattaforme(d);
 
   const note = [
     d.poster_path ? null : 'senza locandina',
+    uscita.fonte === 'US' || uscita.fonte === 'globale' ? `⚠ data ${uscita.fonte}, non IT` : null,
     esterni.rtScore != null ? `RT ${esterni.rtScore}%` : null,
     streaming.length ? streaming.join('/') : null
   ].filter(Boolean);
-  console.log(`  ✓ ${film.title} → ${uscitaIT || d.release_date || '?'}${note.length ? ` · ${note.join(' · ')}` : ''}`);
+  console.log(`  ✓ ${film.title} → ${uscita.data || '?'}${note.length ? ` · ${note.join(' · ')}` : ''}`);
 
   return {
     ...film,
@@ -179,9 +198,10 @@ async function arricchisci(film, giaInLibreria = new Set()) {
     imdbId: d.imdb_id || null,
     ...esterni,
     // I dati di Notion restano prioritari: TMDB riempie solo i buchi.
-    // La data di Notion vince; se manca, uscita italiana e solo in ultima istanza quella globale.
-    release:  film.release  || uscitaIT || d.release_date || null,
+    release: uscita.data,
+    releaseFonte: uscita.fonte,          // manuale | IT | US | globale
     releaseGlobale: d.release_date || null,
+    releaseUS: uscitaPaese(d, 'US'),
     streaming,
     runtime:  film.runtime  || d.runtime || null,
     director: film.director || registi[0] || null,
