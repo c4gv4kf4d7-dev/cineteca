@@ -17,7 +17,7 @@
         "USA"
       ],
       "runtime": 106,
-      "trailer": "https://www.comingsoon.it/film/deep-water/65949/video/?vid=49826",
+      "trailer": "https://www.youtube.com/watch?v=pZ-ZVkePQsM",
       "cast": [
         "Aaron Eckhart",
         "Ben Kingsley",
@@ -419,7 +419,7 @@
     {
       "id": "cs-67639",
       "title": "Couture",
-      "originalTitle": "Couture",
+      "originalTitle": "Coutures",
       "release": "2026-08-26",
       "director": "Alice Winocour",
       "genres": [
@@ -439,51 +439,85 @@
       "plot": "Nella Fashion Week di Parigi, tra apparenze e pressione costante, tre donne si incrociano. I loro percorsi mettono a nudo fragilità e scelte, dentro e fuori dal mondo della moda.",
       "source": "comingsoon:67639",
       "lista": "cinema",
-      "tmdbId": 1677927,
-      "imdbId": null,
+      "tmdbId": 1390382,
+      "imdbId": "tt34688195",
+      "rtScore": 51,
+      "metascore": 53,
+      "imdbRating": 5.7,
+      "imdbVotes": 1655,
       "releaseFonte": "manuale",
-      "releaseGlobale": "2026-06-13",
+      "releaseGlobale": "2026-02-18",
       "releaseUS": null,
       "streaming": [],
-      "poster": "/szWNSL9PfUtGPDODYp0hgBVr45a.jpg",
-      "backdrop": "/9Dygx7zaog5DJbGtnAak6ixZQaf.jpg",
-      "tmdbRating": null,
-      "tmdbVotes": null,
-      "popularity": 1.1227,
+      "poster": "/zN2hnZzj3DjJH2CzB76kDo1zYFu.jpg",
+      "backdrop": "/9GBiwvuJahvlfEQtuGhpS384Ei5.jpg",
+      "tmdbRating": 6.2,
+      "tmdbVotes": 49,
+      "popularity": 7.9508,
       "budget": null,
       "revenue": null,
-      "tagline": "Dream big...even if you're small.",
+      "tagline": null,
       "scoperte": [],
       "castDetail": [
         {
-          "name": "Max Alexander",
-          "character": "Self",
+          "name": "Angelina Jolie",
+          "character": "Maxine Walker",
+          "profile": "/bXNxIKcJ5cNNW8QFrBPWcfTSu9x.jpg"
+        },
+        {
+          "name": "Anyier Anei",
+          "character": "Ada",
+          "profile": "/3jjM2S7X13ONA4s45nr2o4HkDZE.jpg"
+        },
+        {
+          "name": "Ella Rumpf",
+          "character": "Angèle",
+          "profile": "/4igT9ZxHs26m6ttyMcZH50NrWgd.jpg"
+        },
+        {
+          "name": "Louis Garrel",
+          "character": "Anton",
+          "profile": "/iKJ1SL0im6tJVnE777HNLX2kUeG.jpg"
+        },
+        {
+          "name": "Vincent Lindon",
+          "character": "Dr. Laurent Hansen",
+          "profile": "/tjRKMKfsIH7MrqtN7cMPIZubSXa.jpg"
+        },
+        {
+          "name": "Garance Marillier",
+          "character": "Christine",
+          "profile": "/gPIOhXZDUYE8wDbL5s12H7i6uzK.jpg"
+        },
+        {
+          "name": "Grégoire Colin",
+          "character": "Le directeur d'image",
+          "profile": "/jtolsceVVsMT1wWi8m8pdtaUE4f.jpg"
+        },
+        {
+          "name": "Aurore Clément",
+          "character": "Anne",
+          "profile": "/9vZxPV8LvY1wp32AIm35CZ7WelG.jpg"
+        },
+        {
+          "name": "Yuliia Ratner",
+          "character": "Julia",
           "profile": null
         },
         {
-          "name": "Bob Mackie",
-          "character": "Self",
-          "profile": "/gNhwliizuE3zNPIhKwWEHxpZmGb.jpg"
-        },
-        {
-          "name": "Sherri Madison",
-          "character": "Self",
+          "name": "Mona Tougaard",
+          "character": "Mona",
           "profile": null
         },
         {
-          "name": "Fern Mallis",
-          "character": "Self",
-          "profile": "/c5kKIWLRDLMwCExtrrbd17SzxfD.jpg"
+          "name": "Hunter David",
+          "character": "Hunter",
+          "profile": null
         },
         {
-          "name": "Isaac Mizrahi",
-          "character": "Self",
-          "profile": "/oP2Ebh9mDaDeFgzAGd6VuiLsDVb.jpg"
-        },
-        {
-          "name": "Sharon Stone",
-          "character": "Self",
-          "profile": "/5lYs0HaAvsXPZJpMcndbSeQdPgT.jpg"
+          "name": "Joana Preiss",
+          "character": "Joana",
+          "profile": "/aP3PslnXvprm0MMcAv8FuVwr3bg.jpg"
         }
       ]
     },
@@ -574,7 +608,7 @@
       "title": "Train to Busan",
       "originalTitle": "Busanhaeng",
       "release": "2026-09-02",
-      "director": "Shin-yeong Jang",
+      "director": "Yeon Sang-ho",
       "genres": [
         "Azione",
         "Horror",
@@ -4258,8 +4292,8 @@
       "streaming": [],
       "poster": "/3zdr031LjTG71QyeC7mWdyU19bE.jpg",
       "backdrop": "/gQxnJoswBzsENExzygVnFiemvK7.jpg",
-      "tmdbRating": 6.932,
-      "tmdbVotes": 1380,
+      "tmdbRating": 6.9,
+      "tmdbVotes": 1384,
       "popularity": 38.0465,
       "budget": 28000000,
       "revenue": 132227793,
@@ -12195,7 +12229,7 @@
           "poster": "/lqUtv5NYqm9n8tEq9gOzWfqvNPY.jpg",
           "anno": 1995,
           "voto": 7.182,
-          "votanti": 2021,
+          "votanti": 2022,
           "tipo": "simile"
         },
         {
@@ -12258,7 +12292,7 @@
           "poster": "/qXPfoEA7qHJxTHm9Tny7cXCHprF.jpg",
           "anno": 2015,
           "voto": 7.243,
-          "votanti": 7332,
+          "votanti": 7333,
           "tipo": "simile"
         },
         {
@@ -14377,5 +14411,5 @@
       ]
     }
   ],
-  "enrichedAt": "2026-07-30T17:32:58.548Z"
+  "enrichedAt": "2026-07-30T17:41:29.708Z"
 }

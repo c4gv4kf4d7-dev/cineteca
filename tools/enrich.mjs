@@ -181,6 +181,23 @@ async function arricchisci(film, giaInLibreria = new Set()) {
     console.warn(`    ! OMDb non raggiungibile per ${film.title}: ${err.message}`);
   }
 
+  /* Sospetto di film sbagliato: se conosco già regista o cast da
+     Notion e TMDB ne dà altri, la ricerca per titolo ha probabilmente
+     agganciato un omonimo. È successo con "Couture", finito su un
+     documentario intitolato "Couture to the Max". */
+  if (!film.tmdbId) {
+    const registiTmdb = registi.map(n => n.toLowerCase());
+    const castTmdb = castDetail.map(c => c.name.toLowerCase());
+    const dubbi = [];
+    if (film.director && registiTmdb.length && !registiTmdb.includes(film.director.toLowerCase()))
+      dubbi.push(`regista: tu "${film.director}", TMDB "${registi[0]}"`);
+    if (film.cast?.length && castTmdb.length && !film.cast.some(a => castTmdb.includes(a.toLowerCase())))
+      dubbi.push(`nessun attore in comune`);
+    if (dubbi.length)
+      console.warn(`  ⚠  ${film.title}: forse è il film sbagliato → ${dubbi.join(' · ')}`
+        + `\n      verifica: https://www.themoviedb.org/movie/${d.id}`);
+  }
+
   const uscita = decidiUscita(film, d);
   const streaming = piattaforme(d);
 

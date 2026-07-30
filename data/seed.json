@@ -91,7 +91,7 @@
     {
       "id": "cs-67639",
       "title": "Couture",
-      "originalTitle": "Couture",
+      "originalTitle": "Coutures",
       "release": "2026-08-26",
       "director": "Alice Winocour",
       "genres": [
@@ -110,7 +110,8 @@
       ],
       "plot": "Nella Fashion Week di Parigi, tra apparenze e pressione costante, tre donne si incrociano. I loro percorsi mettono a nudo fragilità e scelte, dentro e fuori dal mondo della moda.",
       "source": "comingsoon:67639",
-      "lista": "cinema"
+      "lista": "cinema",
+      "tmdbId": 1390382
     },
     {
       "id": "cs-66983",
@@ -143,7 +144,7 @@
       "title": "Train to Busan",
       "originalTitle": "Busanhaeng",
       "release": "2026-09-02",
-      "director": "Shin-yeong Jang",
+      "director": null,
       "genres": [
         "Azione",
         "Horror",
