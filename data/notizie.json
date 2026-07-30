@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-07-30T08:40:15.464Z",
+  "aggiornato": "2026-07-30T08:46:23.375Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -15,6 +15,127 @@
     "THR"
   ],
   "notizie": [
+    {
+      "titolo": "The Batman – Parte II: un video dal set suggerisce problemi per un personaggio chiave",
+      "link": "https://www.cinefilos.it/cinema-news/2026/the-batman-parte-ii-un-video-dal-set-suggerisce-problemi-per-un-personaggio-chiave-716128",
+      "sommario": "The Batman – Parte II: un video dal set suggerisce problemi per un personaggio chiave Le riprese di The Batman – Parte II proseguono nel Regno Unito, ma un nuovo filmato trapelato dal set sta già facendo discutere i fan. Le immagini, condivise online in forma ",
+      "data": "2026-07-30T08:40:40.000Z",
+      "fonte": "Cinefilos",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "The Batman: Part II",
+          "tipo": "film",
+          "film": [
+            "The Batman: Part II"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "vistoIl": "2026-07-30T08:46:23.352Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Antonio Banderas tra squali e tensione: il nuovo thriller poliziesco",
+      "link": "https://www.badtaste.it/articoli/antonio-banderas-tra-squali-e-tensione-il-nuovo-thriller-poliziesco",
+      "sommario": "Antonio Banderas spietato boss narcos in 'Sopra e sotto': il trailer",
+      "data": "2026-07-30T07:58:16.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Antonio Banderas",
+          "tipo": "attore",
+          "film": [
+            "Tony - Diario di un giovane cuoco"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Ben Affleck vince 1 milione di dollari a Chi vuol essere milionario?: tutto merito dei tacchini",
+      "link": "https://movieplayer.it/news/ben-affleck-vince-1-milione-dollari-chi-vuol-essere-milionario_170381/",
+      "sommario": "Ben Affleck conquista il premio massimo nell'edizione americana di Chi vuol essere milionario?. L'attore porta a casa un milione di dollari destinato in beneficenza, replicando l'impresa compiuta dodici mesi prima dall'amico Matt Damon. Ben Affleck entra nel r",
+      "data": "2026-07-30T07:30:58.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Matt Damon",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man e Venom insieme? Kevin Feige e Amy Pascal riaccendono le speranze dei fan sul crossover",
+      "link": "https://www.badtaste.it/articoli/spider-man-e-venom-insieme-kevin-feige-e-amy-pascal-riaccendono-le-speranze-dei-fan-sul-crossover",
+      "sommario": "Kevin Feige e Amy Pascal sono tornati a parlare del possibile incontro tra lo Spider-Man di Tom Holland e il Venom di Tom Hardy, lasciando aperta la porta a un futuro crossover.",
+      "data": "2026-07-30T07:15:06.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Tom Holland ammette la sua gaffe peggiore con la Marvel: \"Un errore che ancora mi tormenta\"",
+      "link": "https://www.badtaste.it/articoli/tom-holland-ammette-la-sua-gaffe-peggiore-con-la-marvel-un-errore-che-ancora-mi-tormenta",
+      "sommario": "Tom Holland svela lo spoiler Marvel che vorrebbe cancellare: il retroscena su 'Infinity War' e la nuova gaffe sul red carpet di Spider-Man",
+      "data": "2026-07-30T06:51:55.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day, qual è il ruolo di Sadie Sink nel nuovo film Marvel",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-chi-interpreta-sadie-sink-film-marvel_170378/",
+      "sommario": "Dopo mesi di teorie e indiscrezioni, il cinecomic con Tom Holland chiarisce l'identità della misteriosa new entry interpretata dalla star di Stranger Things. Il nome di Sadie Sink ha iniziato a ronzare attorno a Spider-Man: Brand New Day fin dai primissimi rum",
+      "data": "2026-07-30T06:30:00.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
+    },
     {
       "titolo": "Odissea è inarrestabile: Christopher Nolan supera i 700 milioni e punta a un nuovo record",
       "link": "https://www.badtaste.it/articoli/odissea-e-inarrestabile-christopher-nolan-supera-i-700-milioni-e-punta-a-un-nuovo-record",
@@ -38,7 +159,129 @@
           ]
         }
       ],
-      "rilievo": 8
+      "rilievo": 8,
+      "servizio": false,
+      "evidenza": true
+    },
+    {
+      "titolo": "Joyce Carol Oates Defends ‘The Odyssey’ and Slams Translator for Scathing Review: ‘Speaks in the Crude Language of MAGA Folks’",
+      "link": "https://variety.com/2026/film/news/joyce-carol-oates-the-odyssey-slams-translator-review-1236823922/",
+      "sommario": "Author Joyce Carol Oates came to the defense of Christopher Nolan’s “The Odyssey” after translator Emily Wilson wrote a viral review attacking the film. “Rather than disagreeing with interpretations of Homer in a collegial manner, this person, who has benefite",
+      "data": "2026-07-30T03:00:24.000Z",
+      "fonte": "Variety",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Tom Holland Recalls Seeing ‘Spider-Man: Brand New Day’ Cut He “Hated”: “It Totally Didn’t Work”",
+      "link": "https://deadline.com/2026/07/tom-holland-spider-man-brand-new-day-cut-he-hated-1237012949/",
+      "sommario": "As Tom Holland swings back into theaters this weekend with Spider-Man: Brand New Day, he’s recalling a version of the movie that remained in the multiverse. The Peter Parker actor noted he and his co-stars have “seen loads of different cuts” of his latest MCU ",
+      "data": "2026-07-30T02:54:54.000Z",
+      "fonte": "Deadline",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "‘Spider-Man: Brand New Day’ Aims to Make Box Office History as It Targets High-Flying Opening",
+      "link": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-brand-new-day-box-office-opening-tom-holland-1236659734/",
+      "sommario": "Sony's Tom Holland-led feature eyes 2026's biggest launch — and then some — as it looks to buck trends for superhero fatigue: \"It's as much a gold standard as any for how to keep a character relevant.\"",
+      "data": "2026-07-30T02:29:43.000Z",
+      "fonte": "THR",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Joyce Carol Oates Defends Christopher Nolan & ‘The Odyssey’ Against Emily Wilson, Other Critics",
+      "link": "https://deadline.com/2026/07/joyce-carol-oates-defends-christopher-nolan-the-odyssey-1237012755/",
+      "sommario": "Emily Wilson, Joyce Carol Oates would like a word. The former, who is responsible for what is probably the most popular translation of The Odyssey, was deeply critical of Christopher Nolan’s film in a recent piece she wrote for the London Review of Books. Wils",
+      "data": "2026-07-29T23:39:54.000Z",
+      "fonte": "Deadline",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "John Leguizamo Says ‘Ice Age’ Money ‘Paid for My Kids’ to Go to College and ‘Got Me a Second and Third Home’",
+      "link": "https://variety.com/2026/film/news/john-leguizamo-ice-age-money-paid-kids-college-1236823639/",
+      "sommario": "John Leguizamo has been voicing Sid the sloth since the “Ice Age” franchise launched in 2002, and the blockbuster success of the animated franchise is what allowed Leguizamo to put his kids through college. The actor told “Entertainment Tonight” on his press t",
+      "data": "2026-07-29T21:54:42.000Z",
+      "fonte": "Variety",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "John Leguizamo",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Amazon: 3 gadget originali di Spider-Man per portare un Brand New Day nella propria stanza",
+      "link": "https://www.everyeye.it/notizie/amazon-3-gadget-originali-spider-man-portare-brand-new-day-propria-stanza-893090.html",
+      "sommario": "Trasforma la casa scegliendo 3 gadget originali di Spider-Man, pensati per portare Brand New Day nella propria stanza. Avete appena visto Spider-Man Brand New Day e vie è venuta una gran voglia di aggiungere qualche gadget legato al film alla vostra collezione",
+      "data": "2026-07-29T20:46:00.000Z",
+      "fonte": "Everyeye",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film",
+          "film": [
+            "La casa - Il rogo del Male"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
     },
     {
       "titolo": "‘Spider-Man: Brand New Day’ Red Carpet Photos: All Of Zendaya & Tom Holland’s Looks From Press Tour",
@@ -64,82 +307,9 @@
           ]
         }
       ],
-      "rilievo": 8
-    },
-    {
-      "titolo": "Notorious Cult: Odissea di Christopher Nolan al centro del secondo episodio del podcast targato BadTaste",
-      "link": "https://www.badtaste.it/articoli/notorious-cult-odissea-di-christopher-nolan-al-centro-del-secondo-episodio-del-podcast-targato-badtaste",
-      "sommario": "È disponibile su YouTube il secondo episodio di Notorious Cult, dedicato a Odissea di Christopher Nolan con Giuseppe Grossi, Gabriella Giliberti e Diego Morgera.",
-      "data": "2026-07-29T17:30:51.000Z",
-      "fonte": "BadTaste",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Odissea",
-          "tipo": "film",
-          "film": [
-            "Odissea"
-          ]
-        },
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 8
-    },
-    {
-      "titolo": "Odissea: le foto e i video dal set svelano il gigantesco lavoro dietro il kolossal di Christopher Nolan",
-      "link": "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/",
-      "sommario": "Dalle monumentali scenografie alle navi costruite per essere realmente utilizzate in mare: le foto e i video condivisi dalla troupe raccontano il gigantesco lavoro dietro The Odyssey di Christopher Nolan.",
-      "data": "2026-07-24T17:00:36.000Z",
-      "fonte": "ScreenWeek",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Odissea",
-          "tipo": "film",
-          "film": [
-            "Odissea"
-          ]
-        },
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 8
-    },
-    {
-      "titolo": "Odissea, Recensione del film di Christopher Nolan",
-      "link": "https://www.lascimmiapensa.com/2026/07/15/odissea-recensione-nolan/",
-      "sommario": "Seguiteci sempre anche su LaScimmiPensa e iscrivetevi al nostro canale WhatsApp! Accompagnato da mille polemiche, a partire dal 16 luglio distribuito da Universal Pictures, arriva finalmente in sala l’evento dell’anno: Odissea di Christopher Nolan. Ma sarà riu",
-      "data": "2026-07-15T16:25:23.000Z",
-      "fonte": "La Scimmia",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Odissea",
-          "tipo": "film",
-          "film": [
-            "Odissea"
-          ]
-        },
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 8
+      "rilievo": 8,
+      "servizio": false,
+      "evidenza": true
     },
     {
       "titolo": "Madeline Brewer, Emory Cohen And Nicholas Alexander Chavez Join Paramount’s ‘Possession’",
@@ -164,7 +334,77 @@
           ]
         }
       ],
-      "rilievo": 5
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Joyce Carol Oates Defends ‘Odyssey’ Against Translator’s Viral Slam: “Crude Language of MAGA Folks”",
+      "link": "https://www.hollywoodreporter.com/movies/movie-news/the-odyssey-controversy-joyce-carol-oates-translator-1236659198/",
+      "sommario": "The celebrated author weighs in on Christopher Nolan's film: “No reason why Nolan, or anyone else, should not re-imagine/re-envision a classical hero.”",
+      "data": "2026-07-29T17:59:22.000Z",
+      "fonte": "THR",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Notorious Cult: Odissea di Christopher Nolan al centro del secondo episodio del podcast targato BadTaste",
+      "link": "https://www.badtaste.it/articoli/notorious-cult-odissea-di-christopher-nolan-al-centro-del-secondo-episodio-del-podcast-targato-badtaste",
+      "sommario": "È disponibile su YouTube il secondo episodio di Notorious Cult, dedicato a Odissea di Christopher Nolan con Giuseppe Grossi, Gabriella Giliberti e Diego Morgera.",
+      "data": "2026-07-29T17:30:51.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 8,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Ultima notte a Soho stasera su Rai 4: trama, cast e durata del film con Matt Smith",
+      "link": "https://movieplayer.it/news/ultima-notte-a-soho-trama-cast-durata_170377/",
+      "sommario": "Ultima notte a Soho arriva stasera su Rai 4 con Matt Smith, Anya Taylor-Joy e Thomasin McKenzie. Ecco trama, cast, durata e curiosità sul thriller di Edgar Wright ambientato tra presente e anni Sessanta. Mistero, un pizzico di soprannaturale e suggestioni vint",
+      "data": "2026-07-29T16:56:40.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Anya Taylor-Joy",
+          "tipo": "attore",
+          "film": [
+            "Dune - Parte tre",
+            "Super Mario Galaxy - Il film"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
     },
     {
       "titolo": "‘Tony’ Review: Dominic Sessa Shines in a Briny, Bittersweet Coming-of-Age Comedy That Just Happens to Be About a Young Anthony Bourdain",
@@ -189,7 +429,49 @@
           ]
         }
       ],
-      "rilievo": 5
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner",
+      "link": "https://fumettologica.it/2026/07/corto-maltese-la-casa-delle-orchidee-bianche-fumetto-igort-marco-steiner/",
+      "sommario": "Igort e Marco Steiner realizzeranno un fumetto inedito di Corto Maltese intitolato La casa delle orchidee bianche. Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner leggi l’articolo su Fumettologica .",
+      "data": "2026-07-29T11:09:11.000Z",
+      "fonte": "Fumettologica",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film",
+          "film": [
+            "La casa - Il rogo del Male"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Mamma ho perso l’aereo, Disney prepara il reboot e corteggia Macaulay Culkin",
+      "link": "https://movieplayer.it/news/mamma-ho-perso-laereo-disney-prepara-reboot-corteggia-macaulay-culkin_170366/",
+      "sommario": "Disney punta al ritorno di Kevin McCallister: trattative in corso con la star degli anni '90 per un nuovo capitolo del cult natalizio. E la casa di Topolino sembra disposta a tutto pur di averlo. Disney potrebbe aver finalmente trovato il modo giusto per ripor",
+      "data": "2026-07-29T09:50:00.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film",
+          "film": [
+            "La casa - Il rogo del Male"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
     },
     {
       "titolo": "Una stanza chiusa da anni, una strega e nessuna via d'uscita: cosa aspettarsi da Hokum",
@@ -214,7 +496,56 @@
           ]
         }
       ],
-      "rilievo": 5
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Odissea: le foto e i video dal set svelano il gigantesco lavoro dietro il kolossal di Christopher Nolan",
+      "link": "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/",
+      "sommario": "Dalle monumentali scenografie alle navi costruite per essere realmente utilizzate in mare: le foto e i video condivisi dalla troupe raccontano il gigantesco lavoro dietro The Odyssey di Christopher Nolan.",
+      "data": "2026-07-24T17:00:36.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 8,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "I film più attesi di agosto",
+      "link": "https://www.screenweek.it/i-film-piu-attesi-di-agosto/",
+      "sommario": "Dagli horror al ritorno di Ridley Scott, passando per i Green Day e il live-action di Oceania, il mese di agosto non è più un deserto cinematografico.",
+      "data": "2026-07-24T11:51:40.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Ridley Scott",
+          "tipo": "regista",
+          "film": [
+            "The Dog Stars - Le Stelle Dopo la Fine"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "evidenza": false
     },
     {
       "titolo": "Odissea: il ruolo di Circe nel discorso sulla violenza maschile",
@@ -239,7 +570,9 @@
           ]
         }
       ],
-      "rilievo": 5
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
     },
     {
       "titolo": "Resident Evil, il trailer ufficiale",
@@ -264,7 +597,9 @@
           ]
         }
       ],
-      "rilievo": 5
+      "rilievo": 9,
+      "servizio": true,
+      "evidenza": true
     },
     {
       "titolo": "Hokum, la Recensione dell’horror dal regista di Oddity",
@@ -289,7 +624,36 @@
           ]
         }
       ],
-      "rilievo": 5
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Odissea, Recensione del film di Christopher Nolan",
+      "link": "https://www.lascimmiapensa.com/2026/07/15/odissea-recensione-nolan/",
+      "sommario": "Seguiteci sempre anche su LaScimmiPensa e iscrivetevi al nostro canale WhatsApp! Accompagnato da mille polemiche, a partire dal 16 luglio distribuito da Universal Pictures, arriva finalmente in sala l’evento dell’anno: Odissea di Christopher Nolan. Ma sarà riu",
+      "data": "2026-07-15T16:25:23.000Z",
+      "fonte": "La Scimmia",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 8,
+      "servizio": false,
+      "evidenza": false
     },
     {
       "titolo": "The Batman Part II: ecco il teaser e una nuova data d’uscita",
@@ -314,7 +678,9 @@
           ]
         }
       ],
-      "rilievo": 5
+      "rilievo": 9,
+      "servizio": true,
+      "evidenza": false
     },
     {
       "titolo": "Lupita Nyong’o accende le polemiche sulle donne nell’Odissea",
@@ -339,296 +705,9 @@
           ]
         }
       ],
-      "rilievo": 5
-    },
-    {
-      "titolo": "Antonio Banderas tra squali e tensione: il nuovo thriller poliziesco",
-      "link": "https://www.badtaste.it/articoli/antonio-banderas-tra-squali-e-tensione-il-nuovo-thriller-poliziesco",
-      "sommario": "Antonio Banderas spietato boss narcos in 'Sopra e sotto': il trailer",
-      "data": "2026-07-30T07:58:16.000Z",
-      "fonte": "BadTaste",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Antonio Banderas",
-          "tipo": "attore",
-          "film": [
-            "Tony - Diario di un giovane cuoco"
-          ]
-        }
-      ],
-      "rilievo": 4
-    },
-    {
-      "titolo": "Tom Holland ammette la sua gaffe peggiore con la Marvel: \"Un errore che ancora mi tormenta\"",
-      "link": "https://www.badtaste.it/articoli/tom-holland-ammette-la-sua-gaffe-peggiore-con-la-marvel-un-errore-che-ancora-mi-tormenta",
-      "sommario": "Tom Holland svela lo spoiler Marvel che vorrebbe cancellare: il retroscena su 'Infinity War' e la nuova gaffe sul red carpet di Spider-Man",
-      "data": "2026-07-30T06:51:55.000Z",
-      "fonte": "BadTaste",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Tom Holland",
-          "tipo": "attore",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 4
-    },
-    {
-      "titolo": "Tom Holland Recalls Seeing ‘Spider-Man: Brand New Day’ Cut He “Hated”: “It Totally Didn’t Work”",
-      "link": "https://deadline.com/2026/07/tom-holland-spider-man-brand-new-day-cut-he-hated-1237012949/",
-      "sommario": "As Tom Holland swings back into theaters this weekend with Spider-Man: Brand New Day, he’s recalling a version of the movie that remained in the multiverse. The Peter Parker actor noted he and his co-stars have “seen loads of different cuts” of his latest MCU ",
-      "data": "2026-07-30T02:54:54.000Z",
-      "fonte": "Deadline",
-      "lingua": "en",
-      "citati": [
-        {
-          "nome": "Tom Holland",
-          "tipo": "attore",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 4
-    },
-    {
-      "titolo": "Joyce Carol Oates Defends Christopher Nolan & ‘The Odyssey’ Against Emily Wilson, Other Critics",
-      "link": "https://deadline.com/2026/07/joyce-carol-oates-defends-christopher-nolan-the-odyssey-1237012755/",
-      "sommario": "Emily Wilson, Joyce Carol Oates would like a word. The former, who is responsible for what is probably the most popular translation of The Odyssey, was deeply critical of Christopher Nolan’s film in a recent piece she wrote for the London Review of Books. Wils",
-      "data": "2026-07-29T23:39:54.000Z",
-      "fonte": "Deadline",
-      "lingua": "en",
-      "citati": [
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 4
-    },
-    {
-      "titolo": "John Leguizamo Says ‘Ice Age’ Money ‘Paid for My Kids’ to Go to College and ‘Got Me a Second and Third Home’",
-      "link": "https://variety.com/2026/film/news/john-leguizamo-ice-age-money-paid-kids-college-1236823639/",
-      "sommario": "John Leguizamo has been voicing Sid the sloth since the “Ice Age” franchise launched in 2002, and the blockbuster success of the animated franchise is what allowed Leguizamo to put his kids through college. The actor told “Entertainment Tonight” on his press t",
-      "data": "2026-07-29T21:54:42.000Z",
-      "fonte": "Variety",
-      "lingua": "en",
-      "citati": [
-        {
-          "nome": "John Leguizamo",
-          "tipo": "attore",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 4
-    },
-    {
-      "titolo": "Ben Affleck vince 1 milione di dollari a Chi vuol essere milionario?: tutto merito dei tacchini",
-      "link": "https://movieplayer.it/news/ben-affleck-vince-1-milione-dollari-chi-vuol-essere-milionario_170381/",
-      "sommario": "Ben Affleck conquista il premio massimo nell'edizione americana di Chi vuol essere milionario?. L'attore porta a casa un milione di dollari destinato in beneficenza, replicando l'impresa compiuta dodici mesi prima dall'amico Matt Damon. Ben Affleck entra nel r",
-      "data": "2026-07-30T07:30:58.000Z",
-      "fonte": "MoviePlayer",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Matt Damon",
-          "tipo": "attore",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Spider-Man e Venom insieme? Kevin Feige e Amy Pascal riaccendono le speranze dei fan sul crossover",
-      "link": "https://www.badtaste.it/articoli/spider-man-e-venom-insieme-kevin-feige-e-amy-pascal-riaccendono-le-speranze-dei-fan-sul-crossover",
-      "sommario": "Kevin Feige e Amy Pascal sono tornati a parlare del possibile incontro tra lo Spider-Man di Tom Holland e il Venom di Tom Hardy, lasciando aperta la porta a un futuro crossover.",
-      "data": "2026-07-30T07:15:06.000Z",
-      "fonte": "BadTaste",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Tom Holland",
-          "tipo": "attore",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Spider-Man: Brand New Day, qual è il ruolo di Sadie Sink nel nuovo film Marvel",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-chi-interpreta-sadie-sink-film-marvel_170378/",
-      "sommario": "Dopo mesi di teorie e indiscrezioni, il cinecomic con Tom Holland chiarisce l'identità della misteriosa new entry interpretata dalla star di Stranger Things. Il nome di Sadie Sink ha iniziato a ronzare attorno a Spider-Man: Brand New Day fin dai primissimi rum",
-      "data": "2026-07-30T06:30:00.000Z",
-      "fonte": "MoviePlayer",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Tom Holland",
-          "tipo": "attore",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Joyce Carol Oates Defends ‘The Odyssey’ and Slams Translator for Scathing Review: ‘Speaks in the Crude Language of MAGA Folks’",
-      "link": "https://variety.com/2026/film/news/joyce-carol-oates-the-odyssey-slams-translator-review-1236823922/",
-      "sommario": "Author Joyce Carol Oates came to the defense of Christopher Nolan’s “The Odyssey” after translator Emily Wilson wrote a viral review attacking the film. “Rather than disagreeing with interpretations of Homer in a collegial manner, this person, who has benefite",
-      "data": "2026-07-30T03:00:24.000Z",
-      "fonte": "Variety",
-      "lingua": "en",
-      "citati": [
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "‘Spider-Man: Brand New Day’ Aims to Make Box Office History as It Targets High-Flying Opening",
-      "link": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-brand-new-day-box-office-opening-tom-holland-1236659734/",
-      "sommario": "Sony's Tom Holland-led feature eyes 2026's biggest launch — and then some — as it looks to buck trends for superhero fatigue: \"It's as much a gold standard as any for how to keep a character relevant.\"",
-      "data": "2026-07-30T02:29:43.000Z",
-      "fonte": "THR",
-      "lingua": "en",
-      "citati": [
-        {
-          "nome": "Tom Holland",
-          "tipo": "attore",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Amazon: 3 gadget originali di Spider-Man per portare un Brand New Day nella propria stanza",
-      "link": "https://www.everyeye.it/notizie/amazon-3-gadget-originali-spider-man-portare-brand-new-day-propria-stanza-893090.html",
-      "sommario": "Trasforma la casa scegliendo 3 gadget originali di Spider-Man, pensati per portare Brand New Day nella propria stanza. Avete appena visto Spider-Man Brand New Day e vie è venuta una gran voglia di aggiungere qualche gadget legato al film alla vostra collezione",
-      "data": "2026-07-29T20:46:00.000Z",
-      "fonte": "Everyeye",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "La casa - Il rogo del Male",
-          "tipo": "film",
-          "film": [
-            "La casa - Il rogo del Male"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Joyce Carol Oates Defends ‘Odyssey’ Against Translator’s Viral Slam: “Crude Language of MAGA Folks”",
-      "link": "https://www.hollywoodreporter.com/movies/movie-news/the-odyssey-controversy-joyce-carol-oates-translator-1236659198/",
-      "sommario": "The celebrated author weighs in on Christopher Nolan's film: “No reason why Nolan, or anyone else, should not re-imagine/re-envision a classical hero.”",
-      "data": "2026-07-29T17:59:22.000Z",
-      "fonte": "THR",
-      "lingua": "en",
-      "citati": [
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista",
-          "film": [
-            "Odissea"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Ultima notte a Soho stasera su Rai 4: trama, cast e durata del film con Matt Smith",
-      "link": "https://movieplayer.it/news/ultima-notte-a-soho-trama-cast-durata_170377/",
-      "sommario": "Ultima notte a Soho arriva stasera su Rai 4 con Matt Smith, Anya Taylor-Joy e Thomasin McKenzie. Ecco trama, cast, durata e curiosità sul thriller di Edgar Wright ambientato tra presente e anni Sessanta. Mistero, un pizzico di soprannaturale e suggestioni vint",
-      "data": "2026-07-29T16:56:40.000Z",
-      "fonte": "MoviePlayer",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Anya Taylor-Joy",
-          "tipo": "attore",
-          "film": [
-            "Dune - Parte tre",
-            "Super Mario Galaxy - Il film"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner",
-      "link": "https://fumettologica.it/2026/07/corto-maltese-la-casa-delle-orchidee-bianche-fumetto-igort-marco-steiner/",
-      "sommario": "Igort e Marco Steiner realizzeranno un fumetto inedito di Corto Maltese intitolato La casa delle orchidee bianche. Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner leggi l’articolo su Fumettologica .",
-      "data": "2026-07-29T11:09:11.000Z",
-      "fonte": "Fumettologica",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "La casa - Il rogo del Male",
-          "tipo": "film",
-          "film": [
-            "La casa - Il rogo del Male"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "Mamma ho perso l’aereo, Disney prepara il reboot e corteggia Macaulay Culkin",
-      "link": "https://movieplayer.it/news/mamma-ho-perso-laereo-disney-prepara-reboot-corteggia-macaulay-culkin_170366/",
-      "sommario": "Disney punta al ritorno di Kevin McCallister: trattative in corso con la star degli anni '90 per un nuovo capitolo del cult natalizio. E la casa di Topolino sembra disposta a tutto pur di averlo. Disney potrebbe aver finalmente trovato il modo giusto per ripor",
-      "data": "2026-07-29T09:50:00.000Z",
-      "fonte": "MoviePlayer",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "La casa - Il rogo del Male",
-          "tipo": "film",
-          "film": [
-            "La casa - Il rogo del Male"
-          ]
-        }
-      ],
-      "rilievo": 1
-    },
-    {
-      "titolo": "I film più attesi di agosto",
-      "link": "https://www.screenweek.it/i-film-piu-attesi-di-agosto/",
-      "sommario": "Dagli horror al ritorno di Ridley Scott, passando per i Green Day e il live-action di Oceania, il mese di agosto non è più un deserto cinematografico.",
-      "data": "2026-07-24T11:51:40.000Z",
-      "fonte": "ScreenWeek",
-      "lingua": "it",
-      "citati": [
-        {
-          "nome": "Ridley Scott",
-          "tipo": "regista",
-          "film": [
-            "The Dog Stars - Le Stelle Dopo la Fine"
-          ]
-        }
-      ],
-      "rilievo": 1
+      "rilievo": 5,
+      "servizio": false,
+      "evidenza": false
     }
   ]
 }

@@ -31,7 +31,19 @@ const FONTI = [
   { nome: 'THR',            url: 'https://www.hollywoodreporter.com/c/movies/feed/', lingua: 'en' }
 ];
 
-const GIORNI = 21;   // oltre, non è più notizia
+const GIORNI = 21;      // oltre, un articolo non è più notizia
+const MEMORIA = 30;     // per quanto conservo l'archivio accumulato
+
+/* Parole che segnalano una notizia "di servizio": quelle che se ti
+   sfuggono cambiano i tuoi piani, non solo il tuo umore. */
+const PESANTI = [
+  'rinviat', 'rimandat', 'slitta', 'posticipat', 'anticipat', 'nuova data', 'data d\'uscita',
+  'prevendit', 'al cinema dal', 'in sala dal', 'uscita italiana',
+  'trailer', 'teaser', 'prime immagini', 'annuncia', 'annunciato', 'confermato',
+  'oscar', 'candidatur', 'nomination', 'vince', 'premio', 'festival',
+  'cancellat', 'sequel', 'riedizione', 'box office', 'incasso', 'incassi',
+  'delayed', 'release date', 'first look', 'announces'
+];
 
 /* ── parsing RSS senza dipendenze ────────────────────── */
 function ripulisci(s = '') {
@@ -197,28 +209,71 @@ for (const a of articoli) {
   // Il titolo dell'articolo pesa più del sommario: è lì che sta la notizia.
   const inTitolo = citati.filter(c => [...c.alias].some(a2 => paroleIntere(soloTitolo, a2)));
 
+  const parolaPesante = PESANTI.some(p => soloTitolo.includes(p));
+
   notizie.push({
     ...a,
     citati: citati.map(c => ({ nome: c.nome, tipo: c.tipo, film: [...c.film] })),
-    rilievo: inTitolo.length * 3 + citati.length
+    rilievo: inTitolo.length * 3 + citati.length + (parolaPesante ? 4 : 0),
+    servizio: parolaPesante && inTitolo.length > 0,
+    vistoIl: new Date().toISOString()
   });
 }
 
-// Stessa notizia su più testate: tengo la prima.
-const viste = new Set();
-const finali = notizie
-  .sort((a, b) => b.rilievo - a.rilievo || String(b.data).localeCompare(String(a.data)))
-  .filter(n => {
-    const impronta = n.titolo.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 45);
-    if (viste.has(impronta)) return false;
-    viste.add(impronta);
-    return true;
-  })
-  .slice(0, 40);
+/* ── archivio: le notizie si accumulano, non si sostituiscono ──
+   Un feed RSS tiene solo gli ultimi articoli: senza memoria, una
+   notizia importante sparirebbe dopo pochi giorni. */
+let archivio = [];
+try {
+  const vecchio = JSON.parse(await readFile(join(ROOT, 'data', 'notizie.json'), 'utf8'));
+  archivio = vecchio.notizie || [];
+} catch { /* prima esecuzione */ }
+
+const perLink = new Map(archivio.map(n => [n.link, n]));
+let inedite = 0;
+for (const n of notizie) {
+  if (perLink.has(n.link)) {
+    // Già vista: aggiorno il punteggio ma conservo quando è comparsa.
+    const prima = perLink.get(n.link);
+    perLink.set(n.link, { ...n, vistoIl: prima.vistoIl });
+  } else {
+    perLink.set(n.link, n);
+    inedite++;
+  }
+}
+
+const scadenza = Date.now() - MEMORIA * 86400000;
+const eta = n => new Date(n.data || n.vistoIl).getTime();
+
+// Stessa notizia su più testate: tengo quella con il rilievo più alto.
+const impronte = new Map();
+for (const n of [...perLink.values()].sort((a, b) => b.rilievo - a.rilievo)) {
+  if (eta(n) < scadenza) continue;
+  const impronta = normalizza(n.titolo).replace(/\s/g, '').slice(0, 45);
+  if (!impronte.has(impronta)) impronte.set(impronta, n);
+}
+
+const tutte = [...impronte.values()].sort((a, b) => eta(b) - eta(a));
+
+/* Le tre più importanti della settimana restano ancorate: se non apri
+   l'app per qualche giorno, le ritrovi comunque in cima. */
+const settimana = Date.now() - 7 * 86400000;
+const evidenza = tutte
+  .filter(n => eta(n) >= settimana)
+  .sort((a, b) => b.rilievo - a.rilievo || eta(b) - eta(a))
+  .slice(0, 3);
+const inEvidenza = new Set(evidenza.map(n => n.link));
+for (const n of tutte) n.evidenza = inEvidenza.has(n.link);
+
+const finali = tutte.slice(0, 80);
 
 await writeFile(join(ROOT, 'data', 'notizie.json'),
-  JSON.stringify({ aggiornato: new Date().toISOString(), fonti: FONTI.map(f => f.nome), notizie: finali }, null, 2) + '\n');
+  JSON.stringify({
+    aggiornato: new Date().toISOString(),
+    fonti: FONTI.map(f => f.nome),
+    notizie: finali
+  }, null, 2) + '\n');
 
-console.log(`\n✅ data/notizie.json — ${finali.length} notizie pertinenti su ${articoli.length} articoli letti.`);
-finali.slice(0, 8).forEach(n =>
-  console.log(`  · [${n.fonte}] ${n.titolo.slice(0, 78)}\n      → ${n.citati.map(c => c.nome).slice(0, 3).join(', ')}`));
+console.log(`\n✅ data/notizie.json — ${finali.length} in archivio (${inedite} nuove) su ${articoli.length} articoli letti.`);
+console.log('\n★ In evidenza questa settimana:');
+evidenza.forEach(n => console.log(`  · [${n.fonte}] ${n.titolo.slice(0, 76)}\n      → ${n.citati.map(c => c.nome).slice(0, 3).join(', ')} · rilievo ${n.rilievo}`));

@@ -768,3 +768,19 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 /* due classifiche affiancate */
 .classifiche{ display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:clamp(20px,3vw,44px); }
 .nov-prevendita .nov-icona{ color:var(--hot); background:rgba(255,194,77,.16); }
+
+/* notizie ancorate e non lette */
+.news-evidenza{
+  border-color:rgba(255,194,77,.4);
+  background:linear-gradient(135deg, rgba(255,194,77,.1), rgba(183,140,255,.05) 60%, var(--panel));
+}
+.news-pin{
+  padding:3px 9px; border-radius:999px; background:rgba(255,194,77,.18);
+  font-size:9.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--hot);
+}
+.news-nuova{ position:relative; }
+.news-nuova::after{
+  content:""; position:absolute; top:11px; right:11px;
+  width:8px; height:8px; border-radius:50%; background:var(--accent);
+  box-shadow:0 0 10px var(--accent);
+}
