@@ -46,7 +46,7 @@ const Store = (() => {
      a un film visto lo farebbe tornare "da vedere". */
   function predefinito(id) {
     const m = catalog.find(x => x.id === id);
-    return { ...blank(), seen: m?.lista === 'visto' };
+    return { ...blank(), seen: m?.lista === 'visto', rewatch: Boolean(m?.rivedere) };
   }
 
   function userState(id) {

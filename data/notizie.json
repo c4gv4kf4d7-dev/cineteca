@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-07-30T16:31:15.713Z",
+  "aggiornato": "2026-07-30T17:21:32.978Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -16,6 +16,81 @@
   ],
   "segnalazioniPrevendita": [],
   "notizie": [
+    {
+      "titolo": "John Leguizamo Eyes ‘Odyssey’ Reunion With Matt Damon On Secret Daniels Project At Universal",
+      "link": "https://deadline.com/2026/07/john-leguizamo-the-odyssey-matt-damon-daniels-movie-1237012847/",
+      "sommario": "EXCLUSIVE: After receiving some of the best reviews of his career on The Odyssey, John Leguizamo and Matt Damon are ready for their next big voyage as sources tell Deadline Leguizamo is in negotiations to join Damon in the untitled event project from filmmakin",
+      "data": "2026-07-30T17:15:00.000Z",
+      "fonte": "Deadline",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Matt Damon",
+          "tipo": "attore",
+          "film": [
+            "Odissea",
+            "Oppenheimer"
+          ]
+        },
+        {
+          "nome": "John Leguizamo",
+          "tipo": "attore",
+          "film": [
+            "Odissea",
+            "The Menu"
+          ]
+        }
+      ],
+      "rilievo": 8,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.959Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "‘Weapons,’ ‘Marty Supreme’ and ‘Hacks’ Among 2026 MacGuffin Awards Nominees",
+      "link": "https://variety.com/2026/artisans/news/macguffin-awards-property-masters-guild-nominees-2026-1236823893/",
+      "sommario": "“One Battle After Another, “Marty Supreme” and “Sinners” are among the MacGuffin Awards nominees presented by the Property Masters Guild. The awards honors the prop masters and their contributions behind the camera. The winners will be revealed during the live",
+      "data": "2026-07-30T17:00:00.000Z",
+      "fonte": "Variety",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Marty Supreme",
+          "tipo": "film",
+          "film": [
+            "Marty Supreme"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.955Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: The Last Blockbuster Franchise Nobody’s Managed to Screw Up",
+      "link": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-brand-new-day-box-office-ranked-1236660008/",
+      "sommario": "'Brand New Day' is poised to continue Spidey's winning streak for a character who keeps scoring home runs while other franchises stumble.",
+      "data": "2026-07-30T16:58:13.000Z",
+      "fonte": "THR",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.971Z",
+      "evidenza": false
+    },
     {
       "titolo": "Odissea, John Leguizamo svela i retroscena della scena del cane: come Christopher Nolan l'ha girata",
       "link": "https://www.badtaste.it/articoli/odissea-john-leguizamo-svela-i-retroscena-della-scena-del-cane-come-christopher-nolan-lha-girata",
@@ -35,14 +110,16 @@
           "nome": "Christopher Nolan",
           "tipo": "regista",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Oppenheimer"
           ]
         },
         {
           "nome": "John Leguizamo",
           "tipo": "attore",
           "film": [
-            "Odissea"
+            "Odissea",
+            "The Menu"
           ]
         }
       ],
@@ -51,6 +128,28 @@
       "prevendite": false,
       "vistoIl": "2026-07-30T16:31:15.122Z",
       "evidenza": true
+    },
+    {
+      "titolo": "Marvel's Spider-Man Remastered è in forte sconto sia su PC che su PS5 #AD",
+      "link": "https://www.everyeye.it/notizie/marvel-s-spider-man-remastered-forte-sconto-pc-ps5-893243.html",
+      "sommario": "Ecco come fare per risparmiare sull'acquisto di Marvel's Spider-Man Remastered, sia sulla versione PC che su quella Playstation 5. Ora che tutti stanno parlando di Spider-Man grazie a Brand New Day hai deciso di recuperare anche la serie videoludica ad opera d",
+      "data": "2026-07-30T15:14:00.000Z",
+      "fonte": "Everyeye",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.879Z",
+      "evidenza": false
     },
     {
       "titolo": "Netflix Sets Fall Release for Cannes Breakout ‘Gentle Monster’ Starring Léa Seydoux (EXCLUSIVE)",
@@ -86,7 +185,9 @@
           "nome": "Brendan Fraser",
           "tipo": "attore",
           "film": [
-            "Rental Family - Nelle vite degli altri"
+            "Rental Family - Nelle vite degli altri",
+            "The Whale",
+            "Killers of the Flower Moon"
           ]
         }
       ],
@@ -119,6 +220,28 @@
       "evidenza": false
     },
     {
+      "titolo": "Solo da Gamelife puoi risparmiare sul bundle con PS5 Slim e Marvel's Spider-Man 2 #AD",
+      "link": "https://www.everyeye.it/notizie/gamelife-puoi-risparmiare-bundle-ps5-slim-marvel-s-spider-man-2-893235.html",
+      "sommario": "È possibile approfittare ora da Gamelife di un ottimo sconto sul bundle composto da PlayStation 5 Slim e Marvel's Spider-Man 2. Dopo aver visto Spider-Man Brand New Day ti è venuta una gran voglia di giocare a Marvel's Spider-Man 2 su PlayStation 5? Nessun pro",
+      "data": "2026-07-30T14:35:00.000Z",
+      "fonte": "Everyeye",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.881Z",
+      "evidenza": false
+    },
+    {
       "titolo": "Billie Eilish Concert Film ‘Hit Me Hard And Soft’ Gets Paramount+ Release Date",
       "link": "https://deadline.com/2026/07/billie-eilish-hit-me-hard-soft-streaming-date-paramount-1237013199/",
       "sommario": "Billie Eilish – Hit Me Hard And Soft: The Tour (Live) will begin streaming Thursday, August 6 on Paramount+ in the the U.S, following an 84-day theatrical window. The 3D concert film, directed by James Cameron and Eilish, captures Eilish’s most recent tour for",
@@ -141,6 +264,28 @@
       "evidenza": false
     },
     {
+      "titolo": "John Legend to Play Harry Belafonte in Bill Condon’s ‘The Road Home’",
+      "link": "https://www.hollywoodreporter.com/movies/movie-news/john-legend-harry-belafonte-bill-condon-the-road-home-1236659795/",
+      "sommario": "The EGOT winner joins Thabo Rametsi as Hugh Masekela, Cynthia Erivo as Miriam Makeba and Johnny Flynn as Paul Simon in a drama about the political firestorm that surrounded the creation of Simon's classic 1980s album 'Graceland.'",
+      "data": "2026-07-30T14:00:00.000Z",
+      "fonte": "THR",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Cynthia Erivo",
+          "tipo": "attore",
+          "film": [
+            "Wicked"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.973Z",
+      "evidenza": false
+    },
+    {
       "titolo": "‘Street Fighter’ Character Posters: Andrew Koji, Noah Centineo, David Dastmalchian, Callina Liang, Jason Momoa, Curtis ‘50 Cent’ Jackson & More",
       "link": "https://deadline.com/gallery/street-fighter-character-posters/",
       "sommario": "Paramount Pictures has released a new sneak peek from the upcoming live-action adaptation of the classic arcade game Street Fighter, showcasing an intense fight between Blanka (Jason Momoa) and Ryu (Andrew Koji). The film is set to hit theaters on October 16, ",
@@ -152,7 +297,8 @@
           "nome": "Jason Momoa",
           "tipo": "attore",
           "film": [
-            "Dune - Parte tre"
+            "Dune - Parte tre",
+            "Dune"
           ]
         }
       ],
@@ -174,11 +320,19 @@
           "nome": "Tom Holland",
           "tipo": "attore",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Spider-Man: Brand New Day"
+          ]
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
           ]
         }
       ],
-      "rilievo": 4,
+      "rilievo": 8,
       "servizio": false,
       "prevendite": false,
       "vistoIl": "2026-07-30T16:31:15.123Z",
@@ -207,6 +361,28 @@
       "evidenza": false
     },
     {
+      "titolo": "Come guardare i film di Spider-Man in ordine (cronologico e in base all’uscita)",
+      "link": "https://www.cinefilos.it/tutto-film/approfondimenti/ordine-film-spider-man-cronologico-uscita-716189",
+      "sommario": "Come guardare i film di Spider-Man in ordine (cronologico e in base all’uscita) Il franchise live-action di Spider-Man si compone di tre diverse incarnazioni e nove film principali, oltre a vari spin-off; ecco l’ordine definitivo in cui guardarli, in base alla",
+      "data": "2026-07-30T12:00:59.000Z",
+      "fonte": "Cinefilos",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.942Z",
+      "evidenza": false
+    },
+    {
       "titolo": "Spider-Man: Brand New Day, Tom Holland ha letteralmente odiato una versione del film",
       "link": "https://movieplayer.it/news/spider-man-brand-new-day-tom-holland-odiato-versione-film_170386/",
       "sommario": "Prima di arrivare al cinema, il nuovo capitolo dedicato a Peter Parker ha cambiato forma più volte. E un montaggio in particolare di Brand New Day non convinse affatto il protagonista. Spider-Man: Brand New Day, il quarto film solista con Tom Holland nei panni",
@@ -218,11 +394,19 @@
           "nome": "Tom Holland",
           "tipo": "attore",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Spider-Man: Brand New Day"
+          ]
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
           ]
         }
       ],
-      "rilievo": 4,
+      "rilievo": 8,
       "servizio": false,
       "prevendite": false,
       "vistoIl": "2026-07-30T12:13:04.828Z",
@@ -248,6 +432,36 @@
       "servizio": false,
       "prevendite": false,
       "vistoIl": "2026-07-30T12:13:04.806Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Chi è il personaggio di Sadie Sink in Spider-Man: Brand New Day",
+      "link": "https://fumettologica.it/2026/07/sadie-sink-personaggio-spider-man-brand-new-day-film-marvel/",
+      "sommario": "Con l'uscita di Spider-Man: Brand New Day, è stato rivelato il personaggio misterioso interpretato da Sadie Sink. Chi è il personaggio di Sadie Sink in Spider-Man: Brand New Day leggi l’articolo su Fumettologica .",
+      "data": "2026-07-30T11:00:00.000Z",
+      "fonte": "Fumettologica",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Sadie Sink",
+          "tipo": "attore",
+          "film": [
+            "The Whale",
+            "Spider-Man: Brand New Day"
+          ]
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 8,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.921Z",
       "evidenza": false
     },
     {
@@ -284,7 +498,8 @@
           "nome": "Zoe Saldaña",
           "tipo": "attore",
           "film": [
-            "Avatar: Fuoco e cenere"
+            "Avatar: Fuoco e cenere",
+            "Elio"
           ]
         }
       ],
@@ -306,14 +521,96 @@
           "nome": "Tom Holland",
           "tipo": "attore",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Spider-Man: Brand New Day"
+          ]
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
           ]
         }
       ],
-      "rilievo": 5,
-      "servizio": false,
+      "rilievo": 9,
+      "servizio": true,
       "prevendite": false,
       "vistoIl": "2026-07-30T12:13:04.831Z",
+      "evidenza": true
+    },
+    {
+      "titolo": "Jennifer Aniston protagonista della prossima commedia natalizia Naughty: trama e cast",
+      "link": "https://www.badtaste.it/articoli/jennifer-aniston-protagonista-della-prossima-commedia-natalizia-naughty-trama-e-cast",
+      "sommario": "Jennifer Aniston e Peter Dinklage star di 'Naughty', la commedia natalizia di Olivia Wilde. Trama, cast e data d'uscita del nuovo film targato Universal",
+      "data": "2026-07-30T10:00:13.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Peter Dinklage",
+          "tipo": "attore",
+          "film": [
+            "Wicked"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.845Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day - Tutto sul personaggio di Sadie Sink",
+      "link": "https://www.screenweek.it/spider-man-brand-new-day-tutto-sul-personaggio-di-sadie-sink/",
+      "sommario": "Ovviamente, SPOILER! Leggete solo dopo aver visto il film.",
+      "data": "2026-07-30T09:59:14.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Sadie Sink",
+          "tipo": "attore",
+          "film": [
+            "The Whale",
+            "Spider-Man: Brand New Day"
+          ]
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 8,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.930Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day - Cosa succede nella scena dopo i titoli di coda?",
+      "link": "https://www.screenweek.it/spider-man-brand-new-day-cosa-succede-nella-scena-dopo-i-titoli-di-coda/",
+      "sommario": "La scena dopo i titoli di coda di Spider-Man: Brand New Day è piccola, ma potenzialmente molto significativa...",
+      "data": "2026-07-30T09:40:26.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.931Z",
       "evidenza": false
     },
     {
@@ -369,7 +666,8 @@
           "nome": "Matt Damon",
           "tipo": "attore",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Oppenheimer"
           ]
         }
       ],
@@ -430,14 +728,30 @@
           "nome": "Tom Holland",
           "tipo": "attore",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Spider-Man: Brand New Day"
+          ]
+        },
+        {
+          "nome": "Sadie Sink",
+          "tipo": "attore",
+          "film": [
+            "The Whale",
+            "Spider-Man: Brand New Day"
+          ]
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
           ]
         }
       ],
-      "rilievo": 1,
+      "rilievo": 9,
       "servizio": false,
       "prevendite": false,
-      "evidenza": false
+      "evidenza": true
     },
     {
       "titolo": "Odissea è inarrestabile: Christopher Nolan supera i 700 milioni e punta a un nuovo record",
@@ -464,7 +778,7 @@
       ],
       "rilievo": 8,
       "servizio": false,
-      "evidenza": true
+      "evidenza": false
     },
     {
       "titolo": "Joyce Carol Oates Defends ‘The Odyssey’ and Slams Translator for Scathing Review: ‘Speaks in the Crude Language of MAGA Folks’",
@@ -583,9 +897,16 @@
           "film": [
             "La casa - Il rogo del Male"
           ]
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
         }
       ],
-      "rilievo": 1,
+      "rilievo": 5,
       "servizio": false,
       "prevendite": false,
       "evidenza": false
@@ -705,7 +1026,9 @@
           "tipo": "attore",
           "film": [
             "Dune - Parte tre",
-            "Super Mario Galaxy - Il film"
+            "Super Mario Galaxy - Il film",
+            "The Menu",
+            "Super Mario Bros. Il Film"
           ]
         }
       ],
@@ -743,6 +1066,28 @@
       "evidenza": false
     },
     {
+      "titolo": "Spider-Man: Brand New Day, la scena post-credit spiegata bene",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-la-scena-post-credit-spiegata-bene_170369/",
+      "sommario": "Cosa accade nella scena post-credit di Spider-Man: Brand New Day e quali indizi offre sul futuro di Peter Parker e del MCU? Fin da quel primo Iron Man di ben 18 anni fa, la Marvel ci ha abituati a una cosa: mai e poi mai abbandonare la sala prima che l'ultimo ",
+      "data": "2026-07-29T14:00:00.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.872Z",
+      "evidenza": false
+    },
+    {
       "titolo": "Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner",
       "link": "https://fumettologica.it/2026/07/corto-maltese-la-casa-delle-orchidee-bianche-fumetto-igort-marco-steiner/",
       "sommario": "Igort e Marco Steiner realizzeranno un fumetto inedito di Corto Maltese intitolato La casa delle orchidee bianche. Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner leggi l’articolo su Fumettologica .",
@@ -761,6 +1106,28 @@
       "rilievo": 1,
       "servizio": false,
       "prevendite": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day, il supereroismo dal volto umano",
+      "link": "https://www.screenweek.it/spider-man-brand-new-day-il-supereroismo-dal-volto-umano/",
+      "sommario": "Non è più Peter Parker ad avere bisogno del MCU, ma viceversa: la sua nuova avventura riporta in scena uno Spider-Man più terreno, in perenne conflitto con se stesso.",
+      "data": "2026-07-29T11:03:03.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film",
+          "film": [
+            "Spider-Man: Brand New Day"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.931Z",
       "evidenza": false
     },
     {
@@ -831,7 +1198,8 @@
           "nome": "Christopher Nolan",
           "tipo": "regista",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Oppenheimer"
           ]
         }
       ],
@@ -852,7 +1220,8 @@
           "nome": "Ridley Scott",
           "tipo": "regista",
           "film": [
-            "The Dog Stars - Le Stelle Dopo la Fine"
+            "The Dog Stars - Le Stelle Dopo la Fine",
+            "Il gladiatore II"
           ]
         }
       ],
@@ -880,11 +1249,19 @@
           "nome": "Christopher Nolan",
           "tipo": "regista",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Oppenheimer"
+          ]
+        },
+        {
+          "nome": "Samantha Morton",
+          "tipo": "attore",
+          "film": [
+            "The Whale"
           ]
         }
       ],
-      "rilievo": 5,
+      "rilievo": 6,
       "servizio": false,
       "prevendite": false,
       "evidenza": false
@@ -914,7 +1291,36 @@
       ],
       "rilievo": 9,
       "servizio": true,
-      "evidenza": true
+      "evidenza": false
+    },
+    {
+      "titolo": "Danny Boyle aprirà Venezia 83 con Ink",
+      "link": "https://www.lascimmiapensa.com/2026/07/17/danny-boyle-ink-venezia-83/",
+      "sommario": "Venezia 83, sarà Ink di Danny Boyle il film d’apertura: il nuovo attesissimo progetto del regista di 28 Anni Dopo La Mostra Internazionale d’Arte Cinematografica di Venezia ha annunciato il film che inaugurerà la sua 83ª edizione. A dare il via al festival, in",
+      "data": "2026-07-17T12:00:12.000Z",
+      "fonte": "La Scimmia",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "28 anni dopo",
+          "tipo": "film",
+          "film": [
+            "28 anni dopo"
+          ]
+        },
+        {
+          "nome": "Danny Boyle",
+          "tipo": "regista",
+          "film": [
+            "28 anni dopo"
+          ]
+        }
+      ],
+      "rilievo": 5,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T17:21:32.946Z",
+      "evidenza": false
     },
     {
       "titolo": "Hokum, la Recensione dell’horror dal regista di Oddity",
@@ -963,7 +1369,8 @@
           "nome": "Christopher Nolan",
           "tipo": "regista",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Oppenheimer"
           ]
         }
       ],
@@ -1019,7 +1426,8 @@
           "nome": "Christopher Nolan",
           "tipo": "regista",
           "film": [
-            "Odissea"
+            "Odissea",
+            "Oppenheimer"
           ]
         }
       ],

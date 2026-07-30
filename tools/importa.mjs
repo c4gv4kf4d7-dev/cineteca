@@ -37,6 +37,7 @@ for (const elenco of ['visto', 'cinema', 'casa']) {
       cast: [],
       plot: null,
       lista: elenco,
+      ...(voce.rivedere ? { rivedere: true } : {}),
       source: `tmdb:${voce.tmdbId}`
     });
     aggiunti++;

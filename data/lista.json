@@ -44,6 +44,77 @@
     {
       "tmdbId": 680493,
       "titolo": "Return to Silent Hill"
+    },
+    {
+      "tmdbId": 1062722,
+      "titolo": "Frankenstein"
+    },
+    {
+      "tmdbId": 1100988,
+      "titolo": "28 anni dopo"
+    },
+    {
+      "tmdbId": 911430,
+      "titolo": "F1: Il film"
+    },
+    {
+      "tmdbId": 1078605,
+      "titolo": "Weapons"
+    },
+    {
+      "tmdbId": 1228246,
+      "titolo": "Five Nights at Freddy's 2"
+    },
+    {
+      "tmdbId": 438631,
+      "titolo": "Dune"
+    },
+    {
+      "tmdbId": 693134,
+      "titolo": "Dune - Parte due"
+    },
+    {
+      "tmdbId": 872585,
+      "titolo": "Oppenheimer"
+    },
+    {
+      "tmdbId": 475557,
+      "titolo": "Joker"
+    },
+    {
+      "tmdbId": 558449,
+      "titolo": "Il gladiatore II"
+    },
+    {
+      "tmdbId": 346698,
+      "titolo": "Barbie"
+    },
+    {
+      "tmdbId": 785084,
+      "titolo": "The Whale"
+    },
+    {
+      "tmdbId": 593643,
+      "titolo": "The Menu",
+      "rivedere": true
+    },
+    {
+      "tmdbId": 502356,
+      "titolo": "Super Mario Bros. Il Film"
+    },
+    {
+      "tmdbId": 447277,
+      "titolo": "La sirenetta"
+    },
+    {
+      "tmdbId": 1026227,
+      "titolo": "C'è ancora domani",
+      "rivedere": true
+    },
+    {
+      "tmdbId": 787699,
+      "titolo": "Wonka",
+      "rivedere": true
     }
   ],
   "cinema": [
@@ -66,6 +137,10 @@
     {
       "tmdbId": 806704,
       "titolo": "The Batman: Part II"
+    },
+    {
+      "tmdbId": 969681,
+      "titolo": "Spider-Man: Brand New Day"
     }
   ],
   "casa": [
@@ -136,6 +211,58 @@
     {
       "tmdbId": 1236153,
       "titolo": "Mercy - Sotto accusa"
+    },
+    {
+      "tmdbId": 1234821,
+      "titolo": "Jurassic World - La rinascita"
+    },
+    {
+      "tmdbId": 574475,
+      "titolo": "Final Destination - Bloodlines"
+    },
+    {
+      "tmdbId": 575265,
+      "titolo": "Mission Impossible - The Final Reckoning"
+    },
+    {
+      "tmdbId": 1022787,
+      "titolo": "Elio"
+    },
+    {
+      "tmdbId": 718821,
+      "titolo": "Twisters"
+    },
+    {
+      "tmdbId": 937287,
+      "titolo": "Challengers"
+    },
+    {
+      "tmdbId": 889737,
+      "titolo": "Joker: Folie à Deux"
+    },
+    {
+      "tmdbId": 402431,
+      "titolo": "Wicked"
+    },
+    {
+      "tmdbId": 1022789,
+      "titolo": "Inside Out 2"
+    },
+    {
+      "tmdbId": 967847,
+      "titolo": "Ghostbusters - Minaccia glaciale"
+    },
+    {
+      "tmdbId": 976573,
+      "titolo": "Elemental"
+    },
+    {
+      "tmdbId": 335977,
+      "titolo": "Indiana Jones e il quadrante del destino"
+    },
+    {
+      "tmdbId": 466420,
+      "titolo": "Killers of the Flower Moon"
     }
   ]
 }
