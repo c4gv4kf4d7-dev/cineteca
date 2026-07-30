@@ -40,6 +40,7 @@ const PerTe = (() => {
     root.innerHTML = ritratto(esito.profilo, esito.visti)
       + coda('Se stasera vai al cinema', Consiglia.classifica(tutti, { lista: 'cinema', quanti: 4 }).voci)
       + coda('Se stasera resti sul divano', Consiglia.classifica(tutti, { lista: 'casa', quanti: 6 }).voci)
+      + daRivedere(tutti)
       + affinita(tutti)
       + '<div id="rassegna"></div>';
 
@@ -48,6 +49,40 @@ const PerTe = (() => {
       const box = document.getElementById('rassegna');
       if (box) box.innerHTML = rassegna(n);
     });
+  }
+
+  /* ── i film che aspetti di rivedere ──────────────────── */
+  function daRivedere(tutti) {
+    const voci = tutti.filter(m => m.user.rewatch);
+    if (!voci.length) return '';
+
+    const disponibili = voci.filter(m => m.streaming?.length);
+    const attesa = voci.filter(m => !m.streaming?.length);
+
+    const riga = m => `<button class="cons" data-open="${F.esc(m.id)}">
+      <span class="cons-ph">${F.poster(m, 'w185')
+        ? `<img src="${F.poster(m, 'w185')}" alt="" loading="lazy">` : ''}</span>
+      <span class="cons-body">
+        <b>${F.esc(m.title)}</b>
+        <span class="cons-meta">${F.esc(F.dataBreve(m.releaseDate))}${
+          m.user.myRating ? ` · ${'★'.repeat(m.user.myRating)}` : ''}</span>
+        <span class="cons-perche">${m.streaming?.length
+          ? `disponibile su ${F.esc(F.piattaforme(m.streaming).join(', '))}`
+          : 'non ancora su nessuna piattaforma'}</span>
+      </span>
+      <span class="cons-punti">${m.streaming?.length ? '▶' : '↻'}</span>
+    </button>`;
+
+    return `<section class="s-block">
+      <h3>Da rivedere</h3>
+      <div class="consigli">
+        ${[...disponibili, ...attesa].map(riga).join('')}
+      </div>
+      <p class="nota">${disponibili.length
+        ? `<b>${disponibili.length}</b> ${disponibili.length === 1 ? 'è già disponibile' : 'sono già disponibili'} in streaming.`
+        : 'Nessuno è ancora arrivato in streaming.'}
+      ${attesa.length ? `Ti avviso qui appena ${attesa.length === 1 ? 'sbarca' : 'sbarcano'} da qualche parte.` : ''}</p>
+    </section>`;
   }
 
   /* ── si parla di loro ────────────────────────────────── */

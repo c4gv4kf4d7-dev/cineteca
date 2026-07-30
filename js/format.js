@@ -53,6 +53,22 @@ const F = (() => {
     ];
   }
 
+  /* Stato delle prevendite. Per gli spettacoli evento è l'unica
+     data che conta davvero: se le perdi, il film lo perdi. */
+  function prevendita(m) {
+    if (!m.prevendita) return null;
+    const d = new Date(`${m.prevendita}T00:00:00`);
+    const g = giorniA(d);
+    const uscito = (giorniA(m.releaseDate) ?? 1) < 0;
+
+    if (g > 7)  return { stato: 'attesa',  g, data: d, testo: `prevendite dal ${dataBreve(d)}`, breve: `PREV ${g}G` };
+    if (g > 1)  return { stato: 'vicina',  g, data: d, testo: `prevendite fra ${g} giorni`,      breve: `PREV ${g}G`, urgente: true };
+    if (g === 1) return { stato: 'domani', g, data: d, testo: 'prevendite da domani',            breve: 'PREV DOMANI', urgente: true };
+    if (g === 0) return { stato: 'oggi',   g, data: d, testo: 'prevendite aperte da oggi',       breve: 'PREVENDITE OGGI', urgente: true };
+    if (!uscito) return { stato: 'aperte', g, data: d, testo: 'prevendite già aperte',           breve: 'PREVENDITE APERTE' };
+    return null;   // film già uscito: le prevendite non interessano più
+  }
+
   /* ── numeri ──────────────────────────────────────────── */
   function durata(min) {
     if (!min) return null;
@@ -135,6 +151,6 @@ const F = (() => {
   }
 
   return { MESI, dataLunga, dataBreve, meseAnno, giorniA, attesa, countdown,
-           durata, soldi, poster, backdrop, profilo, iniziali, piattaforme, conArticolo,
+           durata, soldi, poster, backdrop, profilo, iniziali, piattaforme, conArticolo, prevendita,
            esc, raggruppa, conteggio };
 })();

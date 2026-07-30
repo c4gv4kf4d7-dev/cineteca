@@ -41,6 +41,7 @@ const Detail = (() => {
       m.releaseDate && { t: F.dataLunga(m.releaseDate), accent: true },
       dataNonIT && { t: m.releaseFonte === 'US' ? 'data USA, non confermata in Italia'
                                                 : 'data internazionale, non confermata in Italia', avviso: true },
+      (() => { const p = F.prevendita(m); return p && { t: `🎫 ${p.testo}`, prev: true, urgente: p.urgente }; })(),
       { t: F.attesa(m.releaseDate) },
       F.durata(m.runtime) && { t: F.durata(m.runtime) },
       ...m.genres.map(g => ({ t: g })),
@@ -58,7 +59,9 @@ const Detail = (() => {
             ? `<p class="d-orig">${F.esc(m.originalTitle)}</p>` : ''}
           <div class="d-facts">
             ${fatti.map(f => `<span class="fact${f.accent ? ' fact-accent' : ''}${
-              f.avviso ? ' fact-avviso' : ''}">${f.avviso ? '⚠ ' : ''}${F.esc(f.t)}</span>`).join('')}
+              f.avviso ? ' fact-avviso' : ''}${f.prev ? ' fact-prev' : ''}${
+              f.urgente ? ' is-urgente' : ''}">${f.avviso ? '⚠ ' : ''}${F.esc(f.t)}</span>`).join('')}
+          ${m.evento ? `<p class="d-evento">${F.esc(m.evento)}</p>` : ''}
           </div>
         </div>
       </div>
@@ -74,6 +77,10 @@ const Detail = (() => {
           <button class="btn btn-ghost" data-act="fav">
             <svg viewBox="0 0 24 24" ${u.fav ? 'fill="currentColor"' : ''}><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 8a4 4 0 0 1 7-2.6c0 5-7 9.4-7 9.4z"/></svg>
             ${u.fav ? 'Nei preferiti' : 'Aggiungi ai preferiti'}
+          </button>
+          <button class="btn btn-ghost${u.rewatch ? ' btn-rewatch' : ''}" data-act="rewatch">
+            <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg>
+            ${u.rewatch ? 'Da rivedere' : 'Voglio rivederlo'}
           </button>
         </div>
 
@@ -235,8 +242,9 @@ const Detail = (() => {
 
     const btn = e.target.closest('[data-act]');
     if (!btn) return;
-    if (btn.dataset.act === 'seen') { Store.toggleSeen(currentId); render(); }
-    if (btn.dataset.act === 'fav')  { Store.toggleFav(currentId);  render(); }
+    if (btn.dataset.act === 'seen')    { Store.toggleSeen(currentId);    render(); }
+    if (btn.dataset.act === 'fav')     { Store.toggleFav(currentId);     render(); }
+    if (btn.dataset.act === 'rewatch') { Store.toggleRewatch(currentId); render(); }
   });
 
   /* Le note si salvano da sole quando esci dal campo. */

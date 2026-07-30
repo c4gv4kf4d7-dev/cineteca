@@ -35,7 +35,11 @@ const Store = (() => {
   }
 
   /* ── stato per singolo film ──────────────────────────── */
-  const blank = () => ({ seen: false, fav: false, myRating: 0, note: '', addedAt: null, seenAt: null });
+  const blank = () => ({
+    seen: false, fav: false, myRating: 0, note: '',
+    rewatch: false,          // visto al cinema, aspetto che esca per rivederlo
+    addedAt: null, seenAt: null
+  });
 
   /* Valore di partenza del film: quelli dell'archivio nascono già visti.
      Deve valere anche alla prima modifica, altrimenti mettere una stella
@@ -63,6 +67,11 @@ const Store = (() => {
     return patch(id, { seen, seenAt: seen ? new Date().toISOString() : null });
   };
   const toggleFav = id => patch(id, { fav: !userState(id).fav });
+  /* Segnare "da rivedere" implica averlo visto. */
+  const toggleRewatch = id => {
+    const u = userState(id);
+    return patch(id, { rewatch: !u.rewatch, seen: u.rewatch ? u.seen : true });
+  };
   const setRating = (id, myRating) => patch(id, { myRating });
   const setNote   = (id, note)     => patch(id, { note });
 
@@ -122,5 +131,6 @@ const Store = (() => {
 
   const subscribe = fn => { listeners.add(fn); return () => listeners.delete(fn); };
 
-  return { init, refresh, all, byId, userState, toggleSeen, toggleFav, setRating, setNote, subscribe };
+  return { init, refresh, all, byId, userState,
+           toggleSeen, toggleFav, toggleRewatch, setRating, setNote, subscribe };
 })();

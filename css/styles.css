@@ -233,6 +233,23 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .badge-seen{ color:var(--bg); background:var(--good); border-color:transparent; }
 .badge-rotten{ color:var(--rotten); border-color:rgba(255,107,107,.38); font-family:var(--ff-mono); }
 .badge-tmdb{ color:var(--ink-2); border-color:var(--line-2); font-family:var(--ff-mono); font-size:9.5px; letter-spacing:.06em; }
+.badge-rewatch{ color:var(--accent-2); border-color:rgba(183,140,255,.42); background:rgba(183,140,255,.14); }
+
+/* prevendite: se sono imminenti devono farsi notare come il "in sala" */
+.poster-prev{ position:absolute; bottom:9px; left:9px; right:9px; z-index:3; display:flex; }
+.badge-prev{
+  display:inline-flex; align-items:center; gap:6px;
+  background:rgba(5,6,11,.82); color:var(--hot); border-color:rgba(255,194,77,.45);
+  font-weight:800;
+}
+.badge-prev.is-urgente{
+  background:linear-gradient(100deg,#FFC24D,#FF9B3D); color:#2A1900; border-color:transparent;
+  box-shadow:0 0 0 0 rgba(255,194,77,.6);
+  animation:liveAlone 2.2s ease-out infinite;
+}
+.badge-prev.is-urgente .live-dot{ background:#2A1900; }
+/* con la fascia prevendite, il cuore si sposta più in alto */
+.card:has(.poster-prev) .fav{ bottom:44px; }
 
 .fav{
   position:absolute; bottom:9px; left:9px; z-index:2;
@@ -318,6 +335,10 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .fact{ padding:5px 12px; border-radius:999px; font-size:12px; font-weight:600; background:var(--panel); border:1px solid var(--line); color:var(--ink-2); }
 .fact-accent{ color:var(--accent); border-color:rgba(77,227,255,.3); }
 .fact-avviso{ color:var(--hot); border-color:rgba(255,194,77,.38); background:rgba(255,194,77,.07); }
+.fact-prev{ color:var(--hot); border-color:rgba(255,194,77,.45); }
+.fact-prev.is-urgente{ background:linear-gradient(100deg,#FFC24D,#FF9B3D); color:#2A1900; border-color:transparent; font-weight:700; }
+.d-evento{ margin:14px 0 0; max-width:60ch; font-size:13.5px; line-height:1.6; color:var(--ink-2); font-style:italic; }
+.btn-rewatch{ background:rgba(183,140,255,.2); border-color:rgba(183,140,255,.5); color:#DCC8FF; }
 .stimata{ margin-left:3px; color:var(--hot); font-weight:700; cursor:help; }
 
 .d-body{ padding:clamp(20px,3vw,34px); display:flex; flex-direction:column; gap:30px; }
@@ -743,3 +764,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
 }
+
+/* due classifiche affiancate */
+.classifiche{ display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:clamp(20px,3vw,44px); }
+.nov-prevendita .nov-icona{ color:var(--hot); background:rgba(255,194,77,.16); }

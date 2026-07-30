@@ -73,6 +73,7 @@
     const img = F.poster(m);
     const uscita = badgeUscita(m);
     const voto = badgeVoto(m);
+    const prev = F.prevendita(m);
 
     return `<div class="card">
       <button class="poster" data-open="${F.esc(m.id)}" aria-label="Apri ${F.esc(m.title)}">
@@ -80,9 +81,16 @@
           ? `<img src="${img}" alt="Locandina di ${F.esc(m.title)}" loading="lazy">`
           : `<span class="poster-fallback"><b>${F.esc(m.title)}</b><span>${F.esc(F.dataBreve(m.releaseDate))}</span></span>`}
         <span class="poster-top">
-          ${m.user.seen ? '<span class="badge badge-seen">VISTO</span>' : '<span></span>'}
+          ${m.user.seen
+            ? `<span class="badge badge-seen">VISTO</span>${
+                m.user.rewatch ? '<span class="badge badge-rewatch">↻ DA RIVEDERE</span>' : ''}`
+            : '<span></span>'}
           ${voto ? `<span class="badge ${voto.cls}">${F.esc(voto.testo)}</span>` : ''}
         </span>
+        ${prev ? `<span class="poster-prev">
+          <span class="badge badge-prev${prev.urgente ? ' is-urgente' : ''}">${
+            prev.urgente ? '<i class="live-dot"></i>' : '🎫 '}${F.esc(prev.breve)}</span>
+        </span>` : ''}
         <span class="poster-bottom">
           <span class="badge ${uscita.live ? 'badge-live' : uscita.hot ? 'badge-hot' : 'badge-soon'}">${
             uscita.live ? '<i class="live-dot"></i>' : ''}${F.esc(uscita.testo)}</span>

@@ -86,8 +86,11 @@ const Novita = (() => {
         const nuove = adesso.str.split('|').filter(p => p && !era.str.split('|').includes(p));
         const pulite = F.piattaforme(nuove);
         if (pulite.length)
-          voci.push({ id, film: m, tipo: 'streaming', peso: 5,
-            testo: `<b>${F.esc(adesso.t)}</b> è arrivato su <b>${F.esc(pulite[0])}</b>` });
+          // Se aspettavi di rivederlo, questa è la notizia del giorno.
+          voci.push({ id, film: m, tipo: 'streaming', peso: m.user?.rewatch ? 11 : 5,
+            testo: m.user?.rewatch
+              ? `<b>${F.esc(adesso.t)}</b>, che volevi rivedere, è arrivato su <b>${F.esc(pulite[0])}</b>`
+              : `<b>${F.esc(adesso.t)}</b> è arrivato su <b>${F.esc(pulite[0])}</b>` });
       }
 
       /* data spostata */
@@ -99,8 +102,34 @@ const Novita = (() => {
       }
     }
 
+    voci.push(...prevendite(films));
     voci.sort((a, b) => b.peso - a.peso);
     return { primaVolta: false, quando: prima.quando, voci };
+  }
+
+  /* Le prevendite non sono un "cambiamento": sono una scadenza.
+     Vanno mostrate finché sono imminenti, anche se non è cambiato nulla. */
+  function prevendite(films) {
+    const voci = [];
+    for (const m of films) {
+      if (m.user.seen) continue;
+      const p = F.prevendita(m);
+      if (!p) continue;
+
+      if (p.stato === 'oggi')
+        voci.push({ id: m.id, film: m, tipo: 'prevendita', peso: 10,
+          testo: `<b>${F.esc(m.title)}</b>: <b>le prevendite aprono oggi</b>` });
+      else if (p.stato === 'domani')
+        voci.push({ id: m.id, film: m, tipo: 'prevendita', peso: 9,
+          testo: `<b>${F.esc(m.title)}</b>: prevendite <b>da domani</b>` });
+      else if (p.stato === 'vicina')
+        voci.push({ id: m.id, film: m, tipo: 'prevendita', peso: 8,
+          testo: `<b>${F.esc(m.title)}</b>: prevendite fra ${p.g} giorni` });
+      else if (p.stato === 'aperte')
+        voci.push({ id: m.id, film: m, tipo: 'prevendita', peso: 4,
+          testo: `<b>${F.esc(m.title)}</b>: prevendite aperte, il biglietto si può già prendere` });
+    }
+    return voci;
   }
 
   /* ── il pannello ─────────────────────────────────────── */
@@ -108,11 +137,22 @@ const Novita = (() => {
     if (!contenitore) return;
     const esito = confronta(films);
 
-    // La prima volta non c'è un "prima": registro e basta.
-    if (esito.primaVolta) { salva(films); contenitore.hidden = true; return; }
-    if (!esito.voci.length) { contenitore.hidden = true; salva(films); return; }
+    // Alla prima apertura non c'è un "prima" con cui confrontare,
+    // ma le prevendite in scadenza vanno mostrate lo stesso.
+    let voci = esito.voci;
+    if (esito.primaVolta) {
+      salva(films);
+      voci = prevendite(films).sort((a, b) => b.peso - a.peso);
+    }
 
-    const giorni = Math.round((Date.now() - esito.quando) / 86400000);
+    // Una volta letto, il pannello tace fino al giorno dopo.
+    if (localStorage.getItem(`${KEY}:letto`) === new Date().toDateString()) {
+      contenitore.hidden = true; return;
+    }
+    if (!voci.length) { contenitore.hidden = true; salva(films); return; }
+    esito.voci = voci;
+
+    const giorni = esito.primaVolta ? 0 : Math.round((Date.now() - esito.quando) / 86400000);
     const mostrate = esito.voci.slice(0, 6);
 
     contenitore.hidden = false;
@@ -125,7 +165,7 @@ const Novita = (() => {
       <ul class="nov-lista">
         ${mostrate.map(v => `<li class="nov-riga nov-${v.tipo}">
           <button data-open="${F.esc(v.id)}">
-            <span class="nov-icona">${{ voto:'★', incasso:'$', streaming:'▶', data:'📅', nuovo:'+' }[v.tipo]}</span>
+            <span class="nov-icona">${{ voto:'★', incasso:'$', streaming:'▶', data:'📅', nuovo:'+', prevendita:'🎫' }[v.tipo]}</span>
             <span>${v.testo}</span>
           </button>
         </li>`).join('')}
@@ -135,12 +175,13 @@ const Novita = (() => {
 
     contenitore.querySelector('[data-nov-chiudi]').addEventListener('click', () => {
       salva(films);
+      localStorage.setItem(`${KEY}:letto`, new Date().toDateString());
       contenitore.hidden = true;
     });
   }
 
   /* Utile per provare il meccanismo senza aspettare giorni. */
-  const dimentica = () => localStorage.removeItem(KEY);
+  const dimentica = () => { localStorage.removeItem(KEY); localStorage.removeItem(`${KEY}:letto`); };
 
   return { render, dimentica, confronta };
 })();

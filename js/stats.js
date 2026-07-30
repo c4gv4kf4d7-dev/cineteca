@@ -51,6 +51,7 @@ const Stats = (() => {
 
     root.innerHTML = [
       manifesto(visti),
+      classificheDelMese(films),
       podio(visti),
       botteghino(visti),
       moltiplicatore(visti),
@@ -92,6 +93,52 @@ const Stats = (() => {
           (minuti / 60 / 24).toFixed(1)} giorni pieni di proiezione</p>` : ''}
       </div>
     </section>`;
+  }
+
+  /* ══ 1bis. le due classifiche ═════════════════════════
+     Top 10 del mese in corso: per incasso e per voto.
+     Se il mese è troppo magro, allargo all'anno e lo dico. */
+  function classificheDelMese(films) {
+    const ora = new Date();
+    const delMese = m => m.releaseDate
+      && m.releaseDate.getMonth() === ora.getMonth()
+      && m.releaseDate.getFullYear() === ora.getFullYear();
+
+    let campo = films.filter(delMese);
+    let ambito = `${F.MESI[ora.getMonth()]} ${ora.getFullYear()}`;
+    if (campo.filter(m => m.revenue).length < 4) {
+      campo = films.filter(m => m.releaseDate && m.releaseDate.getFullYear() === ora.getFullYear());
+      ambito = `${ora.getFullYear()}`;
+    }
+
+    // Le riedizioni portano l'incasso del film originale: in una
+    // classifica dell'anno in corso falserebbero tutto.
+    const perIncasso = campo.filter(m => m.revenue && !m.evento)
+      .sort((a, b) => b.revenue - a.revenue).slice(0, 10);
+    const perVoto = campo.filter(m => consenso(m) != null)
+      .sort((a, b) => consenso(b) - consenso(a)).slice(0, 10);
+
+    if (perIncasso.length < 3 && perVoto.length < 3) return '';
+
+    const colonna = (titolo, voci, valore, formato, colore) => !voci.length ? '' : `
+      <div class="classifica">
+        <h4 class="s-sub">${F.esc(titolo)}</h4>
+        ${Chart.barre(voci.map(m => ({
+          id: m.id, etichetta: m.title, valore: valore(m), poster: F.poster(m, 'w185'),
+          sotto: F.dataBreve(m.releaseDate)
+        })), { formato, colore })}
+      </div>`;
+
+    return blocco(`Le classifiche di ${ambito}`, `
+      <div class="classifiche">
+        ${colonna('Box office mondiale', perIncasso, m => m.revenue, F.soldi,
+          'linear-gradient(90deg,var(--good),var(--accent))')}
+        ${colonna('Consenso della critica', perVoto, consenso, v => `${v}`,
+          'linear-gradient(90deg,var(--hot),var(--rotten))')}
+      </div>
+      <p class="nota">${ambito.match(/^\d+$/)
+        ? 'Il mese in corso ha ancora troppi pochi film con dati: la classifica si allarga a tutto l\'anno.'
+        : 'Solo i film usciti questo mese.'} Il consenso è la media di Rotten Tomatoes, Metacritic e IMDb su scala 0–100.</p>`);
   }
 
   /* ══ 2. podio ═════════════════════════════════════════ */
