@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-07-30T08:46:23.375Z",
+  "aggiornato": "2026-07-30T12:13:05.016Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -15,6 +15,111 @@
     "THR"
   ],
   "notizie": [
+    {
+      "titolo": "Spider-Man: Brand New Day, Tom Holland ha letteralmente odiato una versione del film",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-tom-holland-odiato-versione-film_170386/",
+      "sommario": "Prima di arrivare al cinema, il nuovo capitolo dedicato a Peter Parker ha cambiato forma più volte. E un montaggio in particolare di Brand New Day non convinse affatto il protagonista. Spider-Man: Brand New Day, il quarto film solista con Tom Holland nei panni",
+      "data": "2026-07-30T12:00:00.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "vistoIl": "2026-07-30T12:13:04.828Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Chi è Filippo Bisciglia: la recente separazione, dove abita e quanto guadagna il re di Temptation Island",
+      "link": "https://www.badtaste.it/articoli/chi-e-filippo-bisciglia-la-recente-separazione-dove-abita-e-quanto-guadagna-il-re-di-temptation-island",
+      "sommario": "Tutto sul conduttore di Temptation Island Filippo Bisciglia: la separazione dopo 17 anni d'amore, la casa da dove rivede le puntate del suo programma e soprattutto il cachet.",
+      "data": "2026-07-30T11:57:40.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film",
+          "film": [
+            "La casa - Il rogo del Male"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "vistoIl": "2026-07-30T12:13:04.806Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Terminator 2: Il giorno del giudizio, torna al cinema. Un nuovo poster e il trailer per l’occasione",
+      "link": "https://www.cinefilos.it/trailers/terminator-2-il-giorno-del-giudizio-torna-al-cinema-un-nuovo-poster-e-il-trailer-per-loccasione-716174",
+      "sommario": "Terminator 2: Il giorno del giudizio, torna al cinema. Un nuovo poster e il trailer per l’occasione STUDIOCANAL, Fathom Entertainment e Rialto Pictures riportano sul grande schermo il capolavoro di James Cameron. Il rivoluzionario film d’azione e fantascienza,",
+      "data": "2026-07-30T10:46:13.000Z",
+      "fonte": "Cinefilos",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "James Cameron",
+          "tipo": "regista",
+          "film": [
+            "Avatar: Fuoco e cenere"
+          ]
+        }
+      ],
+      "rilievo": 5,
+      "servizio": false,
+      "vistoIl": "2026-07-30T12:13:04.964Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Zoe Saldaña to Receive Locarno Fest Special Honor",
+      "link": "https://www.hollywoodreporter.com/movies/movie-news/zoe-saldana-locarno-2026-special-pardo-leopard-honor-1236659915/",
+      "sommario": "Claudio Simonetti will be honored for his contribution to film music, while Olivia Wilde, Caleb Landry Jones, Monica Bellucci, Isabelle Huppert and Kingsley Ben-Adir will be among the stars at the fest.",
+      "data": "2026-07-30T10:12:29.000Z",
+      "fonte": "THR",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Zoe Saldaña",
+          "tipo": "attore",
+          "film": [
+            "Avatar: Fuoco e cenere"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "vistoIl": "2026-07-30T12:13:05.009Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day sfiora il record al box office italiano: oltre 4 milioni al debutto",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-record-box-office-italiano-primo-giorno_170389/",
+      "sommario": "Il nuovo film con Tom Holland firma il miglior debutto della saga in Italia, supera l'apertura di Spider-Man: No Way Home e diventa il secondo miglior esordio di sempre per un cinecomic nel nostro Paese Un esordio fortissimo quello Spider-Man: Brand New Day al",
+      "data": "2026-07-30T10:05:06.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 5,
+      "servizio": false,
+      "vistoIl": "2026-07-30T12:13:04.831Z",
+      "evidenza": false
+    },
     {
       "titolo": "The Batman – Parte II: un video dal set suggerisce problemi per un personaggio chiave",
       "link": "https://www.cinefilos.it/cinema-news/2026/the-batman-parte-ii-un-video-dal-set-suggerisce-problemi-per-un-personaggio-chiave-716128",
