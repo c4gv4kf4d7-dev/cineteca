@@ -210,6 +210,25 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 }
 .badge-hot{ color:var(--hot); border-color:rgba(255,194,77,.35); }
 .badge-soon{ color:var(--ink-2); border-color:var(--line-2); font-family:var(--ff-mono); letter-spacing:.02em; }
+
+/* "In sala" ora: spia rossa da diretta radiofonica. */
+.badge-live{
+  display:inline-flex; align-items:center; gap:6px;
+  color:#fff; background:rgba(255,60,80,.9); border-color:transparent;
+  font-weight:800; letter-spacing:.09em;
+  box-shadow:0 0 0 0 rgba(255,60,80,.55);
+  animation:liveAlone 2.4s ease-out infinite;
+}
+.live-dot{
+  width:6px; height:6px; border-radius:50%; background:#fff; flex:none;
+  animation:liveBlink 2.4s ease-in-out infinite;
+}
+@keyframes liveAlone{
+  0%   { box-shadow:0 0 0 0   rgba(255,60,80,.55); }
+  70%  { box-shadow:0 0 0 11px rgba(255,60,80,0); }
+  100% { box-shadow:0 0 0 0   rgba(255,60,80,0); }
+}
+@keyframes liveBlink{ 0%,100%{ opacity:1; } 50%{ opacity:.25; } }
 .badge-score{ color:var(--good); font-family:var(--ff-mono); }
 .badge-seen{ color:var(--bg); background:var(--good); border-color:transparent; }
 .badge-rotten{ color:var(--rotten); border-color:rgba(255,107,107,.38); font-family:var(--ff-mono); }
@@ -303,6 +322,23 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .d-actions{ display:flex; flex-wrap:wrap; gap:10px; }
 .btn-ghost{ background:var(--panel); }
 .btn-on{ background:var(--good); color:#052617; border-color:transparent; }
+
+/* la riga personale */
+.d-perche{
+  position:relative; padding:clamp(18px,2.4vw,26px) clamp(20px,2.6vw,28px);
+  border-radius:var(--r-m); border:1px solid rgba(77,227,255,.22);
+  background:linear-gradient(135deg, rgba(77,227,255,.09), rgba(183,140,255,.06) 60%, transparent);
+}
+.d-perche-et{
+  display:block; margin-bottom:10px;
+  font-size:10.5px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--accent);
+}
+.d-perche-frase{
+  margin:0; font-size:clamp(15px,1.9vw,18px); line-height:1.62; color:var(--ink); max-width:62ch;
+}
+.d-perche-frase b{ color:var(--accent); font-weight:650; }
+.d-perche-frase i{ color:var(--ink); font-style:italic; }
+.d-perche-coda{ margin:12px 0 0; font-size:13px; line-height:1.6; color:var(--ink-3); }
 
 .d-section h4{
   margin:0 0 13px; font-size:11px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-3);

@@ -79,6 +79,20 @@ const F = (() => {
 
   const iniziali = nome => nome.split(/\s+/).slice(0, 2).map(p => p[0] || '').join('').toUpperCase();
 
+  /* Articolo giusto davanti al genere: "l'horror", non "il horror". */
+  const ARTICOLI = {
+    azione: "l'", avventura: "l'", animazione: "l'", horror: "l'",
+    commedia: 'la ', famiglia: 'la ', storia: 'la ', musica: 'la ',
+    fantascienza: 'la ', guerra: 'la ', commediamusicale: 'la ',
+    crime: 'il ', documentario: 'il ', dramma: 'il ', drammatico: 'il ',
+    fantasy: 'il ', mistero: 'il ', romance: 'il ', thriller: 'il ', western: 'il '
+  };
+  function conArticolo(genere) {
+    const g = String(genere).toLowerCase();
+    const art = ARTICOLI[g.replace(/\s+/g, '')] ?? (/^[aeiou]/.test(g) ? "l'" : 'il ');
+    return art + g;
+  }
+
   /* TMDB elenca anche i canali rivenduti ("HBO Max Amazon Channel"):
      tengo il servizio vero e tolgo i doppioni. */
   function piattaforme(lista = []) {
@@ -121,6 +135,6 @@ const F = (() => {
   }
 
   return { MESI, dataLunga, dataBreve, meseAnno, giorniA, attesa, countdown,
-           durata, soldi, poster, backdrop, profilo, iniziali, piattaforme,
+           durata, soldi, poster, backdrop, profilo, iniziali, piattaforme, conArticolo,
            esc, raggruppa, conteggio };
 })();

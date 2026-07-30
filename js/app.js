@@ -53,7 +53,10 @@
     if (g > 0)      return { testo: `${g}G`, hot: g <= 30 };
     // Già uscito: cambia cosa è utile sapere a seconda della lista.
     if (m.streaming?.length) return { testo: 'STREAMING', hot: false };
-    return { testo: m.lista === 'casa' ? 'USCITO' : 'IN SALA', hot: false };
+    // Nelle multisala la tenitura vera è di circa dieci settimane:
+    // oltre, dire "in sala" sarebbe una bugia.
+    if (m.lista !== 'casa' && g >= -70) return { testo: 'IN SALA', live: true };
+    return { testo: m.lista === 'casa' ? 'USCITO' : 'GIÀ PASSATO', hot: false };
   }
 
   /* Angolo in alto a destra: il voto. Rotten Tomatoes quando c'è;
@@ -81,7 +84,8 @@
           ${voto ? `<span class="badge ${voto.cls}">${F.esc(voto.testo)}</span>` : ''}
         </span>
         <span class="poster-bottom">
-          <span class="badge ${uscita.hot ? 'badge-hot' : 'badge-soon'}">${F.esc(uscita.testo)}</span>
+          <span class="badge ${uscita.live ? 'badge-live' : uscita.hot ? 'badge-hot' : 'badge-soon'}">${
+            uscita.live ? '<i class="live-dot"></i>' : ''}${F.esc(uscita.testo)}</span>
         </span>
       </button>
       <button class="fav${m.user.fav ? ' is-on' : ''}" data-fav="${F.esc(m.id)}"

@@ -150,5 +150,121 @@ const Consiglia = (() => {
     };
   }
 
-  return { classifica, ritratto, profilo, gradimento };
+  /* ── il gemello: il film già visto che gli somiglia di più ──
+     Non è "somiglianza oggettiva": pesa di più ciò che ti è piaciuto,
+     perché serve a dire "se hai amato quello, guarda questo". */
+  function gemello(film, visti) {
+    const punteggia = v => {
+      let s = 0;
+      const generiComuni = film.genres.filter(g => v.genres.includes(g));
+      s += generiComuni.length * 12;
+
+      const cast = new Set((film.castDetail || []).slice(0, 8).map(c => c.name));
+      const comuni = (v.castDetail || []).slice(0, 8).filter(c => cast.has(c.name));
+      s += comuni.length * 20;
+
+      if (film.director && film.director === v.director) s += 40;
+      if (film.runtime && v.runtime && Math.abs(film.runtime - v.runtime) < 15) s += 6;
+      if (film.countries.some(c => v.countries.includes(c))) s += 3;
+
+      // Un film che hai amato è un paragone più utile di uno che hai subito.
+      s *= 1 + Math.max(0, gradimento(v)) * 0.7;
+      return { v, s, generiComuni, comuni };
+    };
+
+    const best = visti.map(punteggia).sort((a, b) => b.s - a.s)[0];
+    return best && best.s >= 24 ? best : null;
+  }
+
+  /* ── la riga "ti piacerà perché" ─────────────────────
+     Frasi intere, non elenchi: deve suonare come qualcuno
+     che ti conosce, non come un motore di ricerca. */
+  function perche(film, tutti) {
+    const visti = tutti.filter(m => m.user.seen && m.id !== film.id);
+    if (visti.length < 3) return null;
+
+    const p = profilo(visti);
+    const pezzi = [];
+    const nome = m => m.title;
+    const stelle = m => m.user.myRating ? ` — gli hai dato ${'★'.repeat(m.user.myRating)}` : '';
+
+    // Un film già nominato non va ripetuto: suonerebbe come un disco rotto.
+    const citati = new Set();
+    const cita = m => { citati.add(m.id); return `<i>${F.esc(nome(m))}</i>`; };
+
+    /* 1. il regista */
+    const reg = film.director && p.registi.get(film.director);
+    if (reg && reg.punti > 0) {
+      const suo = [...reg.film].sort((a, b) => (b.user.myRating || 0) - (a.user.myRating || 0))[0];
+      pezzi.push(`hai già seguito <b>${F.esc(film.director)}</b> in ${cita(suo)}${stelle(suo)}`);
+    }
+
+    /* 2. i volti che ritrovi */
+    const facce = (film.castDetail || []).slice(0, 6)
+      .map(c => ({ nome: c.name, v: p.attori.get(c.name) }))
+      .filter(x => x.v && x.v.punti > 0)
+      .sort((a, b) => b.v.punti - a.v.punti)
+      .slice(0, 2);
+    if (facce.length) {
+      const dove = facce[0].v.film.sort((a, b) => (b.user.myRating || 0) - (a.user.myRating || 0))[0];
+      pezzi.push(facce.length > 1
+        ? `ritrovi <b>${F.esc(facce[0].nome)}</b> e <b>${F.esc(facce[1].nome)}</b>, già incrociati nella tua libreria`
+        : `c'è <b>${F.esc(facce[0].nome)}</b>, che hai visto in ${cita(dove)}${stelle(dove)}`);
+    }
+
+    /* 3. il gemello, solo se porta un film nuovo nel discorso */
+    const g = gemello(film, visti);
+    if (g && !reg && !citati.has(g.v.id)) {
+      const legame = g.comuni.length ? 'stesso giro di facce'
+        : g.generiComuni.length > 1 ? `stesso incrocio di ${g.generiComuni.map(x => x.toLowerCase()).join(' e ')}`
+        : 'stessa stoffa';
+      pezzi.push(`sta vicino a ${cita(g.v)} — ${legame}`);
+    }
+
+    /* 4. il terreno che frequenti */
+    if (pezzi.length < 2) {
+      const gen = film.genres.map(x => ({ x, v: p.generi.get(x) }))
+        .filter(x => x.v && x.v.punti > 0)
+        .sort((a, b) => b.v.punti - a.v.punti)[0];
+      if (gen) pezzi.push(`<b>${F.esc(F.conArticolo(gen.x))}</b> è terreno tuo: ne hai visti ${gen.v.film.length} quest'anno`);
+    }
+
+    if (!pezzi.length) return null;
+
+    /* Il contrappunto onesto: se la critica lo boccia, va detto. */
+    let caveat = null;
+    const critica = [film.rtScore, film.metascore].filter(x => x != null);
+    if (critica.length) {
+      const media = Math.round(critica.reduce((a, b) => a + b, 0) / critica.length);
+      if (media < 45) {
+        caveat = p.scarto != null && p.scarto > 8
+          ? `La critica lo massacra (${media}/100), ma tu tendi a essere più generoso di lei.`
+          : `Sappilo: la critica lo massacra, ${media}/100.`;
+      } else if (media >= 85) {
+        caveat = `E la critica è d'accordo con te: ${media}/100.`;
+      }
+    }
+
+    /* Il dettaglio pratico: dove e quando. */
+    let pratico = null;
+    if (film.streaming?.length) pratico = `Ce l'hai già su ${F.esc(F.piattaforme(film.streaming)[0])}.`;
+    else {
+      const gg = F.giorniA(film.releaseDate);
+      if (gg != null && gg > 0 && gg <= 45) pratico = `Esce fra ${gg} giorni.`;
+      else if (gg != null && gg <= 0 && gg >= -70 && film.lista !== 'casa') pratico = `È in sala adesso.`;
+    }
+
+    const frase = pezzi.length > 1
+      ? `${maiuscola(pezzi[0])}, e ${pezzi.slice(1).join(', ')}.`
+      : `${maiuscola(pezzi[0])}.`;
+
+    return { frase, caveat, pratico };
+  }
+
+  /* La frase può iniziare con un tag (<b>, <i>): la maiuscola va
+     sulla prima lettera del testo, saltando i tag di apertura. */
+  const maiuscola = s =>
+    s.replace(/^(\s*(?:<[^>]+>\s*)*)([a-zà-ÿ])/i, (_, tag, c) => tag + c.toUpperCase());
+
+  return { classifica, ritratto, profilo, gradimento, perche, gemello };
 })();

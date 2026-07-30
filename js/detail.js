@@ -72,6 +72,8 @@ const Detail = (() => {
           </button>
         </div>
 
+        ${perche(m)}
+
         ${m.plot ? `<section class="d-section">
           <h4>Trama</h4>
           <p class="d-plot">${F.esc(m.plot)}</p>
@@ -104,6 +106,21 @@ const Detail = (() => {
       </div>`;
   }
 
+  /* Solo per i film che non hai ancora visto: su quelli visti
+     il posto del consiglio lo prende il tuo giudizio. */
+  function perche(m) {
+    if (m.user.seen) return '';
+    const p = Consiglia.perche(m, Store.all());
+    if (!p) return '';
+
+    return `<section class="d-perche">
+      <span class="d-perche-et">Ti piacerà perché</span>
+      <p class="d-perche-frase">${p.frase}</p>
+      ${p.caveat || p.pratico ? `<p class="d-perche-coda">${
+        [p.caveat, p.pratico].filter(Boolean).join(' ')}</p>` : ''}
+    </section>`;
+  }
+
   function statsBlock(m) {
     const cells = [
       m.rtScore != null && { v: `${m.rtScore}%`, l: 'Rotten Tomatoes', cls: m.rtScore >= 60 ? 'stat-good' : 'stat-rotten' },
@@ -111,7 +128,13 @@ const Detail = (() => {
       m.metascore != null && { v: String(m.metascore), l: 'Metacritic' },
       m.tmdbRating && { v: m.tmdbRating.toFixed(1), l: 'voto TMDB', cls: 'stat-good' },
       m.tmdbVotes  && { v: m.tmdbVotes.toLocaleString('it-IT'), l: 'votanti TMDB' },
-      m.popularity && { v: Math.round(m.popularity).toLocaleString('it-IT'), l: 'popolarità' },
+      // L'indice TMDB grezzo non dice niente: conta la posizione fra i tuoi film.
+      (() => {
+        if (!m.popularity) return null;
+        const cl = Store.all().filter(x => x.popularity).sort((a, b) => b.popularity - a.popularity);
+        const pos = cl.findIndex(x => x.id === m.id) + 1;
+        return pos ? { v: `${pos}°`, l: `più chiacchierato dei tuoi ${cl.length}` } : null;
+      })(),
       F.durata(m.runtime) && { v: F.durata(m.runtime), l: 'durata', cls: 'stat-accent' },
       F.soldi(m.budget)  && { v: F.soldi(m.budget),  l: 'budget', cls: 'stat-hot' },
       F.soldi(m.revenue) && { v: F.soldi(m.revenue), l: 'incasso', cls: 'stat-good' },
