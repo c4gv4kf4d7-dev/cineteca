@@ -762,7 +762,8 @@
       "cast": [],
       "plot": null,
       "lista": "cinema",
-      "source": "tmdb:671 (riedizione 2026)"
+      "source": "tmdb:671 (riedizione 2026)",
+      "posterLocale": "assets/poster/harry-potter-25.jpg"
     }
   ]
 }

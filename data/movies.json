@@ -9751,6 +9751,7 @@
       "plot": "Harry Potter vive con gli zii e il cuginetto sin dalla più tenera età dopo la morte dei suoi genitori. I parenti non lo amano per nulla. Harry sta ormai per compiere undici anni e viene guardato male anche per alcune sue capacità 'magiche'. Che sono effettive perché Harry è figlio di maghi e comincia a ricevere lettere, regolarmente sequestrate, portate da gufi. Dovrà giungere il gigantesco Hagrid a recapitargliene personalmente una perché possa apprendere di essere stato ammesso a frequentare la Scuola di Magia e Stregoneria di Hogwarts. Gli zii a questo punto non possono far più nulla e Harry raggiunge la Scuola dove apprende che il suo nome è già noto e dove scoprirà di avere naturali doti magiche.",
       "lista": "cinema",
       "source": "tmdb:671 (riedizione 2026)",
+      "posterLocale": "assets/poster/harry-potter-25.jpg",
       "imdbId": "tt0241527",
       "rtScore": 80,
       "metascore": 65,
@@ -9912,5 +9913,5 @@
       ]
     }
   ],
-  "enrichedAt": "2026-07-30T08:26:52.828Z"
+  "enrichedAt": "2026-07-30T08:41:44.948Z"
 }

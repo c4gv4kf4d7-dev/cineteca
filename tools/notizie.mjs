@@ -17,14 +17,18 @@ import { dirname, join } from 'node:path';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 const FONTI = [
-  { nome: 'BadTaste',     url: 'https://www.badtaste.it/feed/',              lingua: 'it' },
-  { nome: 'MoviePlayer',  url: 'https://www.movieplayer.it/rss/news.xml',    lingua: 'it' },
-  { nome: 'Everyeye',     url: 'https://cinema.everyeye.it/rss/news.xml',    lingua: 'it' },
-  { nome: 'Ciak',         url: 'https://www.ciakmagazine.it/feed/',          lingua: 'it' },
-  { nome: 'Variety',      url: 'https://variety.com/v/film/feed/',           lingua: 'en' },
-  { nome: 'Deadline',     url: 'https://deadline.com/v/film/feed/',          lingua: 'en' },
-  { nome: 'IndieWire',    url: 'https://www.indiewire.com/feed/',            lingua: 'en' },
-  { nome: 'THR',          url: 'https://www.hollywoodreporter.com/c/movies/feed/', lingua: 'en' }
+  { nome: 'BadTaste',       url: 'https://www.badtaste.it/feed/',              lingua: 'it' },
+  { nome: 'MoviePlayer',    url: 'https://www.movieplayer.it/rss/news.xml',    lingua: 'it' },
+  { nome: 'Everyeye',       url: 'https://cinema.everyeye.it/rss/news.xml',    lingua: 'it' },
+  { nome: 'Ciak',           url: 'https://www.ciakmagazine.it/feed/',          lingua: 'it' },
+  { nome: 'Fumettologica',  url: 'https://fumettologica.it/feed/',             lingua: 'it' },
+  { nome: 'ScreenWeek',     url: 'https://www.screenweek.it/feed',             lingua: 'it' },
+  { nome: 'Cinefilos',      url: 'https://www.cinefilos.it/feed',              lingua: 'it' },
+  { nome: 'La Scimmia',     url: 'https://www.lascimmiapensa.com/feed/',       lingua: 'it' },
+  { nome: 'Variety',        url: 'https://variety.com/v/film/feed/',           lingua: 'en' },
+  { nome: 'Deadline',       url: 'https://deadline.com/v/film/feed/',          lingua: 'en' },
+  { nome: 'IndieWire',      url: 'https://www.indiewire.com/feed/',            lingua: 'en' },
+  { nome: 'THR',            url: 'https://www.hollywoodreporter.com/c/movies/feed/', lingua: 'en' }
 ];
 
 const GIORNI = 21;   // oltre, non è più notizia
@@ -63,44 +67,94 @@ function leggiFeed(xml, fonte) {
 }
 
 /* ── chi e cosa sorvegliare ──────────────────────────── */
+/* Le testate non scrivono mai il titolo esatto del database:
+   "The Batman: Part II" diventa "The Batman 2", "The Batman - Parte II".
+   Genero le varianti plausibili, altrimenti la notizia sfugge. */
+const ROMANI = { i:'1', ii:'2', iii:'3', iv:'4', v:'5', vi:'6', vii:'7', viii:'8', ix:'9', x:'10' };
+
+function normalizza(s) {
+  return s.toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[’']/g, "'")
+    .replace(/[^\p{L}\p{N}'\s]/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function alias(titolo) {
+  const base = normalizza(titolo);
+  const varianti = new Set([base]);
+
+  // via il sottotitolo dopo i due punti o il trattino
+  const tagliato = normalizza(titolo.split(/[:–—]| - /)[0]);
+  if (tagliato.length >= 5) varianti.add(tagliato);
+
+  for (const v of [...varianti]) {
+    const parole = v.split(' ');
+
+    // "part"/"parte" è rumore: "the batman part ii" ≡ "the batman ii"
+    const senzaParte = parole.filter(p => p !== 'part' && p !== 'parte').join(' ');
+    if (senzaParte.length >= 5) varianti.add(senzaParte);
+
+    // numeri romani ⇄ arabi, in entrambe le forme
+    for (const forma of [v, senzaParte]) {
+      const p = forma.split(' ');
+      const ultima = p.at(-1);
+      if (ROMANI[ultima]) varianti.add([...p.slice(0, -1), ROMANI[ultima]].join(' '));
+      const romano = Object.keys(ROMANI).find(k => ROMANI[k] === ultima);
+      if (romano) varianti.add([...p.slice(0, -1), romano].join(' '));
+      // "the batman part ii" → anche "the batman parte ii"
+      if (forma.includes(' part ')) varianti.add(forma.replace(' part ', ' parte '));
+      if (forma.includes(' parte ')) varianti.add(forma.replace(' parte ', ' part '));
+    }
+  }
+
+  return [...varianti].filter(v => v.length >= 5);
+}
+
 function entita(movies) {
   const e = new Map();
-  const aggiungi = (nome, tipo, film) => {
-    if (!nome || nome.length < 5) return;          // nomi troppo corti danno falsi positivi
-    const k = nome.toLowerCase();
-    if (!e.has(k)) e.set(k, { nome, tipo, film: new Set(), compagni: new Set() });
+
+  const aggiungi = (nome, tipo, film, varianti = null) => {
+    if (!nome || nome.length < 5) return;
+    const k = normalizza(nome);
+    if (k.length < 5) return;
+    if (!e.has(k)) e.set(k, { nome, tipo, film: new Set(), compagni: new Set(), alias: new Set([k]) });
     const v = e.get(k);
     v.film.add(film.title);
+    for (const a of varianti || []) v.alias.add(a);
     // Chi gravita attorno a questo titolo: serve a disambiguare più sotto.
     if (tipo === 'film') {
-      if (film.director) v.compagni.add(film.director.toLowerCase());
-      for (const c of (film.castDetail || []).slice(0, 6)) v.compagni.add(c.name.toLowerCase());
+      if (film.director) v.compagni.add(normalizza(film.director));
+      for (const c of (film.castDetail || []).slice(0, 8)) v.compagni.add(normalizza(c.name));
     }
   };
 
   for (const m of movies) {
-    aggiungi(m.title, 'film', m);
-    if (m.originalTitle && m.originalTitle !== m.title) aggiungi(m.originalTitle, 'film', m);
+    aggiungi(m.title, 'film', m, alias(m.title));
+    if (m.originalTitle && m.originalTitle !== m.title)
+      aggiungi(m.originalTitle, 'film', m, alias(m.originalTitle));
     aggiungi(m.director, 'regista', m);
-    for (const c of (m.castDetail || []).slice(0, 6)) aggiungi(c.name, 'attore', m);
+    for (const c of (m.castDetail || []).slice(0, 8)) aggiungi(c.name, 'attore', m);
   }
   return e;
 }
 
 /* Riconoscimento a parole intere: "Michael" non deve agganciarsi
-   dentro "Michael B. Jordan". */
+   dentro "Michael B. Jordan". Il testo arriva già normalizzato. */
 const paroleIntere = (testo, ago) => {
   const fuga = ago.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return new RegExp(`(^|[^\\p{L}\\p{N}])${fuga}([^\\p{L}\\p{N}]|$)`, 'iu').test(testo);
+  return new RegExp(`(^|[^\\p{L}\\p{N}])${fuga}([^\\p{L}\\p{N}]|$)`, 'u').test(testo);
 };
 
 /* Un titolo di una sola parola è ambiguo per natura ("Michael",
    "Obsession"): lo accetto solo se l'articolo nomina anche
    qualcuno di quel film. */
 function pertinente(testo, v) {
-  if (!paroleIntere(testo, v.nome)) return false;
-  const unaParola = !/\s/.test(v.nome.trim());
-  if (v.tipo !== 'film' || !unaParola || v.nome.length > 12) return true;
+  const colpito = [...v.alias].find(a => paroleIntere(testo, a));
+  if (!colpito) return false;
+  const unaParola = !/\s/.test(colpito.trim());
+  if (v.tipo !== 'film' || !unaParola || colpito.length > 12) return true;
   return [...v.compagni].some(c => paroleIntere(testo, c));
 }
 
@@ -131,7 +185,9 @@ const notizie = [];
 for (const a of articoli) {
   if (a.data && new Date(a.data).getTime() < limite) continue;
 
-  const testo = `${a.titolo} ${a.sommario}`;
+  const testo = normalizza(`${a.titolo} ${a.sommario}`);
+  const soloTitolo = normalizza(a.titolo);
+
   const citati = [];
   for (const v of sorvegliati.values()) {
     if (pertinente(testo, v)) citati.push(v);
@@ -139,7 +195,7 @@ for (const a of articoli) {
   if (!citati.length) continue;
 
   // Il titolo dell'articolo pesa più del sommario: è lì che sta la notizia.
-  const inTitolo = citati.filter(c => paroleIntere(a.titolo, c.nome));
+  const inTitolo = citati.filter(c => [...c.alias].some(a2 => paroleIntere(soloTitolo, a2)));
 
   notizie.push({
     ...a,

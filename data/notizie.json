@@ -1,10 +1,14 @@
 {
-  "aggiornato": "2026-07-30T08:21:11.273Z",
+  "aggiornato": "2026-07-30T08:40:15.464Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
     "Everyeye",
     "Ciak",
+    "Fumettologica",
+    "ScreenWeek",
+    "Cinefilos",
+    "La Scimmia",
     "Variety",
     "Deadline",
     "IndieWire",
@@ -88,6 +92,81 @@
       "rilievo": 8
     },
     {
+      "titolo": "Odissea: le foto e i video dal set svelano il gigantesco lavoro dietro il kolossal di Christopher Nolan",
+      "link": "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/",
+      "sommario": "Dalle monumentali scenografie alle navi costruite per essere realmente utilizzate in mare: le foto e i video condivisi dalla troupe raccontano il gigantesco lavoro dietro The Odyssey di Christopher Nolan.",
+      "data": "2026-07-24T17:00:36.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 8
+    },
+    {
+      "titolo": "Odissea, Recensione del film di Christopher Nolan",
+      "link": "https://www.lascimmiapensa.com/2026/07/15/odissea-recensione-nolan/",
+      "sommario": "Seguiteci sempre anche su LaScimmiPensa e iscrivetevi al nostro canale WhatsApp! Accompagnato da mille polemiche, a partire dal 16 luglio distribuito da Universal Pictures, arriva finalmente in sala l’evento dell’anno: Odissea di Christopher Nolan. Ma sarà riu",
+      "data": "2026-07-15T16:25:23.000Z",
+      "fonte": "La Scimmia",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 8
+    },
+    {
+      "titolo": "Madeline Brewer, Emory Cohen And Nicholas Alexander Chavez Join Paramount’s ‘Possession’",
+      "link": "https://deadline.com/2026/07/madeline-brewer-nicholas-alexander-chavez-possession-1237012513/",
+      "sommario": "EXCLUSIVE: Madeline Brewer, Emory Cohen and Nicholas Alexander Chavez are joining Margaret Qualley and Callum Turner in Paramount’s remake of the supernatural thriller Possession. Paul Dano and Diego Calva are also on board. Parker Finn is directing from a scr",
+      "data": "2026-07-29T19:00:00.000Z",
+      "fonte": "Deadline",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Margaret Qualley",
+          "tipo": "attore",
+          "film": [
+            "The Dog Stars - Le Stelle Dopo la Fine"
+          ]
+        },
+        {
+          "nome": "Emory Cohen",
+          "tipo": "attore",
+          "film": [
+            "Marty Supreme"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
       "titolo": "‘Tony’ Review: Dominic Sessa Shines in a Briny, Bittersweet Coming-of-Age Comedy That Just Happens to Be About a Young Anthony Bourdain",
       "link": "https://www.indiewire.com/criticism/movies/tony-movie-review-anthony-bourdain-1235207248/",
       "sommario": "Matt Johnson's most straightforward movie is a summery ode to pretentious young louts everywhere.",
@@ -107,6 +186,156 @@
           "tipo": "attore",
           "film": [
             "Tony - Diario di un giovane cuoco"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
+      "titolo": "Una stanza chiusa da anni, una strega e nessuna via d'uscita: cosa aspettarsi da Hokum",
+      "link": "https://www.screenweek.it/una-stanza-chiusa-da-anni-una-strega-e-nessuna-via-duscita-cosa-aspettarsi-da-hokum/",
+      "sommario": "Il nuovo film di Damian McCarthy arriva in uno dei momenti più felici per il cinema horror e conferma l'ascesa di uno degli autori più interessanti del genere.",
+      "data": "2026-07-27T08:31:28.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Hokum",
+          "tipo": "film",
+          "film": [
+            "Hokum"
+          ]
+        },
+        {
+          "nome": "Damian McCarthy",
+          "tipo": "regista",
+          "film": [
+            "Hokum"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
+      "titolo": "Odissea: il ruolo di Circe nel discorso sulla violenza maschile",
+      "link": "https://www.screenweek.it/odissea-il-ruolo-di-circe-nel-discorso-sulla-violenza-maschile/",
+      "sommario": "Il film di Christopher Nolan rilegge Circe come una reazione alla violenza maschile, anche grazie alla raffinata interpretazione di Samantha Morton.",
+      "data": "2026-07-24T06:00:34.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
+      "titolo": "Resident Evil, il trailer ufficiale",
+      "link": "https://www.screenweek.it/resident-evil-il-trailer-ufficiale/",
+      "sommario": "Zach Cregger ci riporta a Raccoon City.",
+      "data": "2026-07-24T04:54:16.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Resident Evil",
+          "tipo": "film",
+          "film": [
+            "Resident Evil"
+          ]
+        },
+        {
+          "nome": "Zach Cregger",
+          "tipo": "regista",
+          "film": [
+            "Resident Evil"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
+      "titolo": "Hokum, la Recensione dell’horror dal regista di Oddity",
+      "link": "https://www.lascimmiapensa.com/2026/07/16/hokum-recensione/",
+      "sommario": "Questa nuova wave horror acquisisce un nuovo tassello di alta qualità che risponde al nome di Hokum. Stavolta non c’è lo zampino dell’America, se non per la presenza della Neon. Il “nostro“, in quanto europeo d’Irlanda, Damian McCarthy sforna una vera perla ch",
+      "data": "2026-07-15T22:01:51.000Z",
+      "fonte": "La Scimmia",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Hokum",
+          "tipo": "film",
+          "film": [
+            "Hokum"
+          ]
+        },
+        {
+          "nome": "Damian McCarthy",
+          "tipo": "regista",
+          "film": [
+            "Hokum"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
+      "titolo": "The Batman Part II: ecco il teaser e una nuova data d’uscita",
+      "link": "https://www.lascimmiapensa.com/2026/07/15/the-batman-part-ii-teaser-data/",
+      "sommario": "The Batman: Part II slitta ancora, ma il primo teaser infiamma i fan Brutte notizie per chi aspettava il ritorno del Cavaliere Oscuro di Matt Reeves. Warner Bros. ha infatti annunciato un nuovo rinvio di The Batman: Part II, che non uscirà più nella data prece",
+      "data": "2026-07-15T14:50:19.000Z",
+      "fonte": "La Scimmia",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "The Batman: Part II",
+          "tipo": "film",
+          "film": [
+            "The Batman: Part II"
+          ]
+        },
+        {
+          "nome": "Matt Reeves",
+          "tipo": "regista",
+          "film": [
+            "The Batman: Part II"
+          ]
+        }
+      ],
+      "rilievo": 5
+    },
+    {
+      "titolo": "Lupita Nyong’o accende le polemiche sulle donne nell’Odissea",
+      "link": "https://www.lascimmiapensa.com/2026/07/15/lupita-nyong-o-odissea-polemica/",
+      "sommario": "A pochi giorni dall’uscita di Odissea, il kolossal diretto da Christopher Nolan, continuano le discussioni attorno al film. Dopo le polemiche sul casting di Lupita Nyong’o nel ruolo di Elena di Troia e Clitennestra, questa volta a far discutere sono alcune dic",
+      "data": "2026-07-15T08:52:08.000Z",
+      "fonte": "La Scimmia",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
           ]
         }
       ],
@@ -293,18 +522,18 @@
       "rilievo": 1
     },
     {
-      "titolo": "Madeline Brewer, Emory Cohen And Nicholas Alexander Chavez Join Paramount’s ‘Possession’",
-      "link": "https://deadline.com/2026/07/madeline-brewer-nicholas-alexander-chavez-possession-1237012513/",
-      "sommario": "EXCLUSIVE: Madeline Brewer, Emory Cohen and Nicholas Alexander Chavez are joining Margaret Qualley and Callum Turner in Paramount’s remake of the supernatural thriller Possession. Paul Dano and Diego Calva are also on board. Parker Finn is directing from a scr",
-      "data": "2026-07-29T19:00:00.000Z",
-      "fonte": "Deadline",
-      "lingua": "en",
+      "titolo": "Amazon: 3 gadget originali di Spider-Man per portare un Brand New Day nella propria stanza",
+      "link": "https://www.everyeye.it/notizie/amazon-3-gadget-originali-spider-man-portare-brand-new-day-propria-stanza-893090.html",
+      "sommario": "Trasforma la casa scegliendo 3 gadget originali di Spider-Man, pensati per portare Brand New Day nella propria stanza. Avete appena visto Spider-Man Brand New Day e vie è venuta una gran voglia di aggiungere qualche gadget legato al film alla vostra collezione",
+      "data": "2026-07-29T20:46:00.000Z",
+      "fonte": "Everyeye",
+      "lingua": "it",
       "citati": [
         {
-          "nome": "Margaret Qualley",
-          "tipo": "attore",
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film",
           "film": [
-            "The Dog Stars - Le Stelle Dopo la Fine"
+            "La casa - Il rogo del Male"
           ]
         }
       ],
@@ -340,7 +569,62 @@
           "nome": "Anya Taylor-Joy",
           "tipo": "attore",
           "film": [
+            "Dune - Parte tre",
             "Super Mario Galaxy - Il film"
+          ]
+        }
+      ],
+      "rilievo": 1
+    },
+    {
+      "titolo": "Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner",
+      "link": "https://fumettologica.it/2026/07/corto-maltese-la-casa-delle-orchidee-bianche-fumetto-igort-marco-steiner/",
+      "sommario": "Igort e Marco Steiner realizzeranno un fumetto inedito di Corto Maltese intitolato La casa delle orchidee bianche. Il fumetto inedito di Corto Maltese realizzato da Igort e Marco Steiner leggi l’articolo su Fumettologica .",
+      "data": "2026-07-29T11:09:11.000Z",
+      "fonte": "Fumettologica",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film",
+          "film": [
+            "La casa - Il rogo del Male"
+          ]
+        }
+      ],
+      "rilievo": 1
+    },
+    {
+      "titolo": "Mamma ho perso l’aereo, Disney prepara il reboot e corteggia Macaulay Culkin",
+      "link": "https://movieplayer.it/news/mamma-ho-perso-laereo-disney-prepara-reboot-corteggia-macaulay-culkin_170366/",
+      "sommario": "Disney punta al ritorno di Kevin McCallister: trattative in corso con la star degli anni '90 per un nuovo capitolo del cult natalizio. E la casa di Topolino sembra disposta a tutto pur di averlo. Disney potrebbe aver finalmente trovato il modo giusto per ripor",
+      "data": "2026-07-29T09:50:00.000Z",
+      "fonte": "MoviePlayer",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film",
+          "film": [
+            "La casa - Il rogo del Male"
+          ]
+        }
+      ],
+      "rilievo": 1
+    },
+    {
+      "titolo": "I film più attesi di agosto",
+      "link": "https://www.screenweek.it/i-film-piu-attesi-di-agosto/",
+      "sommario": "Dagli horror al ritorno di Ridley Scott, passando per i Green Day e il live-action di Oceania, il mese di agosto non è più un deserto cinematografico.",
+      "data": "2026-07-24T11:51:40.000Z",
+      "fonte": "ScreenWeek",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Ridley Scott",
+          "tipo": "regista",
+          "film": [
+            "The Dog Stars - Le Stelle Dopo la Fine"
           ]
         }
       ],

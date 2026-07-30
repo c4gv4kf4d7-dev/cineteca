@@ -89,7 +89,9 @@ const F = (() => {
   /* I path TMDB arrivano già con lo slash iniziale: lo normalizzo per non generare "//". */
   const img = (path, size) => path ? `${TMDB_IMG}/${size}/${String(path).replace(/^\/+/, '')}` : null;
 
-  const poster   = (m, size = 'w500')    => img(m.poster, size);
+  /* Una locandina locale (riedizioni, eventi) batte sempre quella di TMDB:
+     è quella che il pubblico vede davvero affissa. */
+  const poster   = (m, size = 'w500')    => m.posterLocale || img(m.poster, size);
   const backdrop = (m, size = 'w1280')   => img(m.backdrop, size);
   const profilo  = (path, size = 'w185') => img(path, size);
 
