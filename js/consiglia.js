@@ -191,6 +191,7 @@ const Consiglia = (() => {
     // Un film già nominato non va ripetuto: suonerebbe come un disco rotto.
     const citati = new Set();
     const cita = m => { citati.add(m.id); return `<i>${F.esc(nome(m))}</i>`; };
+    let haGemello = false;
 
     /* 1. il regista */
     const reg = film.director && p.registi.get(film.director);
@@ -212,30 +213,81 @@ const Consiglia = (() => {
         : `c'è <b>${F.esc(facce[0].nome)}</b>, che hai visto in ${cita(dove)}${stelle(dove)}`);
     }
 
-    /* 3. il gemello, solo se porta un film nuovo nel discorso */
+    /* 3. il gemello, solo se porta un film nuovo nel discorso.
+       Vario l'attacco: ripetere "sta vicino a" su ogni scheda
+       fa sembrare tutto uscito dallo stesso stampo. */
     const g = gemello(film, visti);
     if (g && !reg && !citati.has(g.v.id)) {
+      const amato = (g.v.user.myRating || 0) >= 4;
       const legame = g.comuni.length ? 'stesso giro di facce'
         : g.generiComuni.length > 1 ? `stesso incrocio di ${g.generiComuni.map(x => x.toLowerCase()).join(' e ')}`
         : 'stessa stoffa';
-      pezzi.push(`sta vicino a ${cita(g.v)} — ${legame}`);
+
+      const attacchi = amato
+        ? [ t => `ti era piaciuto ${t}: questo gli somiglia`,
+            t => `è cugino di ${t}, che hai amato`,
+            t => `se ${t} ti ha preso, qui ritrovi ${legame}` ]
+        : [ t => `sta dalle parti di ${t} — ${legame}`,
+            t => `respira la stessa aria di ${t}`,
+            t => `chi ha visto ${t} si ritrova in casa` ];
+
+      // Scelta stabile per film: la frase non cambia a ogni ricarica.
+      const seme = [...String(film.id)].reduce((s, c) => s + c.charCodeAt(0), 0);
+      pezzi.push(attacchi[seme % attacchi.length](cita(g.v)));
+      haGemello = true;
     }
 
-    /* 4. il terreno che frequenti */
+    /* 4. il verdetto della critica, quando è netto */
+    const critica = [film.rtScore, film.metascore, film.imdbRating ? film.imdbRating * 10 : null]
+      .filter(x => x != null);
+    const mediaCritica = critica.length
+      ? Math.round(critica.reduce((a, b) => a + b, 0) / critica.length) : null;
+
+    if (pezzi.length < 2 && mediaCritica != null && mediaCritica >= 82)
+      pezzi.push(`ne stanno parlando benissimo (${mediaCritica} su cento)`);
+
+    /* 5. il terreno che frequenti, detto una volta sola e senza conteggi */
     if (pezzi.length < 2) {
       const gen = film.genres.map(x => ({ x, v: p.generi.get(x) }))
         .filter(x => x.v && x.v.punti > 0)
         .sort((a, b) => b.v.punti - a.v.punti)[0];
-      if (gen) pezzi.push(`<b>${F.esc(F.conArticolo(gen.x))}</b> è terreno tuo: ne hai visti ${gen.v.film.length} quest'anno`);
+      if (gen) {
+        const etichetta = `<b>${F.esc(F.conArticolo(gen.x))}</b>`;
+        const seme = [...String(film.id)].reduce((s, c) => s + c.charCodeAt(0), 0);
+        // Se un gemello ha già parlato di film, qui resto sul genere:
+        // due paragoni di fila con lo stesso giro di parole stonano.
+        const esempio = haGemello ? null : [...gen.v.film]
+          .filter(f => !citati.has(f.id))
+          .sort((a, b) => (b.user.myRating || 0) - (a.user.myRating || 0))[0];
+
+        if (esempio && gen.v.film.length < 3) {
+          pezzi.push(`sei dalle parti di ${cita(esempio)}`);
+        } else {
+          // Niente preposizioni davanti al genere: "su l'avventura"
+          // costringerebbe a gestire tutte le elisioni italiane.
+          const forme = [
+            `${etichetta} è casa tua`,
+            `${etichetta} non ti delude mai`,
+            `${etichetta} è il tuo terreno`
+          ];
+          pezzi.push(forme[seme % forme.length]);
+        }
+      }
     }
+
+    /* 6. l'ultima spiaggia: qualcosa di vero da dire c'è sempre */
+    if (!pezzi.length && mediaCritica != null && mediaCritica >= 70)
+      pezzi.push(`la critica lo tratta bene (${mediaCritica} su cento)`);
+    if (!pezzi.length && film.director)
+      pezzi.push(`lo firma <b>${F.esc(film.director)}</b>`);
 
     if (!pezzi.length) return null;
 
     /* Il contrappunto onesto: se la critica lo boccia, va detto. */
     let caveat = null;
-    const critica = [film.rtScore, film.metascore].filter(x => x != null);
-    if (critica.length) {
-      const media = Math.round(critica.reduce((a, b) => a + b, 0) / critica.length);
+    const stampa = [film.rtScore, film.metascore].filter(x => x != null);
+    if (stampa.length) {
+      const media = Math.round(stampa.reduce((a, b) => a + b, 0) / stampa.length);
       if (media < 45) {
         caveat = p.scarto != null && p.scarto > 8
           ? `La critica lo massacra (${media}/100), ma tu tendi a essere più generoso di lei.`
@@ -245,13 +297,21 @@ const Consiglia = (() => {
       }
     }
 
-    /* Il dettaglio pratico: dove e quando. */
+    /* Il dettaglio pratico: dove e quando. Per un film che aspetti
+       in sala, lo streaming è irrilevante — e per una riedizione è
+       pure fuorviante, perché è la disponibilità del film originale. */
     let pratico = null;
-    if (film.streaming?.length) pratico = `Ce l'hai già su ${F.esc(F.piattaforme(film.streaming)[0])}.`;
-    else {
-      const gg = F.giorniA(film.releaseDate);
-      if (gg != null && gg > 0 && gg <= 45) pratico = `Esce fra ${gg} giorni.`;
-      else if (gg != null && gg <= 0 && gg >= -70 && film.lista !== 'casa') pratico = `È in sala adesso.`;
+    const gg = F.giorniA(film.releaseDate);
+    const prev = F.prevendita(film);
+
+    if (film.lista === 'cinema') {
+      if (prev?.urgente)               pratico = `${maiuscola(prev.testo)}.`;
+      else if (gg != null && gg > 0)   pratico = `Esce fra ${gg} giorni.`;
+      else if (gg != null && gg >= -70) pratico = 'È in sala adesso.';
+    } else if (film.streaming?.length) {
+      pratico = `Ce l'hai già su ${F.esc(F.piattaforme(film.streaming)[0])}.`;
+    } else if (gg != null && gg > 0 && gg <= 45) {
+      pratico = `Esce fra ${gg} giorni.`;
     }
 
     const frase = pezzi.length > 1

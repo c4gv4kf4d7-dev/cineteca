@@ -8,9 +8,18 @@
 const Chart = (() => {
 
   /* ── barre orizzontali con locandina ─────────────────── */
-  function barre(voci, { formato = v => v, colore = 'var(--accent)' } = {}) {
+  function barre(voci, { formato = v => v, colore = 'var(--accent)', scala = 'lineare' } = {}) {
     if (!voci.length) return '';
     const max = Math.max(...voci.map(v => v.valore));
+
+    /* Con un valore fuori scala (un ×612 fra dei ×3) la scala lineare
+       schiaccia tutti gli altri a una riga invisibile. La radice
+       comprime l'estremo senza falsare l'ordine né i numeri scritti. */
+    const larghezza = v => {
+      if (scala !== 'compressa') return v / max * 100;
+      const k = 0.34;                       // quanto comprimere: più basso, più piatto
+      return Math.pow(v / max, k) * 100;
+    };
 
     return `<div class="cbars">
       ${voci.map((v, i) => `
@@ -23,7 +32,7 @@ const Chart = (() => {
               <i>${F.esc(formato(v.valore))}</i>
             </span>
             <span class="cbar-track">
-              <span class="cbar-fill" style="width:${(v.valore / max * 100).toFixed(1)}%;background:${colore}"></span>
+              <span class="cbar-fill" style="width:${larghezza(v.valore).toFixed(1)}%;background:${colore}"></span>
             </span>
             ${v.sotto ? `<span class="cbar-sotto">${F.esc(v.sotto)}</span>` : ''}
           </span>

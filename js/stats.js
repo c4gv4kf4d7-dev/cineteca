@@ -55,7 +55,6 @@ const Stats = (() => {
       podio(visti),
       botteghino(visti),
       moltiplicatore(visti),
-      scommessa(visti),
       verdetti(visti),
       volti(visti),
       firme(visti),
@@ -204,28 +203,17 @@ const Stats = (() => {
       ${Chart.barre(voci.map(v => ({
         id: v.m.id, etichetta: v.m.title, valore: v.roi, poster: F.poster(v.m, 'w185'),
         sotto: `${F.soldi(v.m.budget)} → ${F.soldi(v.m.revenue)}`
-      })), { formato: v => `×${v < 10 ? v.toFixed(1) : Math.round(v)}`, colore: 'linear-gradient(90deg,var(--hot),var(--rotten))' })}
+      })), { formato: v => `×${v < 10 ? v.toFixed(1) : Math.round(v)}`,
+             colore: 'linear-gradient(90deg,var(--hot),var(--rotten))',
+             scala: 'compressa' })}
       <p class="nota">Quante volte il film ha ripagato il proprio costo.
+      Le barre usano una scala compressa: senza, un caso limite come
+      <b>${F.esc(voci[0].m.title)}</b> (×${Math.round(voci[0].roi)}) ridurrebbe tutti gli altri a una riga invisibile.
+      I numeri a destra restano quelli veri.
       Regola del pollice del settore: sotto <b>×2.5</b> un film in sala fatica a rientrare,
       perché circa metà dell'incasso resta agli esercenti e il marketing non compare nel budget.
       ${flop.length ? `Con questo metro, ${flop.length} dei tuoi film ${flop.length === 1 ? 'è' : 'sono'} in bilico: ${
         F.esc(flop.map(v => v.m.title).join(', '))}.` : 'Tutti i tuoi film hanno superato quella soglia.'}</p>`);
-  }
-
-  /* ══ 5. scommessa: budget contro incasso ══════════════ */
-  function scommessa(visti) {
-    const punti = visti.filter(m => m.budget && m.revenue).map(m => ({
-      id: m.id, x: m.budget, y: m.revenue,
-      etichetta: m.title,
-      nota: `${F.soldi(m.budget)} → ${F.soldi(m.revenue)}`
-    }));
-    if (punti.length < 4) return '';
-
-    return blocco('La scommessa', `
-      ${Chart.dispersione(punti, { xEtichetta: 'budget', yEtichetta: 'incasso' })}
-      <p class="nota">Scale logaritmiche: ogni tacca è un fattore dieci.
-      La diagonale è il pareggio secco fra costo e incasso lordo —
-      più un film sta in alto a sinistra, più ha reso rispetto a quanto è costato.</p>`);
   }
 
   /* ══ 6. i tre verdetti ════════════════════════════════ */

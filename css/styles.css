@@ -784,3 +784,13 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   width:8px; height:8px; border-radius:50%; background:var(--accent);
   box-shadow:0 0 10px var(--accent);
 }
+
+/* notizie raggruppate per tema */
+.tema{ margin-bottom:26px; }
+.tema:last-of-type{ margin-bottom:0; }
+.tema-titolo{
+  display:flex; align-items:baseline; gap:11px; margin:0 0 11px;
+  font-size:13px; font-weight:700; letter-spacing:.02em; color:var(--ink);
+}
+.tema-n{ font-family:var(--ff-mono); font-size:10.5px; font-weight:400; color:var(--ink-3); }
+.cons-coda{ display:block; margin-top:5px; font-size:11.5px; line-height:1.5; color:var(--ink-3); }

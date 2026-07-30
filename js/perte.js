@@ -37,9 +37,15 @@ const PerTe = (() => {
       return;
     }
 
+    // Al cinema conta solo ciò che è raggiungibile a breve: proporre
+    // un film fra cinque mesi non è un consiglio, è un promemoria.
+    const inSalaPresto = Consiglia.classifica(tutti, { lista: 'cinema', quanti: 40 }).voci
+      .filter(v => { const g = F.giorniA(v.film.releaseDate); return g != null && g <= 45; })
+      .slice(0, 4);
+
     root.innerHTML = ritratto(esito.profilo, esito.visti)
-      + coda('Se stasera vai al cinema', Consiglia.classifica(tutti, { lista: 'cinema', quanti: 4 }).voci)
-      + coda('Se stasera resti sul divano', Consiglia.classifica(tutti, { lista: 'casa', quanti: 6 }).voci)
+      + coda('Tra poco al cinema', inSalaPresto, tutti)
+      + coda('Se stasera resti sul divano', Consiglia.classifica(tutti, { lista: 'casa', quanti: 3 }).voci, tutti)
       + daRivedere(tutti)
       + affinita(tutti)
       + '<div id="rassegna"></div>';
@@ -109,7 +115,25 @@ const PerTe = (() => {
     };
 
     const ancorate = tutte.filter(n => n.evidenza);
-    const resto = tutte.filter(n => !n.evidenza).slice(0, 12);
+
+    /* Raggruppo per soggetto: leggere sei pezzi su Odissea sparsi fra
+       gli altri è faticoso, vicini raccontano una storia sola.
+       I gruppi restano in ordine cronologico, dal più fresco. */
+    const quando_ms = n => new Date(n.data || n.vistoIl).getTime();
+    const soggetto = n => {
+      const film = n.citati.find(c => c.tipo === 'film');
+      return film ? film.nome : (n.citati[0]?.nome || 'Varie');
+    };
+
+    const gruppi = new Map();
+    for (const n of [...tutte].sort((a, b) => quando_ms(b) - quando_ms(a))) {
+      const k = soggetto(n);
+      if (!gruppi.has(k)) gruppi.set(k, []);
+      gruppi.get(k).push(n);
+    }
+
+    const ordinati = [...gruppi.entries()]
+      .sort((a, b) => quando_ms(b[1][0]) - quando_ms(a[1][0]));
 
     const scheda = n => `
       <a class="news${n.evidenza ? ' news-evidenza' : ''}${lette.has(n.link) ? '' : ' news-nuova'}"
@@ -138,10 +162,18 @@ const PerTe = (() => {
 
     <section class="s-block">
       <h3>Si parla di loro</h3>
-      <div class="rassegna">${resto.map(scheda).join('')}</div>
+      ${ordinati.map(([tema, voci]) => `
+        <div class="tema">
+          <h4 class="tema-titolo">
+            ${F.esc(tema)}
+            ${voci.length > 1 ? `<span class="tema-n">${voci.length} notizie</span>` : ''}
+          </h4>
+          <div class="rassegna">${voci.map(scheda).join('')}</div>
+        </div>`).join('')}
       <p class="nota">Da ${F.esc((dati.fonti || []).join(', '))}.
-      Tengo solo gli articoli che nominano un film, un regista o un attore che hai in libreria.
-      Archivio di ${tutte.length} notizie, aggiornato ${F.esc(quando(dati.aggiornato))}.</p>
+      Tengo solo gli articoli che nominano un film, un regista o un attore che hai in libreria,
+      raggruppati per soggetto e dal più recente. Archivio di ${tutte.length} notizie,
+      aggiornato ${F.esc(quando(dati.aggiornato))}.</p>
     </section>`;
   }
 
@@ -179,7 +211,7 @@ const PerTe = (() => {
   }
 
   /* ── la coda riordinata ──────────────────────────────── */
-  function coda(titolo, voci) {
+  function coda(titolo, voci, tutti) {
     if (!voci.length) return '';
 
     return `<section class="s-block">
@@ -187,6 +219,9 @@ const PerTe = (() => {
       <div class="consigli">
         ${voci.map((v, i) => {
           const m = v.film;
+          // Una frase scritta per questo film, non tre etichette uguali per tutti.
+          const p = Consiglia.perche(m, tutti);
+          const coda2 = [p?.caveat, p?.pratico].filter(Boolean).join(' ');
           return `<button class="cons" data-open="${F.esc(m.id)}">
             <span class="cons-pos">${i + 1}</span>
             <span class="cons-ph">${F.poster(m, 'w185')
@@ -196,7 +231,8 @@ const PerTe = (() => {
               <span class="cons-meta">${F.esc(F.dataBreve(m.releaseDate))}${
                 m.genres[0] ? ` · ${F.esc(m.genres[0])}` : ''}${
                 F.durata(m.runtime) ? ` · ${F.durata(m.runtime)}` : ''}</span>
-              ${v.motivi.length ? `<span class="cons-perche">${F.esc(v.motivi.join(' · '))}</span>` : ''}
+              ${p ? `<span class="cons-perche">${p.frase}</span>` : ''}
+              ${coda2 ? `<span class="cons-coda">${coda2}</span>` : ''}
             </span>
             <span class="cons-punti" title="Affinità stimata">${Math.round(v.punti)}</span>
           </button>`;
