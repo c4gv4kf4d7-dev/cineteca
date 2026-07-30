@@ -12,7 +12,7 @@
 
   --ink:       #EDEFF7;
   --ink-2:     #A2A8BE;
-  --ink-3:     #6A7089;
+  --ink-3:     #7B8199;   /* sul fondo scuro dà 5.2:1, sopra la soglia AA */
 
   --accent:    #4DE3FF;   /* ciano proiettore */
   --accent-2:  #B78CFF;   /* viola pellicola  */

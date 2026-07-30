@@ -28,6 +28,20 @@ const Detail = (() => {
 
   const isOpen = () => !sheet.hidden;
 
+  /* Con la scheda aperta il Tab non deve uscire e girovagare
+     fra le locandine dietro al velo. */
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Tab' || !isOpen()) return;
+    const dentro = [...sheet.querySelectorAll('a[href], button, textarea, input, select')]
+      .filter(el => !el.disabled && el.offsetParent !== null);
+    if (!dentro.length) return;
+
+    const primo = dentro[0], ultimo = dentro.at(-1);
+    if (e.shiftKey && document.activeElement === primo) { e.preventDefault(); ultimo.focus(); }
+    else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primo.focus(); }
+    else if (!sheet.contains(document.activeElement)) { e.preventDefault(); primo.focus(); }
+  });
+
   /* ── rendering ───────────────────────────────────────── */
   function render() {
     const m = Store.byId(currentId);

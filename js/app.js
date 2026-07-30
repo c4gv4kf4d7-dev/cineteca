@@ -19,11 +19,15 @@
     const q = filtro.q.toLowerCase().trim();
 
     /* Tre gruppi che non si sovrappongono: dove lo devo vedere,
-       oppure l'ho già visto e non importa più dove. */
+       oppure l'ho già visto e non importa più dove.
+       Quando cerchi, però, i gruppi si aprono: cercare "chastain"
+       e non trovare Mammina perché sta in un'altra scheda è assurdo. */
     let films = Store.all().filter(m => {
-      if (filtro.status === 'seen') { if (!m.user.seen) return false; }
-      else if (m.user.seen || m.lista !== filtro.status) return false;
-      if (!q) return true;
+      if (!q) {
+        if (filtro.status === 'seen') { if (!m.user.seen) return false; }
+        else if (m.user.seen || m.lista !== filtro.status) return false;
+        return true;
+      }
 
       return [m.title, m.originalTitle, m.director, m.plot,
               ...m.genres, ...m.countries,
@@ -167,12 +171,15 @@
     grid.innerHTML = films.map(card).join('');
     emptyEl.hidden = films.length > 0;
 
+    const cercando = filtro.q.trim().length > 0;
     const etichetta = { cinema: 'da vedere al cinema', casa: 'da vedere sul divano', seen: 'già visti' };
-    countEl.textContent = `${films.length} ${films.length === 1 ? 'film' : 'film'} ${etichetta[filtro.status]} · ${tot} in libreria`;
+    countEl.textContent = cercando
+      ? `${films.length} ${films.length === 1 ? 'risultato' : 'risultati'} in tutta la libreria`
+      : `${films.length} film ${etichetta[filtro.status]} · ${tot} in libreria`;
 
-    // L'hero ha senso solo sulla lista del cinema.
-    heroEl.hidden = filtro.status !== 'cinema';
-    if (filtro.status === 'cinema') renderHero();
+    // L'hero ha senso solo sulla lista del cinema, e non mentre cerchi.
+    heroEl.hidden = cercando || filtro.status !== 'cinema';
+    if (!heroEl.hidden) renderHero();
     if ($('#view-perte').classList.contains('is-active')) PerTe.render();
     if ($('#view-stats').classList.contains('is-active')) Stats.render();
   }

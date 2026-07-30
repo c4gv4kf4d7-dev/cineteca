@@ -218,7 +218,9 @@ async function arricchisci(film, giaInLibreria = new Set()) {
     budget:     d.budget  || null,
     revenue:    d.revenue || null,
     tagline,
-    scoperte: await scoperte(d, giaInLibreria),
+    // Le scoperte compaiono solo sulla scheda di un film già visto:
+    // calcolarle per gli altri gonfierebbe il catalogo per niente.
+    scoperte: film.lista === 'visto' ? await scoperte(d, giaInLibreria) : [],
     castDetail
   };
 }
