@@ -8,6 +8,24 @@
 const PerTe = (() => {
   const root = document.getElementById('perte');
 
+  /* Estrazione del giorno: pesca a caso ma resta identica per tutta
+     la giornata, così l'app non cambia sotto le dita mentre la usi,
+     e domani propone altro. */
+  function pescaOggi(lista, quanti, sale = '') {
+    if (lista.length <= quanti) return lista;
+
+    const oggi = new Date().toISOString().slice(0, 10) + sale;
+    let seme = [...oggi].reduce((s, c) => (s * 31 + c.charCodeAt(0)) >>> 0, 7);
+    const caso = () => (seme = (seme * 1664525 + 1013904223) >>> 0) / 4294967296;
+
+    const mazzo = [...lista];
+    for (let i = mazzo.length - 1; i > 0; i--) {
+      const j = Math.floor(caso() * (i + 1));
+      [mazzo[i], mazzo[j]] = [mazzo[j], mazzo[i]];
+    }
+    return mazzo.slice(0, quanti);
+  }
+
   function render() {
     try { disegna(); }
     catch (err) {
@@ -26,8 +44,14 @@ const PerTe = (() => {
       return;
     }
 
+    // Pesco fra i primi dieci per affinità, non fra tutti: resta
+    // una proposta sensata, ma cambia faccia ogni giorno.
+    const divano = pescaOggi(
+      Consiglia.classifica(tutti, { lista: 'casa', quanti: 10 }).voci, 3, 'divano');
+
     root.innerHTML = ritratto(esito.profilo, esito.visti)
-      + coda('Se stasera resti sul divano', Consiglia.classifica(tutti, { lista: 'casa', quanti: 3 }).voci, tutti)
+      + coda('Se stasera resti sul divano', divano, tutti,
+          'Tre pescati fra i più affini della tua lista, diversi ogni giorno.')
       + daRivedere(tutti)
       + affinita(tutti);
   }
@@ -37,8 +61,9 @@ const PerTe = (() => {
     const voci = tutti.filter(m => m.user.rewatch);
     if (!voci.length) return '';
 
-    const disponibili = voci.filter(m => m.streaming?.length);
-    const attesa = voci.filter(m => !m.streaming?.length);
+    // Chi è già disponibile viene prima: è quello che puoi guardare stasera.
+    const disponibili = pescaOggi(voci.filter(m => m.streaming?.length), 3, 'rivedere');
+    const attesa = pescaOggi(voci.filter(m => !m.streaming?.length), 3 - disponibili.length, 'attesa');
 
     const riga = m => `<button class="cons" data-open="${F.esc(m.id)}">
       <span class="cons-ph">${F.poster(m, 'w185')
@@ -59,10 +84,11 @@ const PerTe = (() => {
       <div class="consigli">
         ${[...disponibili, ...attesa].map(riga).join('')}
       </div>
-      <p class="nota">${disponibili.length
-        ? `<b>${disponibili.length}</b> ${disponibili.length === 1 ? 'è già disponibile' : 'sono già disponibili'} in streaming.`
-        : 'Nessuno è ancora arrivato in streaming.'}
-      ${attesa.length ? `Ti avviso qui appena ${attesa.length === 1 ? 'sbarca' : 'sbarcano'} da qualche parte.` : ''}</p>
+      <p class="nota">${voci.length > 3
+        ? `Tre pescati fra i ${voci.length} che vuoi rivedere, diversi ogni giorno. `
+        : ''}${voci.filter(m => m.streaming?.length).length
+        ? 'Quelli già in streaming vengono per primi.'
+        : 'Nessuno è ancora arrivato in streaming: ti avviso qui appena succede.'}</p>
     </section>`;
   }
 
@@ -100,7 +126,7 @@ const PerTe = (() => {
   }
 
   /* ── la coda riordinata ──────────────────────────────── */
-  function coda(titolo, voci, tutti) {
+  function coda(titolo, voci, tutti, nota = '') {
     if (!voci.length) return '';
 
     return `<section class="s-block">
@@ -127,6 +153,7 @@ const PerTe = (() => {
           </button>`;
         }).join('')}
       </div>
+      ${nota ? `<p class="nota">${F.esc(nota)}</p>` : ''}
     </section>`;
   }
 

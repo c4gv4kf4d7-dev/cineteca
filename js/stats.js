@@ -76,7 +76,6 @@ const Stats = (() => {
     const numeri = [
       { n: visti.length, e: 'film' },
       { n: Math.floor(minuti / 60), e: 'ore' },
-      { n: visti.length, e: '🍿 secchielli', nota: 'stima, uno a film' },
       incasso && { n: F.soldi(incasso), e: 'mossi al box office' }
     ].filter(Boolean);
 
