@@ -107,10 +107,29 @@ const Novita = (() => {
     return { primaVolta: false, quando: prima.quando, voci };
   }
 
+  /* Segnalazioni pescate dalla stampa: un articolo parla di prevendite
+     per un film che hai in lista e di cui non conosco ancora la data. */
+  let segnalazioni = [];
+  async function caricaSegnalazioni() {
+    try {
+      const res = await fetch(`data/notizie.json?t=${Date.now()}`);
+      if (res.ok) segnalazioni = (await res.json()).segnalazioniPrevendita || [];
+    } catch { /* niente rassegna, pazienza */ }
+    return segnalazioni;
+  }
+
   /* Le prevendite non sono un "cambiamento": sono una scadenza.
      Vanno mostrate finché sono imminenti, anche se non è cambiato nulla. */
   function prevendite(films) {
     const voci = [];
+
+    for (const s of segnalazioni) {
+      const m = films.find(x => x.id === s.id);
+      if (!m || m.user.seen) continue;
+      voci.push({ id: m.id, film: m, tipo: 'prevendita', peso: 9,
+        testo: `Si parla di <b>prevendite per ${F.esc(m.title)}</b> — ${F.esc(s.fonte)}`,
+        link: s.link });
+    }
     for (const m of films) {
       if (m.user.seen) continue;
       const p = F.prevendita(m);
@@ -133,8 +152,9 @@ const Novita = (() => {
   }
 
   /* ── il pannello ─────────────────────────────────────── */
-  function render(films) {
+  async function render(films) {
     if (!contenitore) return;
+    await caricaSegnalazioni();
     const esito = confronta(films);
 
     // Alla prima apertura non c'è un "prima" con cui confrontare,
@@ -168,6 +188,7 @@ const Novita = (() => {
             <span class="nov-icona">${{ voto:'★', incasso:'$', streaming:'▶', data:'📅', nuovo:'+', prevendita:'🎫' }[v.tipo]}</span>
             <span>${v.testo}</span>
           </button>
+          ${v.link ? `<a class="nov-link" href="${F.esc(v.link)}" target="_blank" rel="noopener">leggi</a>` : ''}
         </li>`).join('')}
       </ul>
       ${esito.voci.length > mostrate.length

@@ -794,3 +794,11 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 }
 .tema-n{ font-family:var(--ff-mono); font-size:10.5px; font-weight:400; color:var(--ink-3); }
 .cons-coda{ display:block; margin-top:5px; font-size:11.5px; line-height:1.5; color:var(--ink-3); }
+
+.nov-riga{ display:flex; align-items:center; gap:8px; }
+.nov-riga > button{ flex:1; }
+.nov-link{
+  flex:none; padding:5px 12px; border-radius:999px; border:1px solid var(--line-2);
+  font-size:11.5px; font-weight:600; color:var(--ink-2); text-decoration:none; transition:.2s;
+}
+.nov-link:hover{ background:var(--panel-2); color:var(--accent); border-color:var(--accent); }

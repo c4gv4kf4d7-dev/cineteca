@@ -1,0 +1,647 @@
+{
+  "anno": 2025,
+  "film": [
+    {
+      "n": 1,
+      "tmdbId": 1140535,
+      "titolo": "Presence",
+      "originale": null,
+      "uscita": "2025-07-24",
+      "generi": [
+        "Dramma",
+        "Horror",
+        "Thriller"
+      ],
+      "voto": 6.1
+    },
+    {
+      "n": 2,
+      "tmdbId": 1062722,
+      "titolo": "Frankenstein",
+      "originale": null,
+      "uscita": "2025-10-22",
+      "generi": [
+        "Dramma",
+        "Fantasy",
+        "Horror"
+      ],
+      "voto": 7.6
+    },
+    {
+      "n": 3,
+      "tmdbId": 1100988,
+      "titolo": "28 anni dopo",
+      "originale": "28 Years Later",
+      "uscita": "2025-06-18",
+      "generi": [
+        "Horror",
+        "Thriller",
+        "Fantascienza"
+      ],
+      "voto": 6.6
+    },
+    {
+      "n": 4,
+      "tmdbId": 1084199,
+      "titolo": "Companion",
+      "originale": null,
+      "uscita": "2025-01-30",
+      "generi": [
+        "Horror",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "voto": 7
+    },
+    {
+      "n": 5,
+      "tmdbId": 604079,
+      "titolo": "The Long Walk",
+      "originale": null,
+      "uscita": "2026-04-23",
+      "generi": [
+        "Fantascienza",
+        "Thriller",
+        "Horror"
+      ],
+      "voto": 6.9
+    },
+    {
+      "n": 6,
+      "tmdbId": 1284120,
+      "titolo": "The Ugly Stepsister",
+      "originale": "Den stygge stesøsteren",
+      "uscita": "2025-10-30",
+      "generi": [
+        "Horror",
+        "Commedia",
+        "Dramma"
+      ],
+      "voto": 7.3
+    },
+    {
+      "n": 7,
+      "tmdbId": 1233413,
+      "titolo": "I peccatori",
+      "originale": "Sinners",
+      "uscita": "2025-04-17",
+      "generi": [
+        "Horror",
+        "Azione",
+        "Thriller"
+      ],
+      "voto": 7.5
+    },
+    {
+      "n": 8,
+      "tmdbId": 1419406,
+      "titolo": "The Shadow's Edge - Colpo su colpo",
+      "originale": "捕风追影",
+      "uscita": "2025-08-16",
+      "generi": [
+        "Azione",
+        "Crime",
+        "Dramma",
+        "Thriller"
+      ],
+      "voto": 7.9
+    },
+    {
+      "n": 9,
+      "tmdbId": 950396,
+      "titolo": "Misteri dal profondo",
+      "originale": "The Gorge",
+      "uscita": "2025-02-13",
+      "generi": [
+        "Romance",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "voto": 7.7
+    },
+    {
+      "n": 10,
+      "tmdbId": 1408208,
+      "titolo": "Exit 8",
+      "originale": "８番出口",
+      "uscita": "2025-08-29",
+      "generi": [
+        "Horror",
+        "Mistero",
+        "Thriller"
+      ],
+      "voto": 7
+    },
+    {
+      "n": 11,
+      "tmdbId": 1119878,
+      "titolo": "Ice Road - La vendetta",
+      "originale": "Ice Road: Vengeance",
+      "uscita": "2025-07-01",
+      "generi": [
+        "Azione",
+        "Thriller",
+        "Dramma"
+      ],
+      "voto": 6.2
+    },
+    {
+      "n": 12,
+      "tmdbId": 1088166,
+      "titolo": "Relay: Informazioni pericolose",
+      "originale": "Relay",
+      "uscita": "2025-08-21",
+      "generi": [
+        "Azione",
+        "Dramma",
+        "Thriller"
+      ],
+      "voto": 7
+    },
+    {
+      "n": 13,
+      "tmdbId": 822119,
+      "titolo": "Captain America: Brave New World",
+      "originale": null,
+      "uscita": "2025-02-12",
+      "generi": [
+        "Azione",
+        "Thriller",
+        "Fantascienza"
+      ],
+      "voto": 6
+    },
+    {
+      "n": 14,
+      "tmdbId": 1011477,
+      "titolo": "Karate Kid: Legends",
+      "originale": null,
+      "uscita": "2025-06-05",
+      "generi": [
+        "Azione",
+        "Avventura",
+        "Dramma"
+      ],
+      "voto": 7
+    },
+    {
+      "n": 15,
+      "tmdbId": 1387382,
+      "titolo": "Hunting season - Caccia estrema",
+      "originale": "Hunting Season",
+      "uscita": "2025-12-05",
+      "generi": [
+        "Azione",
+        "Dramma",
+        "Thriller"
+      ],
+      "voto": 7.4
+    },
+    {
+      "n": 16,
+      "tmdbId": 1426776,
+      "titolo": "STRAW - Senza uscita",
+      "originale": "STRAW",
+      "uscita": "2025-06-05",
+      "generi": [
+        "Thriller",
+        "Dramma",
+        "Crime"
+      ],
+      "voto": 7.7
+    },
+    {
+      "n": 17,
+      "tmdbId": 1220564,
+      "titolo": "L'agente segreto",
+      "originale": "O Agente Secreto",
+      "uscita": "2026-01-29",
+      "generi": [
+        "Thriller",
+        "Dramma",
+        "Crime"
+      ],
+      "voto": 7.2
+    },
+    {
+      "n": 18,
+      "tmdbId": 1259102,
+      "titolo": "Eternity",
+      "originale": null,
+      "uscita": "2025-12-04",
+      "generi": [
+        "Romance",
+        "Commedia",
+        "Dramma"
+      ],
+      "voto": 7.1
+    },
+    {
+      "n": 19,
+      "tmdbId": 701387,
+      "titolo": "Bugonia",
+      "originale": null,
+      "uscita": "2025-10-23",
+      "generi": [
+        "Fantascienza",
+        "Thriller",
+        "Commedia"
+      ],
+      "voto": 7.3
+    },
+    {
+      "n": 20,
+      "tmdbId": 1330421,
+      "titolo": "Bone Lake",
+      "originale": null,
+      "uscita": "2025-10-02",
+      "generi": [
+        "Horror",
+        "Mistero",
+        "Thriller"
+      ],
+      "voto": 5.9
+    },
+    {
+      "n": 21,
+      "tmdbId": 1061474,
+      "titolo": "Superman",
+      "originale": null,
+      "uscita": "2025-07-09",
+      "generi": [
+        "Fantascienza",
+        "Avventura",
+        "Azione"
+      ],
+      "voto": 7.3
+    },
+    {
+      "n": 22,
+      "tmdbId": 798645,
+      "titolo": "The Running Man",
+      "originale": null,
+      "uscita": "2025-11-13",
+      "generi": [
+        "Azione",
+        "Thriller",
+        "Fantascienza"
+      ],
+      "voto": 6.8
+    },
+    {
+      "n": 23,
+      "tmdbId": 1272149,
+      "titolo": "Bridget Jones - Un amore di ragazzo",
+      "originale": "Bridget Jones: Mad About the Boy",
+      "uscita": "2025-02-27",
+      "generi": [
+        "Romance",
+        "Commedia",
+        "Dramma"
+      ],
+      "voto": 6.4
+    },
+    {
+      "n": 24,
+      "tmdbId": 1234821,
+      "titolo": "Jurassic World - La rinascita",
+      "originale": "Jurassic World Rebirth",
+      "uscita": "2025-07-02",
+      "generi": [
+        "Fantascienza",
+        "Avventura",
+        "Azione"
+      ],
+      "voto": 6.3
+    },
+    {
+      "n": 25,
+      "tmdbId": 911430,
+      "titolo": "F1: Il film",
+      "originale": "F1",
+      "uscita": "2025-06-25",
+      "generi": [
+        "Azione",
+        "Dramma"
+      ],
+      "voto": 7.8
+    },
+    {
+      "n": 26,
+      "tmdbId": 617126,
+      "titolo": "I Fantastici 4 - Gli inizi",
+      "originale": "The Fantastic 4: First Steps",
+      "uscita": "2025-07-23",
+      "generi": [
+        "Fantascienza",
+        "Avventura",
+        "Azione"
+      ],
+      "voto": 7
+    },
+    {
+      "n": 27,
+      "tmdbId": 1246049,
+      "titolo": "Dracula - L’amore perduto",
+      "originale": "Dracula",
+      "uscita": "2025-10-29",
+      "generi": [
+        "Horror",
+        "Fantasy",
+        "Romance"
+      ],
+      "voto": 7.2
+    },
+    {
+      "n": 28,
+      "tmdbId": 986056,
+      "titolo": "Thunderbolts*",
+      "originale": null,
+      "uscita": "2025-04-30",
+      "generi": [
+        "Azione",
+        "Fantascienza",
+        "Avventura"
+      ],
+      "voto": 7.3
+    },
+    {
+      "n": 29,
+      "tmdbId": 1234731,
+      "titolo": "Anaconda",
+      "originale": null,
+      "uscita": "2026-02-05",
+      "generi": [
+        "Avventura",
+        "Commedia",
+        "Horror"
+      ],
+      "voto": 5.8
+    },
+    {
+      "n": 30,
+      "tmdbId": 1136867,
+      "titolo": "Material Love",
+      "originale": "Materialists",
+      "uscita": "2025-09-04",
+      "generi": [
+        "Romance",
+        "Dramma"
+      ],
+      "voto": 6.3
+    },
+    {
+      "n": 31,
+      "tmdbId": 1071585,
+      "titolo": "M3GAN 2.0",
+      "originale": null,
+      "uscita": "2025-06-26",
+      "generi": [
+        "Azione",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "voto": 7.2
+    },
+    {
+      "n": 32,
+      "tmdbId": 1257009,
+      "titolo": "Primitive War",
+      "originale": null,
+      "uscita": "2025-08-21",
+      "generi": [
+        "Azione",
+        "Horror",
+        "Guerra",
+        "Fantascienza"
+      ],
+      "voto": 6.7
+    },
+    {
+      "n": 33,
+      "tmdbId": 1242898,
+      "titolo": "Predator: Badlands",
+      "originale": null,
+      "uscita": "2025-11-06",
+      "generi": [
+        "Azione",
+        "Fantascienza",
+        "Avventura"
+      ],
+      "voto": 7.8
+    },
+    {
+      "n": 34,
+      "tmdbId": 1078605,
+      "titolo": "Weapons",
+      "originale": null,
+      "uscita": "2025-08-06",
+      "generi": [
+        "Horror",
+        "Mistero"
+      ],
+      "voto": 7.3
+    },
+    {
+      "n": 35,
+      "tmdbId": 1376434,
+      "titolo": "Predator: Killer dei Killer",
+      "originale": "Predator: Killer of Killers",
+      "uscita": "2025-06-05",
+      "generi": [
+        "Animazione",
+        "Azione",
+        "Fantascienza",
+        "Thriller"
+      ],
+      "voto": 7.8
+    },
+    {
+      "n": 36,
+      "tmdbId": 696506,
+      "titolo": "Mickey 17",
+      "originale": null,
+      "uscita": "2025-03-06",
+      "generi": [
+        "Fantascienza",
+        "Commedia",
+        "Avventura"
+      ],
+      "voto": 6.8
+    },
+    {
+      "n": 37,
+      "tmdbId": 1197137,
+      "titolo": "Black Phone 2",
+      "originale": null,
+      "uscita": "2025-10-16",
+      "generi": [
+        "Horror",
+        "Thriller"
+      ],
+      "voto": 6.7
+    },
+    {
+      "n": 38,
+      "tmdbId": 1228246,
+      "titolo": "Five Nights at Freddy's 2",
+      "originale": null,
+      "uscita": "2025-12-04",
+      "generi": [
+        "Horror",
+        "Thriller"
+      ],
+      "voto": 6.6
+    },
+    {
+      "n": 39,
+      "tmdbId": 575265,
+      "titolo": "Mission Impossible - The Final Reckoning",
+      "originale": "Mission: Impossible - The Final Reckoning",
+      "uscita": "2025-05-22",
+      "generi": [
+        "Azione",
+        "Thriller",
+        "Avventura"
+      ],
+      "voto": 7.2
+    },
+    {
+      "n": 40,
+      "tmdbId": 574475,
+      "titolo": "Final Destination - Bloodlines",
+      "originale": "Final Destination Bloodlines",
+      "uscita": "2025-05-15",
+      "generi": [
+        "Horror",
+        "Mistero"
+      ],
+      "voto": 7
+    },
+    {
+      "n": 41,
+      "tmdbId": 812583,
+      "titolo": "Wake Up Dead Man - Knives Out",
+      "originale": "Wake Up Dead Man: A Knives Out Mystery",
+      "uscita": "2025-11-26",
+      "generi": [
+        "Thriller",
+        "Mistero",
+        "Commedia"
+      ],
+      "voto": 7.2
+    },
+    {
+      "n": 42,
+      "tmdbId": 1156594,
+      "titolo": "È colpa nostra?",
+      "originale": "Culpa nuestra",
+      "uscita": "2025-10-15",
+      "generi": [
+        "Romance",
+        "Dramma"
+      ],
+      "voto": 7.4
+    },
+    {
+      "n": 43,
+      "tmdbId": 1196067,
+      "titolo": "Worldbreaker",
+      "originale": null,
+      "uscita": "2025-10-30",
+      "generi": [
+        "Azione",
+        "Horror",
+        "Fantascienza"
+      ],
+      "voto": 6.1
+    },
+    {
+      "n": 44,
+      "tmdbId": 1294203,
+      "titolo": "È colpa mia: Londra",
+      "originale": "My Fault: London",
+      "uscita": "2025-02-12",
+      "generi": [
+        "Dramma",
+        "Romance"
+      ],
+      "voto": 7.4
+    },
+    {
+      "n": 45,
+      "tmdbId": 1302916,
+      "titolo": "Heart Eyes - Appuntamento con la morte",
+      "originale": "Heart Eyes",
+      "uscita": "2025-06-12",
+      "generi": [
+        "Horror",
+        "Romance",
+        "Commedia"
+      ],
+      "voto": 6.3
+    },
+    {
+      "n": 46,
+      "tmdbId": 777443,
+      "titolo": "The Electric State",
+      "originale": null,
+      "uscita": "2025-02-24",
+      "generi": [
+        "Azione",
+        "Avventura",
+        "Fantascienza"
+      ],
+      "voto": 6.5
+    },
+    {
+      "n": 47,
+      "tmdbId": 755898,
+      "titolo": "La guerra dei mondi",
+      "originale": "War of the Worlds",
+      "uscita": "2025-07-29",
+      "generi": [
+        "Fantascienza",
+        "Thriller"
+      ],
+      "voto": 4.1
+    },
+    {
+      "n": 48,
+      "tmdbId": 1327862,
+      "titolo": "Regretting You - Tutto quello che non ti ho detto",
+      "originale": "Regretting You",
+      "uscita": "2025-12-04",
+      "generi": [
+        "Romance",
+        "Dramma"
+      ],
+      "voto": 7.1
+    },
+    {
+      "n": 49,
+      "tmdbId": 533533,
+      "titolo": "TRON: Ares",
+      "originale": null,
+      "uscita": "2025-10-09",
+      "generi": [
+        "Fantascienza",
+        "Avventura",
+        "Azione"
+      ],
+      "voto": 6.5
+    },
+    {
+      "n": 50,
+      "tmdbId": 1242011,
+      "titolo": "Together",
+      "originale": null,
+      "uscita": "2025-10-01",
+      "generi": [
+        "Horror",
+        "Romance"
+      ],
+      "voto": 6.9
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-07-30T12:13:05.016Z",
+  "aggiornato": "2026-07-30T16:31:15.713Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -14,7 +14,198 @@
     "IndieWire",
     "THR"
   ],
+  "segnalazioniPrevendita": [],
   "notizie": [
+    {
+      "titolo": "Odissea, John Leguizamo svela i retroscena della scena del cane: come Christopher Nolan l'ha girata",
+      "link": "https://www.badtaste.it/articoli/odissea-john-leguizamo-svela-i-retroscena-della-scena-del-cane-come-christopher-nolan-lha-girata",
+      "sommario": "John Leguizamo svela i retroscena della scena d'apertura di Eumeo e spiega come Christopher Nolan abbia realizzato la sequenza senza mettere in pericolo il cucciolo.",
+      "data": "2026-07-30T15:31:07.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista",
+          "film": [
+            "Odissea"
+          ]
+        },
+        {
+          "nome": "John Leguizamo",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 12,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.122Z",
+      "evidenza": true
+    },
+    {
+      "titolo": "Netflix Sets Fall Release for Cannes Breakout ‘Gentle Monster’ Starring Léa Seydoux (EXCLUSIVE)",
+      "link": "https://variety.com/2026/film/awards/netflix-gentle-monster-release-date-lea-seydoux-1236822986/",
+      "sommario": "Netflix has set a release date for “Gentle Monster,” the Cannes breakout starring Léa Seydoux, revealed to Variety exclusively. The drama from writer-director Marie Kreutzer opens in select theaters Oct. 30 before beginning its streaming rollout Nov. 18 in the",
+      "data": "2026-07-30T15:00:00.000Z",
+      "fonte": "Variety",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "The Drama - Un segreto è per sempre",
+          "tipo": "film",
+          "film": [
+            "The Drama - Un segreto è per sempre"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.693Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Andy Garcia’s Starry L.A. Noir ‘Diamond’ Lands at Sony Pictures Classics",
+      "link": "https://www.hollywoodreporter.com/movies/movie-news/andy-garcia-noir-diamond-sony-pictures-classics-1236659815/",
+      "sommario": "The passion project, starring Garcia opposite Vicky Krieps, Brendan Fraser, Bill Murray and Dustin Hoffman, received a warm reception at the Cannes Film Festival in May.",
+      "data": "2026-07-30T15:00:00.000Z",
+      "fonte": "THR",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Brendan Fraser",
+          "tipo": "attore",
+          "film": [
+            "Rental Family - Nelle vite degli altri"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.705Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Julie Delpy, Takehiro Hira, Kathryn Hunter, Kate Dickie and Emma D’Arcy Join Sonoya Mizuno’s Debut ‘Stages’; Focus Takes International",
+      "link": "https://deadline.com/2026/07/sonoya-mizuno-stages-focus-features-julie-delpy-emma-darcy-1237013187/",
+      "sommario": "Focus Features has picked up international rights to Sonoya Mizuno’s directorial debut Stages and will distribute the film via Universal Pictures International. The film’s ensemble cast features Julie Delpy (Meet the Barbarians), Takehiro Hira (Rental Family),",
+      "data": "2026-07-30T14:44:25.000Z",
+      "fonte": "Deadline",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Rental Family - Nelle vite degli altri",
+          "tipo": "film",
+          "film": [
+            "Rental Family - Nelle vite degli altri"
+          ]
+        }
+      ],
+      "rilievo": 1,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.697Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Billie Eilish Concert Film ‘Hit Me Hard And Soft’ Gets Paramount+ Release Date",
+      "link": "https://deadline.com/2026/07/billie-eilish-hit-me-hard-soft-streaming-date-paramount-1237013199/",
+      "sommario": "Billie Eilish – Hit Me Hard And Soft: The Tour (Live) will begin streaming Thursday, August 6 on Paramount+ in the the U.S, following an 84-day theatrical window. The 3D concert film, directed by James Cameron and Eilish, captures Eilish’s most recent tour for",
+      "data": "2026-07-30T14:29:59.000Z",
+      "fonte": "Deadline",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "James Cameron",
+          "tipo": "regista",
+          "film": [
+            "Avatar: Fuoco e cenere"
+          ]
+        }
+      ],
+      "rilievo": 5,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.697Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "‘Street Fighter’ Character Posters: Andrew Koji, Noah Centineo, David Dastmalchian, Callina Liang, Jason Momoa, Curtis ‘50 Cent’ Jackson & More",
+      "link": "https://deadline.com/gallery/street-fighter-character-posters/",
+      "sommario": "Paramount Pictures has released a new sneak peek from the upcoming live-action adaptation of the classic arcade game Street Fighter, showcasing an intense fight between Blanka (Jason Momoa) and Ryu (Andrew Koji). The film is set to hit theaters on October 16, ",
+      "data": "2026-07-30T13:30:31.000Z",
+      "fonte": "Deadline",
+      "lingua": "en",
+      "citati": [
+        {
+          "nome": "Jason Momoa",
+          "tipo": "attore",
+          "film": [
+            "Dune - Parte tre"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.698Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Tom Holland svela il vero incubo del costume di Spider-Man: “Dopo mezza giornata puzza da morire”",
+      "link": "https://www.badtaste.it/articoli/tom-holland-svela-il-vero-incubo-del-costume-di-spider-man-dopo-mezza-giornata-puzza-da-morire",
+      "sommario": "Tom Holland racconta il lato meno glamour del costume di Spider-Man, tra cattivi odori, problemi pratici e le differenze con Tobey Maguire e Andrew Garfield.",
+      "data": "2026-07-30T13:26:14.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Tom Holland",
+          "tipo": "attore",
+          "film": [
+            "Odissea"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.123Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Su Netflix, Tom Hanks nel film di Clint Eastwood da una storia vera del miracolo di Hudson",
+      "link": "https://www.badtaste.it/articoli/su-netflix-tom-hanks-nel-film-di-clint-eastwood-da-una-storia-vera-del-miracolo-di-hudson",
+      "sommario": "Il film di Clint Eastwood racconta il miracolo sul fiume Hudson del 2009. Dove vederlo in streaming e trama completa.",
+      "data": "2026-07-30T13:00:20.000Z",
+      "fonte": "BadTaste",
+      "lingua": "it",
+      "citati": [
+        {
+          "nome": "Tom Hanks",
+          "tipo": "attore",
+          "film": [
+            "Toy Story 5"
+          ]
+        }
+      ],
+      "rilievo": 4,
+      "servizio": false,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T16:31:15.123Z",
+      "evidenza": false
+    },
     {
       "titolo": "Spider-Man: Brand New Day, Tom Holland ha letteralmente odiato una versione del film",
       "link": "https://movieplayer.it/news/spider-man-brand-new-day-tom-holland-odiato-versione-film_170386/",
@@ -33,6 +224,7 @@
       ],
       "rilievo": 4,
       "servizio": false,
+      "prevendite": false,
       "vistoIl": "2026-07-30T12:13:04.828Z",
       "evidenza": false
     },
@@ -54,6 +246,7 @@
       ],
       "rilievo": 1,
       "servizio": false,
+      "prevendite": false,
       "vistoIl": "2026-07-30T12:13:04.806Z",
       "evidenza": false
     },
@@ -75,6 +268,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "vistoIl": "2026-07-30T12:13:04.964Z",
       "evidenza": false
     },
@@ -96,6 +290,7 @@
       ],
       "rilievo": 4,
       "servizio": false,
+      "prevendite": false,
       "vistoIl": "2026-07-30T12:13:05.009Z",
       "evidenza": false
     },
@@ -117,6 +312,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "vistoIl": "2026-07-30T12:13:04.831Z",
       "evidenza": false
     },
@@ -179,6 +375,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -239,6 +436,7 @@
       ],
       "rilievo": 1,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -306,6 +504,7 @@
       ],
       "rilievo": 4,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -326,6 +525,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -346,6 +546,7 @@
       ],
       "rilievo": 4,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -386,6 +587,7 @@
       ],
       "rilievo": 1,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -414,7 +616,7 @@
       ],
       "rilievo": 8,
       "servizio": false,
-      "evidenza": true
+      "evidenza": false
     },
     {
       "titolo": "Madeline Brewer, Emory Cohen And Nicholas Alexander Chavez Join Paramount’s ‘Possession’",
@@ -509,6 +711,7 @@
       ],
       "rilievo": 1,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -536,6 +739,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -556,6 +760,7 @@
       ],
       "rilievo": 1,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -576,6 +781,7 @@
       ],
       "rilievo": 1,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -603,6 +809,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -630,6 +837,7 @@
       ],
       "rilievo": 8,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -650,6 +858,7 @@
       ],
       "rilievo": 1,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -677,6 +886,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -731,6 +941,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -758,6 +969,7 @@
       ],
       "rilievo": 8,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -785,6 +997,7 @@
       ],
       "rilievo": 9,
       "servizio": true,
+      "prevendite": false,
       "evidenza": false
     },
     {
@@ -812,6 +1025,7 @@
       ],
       "rilievo": 5,
       "servizio": false,
+      "prevendite": false,
       "evidenza": false
     }
   ]

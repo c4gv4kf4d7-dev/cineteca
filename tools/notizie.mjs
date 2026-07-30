@@ -34,6 +34,14 @@ const FONTI = [
 const GIORNI = 21;      // oltre, un articolo non è più notizia
 const MEMORIA = 30;     // per quanto conservo l'archivio accumulato
 
+/* Le prevendite non hanno un'API: le annunciano le testate.
+   Questi sono i modi in cui lo scrivono. */
+const SPIE_PREVENDITA = [
+  'prevendit', 'prevendite aperte', 'biglietti disponibili', 'biglietti in vendita',
+  'acquista il biglietto', 'porte aperte', 'on sale now', 'tickets on sale',
+  'presale', 'pre-sale', 'in prevendita'
+];
+
 /* Parole che segnalano una notizia "di servizio": quelle che se ti
    sfuggono cambiano i tuoi piani, non solo il tuo umore. */
 const PESANTI = [
@@ -210,12 +218,14 @@ for (const a of articoli) {
   const inTitolo = citati.filter(c => [...c.alias].some(a2 => paroleIntere(soloTitolo, a2)));
 
   const parolaPesante = PESANTI.some(p => soloTitolo.includes(p));
+  const parlaDiPrevendite = SPIE_PREVENDITA.some(p => testo.includes(p));
 
   notizie.push({
     ...a,
     citati: citati.map(c => ({ nome: c.nome, tipo: c.tipo, film: [...c.film] })),
-    rilievo: inTitolo.length * 3 + citati.length + (parolaPesante ? 4 : 0),
+    rilievo: inTitolo.length * 3 + citati.length + (parolaPesante ? 4 : 0) + (parlaDiPrevendite ? 6 : 0),
     servizio: parolaPesante && inTitolo.length > 0,
+    prevendite: parlaDiPrevendite,
     vistoIl: new Date().toISOString()
   });
 }
@@ -267,13 +277,41 @@ for (const n of tutte) n.evidenza = inEvidenza.has(n.link);
 
 const finali = tutte.slice(0, 80);
 
+/* ── segnalazioni di prevendita ──────────────────────────
+   Nessuna API le espone: le annunciano le testate. Qui isolo
+   gli articoli che ne parlano riferendosi a un film che hai in
+   lista e che non ha ancora una data di prevendita registrata. */
+const senzaPrevendita = new Map(
+  catalogo.movies
+    .filter(m => m.lista === 'cinema' && !m.prevendita && (!m.release || new Date(m.release) > new Date()))
+    .map(m => [normalizza(m.title), m])
+);
+
+const segnalazioni = [];
+for (const n of tutte.filter(x => x.prevendite)) {
+  for (const c of n.citati) {
+    if (c.tipo !== 'film') continue;
+    const m = senzaPrevendita.get(normalizza(c.nome));
+    if (!m) continue;
+    if (segnalazioni.some(s => s.id === m.id)) continue;
+    segnalazioni.push({ id: m.id, film: m.title, uscita: m.release, titolo: n.titolo, fonte: n.fonte, link: n.link });
+  }
+}
+
 await writeFile(join(ROOT, 'data', 'notizie.json'),
   JSON.stringify({
     aggiornato: new Date().toISOString(),
     fonti: FONTI.map(f => f.nome),
+    segnalazioniPrevendita: segnalazioni,
     notizie: finali
   }, null, 2) + '\n');
 
 console.log(`\n✅ data/notizie.json — ${finali.length} in archivio (${inedite} nuove) su ${articoli.length} articoli letti.`);
+if (segnalazioni.length) {
+  console.log('\n🎫 POSSIBILI PREVENDITE — da verificare e registrare a mano:');
+  segnalazioni.forEach(s =>
+    console.log(`  · ${s.film} (esce ${s.uscita})\n      [${s.fonte}] ${s.titolo.slice(0, 70)}\n      ${s.link}`));
+}
+
 console.log('\n★ In evidenza questa settimana:');
 evidenza.forEach(n => console.log(`  · [${n.fonte}] ${n.titolo.slice(0, 76)}\n      → ${n.citati.map(c => c.nome).slice(0, 3).join(', ')} · rilievo ${n.rilievo}`));
