@@ -8,12 +8,12 @@
    quando la rete non c'è.
    ══════════════════════════════════════════════════════════ */
 
-const CACHE = 'cineteca-v202607311250';
+const CACHE = 'cineteca-v202607311922';
 const SHELL = [
   './', './index.html', './css/styles.css',
   './js/store.js', './js/format.js', './js/charts.js',
   './js/consiglia.js', './js/perte.js', './js/notizie.js', './js/stats.js', './js/detail.js', './js/novita.js', './js/cloud-config.js', './js/cloud.js', './js/app.js',
-  './data/movies.json', './manifest.webmanifest'
+  './data/movies.json', './manifest.webmanifest', './assets/icon-180.png', './assets/icon-192.png'
 ];
 
 self.addEventListener('install', e => {
