@@ -61,9 +61,10 @@ const PerTe = (() => {
     const voci = tutti.filter(m => m.user.rewatch);
     if (!voci.length) return '';
 
-    // Chi è già disponibile viene prima: è quello che puoi guardare stasera.
-    const disponibili = pescaOggi(voci.filter(m => m.streaming?.length), 3, 'rivedere');
-    const attesa = pescaOggi(voci.filter(m => !m.streaming?.length), 3 - disponibili.length, 'attesa');
+    // Chi è già uscito viene prima: è quello che puoi rivedere stasera.
+    const guardabile = m => (F.giorniA(m.releaseDate) ?? 1) <= 0;
+    const disponibili = pescaOggi(voci.filter(guardabile), 3, 'rivedere');
+    const attesa = pescaOggi(voci.filter(m => !guardabile(m)), 3 - disponibili.length, 'attesa');
 
     const riga = m => `<button class="cons" data-open="${F.esc(m.id)}">
       <span class="cons-ph">${F.poster(m, 'w185')
@@ -72,11 +73,10 @@ const PerTe = (() => {
         <b>${F.esc(m.title)}</b>
         <span class="cons-meta">${F.esc(F.dataBreve(m.releaseDate))}${
           m.user.myRating ? ` · ${'★'.repeat(m.user.myRating)}` : ''}</span>
-        <span class="cons-perche">${m.streaming?.length
-          ? `disponibile su ${F.esc(F.piattaforme(m.streaming).join(', '))}`
-          : 'non ancora su nessuna piattaforma'}</span>
+        <span class="cons-perche">${(F.giorniA(m.releaseDate) ?? 1) <= 0
+          ? 'pronto da rivedere' : 'non ancora uscito'}</span>
       </span>
-      <span class="cons-punti">${m.streaming?.length ? '▶' : '↻'}</span>
+      <span class="cons-punti">${(F.giorniA(m.releaseDate) ?? 1) <= 0 ? '🍿' : '↻'}</span>
     </button>`;
 
     return `<section class="s-block">
@@ -86,9 +86,7 @@ const PerTe = (() => {
       </div>
       <p class="nota">${voci.length > 3
         ? `Tre pescati fra i ${voci.length} che vuoi rivedere, diversi ogni giorno. `
-        : ''}${voci.filter(m => m.streaming?.length).length
-        ? 'Quelli già in streaming vengono per primi.'
-        : 'Nessuno è ancora arrivato in streaming: ti avviso qui appena succede.'}</p>
+        : ''}Quelli già usciti vengono per primi.</p>
     </section>`;
   }
 

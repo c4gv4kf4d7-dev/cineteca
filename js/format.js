@@ -111,18 +111,6 @@ const F = (() => {
     return art + g;
   }
 
-  /* TMDB elenca anche i canali rivenduti ("HBO Max Amazon Channel"):
-     tengo il servizio vero e tolgo i doppioni. */
-  function piattaforme(lista = []) {
-    const pulito = lista
-      .map(n => n.replace(/\s+Amazon (Channel|channel)$/i, '')
-                 .replace(/\s+with Ads$/i, '')
-                 .replace(/\s+Full$/i, '')
-                 .trim())
-      .filter(Boolean);
-    return [...new Set(pulito)];
-  }
-
   /* ── DOM ─────────────────────────────────────────────── */
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
     ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -153,6 +141,6 @@ const F = (() => {
   }
 
   return { MESI, dataLunga, dataBreve, meseAnno, giorniA, attesa, countdown,
-           durata, soldi, poster, backdrop, profilo, iniziali, piattaforme, conArticolo, prevendita,
+           durata, soldi, poster, backdrop, profilo, iniziali, conArticolo, prevendita,
            esc, raggruppa, conteggio };
 })();

@@ -108,11 +108,8 @@ const Consiglia = (() => {
       if (scostamento < 12) { punti += 4; motivi.push('dura quanto i film che scegli di solito'); }
     }
 
-    // Un titolo già disponibile in abbonamento è un consiglio azionabile stasera.
-    if (film.streaming?.length) {
-      punti += 6;
-      motivi.push(`è già su ${F.piattaforme(film.streaming)[0]}`);
-    }
+    // Un film già uscito è guardabile stasera: vale più di uno che deve ancora arrivare.
+    if (film.lista === 'casa' && (F.giorniA(film.releaseDate) ?? 1) <= 0) punti += 6;
 
     return { punti, motivi: [...new Set(motivi)].slice(0, 3) };
   }
@@ -297,9 +294,7 @@ const Consiglia = (() => {
       }
     }
 
-    /* Il dettaglio pratico: dove e quando. Per un film che aspetti
-       in sala, lo streaming è irrilevante — e per una riedizione è
-       pure fuorviante, perché è la disponibilità del film originale. */
+    /* Il dettaglio pratico: dove e quando. */
     let pratico = null;
     const gg = F.giorniA(film.releaseDate);
     const prev = F.prevendita(film);
@@ -308,9 +303,9 @@ const Consiglia = (() => {
       if (prev?.urgente)               pratico = `${maiuscola(prev.testo)}.`;
       else if (gg != null && gg > 0)   pratico = `Esce fra ${gg} giorni.`;
       else if (gg != null && gg >= -70) pratico = 'È in sala adesso.';
-    } else if (film.streaming?.length) {
-      pratico = `Ce l'hai già su ${F.esc(F.piattaforme(film.streaming)[0])}.`;
-    } else if (gg != null && gg > 0 && gg <= 45) {
+    } else if (gg != null && gg <= 0) {
+      pratico = 'Puoi guardarlo stasera.';
+    } else if (gg != null && gg <= 45) {
       pratico = `Esce fra ${gg} giorni.`;
     }
 

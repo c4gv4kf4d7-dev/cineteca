@@ -136,14 +136,6 @@ function decidiUscita(film, d) {
   return { data: d.release_date || null, fonte: d.release_date ? 'globale' : null };
 }
 
-/* Dove si può vedere in Italia, in abbonamento. */
-function piattaforme(d) {
-  const it = d['watch/providers']?.results?.IT;
-  if (!it) return [];
-  const nomi = [...(it.flatrate || []), ...(it.free || [])].map(p => p.provider_name);
-  return [...new Set(nomi)];
-}
-
 /* ── arricchimento di un singolo film ────────────────── */
 async function arricchisci(film, giaInLibreria = new Set()) {
   // Se l'ID è già stato verificato a mano, niente ricerca: nessun rischio di sbagliare film.
@@ -153,7 +145,7 @@ async function arricchisci(film, giaInLibreria = new Set()) {
     return { ...film, tmdbId: null };
   }
 
-  const d = await tmdb(`/movie/${hit.id}`, { append_to_response: 'credits,videos,release_dates,watch/providers' });
+  const d = await tmdb(`/movie/${hit.id}`, { append_to_response: 'credits,videos,release_dates' });
 
   const registi = (d.credits?.crew || []).filter(c => c.job === 'Director').map(c => c.name);
   const castDetail = (d.credits?.cast || []).slice(0, 12).map(c => ({
@@ -199,13 +191,11 @@ async function arricchisci(film, giaInLibreria = new Set()) {
   }
 
   const uscita = decidiUscita(film, d);
-  const streaming = piattaforme(d);
 
   const note = [
     d.poster_path ? null : 'senza locandina',
     uscita.fonte === 'US' || uscita.fonte === 'globale' ? `⚠ data ${uscita.fonte}, non IT` : null,
     esterni.rtScore != null ? `RT ${esterni.rtScore}%` : null,
-    streaming.length ? streaming.join('/') : null
   ].filter(Boolean);
   console.log(`  ✓ ${film.title} → ${uscita.data || '?'}${note.length ? ` · ${note.join(' · ')}` : ''}`);
 
@@ -219,7 +209,6 @@ async function arricchisci(film, giaInLibreria = new Set()) {
     releaseFonte: uscita.fonte,          // manuale | IT | US | globale
     releaseGlobale: d.release_date || null,
     releaseUS: uscitaPaese(d, 'US'),
-    streaming,
     runtime:  film.runtime  || d.runtime || null,
     director: film.director || registi[0] || null,
     plot:     film.plot     || d.overview || null,

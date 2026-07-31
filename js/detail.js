@@ -111,13 +111,6 @@ const Detail = (() => {
           <p class="d-plot">${F.esc(m.plot)}</p>
         </section>` : ''}
 
-        ${m.streaming?.length ? `<section class="d-section">
-          <h4>Dove vederlo in abbonamento</h4>
-          <div class="d-facts">
-            ${F.piattaforme(m.streaming).map(p => `<span class="fact fact-accent">${F.esc(p)}</span>`).join('')}
-          </div>
-        </section>` : ''}
-
         ${statsBlock(m)}
         ${castBlock(m)}
 

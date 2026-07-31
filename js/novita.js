@@ -4,7 +4,7 @@
    A ogni apertura confronta il catalogo con l'istantanea
    salvata l'ultima volta e racconta le differenze: voti
    arrivati o cambiati, incassi che si muovono, film sbarcati
-   in streaming, date che slittano.
+   date che slittano, film che diventano guardabili.
 
    Tutto in locale, nessun server: l'istantanea vive accanto
    al resto del tuo stato nel browser.
@@ -22,7 +22,7 @@ const Novita = (() => {
     imdb: m.imdbRating ?? null,
     inc: m.revenue ?? null,
     usc: m.release ?? null,
-    str: (m.streaming || []).slice().sort().join('|')
+    pronto: m.lista === 'casa' && (F.giorniA(m.releaseDate) ?? 1) <= 0
   }]));
 
   const leggi = () => {
@@ -81,17 +81,13 @@ const Novita = (() => {
         }
       }
 
-      /* sbarco in streaming */
-      if (adesso.str !== era.str) {
-        const nuove = adesso.str.split('|').filter(p => p && !era.str.split('|').includes(p));
-        const pulite = F.piattaforme(nuove);
-        if (pulite.length)
-          // Se aspettavi di rivederlo, questa è la notizia del giorno.
-          voci.push({ id, film: m, tipo: 'streaming', peso: m.user?.rewatch ? 11 : 5,
-            testo: m.user?.rewatch
-              ? `<b>${F.esc(adesso.t)}</b>, che volevi rivedere, è arrivato su <b>${F.esc(pulite[0])}</b>`
-              : `<b>${F.esc(adesso.t)}</b> è arrivato su <b>${F.esc(pulite[0])}</b>` });
-      }
+      /* da attesa a guardabile */
+      if (!era.pronto && adesso.pronto)
+        // Se aspettavi di rivederlo, questa è la notizia del giorno.
+        voci.push({ id, film: m, tipo: 'pronto', peso: m.user?.rewatch ? 11 : 6,
+          testo: m.user?.rewatch
+            ? `<b>${F.esc(adesso.t)}</b>, che volevi rivedere, ora si può guardare`
+            : `<b>${F.esc(adesso.t)}</b> è pronto da vedere sul divano` });
 
       /* data spostata */
       if (era.usc && adesso.usc && era.usc !== adesso.usc) {
@@ -185,7 +181,7 @@ const Novita = (() => {
       <ul class="nov-lista">
         ${mostrate.map(v => `<li class="nov-riga nov-${v.tipo}">
           <button data-open="${F.esc(v.id)}">
-            <span class="nov-icona">${{ voto:'★', incasso:'$', streaming:'▶', data:'📅', nuovo:'+', prevendita:'🎫' }[v.tipo]}</span>
+            <span class="nov-icona">${{ voto:'★', incasso:'$', pronto:'🍿', data:'📅', nuovo:'+', prevendita:'🎫' }[v.tipo]}</span>
             <span>${v.testo}</span>
           </button>
           ${v.link ? `<a class="nov-link" href="${F.esc(v.link)}" target="_blank" rel="noopener">leggi</a>` : ''}

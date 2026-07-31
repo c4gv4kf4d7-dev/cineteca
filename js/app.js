@@ -55,12 +55,12 @@
     if (g === null) return { testo: 'TBA', hot: false };
     if (g === 0)    return { testo: 'OGGI', hot: true };
     if (g > 0)      return { testo: `${g}G`, hot: g <= 30 };
-    // Già uscito: cambia cosa è utile sapere a seconda della lista.
-    if (m.streaming?.length) return { testo: 'STREAMING', hot: false };
+    // Già uscito. Sul divano lo dice già il popcorn: non ripeterlo.
+    if (m.lista === 'casa') return null;
     // Nelle multisala la tenitura vera è di circa dieci settimane:
     // oltre, dire "in sala" sarebbe una bugia.
-    if (m.lista !== 'casa' && g >= -70) return { testo: 'IN SALA', live: true };
-    return { testo: m.lista === 'casa' ? 'USCITO' : 'GIÀ PASSATO', hot: false };
+    if (g >= -70) return { testo: 'IN SALA', live: true };
+    return { testo: 'GIÀ PASSATO', hot: false };
   }
 
   /* Angolo in alto a destra: il voto. Rotten Tomatoes quando c'è;
@@ -78,6 +78,9 @@
     const uscita = badgeUscita(m);
     const voto = badgeVoto(m);
     const prev = F.prevendita(m);
+    // Popcorn: sta sul divano, è già uscito e non l'hai ancora visto.
+    const pronto = m.lista === 'casa' && !m.user.seen
+      && (F.giorniA(m.releaseDate) ?? 1) <= 0;
 
     return `<div class="card">
       <button class="poster" data-open="${F.esc(m.id)}" aria-label="Apri ${F.esc(m.title)}">
@@ -94,10 +97,11 @@
           <span class="badge badge-prev${prev.urgente ? ' is-urgente' : ''}">${
             prev.urgente ? '<i class="live-dot"></i>' : '🎫 '}${F.esc(prev.breve)}</span>
         </span>` : ''}
-        <span class="poster-bottom">
+        ${pronto ? '<span class="poster-pronto"><span class="badge badge-pronto">🍿 PRONTO</span></span>' : ''}
+        ${uscita ? `<span class="poster-bottom">
           <span class="badge ${uscita.live ? 'badge-live' : uscita.hot ? 'badge-hot' : 'badge-soon'}">${
             uscita.live ? '<i class="live-dot"></i>' : ''}${F.esc(uscita.testo)}</span>
-        </span>
+        </span>` : ''}
       </button>
       <div class="card-meta">
         <h3>${F.esc(m.title)}</h3>
@@ -105,7 +109,6 @@
           m.releaseFonte === 'US' || m.releaseFonte === 'globale'
             ? '<span class="stimata" title="Data non ancora confermata per l\'Italia">≈</span>' : ''
           } · ${F.esc(m.genres[0] || '—')}${F.durata(m.runtime) ? ` · ${F.durata(m.runtime)}` : ''}</p>
-        ${m.streaming?.length ? `<p class="su">${F.esc(F.piattaforme(m.streaming).join(' · '))}</p>` : ''}
       </div>
     </div>`;
   }
