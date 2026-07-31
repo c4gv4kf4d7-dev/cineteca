@@ -56,6 +56,8 @@ const Store = (() => {
   function patch(id, changes) {
     const next = { ...userState(id), ...changes };
     if (!next.addedAt) next.addedAt = new Date().toISOString();
+    // Serve a fondere due dispositivi: a parità di film vince il più recente.
+    next.updatedAt = new Date().toISOString();
     state.movies[id] = next;
     save();
     return next;
@@ -131,6 +133,37 @@ const Store = (() => {
 
   const subscribe = fn => { listeners.add(fn); return () => listeners.delete(fn); };
 
+  /* ── ponte verso il cloud ────────────────────────────────
+     Il sync non deve conoscere la struttura interna: gli do
+     lo stato grezzo e un modo per rimpiazzarlo o fonderlo. */
+
+  const stato = () => JSON.parse(JSON.stringify(state));
+
+  /** Quanti film hai davvero toccato: serve al cloud per non
+      sovrascrivere un archivio pieno con uno vuoto. */
+  const quantiToccati = () => Object.keys(state.movies || {}).length;
+
+  /** Fonde uno stato remoto con quello locale, film per film:
+      a parità di titolo vince la modifica più recente. */
+  function fondi(remoto) {
+    if (!remoto || !remoto.movies) return false;
+    let cambiato = false;
+
+    for (const [id, loro] of Object.entries(remoto.movies)) {
+      const mio = state.movies[id];
+      if (!mio) { state.movies[id] = loro; cambiato = true; continue; }
+
+      const quandoLoro = Date.parse(loro.updatedAt || loro.addedAt || 0) || 0;
+      const quandoMio  = Date.parse(mio.updatedAt  || mio.addedAt  || 0) || 0;
+      if (quandoLoro > quandoMio) { state.movies[id] = loro; cambiato = true; }
+    }
+
+    if (remoto.schema > (state.schema || 0)) state.schema = remoto.schema;
+    if (cambiato) save();
+    return cambiato;
+  }
+
   return { init, refresh, all, byId, userState,
-           toggleSeen, toggleFav, toggleRewatch, setRating, setNote, subscribe };
+           toggleSeen, toggleFav, toggleRewatch, setRating, setNote, subscribe,
+           stato, fondi, quantiToccati, riparaArchivio };
 })();
