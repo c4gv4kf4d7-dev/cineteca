@@ -98,12 +98,26 @@ svg{ width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:1.7; st
 }
 .search:focus-within kbd{ opacity:0; }
 
-.tabs{ display:flex; gap:2px; flex:none; padding:3px; background:var(--panel); border:1px solid var(--line); border-radius:999px; }
+/* ── barra delle sezioni: fluttua in basso, come una dock ──
+   Sul telefono il pollice sta in fondo allo schermo, non in cima. */
+.tabs{
+  position:fixed; z-index:50;
+  left:50%; bottom:calc(14px + env(safe-area-inset-bottom)); transform:translateX(-50%);
+  display:flex; gap:3px; padding:5px;
+  background:rgba(18,20,32,.62);
+  border:1px solid rgba(255,255,255,.14); border-radius:999px;
+  backdrop-filter:blur(26px) saturate(180%);
+  -webkit-backdrop-filter:blur(26px) saturate(180%);
+  box-shadow:0 18px 44px -12px rgba(0,0,0,.85), inset 0 1px 0 rgba(255,255,255,.1);
+}
 .tab{
-  padding:8px 16px; font-size:13.5px; font-weight:600; color:var(--ink-2);
+  padding:10px 18px; font-size:13.5px; font-weight:600; color:var(--ink-2);
   border-radius:999px; transition:color .2s, background .2s; white-space:nowrap;
 }
 .tab.is-active{ color:var(--bg); background:var(--ink); }
+
+/* spazio in fondo perché la dock non copra l'ultima riga */
+main{ padding-bottom:calc(110px + env(safe-area-inset-bottom)) !important; }
 
 main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .view{ display:none; }
@@ -114,30 +128,42 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .hero{
   position:relative; overflow:hidden;
   border:1px solid var(--line); border-radius:var(--r-l);
-  margin:8px 0 30px; min-height:340px;
-  display:flex; align-items:flex-end;
+  margin:8px 0 22px; min-height:0;
+  display:flex; align-items:center;
   background:var(--bg-2);
 }
 .hero-bg{ position:absolute; inset:0; object-fit:cover; width:100%; height:100%; opacity:.5; }
 .hero::after{
   content:""; position:absolute; inset:0;
-  background:linear-gradient(105deg, rgba(5,6,11,.97) 8%, rgba(5,6,11,.72) 46%, rgba(5,6,11,.25) 100%);
+  background:linear-gradient(100deg, rgba(5,6,11,.96) 12%, rgba(5,6,11,.7) 62%, rgba(5,6,11,.35) 100%);
 }
-.hero-inner{ position:relative; z-index:2; padding:clamp(22px,3.6vw,44px); max-width:min(660px,92%); }
+.hero-inner{
+  position:relative; z-index:2; flex:1; min-width:0; text-align:left;
+  padding:clamp(16px,2.4vw,26px); display:block;
+}
 .hero-kicker{
-  display:inline-flex; align-items:center; gap:8px;
-  font-size:11px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
-  color:var(--accent); margin-bottom:14px;
+  display:inline-flex; align-items:center; gap:7px;
+  font-size:9.5px; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--accent); margin-bottom:7px;
 }
-.hero-kicker::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--accent); box-shadow:0 0 10px var(--accent); animation:pulse 2.4s infinite; }
+.hero-kicker::before{ content:""; width:5px; height:5px; border-radius:50%; background:var(--accent); box-shadow:0 0 8px var(--accent); animation:pulse 2.4s infinite; }
 @keyframes pulse{ 50%{ opacity:.25; transform:scale(.7);} }
-.hero h1{ margin:0 0 12px; font-size:clamp(28px,4.4vw,52px); line-height:1.04; letter-spacing:-.025em; font-weight:800; }
-.hero-sub{ color:var(--ink-2); font-size:15px; line-height:1.6; margin:0 0 20px; }
-.hero-count{ display:flex; gap:10px; margin-bottom:22px; }
-.cd{ text-align:center; min-width:66px; padding:10px 8px; background:var(--panel); border:1px solid var(--line); border-radius:var(--r-s); backdrop-filter:blur(8px); }
-.cd b{ display:block; font-family:var(--ff-mono); font-size:23px; font-weight:600; letter-spacing:-.02em; font-variant-numeric:tabular-nums; }
-.cd span{ font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3); }
-.hero-actions{ display:flex; flex-wrap:wrap; gap:10px; }
+.hero h1{ margin:0 0 4px; font-size:clamp(19px,2.6vw,26px); line-height:1.12; letter-spacing:-.02em; font-weight:800; }
+.hero-sub{ color:var(--ink-3); font-size:12px; line-height:1.4; margin:0 0 10px; }
+.hero-count{ display:flex; gap:6px; }
+.cd{
+  display:inline-flex; align-items:baseline; gap:2px;
+  padding:5px 9px; background:rgba(255,255,255,.07); border:1px solid var(--line); border-radius:8px;
+}
+.cd b{ font-family:var(--ff-mono); font-size:14px; font-weight:600; font-variant-numeric:tabular-nums; }
+.cd i{ font-style:normal; font-size:9.5px; color:var(--ink-3); text-transform:uppercase; }
+.hero-trailer{
+  position:relative; z-index:2; flex:none; display:grid; place-items:center;
+  width:46px; height:46px; margin-right:clamp(14px,2vw,22px);
+  border-radius:50%; background:var(--accent); color:#04222B;
+  box-shadow:0 8px 22px -8px rgba(77,227,255,.7);
+}
+.hero-trailer svg{ width:18px; height:18px; margin-left:2px; }
 
 .btn{
   display:inline-flex; align-items:center; gap:8px;
@@ -864,7 +890,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .ritratto-frase b{ display:inline; font-size:inherit; margin:0; }
 
 /* ══ account e sincronizzazione ═══════════════════════ */
-.account{ position:relative; flex:none; }
+.account{ position:relative; margin:0 0 22px; }
 .acc-chip{
   display:flex; align-items:center; gap:8px; padding:8px 14px;
   background:var(--panel); border:1px solid var(--line); border-radius:999px;
@@ -879,7 +905,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .acc-chip.is-scollegato .acc-spia{ background:var(--ink-3); }
 
 .acc-pannello{
-  position:absolute; top:calc(100% + 10px); right:0; z-index:60;
+  position:absolute; top:calc(100% + 10px); left:0; z-index:60;
   width:min(320px,calc(100vw - 32px)); padding:20px;
   background:var(--bg-2); border:1px solid var(--line-2); border-radius:var(--r-m);
   box-shadow:var(--shadow); animation:rise .3s cubic-bezier(.2,.8,.3,1) both;
@@ -905,9 +931,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .acc-link:hover{ color:var(--accent); }
 
 @media (max-width:760px){
-  .account{ order:2; margin-left:auto; }
-  .acc-nome{ max-width:70px; }
-  .acc-pannello{ position:fixed; top:auto; bottom:12px; left:12px; right:12px; width:auto; }
+  .acc-pannello{ position:fixed; top:auto; bottom:96px; left:12px; right:12px; width:auto; }
 }
 
 /* Popcorn in basso a sinistra: è sul divano, è uscito, si può guardare. */
@@ -924,3 +948,41 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   border-color:transparent; box-shadow:0 8px 26px -8px rgba(255,194,77,.6);
 }
 .btn-emoji{ font-size:16px; line-height:1; }
+
+/* ══ comandi di gestione nella scheda film ═══════════ */
+.d-gestione{ display:flex; flex-wrap:wrap; gap:10px; }
+.d-sposta, .d-elimina{
+  padding:11px 18px; border-radius:999px; font-size:13px; font-weight:600;
+  border:1px solid var(--line); color:var(--ink-2); transition:.2s;
+}
+.d-sposta:hover{ background:var(--panel-2); color:var(--ink); border-color:var(--line-2); }
+.d-elimina{ margin-left:auto; color:var(--rotten); border-color:rgba(255,107,107,.28); }
+.d-elimina:hover{ background:rgba(255,107,107,.12); border-color:rgba(255,107,107,.5); }
+
+/* ══ avviso con ripensamento ═════════════════════════ */
+.avviso{
+  position:fixed; z-index:90;
+  left:50%; bottom:calc(84px + env(safe-area-inset-bottom)); transform:translateX(-50%) translateY(12px);
+  display:flex; align-items:center; gap:16px;
+  max-width:min(520px,calc(100vw - 28px)); padding:13px 16px 13px 20px;
+  background:rgba(18,20,32,.9); border:1px solid var(--line-2); border-radius:999px;
+  backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+  box-shadow:var(--shadow); font-size:13.5px; color:var(--ink-2);
+  opacity:0; transition:opacity .25s, transform .25s;
+}
+.avviso.is-vivo{ opacity:1; transform:translateX(-50%) translateY(0); }
+.avviso b{ color:var(--ink); }
+.avviso-azione{
+  flex:none; padding:7px 15px; border-radius:999px;
+  background:var(--accent); color:#04222B; font-size:12.5px; font-weight:700;
+}
+
+/* ══ telefono: hero ancora più asciutto ══════════════ */
+@media (max-width:560px){
+  .hero{ min-height:0; }
+  .hero-bg{ opacity:.38; }
+  .hero h1{ font-size:19px; }
+  .hero-trailer{ width:42px; height:42px; margin-right:12px; }
+  .tabs{ width:calc(100vw - 24px); justify-content:space-between; }
+  .tab{ flex:1; padding:11px 8px; text-align:center; font-size:12.5px; }
+}

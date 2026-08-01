@@ -108,6 +108,14 @@ const Detail = (() => {
           </div>
         </section>
 
+        <section class="d-gestione">
+          ${m.lista !== 'visto' ? `<button class="d-sposta" data-act="sposta">
+            ${m.lista === 'cinema' ? '🛋️ Non ci vado: spostalo sul divano'
+                                   : '🎟️ Rimettilo fra quelli al cinema'}
+          </button>` : ''}
+          <button class="d-elimina" data-act="elimina">Togli dalla libreria</button>
+        </section>
+
         ${perche(m)}
 
         ${m.plot ? `<section class="d-section">
@@ -248,6 +256,19 @@ const Detail = (() => {
     if (btn.dataset.act === 'seen')    { Store.toggleSeen(currentId);    render(); }
     if (btn.dataset.act === 'rewatch') { Store.toggleRewatch(currentId); render(); }
     if (btn.dataset.act === 'pronto')  { Store.togglePronto(currentId);  render(); }
+    if (btn.dataset.act === 'sposta') {
+      const m = Store.byId(currentId);
+      Store.spostaIn(currentId, m.lista === 'cinema' ? 'casa' : 'cinema');
+      render();
+    }
+    if (btn.dataset.act === 'elimina') {
+      const m = Store.byId(currentId);
+      Store.rimuovi(currentId);
+      close();
+      // Un ripensamento capita: lascio una via d'uscita per qualche secondo.
+      Avviso.mostra(`<b>${F.esc(m.title)}</b> tolto dalla libreria`, 'Annulla',
+        () => Store.ripristina(m.id));
+    }
   });
 
   return { open, close, isOpen };

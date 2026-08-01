@@ -39,6 +39,8 @@ const Store = (() => {
     seen: false, fav: false, myRating: 0, note: '',
     rewatch: false,          // visto al cinema, aspetto che esca per rivederlo
     pronto: false,           // ce l'ho a portata di mano: si guarda quando voglio
+    rimosso: false,          // tolto dalla libreria: non mi interessa più
+    listaScelta: null,       // sposto io dove sta: 'cinema' | 'casa' | null
     addedAt: null, seenAt: null
   });
 
@@ -71,6 +73,10 @@ const Store = (() => {
   };
   const toggleFav = id => patch(id, { fav: !userState(id).fav });
   const togglePronto = id => patch(id, { pronto: !userState(id).pronto });
+  const rimuovi      = id => patch(id, { rimosso: true });
+  const ripristina   = id => patch(id, { rimosso: false });
+  /* Sposta un film fra cinema e divano senza toccare il catalogo. */
+  const spostaIn     = (id, lista) => patch(id, { listaScelta: lista });
 
   /* Segnare "da rivedere" implica averlo visto. */
   const toggleRewatch = id => {
@@ -130,9 +136,17 @@ const Store = (() => {
     return info;
   }
 
-  /* film = dati catalogo + stato personale, sempre uniti */
-  const all = () => catalog.map(m => ({ ...m, user: userState(m.id) }));
-  const byId = id => all().find(m => m.id === id) || null;
+  /* film = dati catalogo + stato personale, sempre uniti.
+     Lo spostamento manuale ha la precedenza sulla lista del catalogo,
+     e i film che hai tolto non compaiono da nessuna parte. */
+  function conStato(m) {
+    const user = userState(m.id);
+    return { ...m, lista: user.listaScelta || m.lista, user };
+  }
+  const all = () => catalog.map(conStato).filter(m => !m.user.rimosso);
+  /* Compresi quelli tolti: serve solo a poterli ripescare. */
+  const tutti = () => catalog.map(conStato);
+  const byId = id => tutti().find(m => m.id === id) || null;
 
   const subscribe = fn => { listeners.add(fn); return () => listeners.delete(fn); };
 
@@ -166,7 +180,7 @@ const Store = (() => {
     return cambiato;
   }
 
-  return { init, refresh, all, byId, userState,
-           toggleSeen, toggleFav, toggleRewatch, togglePronto, setRating, setNote, subscribe,
+  return { init, refresh, all, tutti, byId, userState,
+           toggleSeen, toggleFav, toggleRewatch, togglePronto, rimuovi, ripristina, spostaIn, setRating, setNote, subscribe,
            stato, fondi, quantiToccati, riparaArchivio };
 })();

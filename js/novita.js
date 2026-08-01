@@ -25,6 +25,20 @@ const Novita = (() => {
     usc2: m.release ?? null
   }]));
 
+  /* Le voci archiviate non tornano più: "ho letto" è definitivo. */
+  const LETTE = `${KEY}:voci-lette`;
+  const impronta = v => `${v.id}|${v.tipo}|${v.testo}`.replace(/<[^>]+>/g, '');
+  const vociLette = () => {
+    try { return new Set(JSON.parse(localStorage.getItem(LETTE)) || []); }
+    catch { return new Set(); }
+  };
+  const archivia = voci => {
+    try {
+      const insieme = new Set([...vociLette(), ...voci.map(impronta)]);
+      localStorage.setItem(LETTE, JSON.stringify([...insieme].slice(-400)));
+    } catch { /* pazienza */ }
+  };
+
   const leggi = () => {
     try { return JSON.parse(localStorage.getItem(KEY)) || null; }
     catch { return null; }
@@ -91,8 +105,10 @@ const Novita = (() => {
     }
 
     voci.push(...prevendite(films));
-    voci.sort((a, b) => b.peso - a.peso);
-    return { primaVolta: false, quando: prima.quando, voci };
+    const gia = vociLette();
+    const rimaste = voci.filter(v => !gia.has(impronta(v)));
+    rimaste.sort((a, b) => b.peso - a.peso);
+    return { primaVolta: false, quando: prima.quando, voci: rimaste };
   }
 
   /* Segnalazioni pescate dalla stampa: un articolo parla di prevendite
@@ -150,13 +166,10 @@ const Novita = (() => {
     let voci = esito.voci;
     if (esito.primaVolta) {
       salva(films);
-      voci = prevendite(films).sort((a, b) => b.peso - a.peso);
+      const gia = vociLette();
+      voci = prevendite(films).filter(v => !gia.has(impronta(v))).sort((a, b) => b.peso - a.peso);
     }
 
-    // Una volta letto, il pannello tace fino al giorno dopo.
-    if (localStorage.getItem(`${KEY}:letto`) === new Date().toDateString()) {
-      contenitore.hidden = true; return;
-    }
     if (!voci.length) { contenitore.hidden = true; salva(films); return; }
     esito.voci = voci;
 
@@ -184,13 +197,13 @@ const Novita = (() => {
 
     contenitore.querySelector('[data-nov-chiudi]').addEventListener('click', () => {
       salva(films);
-      localStorage.setItem(`${KEY}:letto`, new Date().toDateString());
+      archivia(esito.voci);      // queste non le rivedrai più
       contenitore.hidden = true;
     });
   }
 
   /* Utile per provare il meccanismo senza aspettare giorni. */
-  const dimentica = () => { localStorage.removeItem(KEY); localStorage.removeItem(`${KEY}:letto`); };
+  const dimentica = () => { localStorage.removeItem(KEY); localStorage.removeItem(LETTE); };
 
   return { render, dimentica, confronta };
 })();

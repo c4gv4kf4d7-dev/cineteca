@@ -41,16 +41,24 @@
       rating:   (a, b) => (b.tmdbRating || 0) - (a.tmdbRating || 0),
       rt:       (a, b) => (b.rtScore ?? -1) - (a.rtScore ?? -1),
       myRating: (a, b) => (b.user.myRating || 0) - (a.user.myRating || 0),
+      pronto:   (a, b) => (b.user.pronto === true) - (a.user.pronto === true)
+                       || (a.releaseDate?.getTime() ?? Infinity) - (b.releaseDate?.getTime() ?? Infinity),
       runtime:  (a, b) => (b.runtime || 0) - (a.runtime || 0),
       added:    (a, b) => String(b.user.addedAt || '').localeCompare(String(a.user.addedAt || ''))
     };
-    return films.sort(ordini[filtro.sort] || ordini.release);
+    films.sort(ordini[filtro.sort] || ordini.release);
+    // Quelli che hai segnato pronti restano sempre in testa: sono
+    // la risposta a "cosa guardo stasera".
+    if (!q) films.sort((a, b) => (b.user.pronto === true) - (a.user.pronto === true));
+    return films;
   }
 
   /* ── card ────────────────────────────────────────────── */
   /* Angolo in basso a destra: quando esce. Ce l'hanno tutti i film.
      L'ambra resta riservata all'imminenza, così mantiene un senso. */
   function badgeUscita(m) {
+    // Il popcorn dice già che si può guardare: "uscito" sarebbe una ripetizione.
+    if (m.user.pronto && !m.user.seen) return null;
     const g = F.giorniA(m.releaseDate);
     if (g === null) return { testo: 'TBA', hot: false };
     if (g === 0)    return { testo: 'OGGI', hot: true };
@@ -127,7 +135,7 @@
     if (cd.every(c => c.v === 0)) { render(); return; }
 
     box.innerHTML = cd.map(c =>
-      `<div class="cd"><b>${String(c.v).padStart(2, '0')}</b><span>${c.l}</span></div>`).join('');
+      `<span class="cd"><b>${String(c.v).padStart(2, '0')}</b><i>${c.l[0]}</i></span>`).join('');
   }
 
   function renderHero() {
@@ -142,21 +150,18 @@
     const bg = F.backdrop(next) || F.poster(next, 'w780');
     heroEl.innerHTML = `
       ${bg ? `<img class="hero-bg" src="${bg}" alt="">` : ''}
-      <div class="hero-inner">
+      <button class="hero-inner" data-open="${F.esc(next.id)}">
         <span class="hero-kicker">Prossima uscita</span>
         <h1>${F.esc(next.title)}</h1>
-        <p class="hero-sub">${F.esc(F.dataLunga(next.releaseDate))} · ${F.esc(next.genres.join(', ') || '—')}${
-          next.director ? ` · regia di ${F.esc(next.director)}` : ''}</p>
+        <p class="hero-sub">${F.esc(F.dataLunga(next.releaseDate))}${
+          next.director ? ` · ${F.esc(next.director)}` : ''}</p>
         <div class="hero-count">
           ${F.countdown(next.releaseDate).map(c =>
-            `<div class="cd"><b>${String(c.v).padStart(2, '0')}</b><span>${c.l}</span></div>`).join('')}
+            `<span class="cd"><b>${String(c.v).padStart(2, '0')}</b><i>${c.l[0]}</i></span>`).join('')}
         </div>
-        <div class="hero-actions">
-          <button class="btn btn-primary" data-open="${F.esc(next.id)}">Apri la scheda</button>
-          ${next.trailer ? `<a class="btn" href="${F.esc(next.trailer)}" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg> Trailer</a>` : ''}
-        </div>
-      </div>`;
+      </button>
+      ${next.trailer ? `<a class="hero-trailer" href="${F.esc(next.trailer)}" target="_blank" rel="noopener"
+        aria-label="Trailer"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg></a>` : ''}`;
   }
 
   /* ── render principale ───────────────────────────────── */
