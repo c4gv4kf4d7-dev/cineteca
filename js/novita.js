@@ -4,7 +4,7 @@
    A ogni apertura confronta il catalogo con l'istantanea
    salvata l'ultima volta e racconta le differenze: voti
    arrivati o cambiati, incassi che si muovono, film sbarcati
-   date che slittano, film che diventano guardabili.
+   date che slittano.
 
    Tutto in locale, nessun server: l'istantanea vive accanto
    al resto del tuo stato nel browser.
@@ -22,7 +22,7 @@ const Novita = (() => {
     imdb: m.imdbRating ?? null,
     inc: m.revenue ?? null,
     usc: m.release ?? null,
-    pronto: m.lista === 'casa' && (F.giorniA(m.releaseDate) ?? 1) <= 0
+    usc2: m.release ?? null
   }]));
 
   const leggi = () => {
@@ -80,14 +80,6 @@ const Novita = (() => {
               : `<b>${F.esc(adesso.t)}</b> ha incassato <b>${F.soldi(salto)}</b> in più` });
         }
       }
-
-      /* da attesa a guardabile */
-      if (!era.pronto && adesso.pronto)
-        // Se aspettavi di rivederlo, questa è la notizia del giorno.
-        voci.push({ id, film: m, tipo: 'pronto', peso: m.user?.rewatch ? 11 : 6,
-          testo: m.user?.rewatch
-            ? `<b>${F.esc(adesso.t)}</b>, che volevi rivedere, ora si può guardare`
-            : `<b>${F.esc(adesso.t)}</b> è pronto da vedere sul divano` });
 
       /* data spostata */
       if (era.usc && adesso.usc && era.usc !== adesso.usc) {

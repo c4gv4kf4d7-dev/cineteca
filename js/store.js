@@ -38,6 +38,7 @@ const Store = (() => {
   const blank = () => ({
     seen: false, fav: false, myRating: 0, note: '',
     rewatch: false,          // visto al cinema, aspetto che esca per rivederlo
+    pronto: false,           // ce l'ho a portata di mano: si guarda quando voglio
     addedAt: null, seenAt: null
   });
 
@@ -69,6 +70,8 @@ const Store = (() => {
     return patch(id, { seen, seenAt: seen ? new Date().toISOString() : null });
   };
   const toggleFav = id => patch(id, { fav: !userState(id).fav });
+  const togglePronto = id => patch(id, { pronto: !userState(id).pronto });
+
   /* Segnare "da rivedere" implica averlo visto. */
   const toggleRewatch = id => {
     const u = userState(id);
@@ -164,6 +167,6 @@ const Store = (() => {
   }
 
   return { init, refresh, all, byId, userState,
-           toggleSeen, toggleFav, toggleRewatch, setRating, setNote, subscribe,
+           toggleSeen, toggleFav, toggleRewatch, togglePronto, setRating, setNote, subscribe,
            stato, fondi, quantiToccati, riparaArchivio };
 })();

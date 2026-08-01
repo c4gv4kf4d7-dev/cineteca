@@ -55,8 +55,8 @@
     if (g === null) return { testo: 'TBA', hot: false };
     if (g === 0)    return { testo: 'OGGI', hot: true };
     if (g > 0)      return { testo: `${g}G`, hot: g <= 30 };
-    // Già uscito. Sul divano lo dice già il popcorn: non ripeterlo.
-    if (m.lista === 'casa') return null;
+    // Già uscito: cambia cosa è utile sapere a seconda della lista.
+    if (m.lista === 'casa') return { testo: 'USCITO', hot: false };
     // Nelle multisala la tenitura vera è di circa dieci settimane:
     // oltre, dire "in sala" sarebbe una bugia.
     if (g >= -70) return { testo: 'IN SALA', live: true };
@@ -78,9 +78,8 @@
     const uscita = badgeUscita(m);
     const voto = badgeVoto(m);
     const prev = F.prevendita(m);
-    // Popcorn: sta sul divano, è già uscito e non l'hai ancora visto.
-    const pronto = m.lista === 'casa' && !m.user.seen
-      && (F.giorniA(m.releaseDate) ?? 1) <= 0;
+    // Popcorn: lo decidi tu, non lo deduco dalla data.
+    const pronto = m.user.pronto && !m.user.seen;
 
     return `<div class="card">
       <button class="poster" data-open="${F.esc(m.id)}" aria-label="Apri ${F.esc(m.title)}">

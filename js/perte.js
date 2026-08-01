@@ -61,8 +61,8 @@ const PerTe = (() => {
     const voci = tutti.filter(m => m.user.rewatch);
     if (!voci.length) return '';
 
-    // Chi è già uscito viene prima: è quello che puoi rivedere stasera.
-    const guardabile = m => (F.giorniA(m.releaseDate) ?? 1) <= 0;
+    // Chi hai segnato pronto viene prima: è quello che puoi rivedere stasera.
+    const guardabile = m => m.user.pronto;
     const disponibili = pescaOggi(voci.filter(guardabile), 3, 'rivedere');
     const attesa = pescaOggi(voci.filter(m => !guardabile(m)), 3 - disponibili.length, 'attesa');
 
@@ -73,10 +73,10 @@ const PerTe = (() => {
         <b>${F.esc(m.title)}</b>
         <span class="cons-meta">${F.esc(F.dataBreve(m.releaseDate))}${
           m.user.myRating ? ` · ${'★'.repeat(m.user.myRating)}` : ''}</span>
-        <span class="cons-perche">${(F.giorniA(m.releaseDate) ?? 1) <= 0
-          ? 'pronto da rivedere' : 'non ancora uscito'}</span>
+        <span class="cons-perche">${m.user.pronto
+          ? '🍿 pronto da rivedere' : 'da recuperare'}</span>
       </span>
-      <span class="cons-punti">${(F.giorniA(m.releaseDate) ?? 1) <= 0 ? '🍿' : '↻'}</span>
+      <span class="cons-punti">${m.user.pronto ? '🍿' : '↻'}</span>
     </button>`;
 
     return `<section class="s-block">
@@ -86,7 +86,7 @@ const PerTe = (() => {
       </div>
       <p class="nota">${voci.length > 3
         ? `Tre pescati fra i ${voci.length} che vuoi rivedere, diversi ogni giorno. `
-        : ''}Quelli già usciti vengono per primi.</p>
+        : ''}Quelli che hai segnato pronti vengono per primi.</p>
     </section>`;
   }
 

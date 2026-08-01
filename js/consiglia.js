@@ -108,8 +108,8 @@ const Consiglia = (() => {
       if (scostamento < 12) { punti += 4; motivi.push('dura quanto i film che scegli di solito'); }
     }
 
-    // Un film già uscito è guardabile stasera: vale più di uno che deve ancora arrivare.
-    if (film.lista === 'casa' && (F.giorniA(film.releaseDate) ?? 1) <= 0) punti += 6;
+    // L'hai segnato come pronto: è quello che puoi guardare davvero stasera.
+    if (film.user?.pronto) punti += 10;
 
     return { punti, motivi: [...new Set(motivi)].slice(0, 3) };
   }
@@ -303,9 +303,9 @@ const Consiglia = (() => {
       if (prev?.urgente)               pratico = `${maiuscola(prev.testo)}.`;
       else if (gg != null && gg > 0)   pratico = `Esce fra ${gg} giorni.`;
       else if (gg != null && gg >= -70) pratico = 'È in sala adesso.';
-    } else if (gg != null && gg <= 0) {
-      pratico = 'Puoi guardarlo stasera.';
-    } else if (gg != null && gg <= 45) {
+    } else if (film.user?.pronto) {
+      pratico = 'Lo hai segnato come pronto: si guarda stasera.';
+    } else if (gg != null && gg > 0 && gg <= 45) {
       pratico = `Esce fra ${gg} giorni.`;
     }
 
