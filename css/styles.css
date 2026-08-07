@@ -52,6 +52,11 @@ button{ background:none; border:0; cursor:pointer; }
 svg{ width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
 
 /* ── atmosfera ───────────────────────────────────────────── */
+/* Questi due fondali stanno fermi mentre la pagina scorre. Su iPhone
+   un livello fisso a tutto schermo va tenuto su un piano di
+   composizione suo (translateZ), altrimenti Safari ridisegna l'intera
+   pagina a ogni pixel di scroll: è così che locandine e barre
+   cominciavano a lampeggiare. */
 .glow{
   position:fixed; inset:-30% -10% auto -10%; height:80vh; z-index:-2; pointer-events:none;
   background:
@@ -59,18 +64,25 @@ svg{ width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:1.7; st
     radial-gradient(46% 56% at 82% 4%,  rgba(183,140,255,.15), transparent 70%),
     radial-gradient(40% 40% at 50% 40%, rgba(255,194,77,.05), transparent 70%);
   filter:blur(20px);
+  transform:translateZ(0);
 }
+/* Niente mix-blend-mode: fondere questo velo con tutto ciò che ha
+   sotto obbliga il browser a rileggere ogni pixel della pagina.
+   La grana si ottiene uguale abbassando l'opacità. */
 .grain{
-  position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.5;
+  position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.16;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");
-  mix-blend-mode:overlay;
+  transform:translateZ(0);
 }
 
 /* ── topbar ──────────────────────────────────────────────── */
+/* La pagina è a tutto schermo (viewport-fit=cover), quindi sotto
+   l'orologio e la Dynamic Island non c'è nessuno spazio regalato:
+   se lo spazio non lo prende la barra, il titolo ci finisce sotto. */
 .topbar{
   position:sticky; top:0; z-index:40;
   display:flex; align-items:center; gap:clamp(12px,2vw,28px);
-  padding:14px var(--pad);
+  padding:calc(14px + env(safe-area-inset-top)) var(--pad) 14px;
   max-width:var(--maxw); margin-inline:auto;
   background:linear-gradient(to bottom, rgba(5,6,11,.94), rgba(5,6,11,.72) 70%, transparent);
   backdrop-filter:blur(18px) saturate(140%);
@@ -102,7 +114,8 @@ svg{ width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:1.7; st
    Sul telefono il pollice sta in fondo allo schermo, non in cima. */
 .tabs{
   position:fixed; z-index:50;
-  left:50%; bottom:calc(14px + env(safe-area-inset-bottom)); transform:translateX(-50%);
+  left:50%; bottom:calc(14px + env(safe-area-inset-bottom));
+  transform:translateX(-50%) translateZ(0);
   display:flex; gap:3px; padding:5px;
   background:rgba(18,20,32,.62);
   border:1px solid rgba(255,255,255,.14); border-radius:999px;
@@ -214,7 +227,11 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   border:1px solid var(--line);
   transition:transform .38s cubic-bezier(.2,.8,.3,1), box-shadow .38s, border-color .3s;
 }
-.card:hover .poster{ transform:translateY(-7px) scale(1.016); box-shadow:var(--shadow); border-color:var(--line-2); }
+/* Solo dove esiste un puntatore: al tocco il "hover" resta incollato
+   dopo il tap e la locandina sussulta invece di aprirsi. */
+@media (hover:hover){
+  .card:hover .poster{ transform:translateY(-7px) scale(1.016); box-shadow:var(--shadow); border-color:var(--line-2); }
+}
 .poster img{ width:100%; height:100%; object-fit:cover; display:block; }
 .poster-fallback{
   position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; gap:6px;
@@ -530,6 +547,13 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .cons-body{ flex:1; min-width:0; }
 .cons-body > b{ display:block; font-size:14.5px; font-weight:650; margin-bottom:4px; }
 .cons-meta{ display:block; font-family:var(--ff-mono); font-size:11px; color:var(--ink-3); }
+/* Il gancio è la frase che deve farti venire voglia: sta in chiaro e
+   in grande. Il "perché" personale scende di tono, sotto: conferma
+   una scelta già fatta, non la provoca. */
+.cons-gancio{
+  display:block; margin-top:7px; font-size:13.5px; line-height:1.55; color:var(--ink-2);
+}
+.cons-gancio b{ color:var(--hot); font-weight:700; }
 .cons-perche{ display:block; margin-top:6px; font-size:12px; line-height:1.5; color:var(--accent); }
 .cons-punti{
   flex:none; display:grid; place-items:center; min-width:38px; height:38px; padding:0 9px;
@@ -775,12 +799,26 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 @media (max-width:760px){
   .topbar{ flex-wrap:wrap; row-gap:10px; }
   .search{ order:3; max-width:none; flex-basis:100%; }
-  .tabs{ margin-left:auto; }
   .controls{ flex-direction:column; align-items:stretch; }
   .controls-right{ justify-content:space-between; }
-  .chips{ overflow-x:auto; scrollbar-width:none; }
-  .chips::-webkit-scrollbar{ display:none; }
+
+  /* I tre filtri occupano tutta la riga: se restano allineati a
+     sinistra dentro un contenitore largo quanto lo schermo, la barra
+     sembra storta. Ognuno prende la sua terza parte. */
+  .chips-big{ width:100%; }
+  .chips-big .chip{ flex:1 1 0; min-width:0; padding:9px 6px; text-align:center; font-size:13.5px; }
   .hero{ min-height:300px; }
+
+  /* Sfocare in tempo reale ciò che scorre sotto una barra appiccicata
+     in cima è il lavoro più caro che si possa chiedere a un telefono,
+     ed è l'altra metà del lampeggio. Qui la barra è semplicemente
+     opaca: si legge uguale e non costa niente. */
+  .topbar{
+    background:var(--bg);
+    backdrop-filter:none; -webkit-backdrop-filter:none;
+    box-shadow:0 10px 24px -18px #000;
+  }
+
   .sheet{ padding:0; align-items:flex-end; }
   .sheet-panel{ max-height:94dvh; border-radius:var(--r-l) var(--r-l) 0 0; }
   .bar{ grid-template-columns:minmax(72px,110px) 1fr auto; gap:10px; }
@@ -842,6 +880,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   .cons-punti{ order:3; margin-left:auto; }
   .cons-body{ order:4; flex:1 1 100%; min-width:0; }
   .cons-body b{ font-size:15px; }
+  .cons-gancio{ font-size:14px; line-height:1.6; }
   .cons-perche{ font-size:12.5px; line-height:1.55; }
   .d-voto .star{ font-size:38px; }
   .d-actions .btn{ flex:1 1 100%; justify-content:center; }

@@ -1,8 +1,17 @@
 name: Aggiornamento quotidiano
 
 # GitHub programma in UTC, quindi due appuntamenti: 05:00 UTC copre
-# l'ora legale italiana, 06:00 UTC quella solare. Il primo passo
-# controlla che a Roma siano davvero le 7 e ferma l'altro.
+# l'ora legale italiana, 06:00 UTC quella solare.
+#
+# ATTENZIONE: GitHub non fa partire i cron in orario. Sotto carico
+# arrivano con mezz'ora o un'ora di ritardo, ed è normale. La versione
+# precedente pretendeva che a Roma fossero *le sette in punto* e
+# scartava tutto il resto: dal 30 luglio in poi non è passata più
+# nessuna esecuzione e le notizie sono rimaste ferme.
+#
+# Ora il criterio non è l'orologio ma il calendario: si aggiorna una
+# volta per giorno romano, e il secondo appuntamento serve solo se il
+# primo è saltato.
 on:
   schedule:
     - cron: '0 5 * * *'
@@ -20,20 +29,20 @@ jobs:
   aggiorna:
     runs-on: ubuntu-latest
     steps:
-      - name: È davvero mattina a Roma?
+      - uses: actions/checkout@v4
+
+      - name: Si è già aggiornato oggi?
         id: ora
         run: |
-          ORA=$(TZ=Europe/Rome date +%H)
-          echo "A Roma sono le $ORA."
-          if [ "$ORA" = "07" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "procedi=si" >> "$GITHUB_OUTPUT"
-          else
+          OGGI=$(TZ=Europe/Rome date +%F)
+          ULTIMO=$(TZ=Europe/Rome date -d "$(node -p "require('./data/notizie.json').aggiornato")" +%F 2>/dev/null || echo "mai")
+          echo "Oggi a Roma è il $OGGI; l'ultimo aggiornamento è del $ULTIMO."
+          if [ "$ULTIMO" = "$OGGI" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
             echo "procedi=no" >> "$GITHUB_OUTPUT"
-            echo "Non sono le 7: questa esecuzione si ferma qui."
+            echo "Già fatto per oggi: questa esecuzione si ferma qui."
+          else
+            echo "procedi=si" >> "$GITHUB_OUTPUT"
           fi
-
-      - uses: actions/checkout@v4
-        if: steps.ora.outputs.procedi == 'si'
 
       - uses: actions/setup-node@v4
         if: steps.ora.outputs.procedi == 'si'

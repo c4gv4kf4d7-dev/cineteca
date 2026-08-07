@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-07-30T19:04:03.051Z",
+  "aggiornato": "2026-08-07T17:48:54.881Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -10,19 +10,70 @@
   ],
   "segnalazioniPrevendita": [],
   "evidenza": [
-    "https://movieplayer.it/news/spider-man-brand-new-day-record-box-office-italiano-primo-giorno_170389/",
-    "https://www.badtaste.it/articoli/odissea-john-leguizamo-svela-i-retroscena-della-scena-del-cane-come-christopher-nolan-lha-girata",
-    "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/"
+    "https://www.badtaste.it/articoli/jurassic-world-perde-pezzi-il-regista-lascia-il-sequel-con-scarlett-johansson-e-ora-che-succede",
+    "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible",
+    "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland"
   ],
   "gruppi": [
     {
+      "soggetto": "The Batman: Part II",
+      "tipo": "film",
+      "quante": 2,
+      "link": [
+        "https://movieplayer.it/news/the-batman-3-esiste-solo-fantasia-fan-james-gunn-smentito_170509/",
+        "https://www.badtaste.it/articoli/the-batman-2-e-3-saranno-girati-insieme-james-gunn-rompe-il-silenzio-sul-rumor-che-coinvolge-matt-reeves"
+      ]
+    },
+    {
+      "soggetto": "Jurassic World - La rinascita",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://movieplayer.it/news/jurassic-world-rebirth-problema-nuovo-regista-divergenze-creative_170508/"
+      ]
+    },
+    {
+      "soggetto": "Oppenheimer",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.badtaste.it/articoli/oppenheimer-cosa-ce-di-vero-nel-film-di-christopher-nolan-la-storia-reale-del-padre-della-bomba-atomica"
+      ]
+    },
+    {
+      "soggetto": "Insidious: Fuori dall'Altrove",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.screenweek.it/insidious-fuori-dallaltrove-il-trailer-finale-del-film/"
+      ]
+    },
+    {
+      "soggetto": "La Fine di Oak Street",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/"
+      ]
+    },
+    {
+      "soggetto": "Odissea",
+      "tipo": "film",
+      "quante": 3,
+      "link": [
+        "https://www.badtaste.it/articoli/odissea-john-leguizamo-svela-i-retroscena-della-scena-del-cane-come-christopher-nolan-lha-girata",
+        "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/",
+        "https://www.screenweek.it/odissea-il-ruolo-di-circe-nel-discorso-sulla-violenza-maschile/"
+      ]
+    },
+    {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 12,
+      "quante": 14,
       "link": [
-        "https://www.everyeye.it/notizie/marvel-s-spider-man-remastered-forte-sconto-pc-ps5-893243.html",
-        "https://www.everyeye.it/notizie/gamelife-puoi-risparmiare-bundle-ps5-slim-marvel-s-spider-man-2-893235.html",
-        "https://www.badtaste.it/articoli/tom-holland-svela-il-vero-incubo-del-costume-di-spider-man-dopo-mezza-giornata-puzza-da-morire"
+        "https://movieplayer.it/news/spider-man-brand-new-day-record-box-office-italiano-primo-giorno_170389/",
+        "https://www.everyeye.it/notizie/marvel-s-spider-man-2-modificata-skin-brand-new-day-giocatori-non-piaceva-894680.html",
+        "https://fumettologica.it/2026/08/spider-man-migliori-fumetti-personaggio/"
       ]
     },
     {
@@ -32,35 +83,215 @@
       "link": [
         "https://www.screenweek.it/una-stanza-chiusa-da-anni-una-strega-e-nessuna-via-duscita-cosa-aspettarsi-da-hokum/"
       ]
-    },
-    {
-      "soggetto": "Odissea",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.screenweek.it/odissea-il-ruolo-di-circe-nel-discorso-sulla-violenza-maschile/"
-      ]
     }
   ],
   "notizie": [
     {
-      "titolo": "Spider-Man: Brand New Day sfiora il record al box office italiano: oltre 4 milioni al debutto",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-record-box-office-italiano-primo-giorno_170389/",
-      "sommario": "Il nuovo film con Tom Holland firma il miglior debutto della saga in Italia, supera l'apertura di Spider-Man: No Way Home e diventa il secondo miglior esordio di sempre per un cinecomic nel nostro Paese Un esordio fortissimo quello Spider-Man: Brand New Day al",
-      "data": "2026-07-30T10:05:06.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Spider-Man: Brand New Day",
+      "titolo": "Jurassic World perde pezzi: il regista lascia il sequel con Scarlett Johansson, e ora che succede?",
+      "link": "https://www.badtaste.it/articoli/jurassic-world-perde-pezzi-il-regista-lascia-il-sequel-con-scarlett-johansson-e-ora-che-succede",
+      "sommario": "Gareth Edward ha deciso di lasciare la regia del sequel di Jurassic World: La rinascita, capitolo della celebre saga con Scarlett Johanson campione al botteghino nel 2025.",
+      "data": "2026-08-07T11:04:18.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Jurassic World - La rinascita",
       "soggettoTipo": "film",
       "citati": [
         {
-          "nome": "Spider-Man: Brand New Day",
+          "nome": "Jurassic World - La rinascita",
+          "tipo": "film"
+        },
+        {
+          "nome": "Jurassic World",
+          "tipo": "film"
+        },
+        {
+          "nome": "Jurassic World – Il regno distrutto",
+          "tipo": "film"
+        },
+        {
+          "nome": "Jurassic World - Il dominio",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 14,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.834Z",
+      "evidenza": true
+    },
+    {
+      "titolo": "Su Netflix, il thriller dimenticato del 1993 con Tom Cruise che ha anticipato Mission: Impossible",
+      "link": "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible",
+      "sommario": "Questo film del 1993 con Tom Cruise è il vero prequel di Mission: Impossible. Scopri come questo thriller legale ha anticipato Ethan Hunt e il franchise di spionaggio.",
+      "data": "2026-08-07T16:00:42.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Mission Impossible - The Final Reckoning",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Mission Impossible - The Final Reckoning",
           "tipo": "film"
         }
       ],
       "rilievo": 11,
       "prevendite": false,
-      "vistoIl": "2026-07-30T12:13:04.831Z",
+      "vistoIl": "2026-08-07T17:48:54.786Z",
       "evidenza": true
+    },
+    {
+      "titolo": "Uncharted 2 si farà? Ci sono novità sul sequel cinematografico con Tom Holland",
+      "link": "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland",
+      "sommario": "Dopo quasi 5 anni dall'uscita del primo film, ci sono dei aggiornamenti sul sequel dell'adattamento cinematografico del celebre gioco di Naughty Dog.",
+      "data": "2026-08-07T11:30:10.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Uncharted",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Uncharted",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.829Z",
+      "evidenza": true
+    },
+    {
+      "titolo": "The Batman 3 per ora esiste solo nella fantasia dei fan: James Gunn smentisce la folle indiscrezione",
+      "link": "https://movieplayer.it/news/the-batman-3-esiste-solo-fantasia-fan-james-gunn-smentito_170509/",
+      "sommario": "Nessuna lavorazione segreta per The Batman 3. James Gunn ha smentito le indiscrezioni secondo cui Matt Reeves starebbe girando contemporaneamente il secondo e il terzo capitolo della saga con Robert Pattinson. Per qualche ora i fan di The Batman hanno sperato ",
+      "data": "2026-08-07T12:00:20.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "The Batman: Part II",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "The Batman: Part II",
+          "tipo": "film"
+        },
+        {
+          "nome": "The Batman",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 8,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.841Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "The Batman 2 e 3 saranno girati insieme? James Gunn mette fine al rumor su Matt Reeves",
+      "link": "https://www.badtaste.it/articoli/the-batman-2-e-3-saranno-girati-insieme-james-gunn-rompe-il-silenzio-sul-rumor-che-coinvolge-matt-reeves",
+      "sommario": "James Gunn ha smentito le voci secondo cui Matt Reeves girerà The Batman 2 e The Batman 3 back-to-back, chiarendo i piani per il futuro della saga con Robert Pattinson.",
+      "data": "2026-08-07T07:00:38.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "The Batman: Part II",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "The Batman: Part II",
+          "tipo": "film"
+        },
+        {
+          "nome": "The Batman",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 8,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.836Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Jurassic World Rebirth ha un grosso problema: deve trovare un nuovo regista",
+      "link": "https://movieplayer.it/news/jurassic-world-rebirth-problema-nuovo-regista-divergenze-creative_170508/",
+      "sommario": "Gareth Edwards non dirigerà il sequel di Jurassic World Rebirth: secondo fonti vicine alla produzione, il regista avrebbe abbandonato il progetto a causa di divergenze creative con Universal. Il futuro di Jurassic World dovrà fare a meno del regista che aveva ",
+      "data": "2026-08-07T09:30:29.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Jurassic World - La rinascita",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Jurassic World - La rinascita",
+          "tipo": "film"
+        },
+        {
+          "nome": "Jurassic World",
+          "tipo": "film"
+        },
+        {
+          "nome": "Jurassic World – Il regno distrutto",
+          "tipo": "film"
+        },
+        {
+          "nome": "Jurassic World - Il dominio",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 10,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.841Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Oppenheimer, cosa c'è di vero nel film di Christopher Nolan? La storia reale del padre della bomba atomica",
+      "link": "https://www.badtaste.it/articoli/oppenheimer-cosa-ce-di-vero-nel-film-di-christopher-nolan-la-storia-reale-del-padre-della-bomba-atomica",
+      "sommario": "Quanto è accurato Oppenheimer di Christopher Nolan? Ecco la vera storia di J. Robert Oppenheimer, del Manhattan Project e dei protagonisti realmente esistiti.",
+      "data": "2026-08-07T07:30:36.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Oppenheimer",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Christopher Nolan",
+          "tipo": "regista"
+        },
+        {
+          "nome": "Oppenheimer",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 8,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.836Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Insidious: Fuori dall'Altrove, il trailer finale del film",
+      "link": "https://www.screenweek.it/insidious-fuori-dallaltrove-il-trailer-finale-del-film/",
+      "sommario": "",
+      "data": "2026-08-05T14:15:53.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "Insidious: Fuori dall'Altrove",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Insidious: Fuori dall'Altrove",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.860Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Un quartiere, un evento cosmico, il ritorno all'era preistorica: Cosa aspettarsi da La fine di Oak Street",
+      "link": "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/",
+      "sommario": "Dimenticate Jurassic Park: il nuovo film di David Robert Mitchell usa i dinosauri come punto di partenza per un enigmatico racconto tra fantascienza, horror e mistero.",
+      "data": "2026-08-03T07:00:01.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.862Z",
+      "evidenza": false
     },
     {
       "titolo": "Odissea, John Leguizamo svela i retroscena della scena del cane: come Christopher Nolan l'ha girata",
@@ -83,7 +314,7 @@
       "rilievo": 8,
       "prevendite": false,
       "vistoIl": "2026-07-30T16:31:15.122Z",
-      "evidenza": true
+      "evidenza": false
     },
     {
       "titolo": "Odissea: le foto e i video dal set svelano il gigantesco lavoro dietro il kolossal di Christopher Nolan",
@@ -105,81 +336,6 @@
       ],
       "rilievo": 8,
       "prevendite": false,
-      "evidenza": true
-    },
-    {
-      "titolo": "Marvel's Spider-Man Remastered è in forte sconto sia su PC che su PS5 #AD",
-      "link": "https://www.everyeye.it/notizie/marvel-s-spider-man-remastered-forte-sconto-pc-ps5-893243.html",
-      "sommario": "Ecco come fare per risparmiare sull'acquisto di Marvel's Spider-Man Remastered, sia sulla versione PC che su quella Playstation 5. Ora che tutti stanno parlando di Spider-Man grazie a Brand New Day hai deciso di recuperare anche la serie videoludica ad opera d",
-      "data": "2026-07-30T15:14:00.000Z",
-      "fonte": "Everyeye",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-07-30T17:21:32.879Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Solo da Gamelife puoi risparmiare sul bundle con PS5 Slim e Marvel's Spider-Man 2 #AD",
-      "link": "https://www.everyeye.it/notizie/gamelife-puoi-risparmiare-bundle-ps5-slim-marvel-s-spider-man-2-893235.html",
-      "sommario": "È possibile approfittare ora da Gamelife di un ottimo sconto sul bundle composto da PlayStation 5 Slim e Marvel's Spider-Man 2. Dopo aver visto Spider-Man Brand New Day ti è venuta una gran voglia di giocare a Marvel's Spider-Man 2 su PlayStation 5? Nessun pro",
-      "data": "2026-07-30T14:35:00.000Z",
-      "fonte": "Everyeye",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-07-30T17:21:32.881Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Tom Holland svela il vero incubo del costume di Spider-Man: “Dopo mezza giornata puzza da morire”",
-      "link": "https://www.badtaste.it/articoli/tom-holland-svela-il-vero-incubo-del-costume-di-spider-man-dopo-mezza-giornata-puzza-da-morire",
-      "sommario": "Tom Holland racconta il lato meno glamour del costume di Spider-Man, tra cattivi odori, problemi pratici e le differenze con Tobey Maguire e Andrew Garfield.",
-      "data": "2026-07-30T13:26:14.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-07-30T16:31:15.123Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Una stanza chiusa da anni, una strega e nessuna via d'uscita: cosa aspettarsi da Hokum",
-      "link": "https://www.screenweek.it/una-stanza-chiusa-da-anni-una-strega-e-nessuna-via-duscita-cosa-aspettarsi-da-hokum/",
-      "sommario": "Il nuovo film di Damian McCarthy arriva in uno dei momenti più felici per il cinema horror e conferma l'ascesa di uno degli autori più interessanti del genere.",
-      "data": "2026-07-27T08:31:28.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "Hokum",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Hokum",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
       "evidenza": false
     },
     {
@@ -193,6 +349,81 @@
       "citati": [
         {
           "nome": "Odissea",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day sfiora il record al box office italiano: oltre 4 milioni al debutto",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-record-box-office-italiano-primo-giorno_170389/",
+      "sommario": "Il nuovo film con Tom Holland firma il miglior debutto della saga in Italia, supera l'apertura di Spider-Man: No Way Home e diventa il secondo miglior esordio di sempre per un cinecomic nel nostro Paese Un esordio fortissimo quello Spider-Man: Brand New Day al",
+      "data": "2026-07-30T10:05:06.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-07-30T12:13:04.831Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Marvel's Spider-Man 2: modificata la skin di Brand New Day, ai giocatori non piaceva",
+      "link": "https://www.everyeye.it/notizie/marvel-s-spider-man-2-modificata-skin-brand-new-day-giocatori-non-piaceva-894680.html",
+      "sommario": "Pare che Insomniac abbia dovuto apportare piccoli cambiamenti al costume di Marvel's Spider-Man 2 a tema Brand New Day. Si sa, i fan Marvel ci tengono particolarmente ai propri beniamini e, nel caso dell'ultimo aggiornamento di Marvel's Spider-Man 2 , hanno es",
+      "data": "2026-08-07T16:48:00.000Z",
+      "fonte": "Everyeye",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.868Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "10 fumetti per capire Spider-Man",
+      "link": "https://fumettologica.it/2026/08/spider-man-migliori-fumetti-personaggio/",
+      "sommario": "Se volete capire davvero Spider-Man, partite da qui. 10 fumetti per capire Spider-Man leggi l’articolo su Fumettologica .",
+      "data": "2026-08-07T09:33:50.000Z",
+      "fonte": "Fumettologica",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.874Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Una stanza chiusa da anni, una strega e nessuna via d'uscita: cosa aspettarsi da Hokum",
+      "link": "https://www.screenweek.it/una-stanza-chiusa-da-anni-una-strega-e-nessuna-via-duscita-cosa-aspettarsi-da-hokum/",
+      "sommario": "Il nuovo film di Damian McCarthy arriva in uno dei momenti più felici per il cinema horror e conferma l'ascesa di uno degli autori più interessanti del genere.",
+      "data": "2026-07-27T08:31:28.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "Hokum",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Hokum",
           "tipo": "film"
         }
       ],

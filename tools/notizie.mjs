@@ -52,6 +52,23 @@ const PESANTI = [
   'delayed', 'release date', 'first look', 'announces'
 ];
 
+/* Non tutto ciò che nomina un tuo film è una notizia sul tuo film.
+   I portali generalisti vendono: "Marvel's Spider-Man Remastered è in
+   forte sconto", "solo da Gamelife risparmi sul bundle". Il titolo
+   aggancia, il contenuto è un volantino. Fuori. */
+const RUMORE = [
+  'sconto', 'scontat', 'offerta', 'offerte', 'risparmi', 'prezzo piu basso',
+  'minimo storico', 'coupon', 'black friday', 'prime day', 'amazon',
+  'gamelife', 'bundle', 'in promozione', 'acquistalo', 'compralo',
+  'lo trovi a', 'crollo del prezzo', 'preordina'
+];
+
+/* Un film non è un videogioco, nemmeno quando condividono il nome. */
+const NON_CINEMA = [
+  'videogioco', 'videogames', 'ps5', 'ps4', 'xbox', 'nintendo switch',
+  'gameplay', 'remastered', 'recensione del gioco', 'dlc'
+];
+
 /* ── parsing RSS senza dipendenze ────────────────────── */
 function ripulisci(s = '') {
   return s
@@ -230,6 +247,9 @@ for (const a of articoli) {
   const testo = normalizza(`${a.titolo} ${a.sommario}`);
   const soloTitolo = normalizza(a.titolo);
 
+  if (RUMORE.some(p => testo.includes(p))) continue;
+  if (NON_CINEMA.some(p => testo.includes(p))) continue;
+
   const citati = [];
   for (const v of sorvegliati.values()) {
     if (pertinente(testo, v)) citati.push(v);
@@ -270,9 +290,14 @@ try {
   archivio = vecchio.notizie || [];
 } catch { /* prima esecuzione */ }
 
-// Le testate rimosse dall'elenco non devono sopravvivere nell'archivio.
+// Le testate rimosse dall'elenco non devono sopravvivere nell'archivio,
+// e nemmeno il volantinaggio già archiviato prima di questo filtro.
 const attive = new Set(FONTI.map(f => f.nome));
-archivio = archivio.filter(n => attive.has(n.fonte) && n.soggetto);
+const volantino = n => {
+  const t = normalizza(`${n.titolo} ${n.sommario || ''}`);
+  return RUMORE.some(p => t.includes(p)) || NON_CINEMA.some(p => t.includes(p));
+};
+archivio = archivio.filter(n => attive.has(n.fonte) && n.soggetto && !volantino(n));
 
 const perLink = new Map(archivio.map(n => [n.link, n]));
 let inedite = 0;

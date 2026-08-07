@@ -182,7 +182,10 @@ const Detail = (() => {
   function perche(m) {
     if (m.user.seen) return scoperte(m);
     const p = Consiglia.perche(m, Store.all());
-    if (!p) return '';
+    // Qui la trama sta già nella scheda, poco più sotto: il gancio
+    // sarebbe un doppione. Se non c'è un legame con la tua libreria
+    // da raccontare, questo riquadro non ha niente da dire.
+    if (!p || !p.frase) return '';
 
     return `<section class="d-perche">
       <span class="d-perche-et">Ti piacerà perché</span>

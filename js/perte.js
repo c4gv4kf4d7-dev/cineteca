@@ -135,6 +135,10 @@ const PerTe = (() => {
           // Una frase scritta per questo film, non tre etichette uguali per tutti.
           const p = Consiglia.perche(m, tutti);
           const coda2 = [p?.caveat, p?.pratico].filter(Boolean).join(' ');
+          // Prima cosa che leggi: cosa succede nel film. Il legame con
+          // la tua libreria viene dopo, in tono minore — è la conferma,
+          // non l'esca.
+          const amo = p?.gancio;
           return `<button class="cons" data-open="${F.esc(m.id)}">
             <span class="cons-pos">${i + 1}</span>
             <span class="cons-ph">${F.poster(m, 'w185')
@@ -144,7 +148,9 @@ const PerTe = (() => {
               <span class="cons-meta">${F.esc(F.dataBreve(m.releaseDate))}${
                 m.genres[0] ? ` · ${F.esc(m.genres[0])}` : ''}${
                 F.durata(m.runtime) ? ` · ${F.durata(m.runtime)}` : ''}</span>
-              ${p ? `<span class="cons-perche">${p.frase}</span>` : ''}
+              ${amo ? `<span class="cons-gancio">${
+                amo.umore ? `<b>${F.esc(amo.umore)}.</b> ` : ''}${F.esc(amo.premessa)}</span>` : ''}
+              ${p?.frase ? `<span class="cons-perche">${p.frase}</span>` : ''}
               ${coda2 ? `<span class="cons-coda">${coda2}</span>` : ''}
             </span>
             <span class="cons-punti" title="Affinità stimata">${Math.round(v.punti)}</span>

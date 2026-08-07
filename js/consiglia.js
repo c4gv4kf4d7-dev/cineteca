@@ -173,12 +173,98 @@ const Consiglia = (() => {
     return best && best.s >= 24 ? best : null;
   }
 
+  /* ── il gancio: la voglia, poi la premessa ────────────
+     Il difetto dei consigli era che parlavano solo di te — generi che
+     frequenti, attori già visti — e mai del film. "Avventura è casa
+     tua" non fa venire voglia di niente. Quello che fa venire voglia
+     è sapere cosa succede: un incontro, una caccia al tesoro, un
+     robot. La trama ce l'abbiamo già in casa: basta usarla.
+
+     Due pezzi: l'umore ("se hai voglia di stare sul filo") e la
+     premessa, presa dalla trama così com'è scritta. */
+
+  const UMORI = {
+    Romance:      ['se hai voglia di romanticismo', 'per una sera di cuore', 'se ti va di innamorarti un po\''],
+    Horror:       ['se hai voglia di farti spaventare', 'per una sera con la luce spenta', 'se ti va di dormire male'],
+    Thriller:     ['se hai voglia di stare sul filo', 'per una sera con il fiato corto', 'se ti va di non fidarti di nessuno'],
+    Mistero:      ['se hai voglia di un enigma', 'se ti va di arrivarci prima del protagonista'],
+    Fantascienza: ['se hai voglia di guardare più avanti', 'per una sera fuori da qui', 'se ti va di chiederti come andrà a finire'],
+    Avventura:    ['se hai voglia di partire', 'per una sera di terre lontane', 'se ti va di seguire qualcuno che scappa'],
+    Azione:       ['se hai voglia di adrenalina', 'per una sera che corre'],
+    Fantasy:      ['se hai voglia di un altro mondo', 'se ti va di credere a qualcosa'],
+    Commedia:     ['se hai voglia di ridere', 'per una sera leggera'],
+    Dramma:       ['se hai voglia di qualcosa che resta addosso', 'per una sera di cose vere'],
+    Drammatico:   ['se hai voglia di qualcosa che resta addosso', 'per una sera di cose vere'],
+    Crime:        ['se hai voglia di stare dalla parte sbagliata', 'per una sera di gente losca'],
+    Animazione:   ['se hai voglia di disegni che si muovono', 'per una sera animata'],
+    Famiglia:     ['se hai voglia di guardarlo con qualcuno', 'per una sera in compagnia'],
+    Storia:       ['se hai voglia di cose successe davvero'],
+    Musica:       ['se hai voglia di alzare il volume'],
+    Documentario: ['se hai voglia di realtà']
+  };
+
+  /* Attacchi che non dicono niente: meglio partire dalla frase dopo. */
+  const FUFFA = /^(il film racconta|il film segue|racconta la storia|segue le vicende|la storia di|trama non disponibile|nuovo capitolo|un nuovo capitolo)\b/i;
+
+  /* La prima frase di una trama è la premessa: chi, dove, cosa va
+     storto. È esattamente il pezzo che serve. Le successive di solito
+     sono conseguenze, e raccontarle sarebbe uno spoiler. */
+  function premessa(plot) {
+    if (!plot) return null;
+    const testo = plot.replace(/\s+/g, ' ').trim();
+
+    // Spezzo sui punti fermi, non sulle abbreviazioni ("Mr. Smith").
+    const frasi = testo.split(/(?<=[.!?])\s+(?=[A-ZÀ-Þ"«'])/).filter(Boolean);
+    if (!frasi.length) return null;
+
+    let i = 0;
+    if (FUFFA.test(frasi[i]) && frasi.length > 1) i++;
+
+    /* La prima frase spesso è solo la posa in scena ("una bambina si
+       trasferisce in una nuova casa"): il gancio vero è la seconda,
+       quella in cui qualcosa gira storto. Se ci sta, la prendo. */
+    let p = frasi[i];
+    if (frasi[i + 1] && p.length + frasi[i + 1].length <= 195) p += ' ' + frasi[i + 1];
+
+    p = p.trim();
+    if (p.length < 30) return null;
+
+    // Troppo lunga: taglio alla virgola più vicina alla fine utile,
+    // così non resta una frase mozzata a metà parola.
+    if (p.length > 195) {
+      const taglio = p.lastIndexOf(',', 195);
+      p = (taglio > 90 ? p.slice(0, taglio) : p.slice(0, 195).replace(/\s\S*$/, '')) + '…';
+    }
+    return p;
+  }
+
+  function gancio(film) {
+    const p = premessa(film.plot);
+    if (!p) return null;
+
+    const seme = [...String(film.id)].reduce((s, c) => s + c.charCodeAt(0), 0);
+
+    // L'umore lo detta il genere più caratterizzante, non il primo
+    // della lista: "Avventura" c'è ovunque, "Romance" dice molto di più.
+    const raro = [...(film.genres || [])]
+      .filter(g => UMORI[g])
+      .sort((a, b) => UMORI[a].length - UMORI[b].length);
+    const scelto = raro.find(g => ['Romance', 'Horror', 'Mistero', 'Crime', 'Storia', 'Musica', 'Documentario'].includes(g))
+      || raro[0];
+
+    const voci = scelto ? UMORI[scelto] : null;
+    const umore = voci ? voci[seme % voci.length] : null;
+
+    return { umore: umore ? maiuscola(umore) : null, premessa: p };
+  }
+
   /* ── la riga "ti piacerà perché" ─────────────────────
      Frasi intere, non elenchi: deve suonare come qualcuno
      che ti conosce, non come un motore di ricerca. */
   function perche(film, tutti) {
     const visti = tutti.filter(m => m.user.seen && m.id !== film.id);
-    if (visti.length < 3) return null;
+    const amo = gancio(film);
+    if (visti.length < 3) return amo ? { gancio: amo, frase: null, caveat: null, pratico: null } : null;
 
     const p = profilo(visti);
     const pezzi = [];
@@ -216,8 +302,11 @@ const Consiglia = (() => {
     const g = gemello(film, visti);
     if (g && !reg && !citati.has(g.v.id)) {
       const amato = (g.v.user.myRating || 0) >= 4;
+      // Due generi bastano a dire il legame: "animazione e avventura e
+      // famiglia e commedia" non è una descrizione, è un inventario.
+      const gc = g.generiComuni.map(x => x.toLowerCase()).slice(0, 2);
       const legame = g.comuni.length ? 'stesso giro di facce'
-        : g.generiComuni.length > 1 ? `stesso incrocio di ${g.generiComuni.map(x => x.toLowerCase()).join(' e ')}`
+        : gc.length > 1 ? `stesso incrocio di ${gc[0]} e ${gc[1]}`
         : 'stessa stoffa';
 
       const attacchi = amato
@@ -243,8 +332,11 @@ const Consiglia = (() => {
     if (pezzi.length < 2 && mediaCritica != null && mediaCritica >= 82)
       pezzi.push(`ne stanno parlando benissimo (${mediaCritica} su cento)`);
 
-    /* 5. il terreno che frequenti, detto una volta sola e senza conteggi */
-    if (pezzi.length < 2) {
+    /* 5. il terreno che frequenti, detto una volta sola e senza conteggi.
+       Solo se non c'è già un gancio: fra "avventura è casa tua" e la
+       trama vera, vince la trama. Le formule sul genere restano il
+       fondo del barile, non il piatto forte. */
+    if (pezzi.length < 2 && !amo) {
       const gen = film.genres.map(x => ({ x, v: p.generi.get(x) }))
         .filter(x => x.v && x.v.punti > 0)
         .sort((a, b) => b.v.punti - a.v.punti)[0];
@@ -272,13 +364,15 @@ const Consiglia = (() => {
       }
     }
 
-    /* 6. l'ultima spiaggia: qualcosa di vero da dire c'è sempre */
-    if (!pezzi.length && mediaCritica != null && mediaCritica >= 70)
+    /* 6. l'ultima spiaggia: qualcosa di vero da dire c'è sempre.
+       Con un gancio in mano non serve raschiare: il film si presenta
+       già da solo, e una riga in meno è meglio di una riga vuota. */
+    if (!pezzi.length && !amo && mediaCritica != null && mediaCritica >= 70)
       pezzi.push(`la critica lo tratta bene (${mediaCritica} su cento)`);
-    if (!pezzi.length && film.director)
+    if (!pezzi.length && !amo && film.director)
       pezzi.push(`lo firma <b>${F.esc(film.director)}</b>`);
 
-    if (!pezzi.length) return null;
+    if (!pezzi.length && !amo) return null;
 
     /* Il contrappunto onesto: se la critica lo boccia, va detto. */
     let caveat = null;
@@ -309,11 +403,12 @@ const Consiglia = (() => {
       pratico = `Esce fra ${gg} giorni.`;
     }
 
-    const frase = pezzi.length > 1
-      ? `${maiuscola(pezzi[0])}, e ${pezzi.slice(1).join(', ')}.`
-      : `${maiuscola(pezzi[0])}.`;
+    const frase = !pezzi.length ? null
+      : pezzi.length > 1
+        ? `${maiuscola(pezzi[0])}, e ${pezzi.slice(1).join(', ')}.`
+        : `${maiuscola(pezzi[0])}.`;
 
-    return { frase, caveat, pratico };
+    return { gancio: amo, frase, caveat, pratico };
   }
 
   /* La frase può iniziare con un tag (<b>, <i>): la maiuscola va
@@ -321,5 +416,5 @@ const Consiglia = (() => {
   const maiuscola = s =>
     s.replace(/^(\s*(?:<[^>]+>\s*)*)([a-zà-ÿ])/i, (_, tag, c) => tag + c.toUpperCase());
 
-  return { classifica, ritratto, profilo, gradimento, perche, gemello };
+  return { classifica, ritratto, profilo, gradimento, perche, gemello, gancio };
 })();
