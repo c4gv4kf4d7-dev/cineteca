@@ -110,27 +110,37 @@ svg{ width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:1.7; st
 }
 .search:focus-within kbd{ opacity:0; }
 
-/* ── barra delle sezioni: fluttua in basso, come una dock ──
-   Sul telefono il pollice sta in fondo allo schermo, non in cima. */
+/* ── barra delle sezioni: chiusa, appoggiata al bordo ──────
+   Sul telefono il pollice sta in fondo allo schermo, non in cima.
+
+   Prima era una pillola sospesa: sotto e intorno passava la pagina, e
+   il testo che scorreva dietro il vetro si leggeva a metà attraverso
+   la barra. Ora è un ripiano vero, da bordo a bordo, con una riga di
+   luce in cima a separarlo: sopra c'è la pagina, sotto la barra, e
+   non si mescolano. Il vetro resta, ma appena accennato. */
 .tabs{
   position:fixed; z-index:50;
-  left:50%; bottom:calc(14px + env(safe-area-inset-bottom));
-  transform:translateX(-50%) translateZ(0);
-  display:flex; gap:3px; padding:5px;
-  background:rgba(18,20,32,.62);
-  border:1px solid rgba(255,255,255,.14); border-radius:999px;
-  backdrop-filter:blur(26px) saturate(180%);
-  -webkit-backdrop-filter:blur(26px) saturate(180%);
-  box-shadow:0 18px 44px -12px rgba(0,0,0,.85), inset 0 1px 0 rgba(255,255,255,.1);
+  left:0; right:0; bottom:0; transform:translateZ(0);
+  display:flex; justify-content:center; gap:4px;
+  padding:8px max(10px, env(safe-area-inset-left))
+          calc(8px + env(safe-area-inset-bottom))
+          max(10px, env(safe-area-inset-right));
+  background:linear-gradient(to bottom, rgba(14,16,26,.94), rgba(8,10,17,.97));
+  border-top:1px solid rgba(255,255,255,.1);
+  backdrop-filter:blur(30px) saturate(180%);
+  -webkit-backdrop-filter:blur(30px) saturate(180%);
+  box-shadow:0 -1px 0 rgba(255,255,255,.04), 0 -18px 36px -22px rgba(0,0,0,.95);
 }
 .tab{
-  padding:10px 18px; font-size:13.5px; font-weight:600; color:var(--ink-2);
-  border-radius:999px; transition:color .2s, background .2s; white-space:nowrap;
+  flex:1 1 0; min-width:0; max-width:190px;
+  padding:11px 10px; font-size:13.5px; font-weight:600; color:var(--ink-2);
+  border-radius:999px; transition:color .2s, background .2s;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .tab.is-active{ color:var(--bg); background:var(--ink); }
 
-/* spazio in fondo perché la dock non copra l'ultima riga */
-main{ padding-bottom:calc(110px + env(safe-area-inset-bottom)) !important; }
+/* spazio in fondo perché il ripiano non copra l'ultima riga */
+main{ padding-bottom:calc(96px + env(safe-area-inset-bottom)) !important; }
 
 main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .view{ display:none; }
@@ -828,6 +838,11 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
     box-shadow:0 10px 24px -18px #000;
   }
 
+  /* Stesso discorso per il ripiano in basso: a questa opacità la
+     sfocatura non si vede comunque, e continuare a calcolarla su
+     tutto quello che scorre sotto si paga e basta. */
+  .tabs{ backdrop-filter:none; -webkit-backdrop-filter:none; }
+
   .sheet{ padding:0; align-items:flex-end; }
   .sheet-panel{ max-height:94dvh; border-radius:var(--r-l) var(--r-l) 0 0; }
   .bar{ grid-template-columns:minmax(72px,110px) 1fr auto; gap:10px; }
@@ -979,7 +994,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .acc-link:hover{ color:var(--accent); }
 
 @media (max-width:760px){
-  .acc-pannello{ position:fixed; top:auto; bottom:96px; left:12px; right:12px; width:auto; }
+  .acc-pannello{ position:fixed; top:auto; bottom:calc(74px + env(safe-area-inset-bottom)); left:12px; right:12px; width:auto; }
 }
 
 /* Popcorn in basso a sinistra: è sul divano, è uscito, si può guardare. */
@@ -1019,7 +1034,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 /* ══ avviso con ripensamento ═════════════════════════ */
 .avviso{
   position:fixed; z-index:90;
-  left:50%; bottom:calc(84px + env(safe-area-inset-bottom)); transform:translateX(-50%) translateY(12px);
+  left:50%; bottom:calc(76px + env(safe-area-inset-bottom)); transform:translateX(-50%) translateY(12px);
   display:flex; align-items:center; gap:16px;
   max-width:min(520px,calc(100vw - 28px)); padding:13px 16px 13px 20px;
   background:rgba(18,20,32,.9); border:1px solid var(--line-2); border-radius:999px;
@@ -1040,8 +1055,7 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   .hero-bg{ opacity:.38; }
   .hero h1{ font-size:19px; }
   .hero-trailer{ width:42px; height:42px; margin-right:12px; }
-  .tabs{ width:calc(100vw - 24px); justify-content:space-between; }
-  .tab{ flex:1; padding:11px 8px; text-align:center; font-size:12.5px; }
+  .tab{ max-width:none; padding:11px 6px; text-align:center; font-size:12.5px; }
 }
 
 /* ══ al tocco l'hover non esiste ═══════════════════════
