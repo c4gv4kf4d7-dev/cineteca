@@ -63,9 +63,15 @@ const Detail = (() => {
       m.director && { t: `regia di ${m.director}` }
     ].filter(Boolean);
 
+    /* Quando la scheda si ridisegna sullo stesso film (hai messo una
+       stella, l'hai segnato visto) la locandina in cima è identica:
+       riuso il nodo <img> già decodificato invece di crearne uno
+       nuovo, che ripartirebbe da un riquadro vuoto. */
+    const vecchiaImg = body.querySelector('.d-hero img');
+
     body.innerHTML = `
       <div class="d-hero${bd ? '' : ' is-nudo'}">
-        ${bd ? `<img src="${bd}" alt="" loading="lazy">` : ''}
+        ${bd ? `<img src="${bd}" alt="">` : ''}
         ${m.tagline ? `<blockquote class="d-quote">${F.esc(m.tagline)}</blockquote>` : ''}
         <div class="d-head">
           <h2 id="sheet-title">${F.esc(m.title)}</h2>
@@ -81,22 +87,7 @@ const Detail = (() => {
       </div>
 
       <div class="d-body">
-        <div class="d-actions">
-          ${m.trailer ? `<a class="btn btn-primary" href="${F.esc(m.trailer)}" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg> Guarda il trailer</a>` : ''}
-          <button class="btn btn-ghost${u.seen ? ' btn-on' : ''}" data-act="seen">
-            <svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
-            ${u.seen ? 'Visto' : 'Segna come visto'}
-          </button>
-          <button class="btn${u.pronto ? ' btn-pronto' : ' btn-ghost'}" data-act="pronto">
-            <span class="btn-emoji">🍿</span>
-            ${u.pronto ? 'Pronto da vedere' : 'Segna come pronto'}
-          </button>
-          <button class="btn${u.rewatch ? ' btn-rewatch' : ' btn-ghost'}" data-act="rewatch">
-            <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg>
-            ${u.rewatch ? 'Da rivedere' : 'Voglio rivederlo'}
-          </button>
-        </div>
+        ${comandi(m)}
 
         <section class="d-section d-voto">
           <h4>Il mio voto</h4>
@@ -106,14 +97,6 @@ const Detail = (() => {
                        aria-label="${n} stelle">★</button>`).join('')}
             ${u.myRating ? `<button class="rate-clear" data-star="0">azzera</button>` : ''}
           </div>
-        </section>
-
-        <section class="d-gestione">
-          ${m.lista !== 'visto' ? `<button class="d-sposta" data-act="sposta">
-            ${m.lista === 'cinema' ? '🛋️ Non ci vado: spostalo sul divano'
-                                   : '🎟️ Rimettilo fra quelli al cinema'}
-          </button>` : ''}
-          <button class="d-elimina" data-act="elimina">Togli dalla libreria</button>
         </section>
 
         ${perche(m)}
@@ -126,7 +109,62 @@ const Detail = (() => {
         ${statsBlock(m)}
         ${castBlock(m)}
 
+        <!-- Spostare e cancellare sono manutenzione, non lettura:
+             stanno in fondo, dopo tutto quello che c'è da sapere. -->
+        <section class="d-gestione">
+          ${m.lista !== 'visto' ? `<button class="d-sposta" data-act="sposta">
+            ${m.lista === 'cinema' ? '🛋️ Spostalo sul divano'
+                                   : '🎟️ Rimettilo al cinema'}
+          </button>` : ''}
+          <button class="d-elimina" data-act="elimina">🗑 Togli dalla libreria</button>
+        </section>
+
       </div>`;
+
+    const nuovaImg = body.querySelector('.d-hero img');
+    if (vecchiaImg && nuovaImg && vecchiaImg.src === nuovaImg.src && vecchiaImg.complete)
+      nuovaImg.replaceWith(vecchiaImg);
+  }
+
+  /* ── i quattro bottoni in cima ─────────────────────────
+     Stanno in una funzione loro perché sono l'unica cosa che cambia
+     quando tocchi "pronto" o "voglio rivederlo": così si riscrivono
+     da soli, senza tirarsi dietro tutta la scheda. */
+  function comandi(m) {
+    const u = m.user;
+    return `<div class="d-actions">
+      ${m.trailer ? `<a class="btn btn-primary" href="${F.esc(m.trailer)}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg> Guarda il trailer</a>` : ''}
+      <button class="btn btn-ghost${u.seen ? ' btn-on' : ''}" data-act="seen">
+        <svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        ${u.seen ? 'Visto' : 'Segna come visto'}
+      </button>
+      <button class="btn${u.pronto ? ' btn-pronto' : ' btn-ghost'}" data-act="pronto">
+        <span class="btn-emoji">🍿</span>
+        ${u.pronto ? 'Pronto da vedere' : 'Segna come pronto'}
+      </button>
+      <button class="btn${u.rewatch ? ' btn-rewatch' : ' btn-ghost'}" data-act="rewatch">
+        <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg>
+        ${u.rewatch ? 'Da rivedere' : 'Voglio rivederlo'}
+      </button>
+    </div>`;
+  }
+
+  /* Ridisegna il minimo indispensabile.
+
+     Riscrivere l'intera scheda a ogni tocco significa buttare via il
+     <img> della locandina e ricrearlo: il browser riparte da un
+     riquadro vuoto e la pagina sbatte le palpebre. Per "pronto" e
+     "voglio rivederlo" cambiano solo i bottoni, e solo quelli tocco. */
+  function aggiorna(soloComandi = false) {
+    const m = Store.byId(currentId);
+    if (!m) return close();
+
+    if (soloComandi) {
+      const zona = body.querySelector('.d-actions');
+      if (zona) { zona.outerHTML = comandi(m); return; }
+    }
+    render();
   }
 
   /* ── su un film già visto: dove andare adesso ──────────
@@ -256,9 +294,11 @@ const Detail = (() => {
 
     const btn = e.target.closest('[data-act]');
     if (!btn) return;
-    if (btn.dataset.act === 'seen')    { Store.toggleSeen(currentId);    render(); }
-    if (btn.dataset.act === 'rewatch') { Store.toggleRewatch(currentId); render(); }
-    if (btn.dataset.act === 'pronto')  { Store.togglePronto(currentId);  render(); }
+    // "Visto" cambia mezza scheda (il consiglio lascia il posto al voto),
+    // gli altri due cambiano solo il proprio bottone.
+    if (btn.dataset.act === 'seen')    { Store.toggleSeen(currentId);    aggiorna(); }
+    if (btn.dataset.act === 'rewatch') { Store.toggleRewatch(currentId); aggiorna(true); }
+    if (btn.dataset.act === 'pronto')  { Store.togglePronto(currentId);  aggiorna(true); }
     if (btn.dataset.act === 'sposta') {
       const m = Store.byId(currentId);
       Store.spostaIn(currentId, m.lista === 'cinema' ? 'casa' : 'cinema');

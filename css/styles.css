@@ -185,9 +185,18 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   transition:transform .18s, background .2s, border-color .2s;
 }
 .btn svg{ width:16px; height:16px; }
-.btn:hover{ transform:translateY(-2px); background:var(--panel-2); }
 .btn-primary{ background:var(--accent); color:#04222B; border-color:transparent; box-shadow:0 8px 26px -8px rgba(77,227,255,.6); }
-.btn-primary:hover{ background:#6BE9FF; }
+
+/* Il grigio dell'hover vale solo per i bottoni vuoti: sui bottoni
+   pieni coprirebbe il colore che dice se il tag è acceso o spento.
+   E vale solo dove c'è un mouse: al tocco il "hover" resta incollato
+   dopo il tap, quindi su iPhone il bottone appena acceso si spegneva
+   sotto il dito e si riaccendeva da solo. */
+@media (hover:hover){
+  .btn:hover{ transform:translateY(-2px); }
+  .btn-ghost:hover{ background:var(--panel-2); }
+  .btn-primary:hover{ background:#6BE9FF; }
+}
 
 /* ── controlli ───────────────────────────────────────────── */
 .controls{
@@ -988,14 +997,23 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 }
 .btn-emoji{ font-size:16px; line-height:1; }
 
-/* ══ comandi di gestione nella scheda film ═══════════ */
-.d-gestione{ display:flex; flex-wrap:wrap; gap:10px; }
+/* ══ comandi di gestione nella scheda film ═══════════
+   Sono le due azioni di servizio, non i comandi principali: stanno in
+   fondo, staccate da una riga, e si dividono lo spazio in parti uguali
+   invece di sbandare una a sinistra e una a destra. */
+.d-gestione{
+  display:flex; flex-wrap:wrap; gap:10px;
+  margin-top:22px; padding-top:20px; border-top:1px solid var(--line);
+}
 .d-sposta, .d-elimina{
-  padding:11px 18px; border-radius:999px; font-size:13px; font-weight:600;
-  border:1px solid var(--line); color:var(--ink-2); transition:.2s;
+  flex:1 1 220px; min-width:0;
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding:12px 18px; border-radius:999px; font-size:13px; font-weight:600;
+  border:1px solid var(--line); color:var(--ink-2); text-align:center;
+  transition:background .2s, color .2s, border-color .2s;
 }
 .d-sposta:hover{ background:var(--panel-2); color:var(--ink); border-color:var(--line-2); }
-.d-elimina{ margin-left:auto; color:var(--rotten); border-color:rgba(255,107,107,.28); }
+.d-elimina{ color:var(--rotten); border-color:rgba(255,107,107,.28); }
 .d-elimina:hover{ background:rgba(255,107,107,.12); border-color:rgba(255,107,107,.5); }
 
 /* ══ avviso con ripensamento ═════════════════════════ */
@@ -1024,4 +1042,22 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   .hero-trailer{ width:42px; height:42px; margin-right:12px; }
   .tabs{ width:calc(100vw - 24px); justify-content:space-between; }
   .tab{ flex:1; padding:11px 8px; text-align:center; font-size:12.5px; }
+}
+
+/* ══ al tocco l'hover non esiste ═══════════════════════
+   Su un telefono non c'è un puntatore che entra ed esce: c'è un dito
+   che tocca. Safari allora lascia lo stato :hover incollato
+   all'ultimo elemento toccato, e lo toglie al tocco successivo. Il
+   risultato è quello che si vede: un pulsante che si illumina e si
+   spegne da solo, una tessera che resta sollevata, una stella che
+   rimane ingrandita. Qui gli effetti di passaggio del mouse vengono
+   annullati dove un mouse non c'è. */
+@media (hover:none){
+  .scop:hover, .cons:hover, .news:hover, .rec:hover, .n-grande:hover,
+  .av:not(.av-statico):hover, .tl-film:hover, .pod:hover{
+    transform:none;
+  }
+  .star:hover, .disp-p:hover{ transform:none; }
+  .sheet-close:hover{ transform:none; background:rgba(5,6,11,.7); }
+  .grid.is-list .card:hover{ background:var(--panel); border-color:var(--line); }
 }
