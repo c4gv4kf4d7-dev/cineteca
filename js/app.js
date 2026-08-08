@@ -197,47 +197,126 @@
     if ($('#view-stats').classList.contains('is-active')) Stats.render();
   }
 
+  /* ── passare da una lista all'altra ───────────────────
+     Le tre liste stanno in fila, nell'ordine della barra. Ci si
+     arriva toccando o scorrendo col dito: è lo stesso movimento,
+     quindi è lo stesso codice.
+
+     Cambiare lista non deve spostare la barra sotto il dito: segno
+     dov'era prima, ridisegno, e riporto lo scroll dove serve perché
+     resti allo stesso punto dello schermo. */
+  const LISTE = ['cinema', 'casa', 'seen'];
+
+  function cambiaLista(status, verso = 0) {
+    if (status === filtro.status) return;
+
+    const barra = $('#filter-status');
+    const prima = barra.getBoundingClientRect().top;
+
+    filtro.status = status;
+    syncChips('#filter-status', 'status');
+    render();
+
+    const scarto = barra.getBoundingClientRect().top - prima;
+    if (scarto) window.scrollBy(0, scarto);
+
+    // Col dito la lista entra dal lato da cui l'hai chiamata.
+    if (verso) {
+      const griglia = $('#grid');
+      griglia.classList.remove('entra-da-destra', 'entra-da-sinistra');
+      void griglia.offsetWidth;                       // riavvia l'animazione
+      griglia.classList.add(verso > 0 ? 'entra-da-destra' : 'entra-da-sinistra');
+    }
+  }
+
   /* ── eventi ──────────────────────────────────────────── */
   document.addEventListener('click', e => {
     const open = e.target.closest('[data-open]');
     if (open) return Detail.open(open.dataset.open);
 
-    /* Cambiare lista non deve spostare la barra sotto il dito.
-       Anche con l'hero spostato sotto, cambiando lista sopra la barra
-       può muoversi qualcosa (l'avviso delle novità). Segno dov'era la
-       barra prima, ridisegno, e riporto lo scroll dove serve perché
-       resti allo stesso punto dello schermo. */
     const status = e.target.closest('[data-status]');
-    if (status) {
-      const barra = status.closest('.chips');
-      const prima = barra.getBoundingClientRect().top;
-      filtro.status = status.dataset.status;
-      syncChips('#filter-status', 'status');
-      render();
-      const scarto = barra.getBoundingClientRect().top - prima;
-      if (scarto) window.scrollBy(0, scarto);
-      return;
-    }
+    if (status) return cambiaLista(status.dataset.status);
 
     const layout = e.target.closest('[data-layout]');
     if (layout) { filtro.layout = layout.dataset.layout; syncChips('#layout', 'layout'); return render(); }
 
-    const tab = e.target.closest('[data-view]');
-    if (tab) {
-      document.querySelectorAll('.tab').forEach(t => t.classList.toggle('is-active', t === tab));
-      document.querySelectorAll('.view').forEach(v =>
-        v.classList.toggle('is-active', v.id === `view-${tab.dataset.view}`));
-      if (tab.dataset.view === 'stats') Stats.render();
-      if (tab.dataset.view === 'perte') PerTe.render();
-      if (tab.dataset.view === 'notizie') Notizie.render();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    /* Un nome toccato è una domanda sola: "e di questo, cosa ho?".
+       La ricerca la sa già rispondere — cerca anche fra regia e cast —
+       quindi non serve una vista nuova: basta portarcela. */
+    const persona = e.target.closest('[data-persona]');
+    if (persona) {
+      if (Detail.isOpen()) Detail.close();
+      qInput.value = persona.dataset.persona;
+      filtro.q = persona.dataset.persona;
+      mostraVista('library');
+      render();
+      return;
     }
+
+    const tab = e.target.closest('[data-view]');
+    if (tab) mostraVista(tab.dataset.view);
   });
+
+  function mostraVista(nome) {
+    document.querySelectorAll('.tab').forEach(t =>
+      t.classList.toggle('is-active', t.dataset.view === nome));
+    document.querySelectorAll('.view').forEach(v =>
+      v.classList.toggle('is-active', v.id === `view-${nome}`));
+    if (nome === 'stats')   Stats.render();
+    if (nome === 'perte')   PerTe.render();
+    if (nome === 'notizie') Notizie.render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   function syncChips(container, attr) {
     document.querySelectorAll(`${container} [data-${attr}]`).forEach(el =>
       el.classList.toggle('is-active', el.dataset[attr] === filtro[attr === 'layout' ? 'layout' : 'status']));
   }
+
+  /* ── sfogliare le liste col dito ──────────────────────
+     Tre liste in fila si sfogliano come pagine: trascina a sinistra
+     per la successiva, a destra per la precedente.
+
+     Un gesto va riconosciuto per quello che è, non appena si muove
+     qualcosa. Quattro cose lo distinguono da uno scroll o da un tap:
+     dev'essere lungo, più orizzontale che verticale, abbastanza
+     rapido, e non deve partire dai bordi — quelli sono del sistema,
+     che ci fa "indietro" e Control Center. */
+  const vistaLibreria = $('#view-library');
+  let gesto = null;
+
+  vistaLibreria.addEventListener('touchstart', e => {
+    gesto = null;
+    if (e.touches.length !== 1 || Detail.isOpen()) return;
+
+    const t = e.touches[0];
+    if (t.clientX < 28 || t.clientX > window.innerWidth - 28) return;
+    // Dove si scorre già in orizzontale per conto proprio, il gesto non è mio.
+    if (e.target.closest('input, select, textarea, [data-scorre]')) return;
+
+    gesto = { x: t.clientX, y: t.clientY, quando: Date.now() };
+  }, { passive: true });
+
+  vistaLibreria.addEventListener('touchend', e => {
+    if (!gesto) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - gesto.x;
+    const dy = t.clientY - gesto.y;
+    const durata = Date.now() - gesto.quando;
+    gesto = null;
+
+    if (durata > 800) return;                      // troppo lento: stavi leggendo
+    if (Math.abs(dx) < 60) return;                 // troppo corto: era un tocco
+    if (Math.abs(dx) < Math.abs(dy) * 1.6) return; // troppo storto: stavi scorrendo
+
+    const i = LISTE.indexOf(filtro.status);
+    const j = dx < 0 ? i + 1 : i - 1;
+    // Ai due capi ci si ferma: la fila non gira su se stessa, altrimenti
+    // dall'ultima lista si finirebbe alla prima senza capire perché.
+    if (j < 0 || j >= LISTE.length) return;
+
+    cambiaLista(LISTE[j], dx < 0 ? 1 : -1);
+  }, { passive: true });
 
   qInput.addEventListener('input', () => { filtro.q = qInput.value; render(); });
   $('#sort').addEventListener('change', e => { filtro.sort = e.target.value; render(); });

@@ -66,12 +66,27 @@ I dati presi da Notion hanno la precedenza: TMDB riempie solo i campi vuoti.
 ```
 index.html          guscio e markup
 css/styles.css      tutto lo stile
+sw.js               service worker: prima la rete, la cache è il paracadute
+
 js/store.js         catalogo + stato personale (localStorage)
 js/format.js        date, durate, valute, helper
 js/app.js           filtri, griglia, hero, avvio
 js/detail.js        scheda film
+js/avviso.js        il messaggio con "annulla" in fondo allo schermo
+js/novita.js        cosa è cambiato da quando non ci sei
+js/notizie.js       la rassegna stampa
+js/charts.js        i grafici, disegnati a mano in SVG
 js/stats.js         vista statistiche
-tools/enrich.mjs    arricchimento TMDB
+js/consiglia.js     il consigliere: perché sì e perché no
+js/persone.js       la libreria vista dalle persone (regia + cast)
+js/ciechi.js        gli angoli bui: i buchi della libreria
+js/perte.js         la scheda "Per te"
+js/cloud.js         accesso e sincronia via Supabase (facoltativa)
+
+tools/enrich.mjs    arricchimento TMDB + OMDb
+tools/notizie.mjs   rassegna stampa italiana
+tools/importa.mjs   import dall'export Notion
+tools/versione.mjs  allinea il `?v=` degli asset e la cache del service worker
 tools/serve.mjs     server statico di sviluppo
 ```
 
@@ -79,8 +94,18 @@ tools/serve.mjs     server statico di sviluppo
 
 - `/` — vai alla ricerca
 - `Esc` — chiudi la scheda film
+- il nome di una persona, ovunque compaia, porta ai suoi film in libreria
 
-## Da fare
+## Quando tocchi il codice
 
-- `assets/icon.png` (icona PWA) non c'è ancora
-- deploy su GitHub Pages sul modello di `gym/deploy.sh`
+Ogni asset è caricato con un `?v=…` e il service worker nomina la cache
+allo stesso modo. Il workflow notturno lo aggiorna da solo **quando cambiano
+i dati**; se invece hai cambiato codice, fallo a mano:
+
+```bash
+node tools/versione.mjs
+```
+
+Senza, un telefono che ha già aperto la cineteca continua a servire il
+JavaScript vecchio. Lo script avvisa anche se hai aggiunto uno script
+all'index dimenticandolo nell'elenco `SHELL` di `sw.js`.

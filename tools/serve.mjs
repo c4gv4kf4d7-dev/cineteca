@@ -7,7 +7,9 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, normalize, extname } from 'node:path';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const PORT = Number(process.argv[2]) || 8123;
+/* La porta si può passare come argomento o come variabile d'ambiente:
+   serve quando 8123 è già occupata da un'altra sessione. */
+const PORT = Number(process.argv[2]) || Number(process.env.PORT) || 8123;
 
 const TIPI = {
   '.html': 'text/html; charset=utf-8',

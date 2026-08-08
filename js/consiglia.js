@@ -69,16 +69,25 @@ const Consiglia = (() => {
   }
 
   /* ── punteggio e motivazione di un candidato ─────────── */
+  /* I due piatti restano separati fino alla fine: `punti` è il saldo,
+     ma chi deve decidere se un film ha comunque delle ragioni a favore
+     (l'anti-consiglio, più sotto) ha bisogno di leggere il solo lato
+     positivo. Sommarli subito renderebbe impossibile distinguere un
+     film mediocre da uno molto amato e molto sospetto insieme. */
   function valuta(film, p) {
     const motivi = [];
-    let punti = 0;
+    let positivi = 0, negativi = 0;
 
     const contributo = (mappa, chiavi, moltiplicatore, frase) => {
       for (const k of chiavi) {
         const v = mappa.get(k);
-        if (!v || v.punti <= 0.05) continue;
-        punti += v.punti * moltiplicatore;
-        motivi.push(frase(k, v));
+        if (!v) continue;
+        /* I contributi negativi contano, ma meno di quelli positivi:
+           un regista può sbagliare un film senza essere bandito.
+           Prima venivano scartati del tutto, e un titolo pieno di
+           gente che non sopporti finiva a pari merito con uno neutro. */
+        if (v.punti > 0.05)       { positivi += v.punti * moltiplicatore; motivi.push(frase(k, v)); }
+        else if (v.punti < -0.05) { negativi += v.punti * moltiplicatore * 0.6; }
       }
     };
 
@@ -98,20 +107,22 @@ const Consiglia = (() => {
       .filter(x => x != null);
     if (critica.length) {
       const media = critica.reduce((a, b) => a + b, 0) / critica.length;
-      punti += (media - 60) * 0.32;
+      const q = (media - 60) * 0.32;
+      if (q >= 0) positivi += q; else negativi += q;
       if (media >= 80) motivi.push(`la critica lo promuove (${Math.round(media)}/100)`);
       if (media < 45)  motivi.push(`la critica lo boccia (${Math.round(media)}/100)`);
     }
 
     if (p.durata && film.runtime) {
       const scostamento = Math.abs(film.runtime - p.durata);
-      if (scostamento < 12) { punti += 4; motivi.push('dura quanto i film che scegli di solito'); }
+      if (scostamento < 12) { positivi += 4; motivi.push('dura quanto i film che scegli di solito'); }
     }
 
     // L'hai segnato come pronto: è quello che puoi guardare davvero stasera.
-    if (film.user?.pronto) punti += 10;
+    if (film.user?.pronto) positivi += 10;
 
-    return { punti, motivi: [...new Set(motivi)].slice(0, 3) };
+    return { punti: positivi + negativi, positivi, negativi,
+             motivi: [...new Set(motivi)].slice(0, 3) };
   }
 
   /* ── la classifica dei consigli ──────────────────────── */
@@ -411,10 +422,103 @@ const Consiglia = (() => {
     return { gancio: amo, frase, caveat, pratico };
   }
 
+  /* ── il contrario: perché potresti lasciarlo perdere ──────
+     Un consigliere che dice sempre di sì non consiglia, asseconda.
+     Qui parlano solo i segnali negativi che hai prodotto tu: registi
+     e attori che ti hanno lasciato freddo, generi che voti male,
+     durate fuori dalla tua misura. La critica da sola non basta —
+     bocciare un film perché piace poco ai giornali sarebbe il
+     contrario di una libreria personale. */
+  function contro(film, tutti) {
+    const visti = tutti.filter(m => m.user.seen && m.id !== film.id);
+    // Sotto i sei film votati il segnale negativo è rumore: una
+    // stellina bassa non basta a dire "questa roba non fa per te".
+    const conVoto = visti.filter(m => m.user.myRating);
+    if (visti.length < 6 || conVoto.length < 3) return null;
+
+    const p = profilo(visti);
+    const pezzi = [];
+    let malus = 0;
+
+    const cita = m => `<i>${F.esc(m.title)}</i>`;
+    /* Il film peggio giudicato fra quelli che portano quel nome:
+       è il caso che spiega meglio perché il segnale è negativo. */
+    const peggiore = v => [...v.film].sort((a, b) =>
+      (a.user.myRating || 3) - (b.user.myRating || 3))[0];
+
+    /* 1. la firma */
+    const reg = film.director && p.registi.get(film.director);
+    if (reg && reg.punti < -0.15) {
+      malus += reg.punti * 26;
+      const q = peggiore(reg);
+      /* Le stelle fra parentesi, non in un'altra proposizione: con la
+         congiunzione la frase finiva per avere due "e" di fila appena
+         si aggiungeva un secondo motivo. */
+      pezzi.push(`di <b>${F.esc(film.director)}</b> hai già visto ${cita(q)}${
+        q.user.myRating ? ` (${'★'.repeat(q.user.myRating)})` : ', senza entusiasmo'}`);
+    }
+
+    /* 2. i volti che non ti hanno convinto */
+    const facce = (film.castDetail || []).slice(0, 6)
+      .map(c => ({ nome: c.name, v: p.attori.get(c.name) }))
+      .filter(x => x.v && x.v.punti < -0.15)
+      .sort((a, b) => a.v.punti - b.v.punti);
+    if (facce.length) {
+      malus += facce[0].v.punti * 13;
+      pezzi.push(`<b>${F.esc(facce[0].nome)}</b> finora non ti ha convinto (${cita(peggiore(facce[0].v))})`);
+    }
+
+    /* 3. il genere che continui a bocciare */
+    const gen = film.genres.map(x => ({ x, v: p.generi.get(x) }))
+      .filter(x => x.v && x.v.punti < -0.2 && x.v.film.length >= 2)
+      .sort((a, b) => a.v.punti - b.v.punti)[0];
+    if (gen) {
+      malus += gen.v.punti * 9;
+      pezzi.push(`${F.esc(F.conArticolo(gen.x))} raramente ti ripaga (${gen.v.film.length} film, nessuno andato bene)`);
+    }
+
+    /* 4. la durata: un fattore pratico, non di gusto.
+       Sotto la tua misura non è un problema — è mezz'ora guadagnata. */
+    if (p.durata && film.runtime && film.runtime - p.durata > 42) {
+      malus -= 5;
+      pezzi.push(`sono <b>${Math.round(film.runtime - p.durata)} minuti</b> più della tua misura abituale`);
+    }
+
+    if (!pezzi.length) return null;
+
+    /* Un titolo che ha comunque una ragione forte a favore non va
+       bocciato: il dubbio si dice, la condanna no.
+
+       Il confronto dev'essere fra cose omogenee. Il punteggio pieno di
+       `valuta` non serve: somma decine di chiavi (ogni attore, ogni
+       genere, ogni paese) e arriva a numeri che nessun malus può
+       pareggiare, quindi il dubbio si cancellerebbe sempre da solo.
+       Qui il paragone è uno a uno — la voce più favorevole contro la
+       più contraria, con gli stessi pesi. */
+    const meglio = (mappa, chiavi, moltiplicatore) => Math.max(0,
+      ...chiavi.map(k => (mappa.get(k)?.punti || 0) * moltiplicatore));
+    const pro = Math.max(
+      meglio(p.registi, [film.director], 26),
+      meglio(p.attori, (film.castDetail || []).slice(0, 6).map(c => c.name), 13),
+      meglio(p.generi, film.genres, 9));
+
+    if (pro >= Math.abs(malus)) return null;
+    // Sotto questa soglia il segnale è troppo debole per valere una riga.
+    if (malus > -4) return null;
+
+    const frase = pezzi.length > 1
+      ? `${maiuscola(pezzi[0])}, e ${pezzi.slice(1).join(', ')}.`
+      : `${maiuscola(pezzi[0])}.`;
+
+    /* "Forte" è quello che si merita un posto in "Ci penserei": il
+       dubbio in fondo alla scheda si accontenta di meno. */
+    return { frase, punti: malus, forte: malus <= -9 };
+  }
+
   /* La frase può iniziare con un tag (<b>, <i>): la maiuscola va
      sulla prima lettera del testo, saltando i tag di apertura. */
   const maiuscola = s =>
     s.replace(/^(\s*(?:<[^>]+>\s*)*)([a-zà-ÿ])/i, (_, tag, c) => tag + c.toUpperCase());
 
-  return { classifica, ritratto, profilo, gradimento, perche, gemello, gancio };
+  return { classifica, ritratto, profilo, gradimento, perche, contro, gemello, gancio };
 })();

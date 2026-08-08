@@ -53,7 +53,42 @@ const PerTe = (() => {
       + coda('Se stasera resti sul divano', divano, tutti,
           'Tre pescati fra i più affini della tua lista, diversi ogni giorno.')
       + daRivedere(tutti)
+      + Persone.sezione(tutti)
+      + cipenserei(tutti)
+      + Ciechi.sezione(tutti)
       + affinita(tutti);
+  }
+
+  /* ── i titoli su cui hai dei dubbi ────────────────────
+     Sta dopo i consigli, non prima: la scheda serve a decidere
+     cosa guardare, non a farti sentire in colpa per la lista.
+     Ma una coda che cresce all'infinito non la guarda nessuno,
+     e qualcuno deve pur dire quali togliere. */
+  function cipenserei(tutti) {
+    const voci = tutti.filter(m => !m.user.seen)
+      .map(m => ({ m, c: Consiglia.contro(m, tutti) }))
+      .filter(x => x.c && x.c.forte)
+      .sort((a, b) => a.c.punti - b.c.punti)
+      .slice(0, 3);
+    if (!voci.length) return '';
+
+    return `<section class="s-block">
+      <h3>Ci penserei</h3>
+      <div class="consigli">
+        ${voci.map(({ m, c }) => `<button class="cons cons-contro" data-open="${F.esc(m.id)}">
+          <span class="cons-ph">${F.poster(m, 'w185')
+            ? `<img src="${F.poster(m, 'w185')}" alt="" loading="lazy">` : ''}</span>
+          <span class="cons-body">
+            <b>${F.esc(m.title)}</b>
+            <span class="cons-meta">${F.esc(F.dataBreve(m.releaseDate))}${
+              m.genres[0] ? ` · ${F.esc(m.genres[0])}` : ''}</span>
+            <span class="cons-contra">${c.frase}</span>
+          </span>
+        </button>`).join('')}
+      </div>
+      <p class="nota">Titoli che, stando ai tuoi voti, rischiano di deluderti.
+      Non è un verdetto: se lo apri e ti smentisce, tanto meglio.</p>
+    </section>`;
   }
 
   /* ── i film che aspetti di rivedere ──────────────────── */

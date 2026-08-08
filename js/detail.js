@@ -219,18 +219,47 @@ const Detail = (() => {
      il posto del consiglio lo prende il tuo giudizio. */
   function perche(m) {
     if (m.user.seen) return scoperte(m);
-    const p = Consiglia.perche(m, Store.all());
+    const tutti = Store.all();
+    const p = Consiglia.perche(m, tutti);
+    const c = Consiglia.contro(m, tutti);
+
+    /* Il dubbio va detto accanto all'entusiasmo, non al posto suo:
+       due riquadri, e decidi tu a quale dei due credere. */
+    const dubbio = !c ? '' : `<section class="d-perche d-contro">
+      <span class="d-perche-et">Ci penserei</span>
+      <p class="d-perche-frase">${c.frase}</p>
+    </section>`;
+
     // Qui la trama sta già nella scheda, poco più sotto: il gancio
     // sarebbe un doppione. Se non c'è un legame con la tua libreria
     // da raccontare, questo riquadro non ha niente da dire.
-    if (!p || !p.frase) return '';
+    if (!p || !p.frase) return dubbio;
 
     return `<section class="d-perche">
       <span class="d-perche-et">Ti piacerà perché</span>
       <p class="d-perche-frase">${p.frase}</p>
       ${p.caveat || p.pratico ? `<p class="d-perche-coda">${
         [p.caveat, p.pratico].filter(Boolean).join(' ')}</p>` : ''}
-    </section>`;
+    </section>` + dubbio;
+  }
+
+  /* ── chi di questo film hai già incrociato ─────────────
+     Sta sopra il cast: prima chi conosci, poi tutti gli altri. */
+  function legami(m) {
+    const voci = Persone.legame(m, Store.all()).slice(0, 3);
+    if (!voci.length) return '';
+
+    const frase = voci.map(v => {
+      const n = v.p.visti.length;
+      return `<button class="lega" data-persona="${F.esc(v.nome)}">${F.esc(v.nome)}<i>${
+        n === 1 ? '1 film' : `${n} film`}${
+        v.p.votoMedio ? ` · ${'★'.repeat(Math.round(v.p.votoMedio))}` : ''}</i></button>`;
+    }).join('');
+
+    return `<p class="d-legami">
+      <span class="d-legami-et">Li hai già incrociati</span>
+      ${frase}
+    </p>`;
   }
 
   function statsBlock(m) {
@@ -270,6 +299,7 @@ const Detail = (() => {
 
     return `<section class="d-section">
       <h4>Cast</h4>
+      ${legami(m)}
       <div class="cast">
         ${people.slice(0, 12).map(p => {
           const img = F.profilo(p.profile);

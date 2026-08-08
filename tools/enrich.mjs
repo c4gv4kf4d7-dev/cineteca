@@ -77,7 +77,22 @@ const PAESI = {
   'New Zealand': 'Nuova Zelanda', 'United Arab Emirates': 'Emirati Arabi Uniti',
   'Belgium': 'Belgio', 'Netherlands': 'Paesi Bassi', 'Sweden': 'Svezia',
   'Denmark': 'Danimarca', 'Norway': 'Norvegia', 'Mexico': 'Messico', 'Brazil': 'Brasile',
-  'India': 'India', 'Argentina': 'Argentina', 'Poland': 'Polonia', 'Switzerland': 'Svizzera'
+  'India': 'India', 'Argentina': 'Argentina', 'Poland': 'Polonia', 'Switzerland': 'Svizzera',
+  /* Il nome inglese lasciato passare non è solo brutto: da quando la
+     cineteca ragiona sui paesi ("un paese mai visitato"), "Finland" e
+     "Finlandia" diventerebbero due paesi diversi. */
+  'Finland': 'Finlandia', 'Iceland': 'Islanda', 'Austria': 'Austria',
+  'Portugal': 'Portogallo', 'Greece': 'Grecia', 'Turkey': 'Turchia',
+  'Czech Republic': 'Repubblica Ceca', 'Czechia': 'Repubblica Ceca',
+  'Hungary': 'Ungheria', 'Romania': 'Romania', 'Bulgaria': 'Bulgaria',
+  'Croatia': 'Croazia', 'Serbia': 'Serbia', 'Slovenia': 'Slovenia',
+  'Slovakia': 'Slovacchia', 'Estonia': 'Estonia', 'Latvia': 'Lettonia',
+  'Lithuania': 'Lituania', 'Luxembourg': 'Lussemburgo', 'Ukraine': 'Ucraina',
+  'Russia': 'Russia', 'Israel': 'Israele', 'Iran': 'Iran', 'Egypt': 'Egitto',
+  'Morocco': 'Marocco', 'South Africa': 'Sudafrica', 'Nigeria': 'Nigeria',
+  'Taiwan': 'Taiwan', 'Thailand': 'Thailandia', 'Indonesia': 'Indonesia',
+  'Philippines': 'Filippine', 'Vietnam': 'Vietnam', 'Chile': 'Cile',
+  'Colombia': 'Colombia', 'Peru': 'Perù', 'Uruguay': 'Uruguay'
 };
 const paese = nome => PAESI[nome] || nome;
 

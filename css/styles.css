@@ -239,6 +239,14 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 /* ── griglia locandine ───────────────────────────────────── */
 .grid{ display:grid; gap:clamp(14px,1.7vw,24px); grid-template-columns:repeat(auto-fill,minmax(clamp(150px,17vw,208px),1fr)); }
 
+/* Sfogliando col dito, la lista nuova entra dal lato da cui l'hai
+   chiamata: senza, il contenuto cambierebbe di scatto e il gesto
+   sembrerebbe non aver fatto niente. */
+.grid.entra-da-destra{ animation:daDestra .26s cubic-bezier(.2,.8,.3,1) both; }
+.grid.entra-da-sinistra{ animation:daSinistra .26s cubic-bezier(.2,.8,.3,1) both; }
+@keyframes daDestra{   from{ opacity:0; transform:translateX(26px); } }
+@keyframes daSinistra{ from{ opacity:0; transform:translateX(-26px); } }
+
 .card{ position:relative; text-align:left; display:flex; flex-direction:column; gap:11px; }
 .poster{
   position:relative; aspect-ratio:2/3; overflow:hidden;
@@ -437,6 +445,30 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 .d-perche-frase i{ color:var(--ink); font-style:italic; }
 .d-perche-coda{ margin:12px 0 0; font-size:13px; line-height:1.6; color:var(--ink-3); }
 
+/* Il dubbio: stesso impianto del consiglio, tinta ambra. Deve
+   somigliargli — è il suo contrario, non un errore di sistema —
+   ma non deve mai essere scambiato per un incoraggiamento. */
+.d-contro{
+  margin-top:12px;
+  border-color:rgba(255,194,77,.24);
+  background:linear-gradient(135deg, rgba(255,194,77,.09), rgba(255,107,107,.05) 60%, transparent);
+}
+.d-contro .d-perche-et{ color:var(--hot); }
+.d-contro .d-perche-frase b{ color:var(--hot); }
+
+/* chi di questo film hai già incrociato */
+.d-legami{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:-4px 0 16px; }
+.d-legami-et{
+  font-size:10.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3);
+}
+.lega{
+  display:inline-flex; align-items:baseline; gap:7px; padding:6px 12px; border-radius:999px;
+  background:var(--panel); border:1px solid var(--line); color:var(--ink);
+  font-size:12.5px; font-weight:600; transition:border-color .2s, background .2s;
+}
+.lega i{ font-style:normal; font-family:var(--ff-mono); font-size:10.5px; color:var(--accent); }
+.lega:hover{ background:var(--panel-2); border-color:rgba(77,227,255,.35); }
+
 /* scoperte: film fuori libreria */
 .d-scoperte-intro{ margin:-4px 0 15px; font-size:14.5px; line-height:1.6; color:var(--ink-2); }
 .d-scoperte-intro b{ color:var(--accent); font-weight:650; }
@@ -592,6 +624,61 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   border-radius:999px; background:rgba(77,227,255,.1); border:1px solid rgba(77,227,255,.25);
   font-family:var(--ff-mono); font-size:14px; font-weight:600; color:var(--accent);
 }
+
+/* Il titolo su cui hai dei dubbi: niente punteggio a destra —
+   un numero negativo sembrerebbe una pagella. Parla la frase. */
+.cons-contro{ border-color:rgba(255,194,77,.2); }
+.cons-contro:hover{ border-color:rgba(255,194,77,.4); }
+.cons-contra{ display:block; margin-top:6px; font-size:12.5px; line-height:1.55; color:var(--hot); }
+.cons-contra b{ color:var(--hot); font-weight:700; }
+.cons-contra i{ color:var(--ink-2); font-style:italic; }
+
+/* ── le persone che ricorrono ─────────────────────────── */
+.persone{ display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:10px; }
+.pers{
+  display:flex; align-items:center; gap:13px; padding:11px; text-align:left;
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--r-m);
+  transition:background .2s, border-color .2s, transform .2s;
+}
+.pers:hover{ background:var(--panel-2); border-color:var(--line-2); transform:translateY(-3px); }
+.pers-ph{
+  flex:none; display:grid; place-items:center; width:52px; height:52px; border-radius:50%;
+  overflow:hidden; background:#12141F; border:1px solid var(--line);
+}
+.pers-ph img{ width:100%; height:100%; object-fit:cover; }
+.pers-ph i{ font-style:normal; font-family:var(--ff-mono); font-size:14px; color:var(--ink-3); }
+.pers-body{ flex:1; min-width:0; }
+.pers-body > b{ display:block; font-size:14px; font-weight:650; margin-bottom:3px; }
+.pers-meta{ display:block; font-family:var(--ff-mono); font-size:10.5px; color:var(--ink-3); }
+.pers-voto{ display:block; margin-top:4px; font-size:12.5px; color:var(--hot); letter-spacing:.06em; }
+.pers-voto i{ font-style:normal; font-size:10.5px; color:var(--ink-3); letter-spacing:0; }
+.pers-muto{ color:var(--ink-3); letter-spacing:0; }
+.pers-attesa{ display:block; margin-top:4px; font-size:11.5px; line-height:1.45; color:var(--accent); }
+.pers-attesa i{ font-style:italic; }
+
+/* ── angoli bui ──────────────────────────────────────── */
+.ciechi{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:11px; }
+.cieco{
+  display:flex; flex-direction:column; gap:11px; padding:16px 17px;
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--r-m);
+}
+.cieco h4{
+  margin:0; font-size:10.5px; font-weight:700; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--accent-2);
+}
+.cieco p{ margin:0; font-size:13.5px; line-height:1.6; color:var(--ink-2); }
+.cieco p b{ color:var(--ink); font-weight:650; }
+.cieco p i{ color:var(--ink); font-style:italic; }
+.cieco-film{
+  display:flex; align-items:center; gap:11px; margin-top:auto; padding:8px; text-align:left;
+  background:var(--bg-2); border:1px solid var(--line); border-radius:var(--r-s);
+  transition:border-color .2s;
+}
+.cieco-film:hover{ border-color:rgba(183,140,255,.42); }
+.cieco-ph{ flex:none; width:34px; aspect-ratio:2/3; border-radius:6px; overflow:hidden; background:#12141F; }
+.cieco-ph img{ width:100%; height:100%; object-fit:cover; }
+.cieco-film i{ display:block; font-style:normal; font-family:var(--ff-mono); font-size:10px; color:var(--ink-3); }
+.cieco-film b{ display:block; font-size:13px; font-weight:650; color:var(--ink); }
 
 /* ── rassegna stampa ─────────────────────────────────── */
 .rassegna{ display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:11px; }
@@ -962,6 +1049,9 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
 
 /* Il grassetto dentro le frasi dei consigli resta in linea. */
 .cons-perche b, .cons-perche i,
+.cons-contra b, .cons-contra i,
+.pers-attesa b, .pers-attesa i,
+.cieco p b, .cieco p i,
 .d-perche-frase b, .d-perche-frase i,
 .ritratto-frase b{ display:inline; font-size:inherit; margin:0; }
 
