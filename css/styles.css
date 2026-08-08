@@ -271,6 +271,19 @@ main{ max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad) 96px; }
   background:rgba(5,6,11,.74); backdrop-filter:blur(10px); border:1px solid var(--line);
 }
 .badge-hot{ color:var(--hot); border-color:rgba(255,194,77,.35); }
+
+/* Sui film visti, in basso a destra, c'è il mio giudizio: stelle
+   d'oro se l'ho votato, un promemoria smorzato se non l'ho ancora
+   fatto — così scorrendo la lista si vede subito cosa manca. */
+.badge-mio{
+  color:var(--hot); border-color:rgba(255,194,77,.4);
+  font-size:12px; letter-spacing:.06em;
+  text-shadow:0 0 10px rgba(255,194,77,.45);
+}
+.badge-davotare{
+  color:var(--ink-3); border-color:var(--line);
+  font-family:var(--ff-mono); font-size:9.5px; font-weight:600; letter-spacing:.08em;
+}
 .badge-soon{ color:var(--ink-2); border-color:var(--line-2); font-family:var(--ff-mono); letter-spacing:.02em; }
 
 /* "In sala" ora: spia rossa da diretta radiofonica. */

@@ -113,7 +113,7 @@ const Detail = (() => {
              stanno in fondo, dopo tutto quello che c'è da sapere. -->
         <section class="d-gestione">
           ${m.lista !== 'visto' ? `<button class="d-sposta" data-act="sposta">
-            ${m.lista === 'cinema' ? '🛋️ Spostalo sul divano'
+            ${m.lista === 'cinema' ? '🛋️ Spostalo fra quelli da vedere'
                                    : '🎟️ Rimettilo al cinema'}
           </button>` : ''}
           <button class="d-elimina" data-act="elimina">🗑 Togli dalla libreria</button>

@@ -57,6 +57,16 @@
   /* Angolo in basso a destra: quando esce. Ce l'hanno tutti i film.
      L'ambra resta riservata all'imminenza, così mantiene un senso. */
   function badgeUscita(m) {
+    /* Su un film già visto la data non serve più: "USCITO" o "GIÀ
+       PASSATO" dicono una cosa che sai. Serve invece sapere se l'hai
+       già giudicato. Le stelle piene lo dicono a colpo d'occhio, e
+       dove non ce ne sono c'è un film che aspetta un voto. */
+    if (m.user.seen) {
+      const v = m.user.myRating;
+      return v
+        ? { testo: '★'.repeat(v), voto: true }
+        : { testo: 'DA VOTARE', davotare: true };
+    }
     // Il popcorn dice già che si può guardare: "uscito" sarebbe una ripetizione.
     if (m.user.pronto && !m.user.seen) return null;
     const g = F.giorniA(m.releaseDate);
@@ -106,7 +116,8 @@
         </span>` : ''}
         ${pronto ? '<span class="poster-pronto"><span class="badge badge-pronto">🍿 PRONTO</span></span>' : ''}
         ${uscita ? `<span class="poster-bottom">
-          <span class="badge ${uscita.live ? 'badge-live' : uscita.hot ? 'badge-hot' : 'badge-soon'}">${
+          <span class="badge ${uscita.voto ? 'badge-mio' : uscita.davotare ? 'badge-davotare'
+            : uscita.live ? 'badge-live' : uscita.hot ? 'badge-hot' : 'badge-soon'}">${
             uscita.live ? '<i class="live-dot"></i>' : ''}${F.esc(uscita.testo)}</span>
         </span>` : ''}
       </button>
@@ -174,7 +185,7 @@
     emptyEl.hidden = films.length > 0;
 
     const cercando = filtro.q.trim().length > 0;
-    const etichetta = { cinema: 'da vedere al cinema', casa: 'da vedere sul divano', seen: 'già visti' };
+    const etichetta = { cinema: 'da vedere al cinema', casa: 'da vedere a casa', seen: 'già visti' };
     countEl.textContent = cercando
       ? `${films.length} ${films.length === 1 ? 'risultato' : 'risultati'} in tutta la libreria`
       : `${films.length} film ${etichetta[filtro.status]} · ${tot} in libreria`;
@@ -191,8 +202,22 @@
     const open = e.target.closest('[data-open]');
     if (open) return Detail.open(open.dataset.open);
 
+    /* Cambiare lista non deve spostare la barra sotto il dito.
+       Anche con l'hero spostato sotto, cambiando lista sopra la barra
+       può muoversi qualcosa (l'avviso delle novità). Segno dov'era la
+       barra prima, ridisegno, e riporto lo scroll dove serve perché
+       resti allo stesso punto dello schermo. */
     const status = e.target.closest('[data-status]');
-    if (status) { filtro.status = status.dataset.status; syncChips('#filter-status', 'status'); return render(); }
+    if (status) {
+      const barra = status.closest('.chips');
+      const prima = barra.getBoundingClientRect().top;
+      filtro.status = status.dataset.status;
+      syncChips('#filter-status', 'status');
+      render();
+      const scarto = barra.getBoundingClientRect().top - prima;
+      if (scarto) window.scrollBy(0, scarto);
+      return;
+    }
 
     const layout = e.target.closest('[data-layout]');
     if (layout) { filtro.layout = layout.dataset.layout; syncChips('#layout', 'layout'); return render(); }

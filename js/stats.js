@@ -391,7 +391,7 @@ const Stats = (() => {
     return blocco('Quel che ti aspetta', `
       <div class="avanti">
         <button class="av" data-vai="cinema"><b>${cinema.length}</b><span>🎟️ al cinema</span></button>
-        <button class="av" data-vai="casa"><b>${casa.length}</b><span>🛋️ sul divano</span></button>
+        <button class="av" data-vai="casa"><b>${casa.length}</b><span>🛋️ da vedere</span></button>
         <div class="av av-statico"><b>${Math.floor(minuti / 60)}h</b><span>già in coda</span></div>
         ${prossimo ? `<button class="av" data-open="${F.esc(prossimo.id)}">
           <b>${F.giorniA(prossimo.releaseDate)}</b><span>giorni al prossimo</span></button>` : ''}
