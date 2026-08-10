@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-09T05:42:28.499Z",
+  "aggiornato": "2026-08-10T06:08:05.765Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -11,8 +11,8 @@
   "segnalazioniPrevendita": [],
   "evidenza": [
     "https://www.badtaste.it/articoli/jurassic-world-perde-pezzi-il-regista-lascia-il-sequel-con-scarlett-johansson-e-ora-che-succede",
-    "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible",
-    "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland"
+    "https://www.badtaste.it/articoli/spider-man-brand-new-day-e-inarrestabile-sfiora-un-record-di-avengers-endgame-e-fa-la-storia-al-box-office",
+    "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible"
   ],
   "gruppi": [
     {
@@ -22,6 +22,14 @@
       "link": [
         "https://movieplayer.it/news/the-batman-3-esiste-solo-fantasia-fan-james-gunn-smentito_170509/",
         "https://www.badtaste.it/articoli/the-batman-2-e-3-saranno-girati-insieme-james-gunn-rompe-il-silenzio-sul-rumor-che-coinvolge-matt-reeves"
+      ]
+    },
+    {
+      "soggetto": "Uncharted",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland"
       ]
     },
     {
@@ -59,21 +67,21 @@
     {
       "soggetto": "Odissea",
       "tipo": "film",
-      "quante": 3,
+      "quante": 4,
       "link": [
         "https://www.badtaste.it/articoli/odissea-john-leguizamo-svela-i-retroscena-della-scena-del-cane-come-christopher-nolan-lha-girata",
-        "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/",
-        "https://www.screenweek.it/odissea-il-ruolo-di-circe-nel-discorso-sulla-violenza-maschile/"
+        "https://www.badtaste.it/articoli/odissea-un-episodio-dei-simpson-di-24-anni-fa-e-tornato-improvvisamente-dattualita-grazie-a-nolan",
+        "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/"
       ]
     },
     {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 12,
+      "quante": 13,
       "link": [
         "https://movieplayer.it/news/spider-man-brand-new-day-record-box-office-italiano-primo-giorno_170389/",
-        "https://www.everyeye.it/notizie/marvel-s-spider-man-2-modificata-skin-brand-new-day-giocatori-non-piaceva-894680.html",
-        "https://fumettologica.it/2026/08/spider-man-migliori-fumetti-personaggio/"
+        "https://www.badtaste.it/articoli/spider-man-brand-new-day-prepara-lo-scontro-con-kingpin-un-dettaglio-nel-film-riaccende-le-speranze",
+        "https://www.badtaste.it/articoli/spider-man-brand-new-day-dietro-la-battaglia-piu-spettacolare-si-nasconde-un-omaggio-agli-x-men"
       ]
     },
     {
@@ -118,6 +126,25 @@
       "evidenza": true
     },
     {
+      "titolo": "Spider-Man: Brand New Day è inarrestabile: sfiora un record di Avengers: Endgame e fa la storia al box office",
+      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-e-inarrestabile-sfiora-un-record-di-avengers-endgame-e-fa-la-storia-al-box-office",
+      "sommario": "Spider-Man: Brand New Day supera 1.5 miliardi di dollari in soli 12 giorni e firma un risultato internazionale, secondo solo ad Avengers: Endgame. Ecco tutti i numeri del weekend appena trascorso.",
+      "data": "2026-08-10T06:00:28.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-10T06:08:05.590Z",
+      "evidenza": true
+    },
+    {
       "titolo": "Su Netflix, il thriller dimenticato del 1993 con Tom Cruise che ha anticipato Mission: Impossible",
       "link": "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible",
       "sommario": "Questo film del 1993 con Tom Cruise è il vero prequel di Mission: Impossible. Scopri come questo thriller legale ha anticipato Ethan Hunt e il franchise di spionaggio.",
@@ -134,25 +161,6 @@
       "rilievo": 11,
       "prevendite": false,
       "vistoIl": "2026-08-07T17:48:54.786Z",
-      "evidenza": true
-    },
-    {
-      "titolo": "Uncharted 2 si farà? Ci sono novità sul sequel cinematografico con Tom Holland",
-      "link": "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland",
-      "sommario": "Dopo quasi 5 anni dall'uscita del primo film, ci sono dei aggiornamenti sul sequel dell'adattamento cinematografico del celebre gioco di Naughty Dog.",
-      "data": "2026-08-07T11:30:10.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Uncharted",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Uncharted",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.829Z",
       "evidenza": true
     },
     {
@@ -199,6 +207,25 @@
       "rilievo": 8,
       "prevendite": false,
       "vistoIl": "2026-08-07T17:48:54.836Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Uncharted 2 si farà? Ci sono novità sul sequel cinematografico con Tom Holland",
+      "link": "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland",
+      "sommario": "Dopo quasi 5 anni dall'uscita del primo film, ci sono dei aggiornamenti sul sequel dell'adattamento cinematografico del celebre gioco di Naughty Dog.",
+      "data": "2026-08-07T11:30:10.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Uncharted",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Uncharted",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.829Z",
       "evidenza": false
     },
     {
@@ -317,6 +344,25 @@
       "evidenza": false
     },
     {
+      "titolo": "Odissea, un episodio dei Simpson di 24 anni fa è tornato improvvisamente d'attualità grazie a Nolan",
+      "link": "https://www.badtaste.it/articoli/odissea-un-episodio-dei-simpson-di-24-anni-fa-e-tornato-improvvisamente-dattualita-grazie-a-nolan",
+      "sommario": "Odissea di Christopher Nolan conquista pubblico e critica, ma I Simpson avevano già raccontato e reinventato il poema di Omero nel 2002.",
+      "data": "2026-08-09T07:45:20.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Odissea",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-10T06:08:05.683Z",
+      "evidenza": false
+    },
+    {
       "titolo": "Odissea: le foto e i video dal set svelano il gigantesco lavoro dietro il kolossal di Christopher Nolan",
       "link": "https://www.screenweek.it/odissea-le-foto-e-i-video-dal-set-svelano-il-gigantesco-lavoro-dietro-il-kolossal-di-christopher-nolan/",
       "sommario": "Dalle monumentali scenografie alle navi costruite per essere realmente utilizzate in mare: le foto e i video condivisi dalla troupe raccontano il gigantesco lavoro dietro The Odyssey di Christopher Nolan.",
@@ -335,24 +381,6 @@
         }
       ],
       "rilievo": 8,
-      "prevendite": false,
-      "evidenza": false
-    },
-    {
-      "titolo": "Odissea: il ruolo di Circe nel discorso sulla violenza maschile",
-      "link": "https://www.screenweek.it/odissea-il-ruolo-di-circe-nel-discorso-sulla-violenza-maschile/",
-      "sommario": "Il film di Christopher Nolan rilegge Circe come una reazione alla violenza maschile, anche grazie alla raffinata interpretazione di Samantha Morton.",
-      "data": "2026-07-24T06:00:34.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "Odissea",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Odissea",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
       "prevendite": false,
       "evidenza": false
     },
@@ -376,11 +404,11 @@
       "evidenza": false
     },
     {
-      "titolo": "Marvel's Spider-Man 2: modificata la skin di Brand New Day, ai giocatori non piaceva",
-      "link": "https://www.everyeye.it/notizie/marvel-s-spider-man-2-modificata-skin-brand-new-day-giocatori-non-piaceva-894680.html",
-      "sommario": "Pare che Insomniac abbia dovuto apportare piccoli cambiamenti al costume di Marvel's Spider-Man 2 a tema Brand New Day. Si sa, i fan Marvel ci tengono particolarmente ai propri beniamini e, nel caso dell'ultimo aggiornamento di Marvel's Spider-Man 2 , hanno es",
-      "data": "2026-08-07T16:48:00.000Z",
-      "fonte": "Everyeye",
+      "titolo": "Spider-Man: Brand New Day prepara lo scontro con Kingpin? Un dettaglio nel film riaccende le speranze",
+      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-prepara-lo-scontro-con-kingpin-un-dettaglio-nel-film-riaccende-le-speranze",
+      "sommario": "Un dettaglio nascosto in Spider-Man: Brand New Day potrebbe preparare l'atteso incontro tra Spider-Man e Kingpin nel futuro del Marvel Cinematic Universe.",
+      "data": "2026-08-09T08:45:11.000Z",
+      "fonte": "BadTaste",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
       "citati": [
@@ -391,15 +419,15 @@
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.868Z",
+      "vistoIl": "2026-08-10T06:08:05.681Z",
       "evidenza": false
     },
     {
-      "titolo": "10 fumetti per capire Spider-Man",
-      "link": "https://fumettologica.it/2026/08/spider-man-migliori-fumetti-personaggio/",
-      "sommario": "Se volete capire davvero Spider-Man, partite da qui. 10 fumetti per capire Spider-Man leggi l’articolo su Fumettologica .",
-      "data": "2026-08-07T09:33:50.000Z",
-      "fonte": "Fumettologica",
+      "titolo": "Spider-Man: Brand New Day, dietro la battaglia più spettacolare si nasconde un omaggio agli X-Men",
+      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-dietro-la-battaglia-piu-spettacolare-si-nasconde-un-omaggio-agli-x-men",
+      "sommario": "Una delle battaglie più spettacolari di Spider-Man: Brand New Day nasconde un riferimento a Jean Grey e alla Fenice che pochi fan avranno notato.",
+      "data": "2026-08-09T07:30:05.000Z",
+      "fonte": "BadTaste",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
       "citati": [
@@ -410,7 +438,7 @@
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.874Z",
+      "vistoIl": "2026-08-10T06:08:05.683Z",
       "evidenza": false
     },
     {
