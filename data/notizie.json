@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-11T05:49:26.667Z",
+  "aggiornato": "2026-08-12T06:09:04.515Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -16,9 +16,17 @@
   ],
   "gruppi": [
     {
+      "soggetto": "Toy Story 5",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.badtaste.it/articoli/toy-story-5-e-pronto-ad-arrivare-in-digitale-ecco-quando-sara-possibile-vederlo-anche-a-casa"
+      ]
+    },
+    {
       "soggetto": "Odissea",
       "tipo": "film",
-      "quante": 5,
+      "quante": 3,
       "link": [
         "https://www.badtaste.it/articoli/odissea-niente-cgi-per-alcune-delle-scene-piu-spettacolari-ecco-come-christopher-nolan-le-ha-realizzate",
         "https://movieplayer.it/news/odissea-nolan-sfida-record-personale-vinto_170537/",
@@ -40,8 +48,8 @@
       "quante": 14,
       "link": [
         "https://www.badtaste.it/articoli/spider-man-brand-new-day-e-inarrestabile-sfiora-un-record-di-avengers-endgame-e-fa-la-storia-al-box-office",
-        "https://movieplayer.it/news/spider-man-brand-new-day-fidanzato-mj-non-e-personaggio-fumetti_170534/",
-        "https://www.badtaste.it/articoli/spider-man-brand-new-day-prepara-lo-scontro-con-kingpin-un-dettaglio-nel-film-riaccende-le-speranze"
+        "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
+        "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/"
       ]
     },
     {
@@ -91,14 +99,6 @@
       "quante": 1,
       "link": [
         "https://www.screenweek.it/insidious-fuori-dallaltrove-il-trailer-finale-del-film/"
-      ]
-    },
-    {
-      "soggetto": "Hokum",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.screenweek.it/una-stanza-chiusa-da-anni-una-strega-e-nessuna-via-duscita-cosa-aspettarsi-da-hokum/"
       ]
     }
   ],
@@ -171,6 +171,25 @@
       "prevendite": false,
       "vistoIl": "2026-08-11T05:49:26.662Z",
       "evidenza": true
+    },
+    {
+      "titolo": "Toy Story 5 è pronto ad arrivare in digitale: ecco quando sarà possibile vederlo anche a casa",
+      "link": "https://www.badtaste.it/articoli/toy-story-5-e-pronto-ad-arrivare-in-digitale-ecco-quando-sara-possibile-vederlo-anche-a-casa",
+      "sommario": "Toy Story 5 si prepara al debutto in digitale: ecco quando arriverà sulle principali piattaforme e quando usciranno le edizioni Blu-ray, 4K e DVD.",
+      "data": "2026-08-12T06:00:10.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Toy Story 5",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Toy Story 5",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-12T06:09:04.342Z",
+      "evidenza": false
     },
     {
       "titolo": "Odissea, niente CGI per alcune delle scene più spettacolari: ecco come Christopher Nolan le ha realizzate",
@@ -291,29 +310,10 @@
       "evidenza": false
     },
     {
-      "titolo": "Spider-Man: Brand New Day, il fidanzato di MJ non è quell'odiatissimo personaggio dei fumetti",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-fidanzato-mj-non-e-personaggio-fumetti_170534/",
-      "sommario": "Il misterioso nuovo compagno di MJ aveva scatenato subito le teorie dei fan, ma Eman Esfandi ha deciso di mettere fine alle speculazioni sul suo personaggio. Spider-Man: Brand New Day ha rimescolato ancora una volta le carte nella vita di Peter Parker, lascian",
-      "data": "2026-08-10T07:00:00.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.605Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Spider-Man: Brand New Day prepara lo scontro con Kingpin? Un dettaglio nel film riaccende le speranze",
-      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-prepara-lo-scontro-con-kingpin-un-dettaglio-nel-film-riaccende-le-speranze",
-      "sommario": "Un dettaglio nascosto in Spider-Man: Brand New Day potrebbe preparare l'atteso incontro tra Spider-Man e Kingpin nel futuro del Marvel Cinematic Universe.",
-      "data": "2026-08-09T08:45:11.000Z",
+      "titolo": "Spider-Man Brand New Day: Rosario Dawson doveva essere nel film, ecco i motivi del taglio",
+      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
+      "sommario": "Gli sceneggiatori di Spider-Man Brand New Day rivelano il motivo dietro il cameo tagliato del personaggio di Claire Temple, interpretata da Rosario Dawson",
+      "data": "2026-08-12T05:45:01.000Z",
       "fonte": "BadTaste",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
@@ -325,7 +325,26 @@
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-10T06:08:05.681Z",
+      "vistoIl": "2026-08-12T06:09:04.404Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day ha corretto un errore di Hulk che il MCU si trascinava da Avengers: Endgame",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/",
+      "sommario": "Con Mark Ruffalo di nuovo al fianco di Tom Holland nell'ultimo capitolo di Spider-Man, il MCU riapre una vecchia ferita per Bruce Banner, rimettendo in gioco un conflitto che sembrava ormai superato. Vedere Hulk - quell'Hulk - accanto all'Arrampicamuri, abbarb",
+      "data": "2026-08-11T10:34:44.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-12T06:09:04.451Z",
       "evidenza": false
     },
     {
@@ -483,24 +502,6 @@
       "rilievo": 11,
       "prevendite": false,
       "vistoIl": "2026-08-07T17:48:54.860Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Una stanza chiusa da anni, una strega e nessuna via d'uscita: cosa aspettarsi da Hokum",
-      "link": "https://www.screenweek.it/una-stanza-chiusa-da-anni-una-strega-e-nessuna-via-duscita-cosa-aspettarsi-da-hokum/",
-      "sommario": "Il nuovo film di Damian McCarthy arriva in uno dei momenti più felici per il cinema horror e conferma l'ascesa di uno degli autori più interessanti del genere.",
-      "data": "2026-07-27T08:31:28.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "Hokum",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Hokum",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
       "evidenza": false
     }
   ]
