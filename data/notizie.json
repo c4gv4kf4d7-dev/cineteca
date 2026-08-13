@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-12T06:09:04.515Z",
+  "aggiornato": "2026-08-13T06:11:25.743Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -11,16 +11,53 @@
   "segnalazioniPrevendita": [],
   "evidenza": [
     "https://www.badtaste.it/articoli/jurassic-world-perde-pezzi-il-regista-lascia-il-sequel-con-scarlett-johansson-e-ora-che-succede",
-    "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
-    "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/"
+    "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
+    "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/"
   ],
   "gruppi": [
     {
       "soggetto": "Toy Story 5",
       "tipo": "film",
+      "quante": 2,
+      "link": [
+        "https://www.badtaste.it/articoli/toy-story-5-svelata-la-scena-eliminata-con-la-toccante-reunion-tra-jessie-ed-emily",
+        "https://www.badtaste.it/articoli/toy-story-5-e-pronto-ad-arrivare-in-digitale-ecco-quando-sara-possibile-vederlo-anche-a-casa"
+      ]
+    },
+    {
+      "soggetto": "Hokum",
+      "tipo": "film",
       "quante": 1,
       "link": [
-        "https://www.badtaste.it/articoli/toy-story-5-e-pronto-ad-arrivare-in-digitale-ecco-quando-sara-possibile-vederlo-anche-a-casa"
+        "https://www.badtaste.it/articoli/hokum-dove-e-stato-girato-le-location-da-brivido-tra-irlanda-e-abu-dhabi"
+      ]
+    },
+    {
+      "soggetto": "La Fine di Oak Street",
+      "tipo": "film",
+      "quante": 3,
+      "link": [
+        "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
+        "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
+        "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/"
+      ]
+    },
+    {
+      "soggetto": "Ryan Gosling",
+      "tipo": "attore",
+      "quante": 1,
+      "link": [
+        "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling"
+      ]
+    },
+    {
+      "soggetto": "Spider-Man: Brand New Day",
+      "tipo": "film",
+      "quante": 12,
+      "link": [
+        "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
+        "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
+        "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/"
       ]
     },
     {
@@ -31,25 +68,6 @@
         "https://www.badtaste.it/articoli/odissea-niente-cgi-per-alcune-delle-scene-piu-spettacolari-ecco-come-christopher-nolan-le-ha-realizzate",
         "https://movieplayer.it/news/odissea-nolan-sfida-record-personale-vinto_170537/",
         "https://www.badtaste.it/articoli/odissea-un-episodio-dei-simpson-di-24-anni-fa-e-tornato-improvvisamente-dattualita-grazie-a-nolan"
-      ]
-    },
-    {
-      "soggetto": "La Fine di Oak Street",
-      "tipo": "film",
-      "quante": 2,
-      "link": [
-        "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
-        "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/"
-      ]
-    },
-    {
-      "soggetto": "Spider-Man: Brand New Day",
-      "tipo": "film",
-      "quante": 14,
-      "link": [
-        "https://www.badtaste.it/articoli/spider-man-brand-new-day-e-inarrestabile-sfiora-un-record-di-avengers-endgame-e-fa-la-storia-al-box-office",
-        "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
-        "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/"
       ]
     },
     {
@@ -83,22 +101,6 @@
       "quante": 1,
       "link": [
         "https://movieplayer.it/news/jurassic-world-rebirth-problema-nuovo-regista-divergenze-creative_170508/"
-      ]
-    },
-    {
-      "soggetto": "Oppenheimer",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.badtaste.it/articoli/oppenheimer-cosa-ce-di-vero-nel-film-di-christopher-nolan-la-storia-reale-del-padre-della-bomba-atomica"
-      ]
-    },
-    {
-      "soggetto": "Insidious: Fuori dall'Altrove",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.screenweek.it/insidious-fuori-dallaltrove-il-trailer-finale-del-film/"
       ]
     }
   ],
@@ -135,6 +137,25 @@
       "evidenza": true
     },
     {
+      "titolo": "Barbie 2 è in piena crisi: il sequel del film da 1,4 miliardi rischia di non vedere mai la luce",
+      "link": "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
+      "sommario": "Barbie 2 è in bilico: Warner Bros. e il team di Greta Gerwig non trovano un accordo e tra pochi mesi i diritti potrebbero tornare a Mattel. Ecco tutti i dettagli del nuovo report!",
+      "data": "2026-08-13T06:00:11.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Barbie",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Barbie",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.576Z",
+      "evidenza": true
+    },
+    {
       "titolo": "Spider-Man: Brand New Day non arresta la corsa al box office e insidia un primato di Star Wars",
       "link": "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
       "sommario": "Il nuovo film con Tom Holland continua a macinare incassi da record, giorno dopo giorno. E nel mirino del cinecomic c'è un primato detenuto da oltre dieci anni da Star Wars. Il ritorno di Spider-Man sul grande schermo sta assumendo dimensioni che pochi avrebbe",
@@ -154,23 +175,23 @@
       "evidenza": true
     },
     {
-      "titolo": "Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa",
-      "link": "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
-      "sommario": "Marvel Comics ha rinviato di due settimane l'uscita di Amazing Spider-Man 1000 per problemi legati alla stampa. Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa leggi l’articolo su Fumettologica .",
-      "data": "2026-08-10T08:09:24.000Z",
-      "fonte": "Fumettologica",
-      "soggetto": "Spider-Man: Brand New Day",
+      "titolo": "Toy Story 5: svelata la scena eliminata con la toccante reunion tra Jessie ed Emily",
+      "link": "https://www.badtaste.it/articoli/toy-story-5-svelata-la-scena-eliminata-con-la-toccante-reunion-tra-jessie-ed-emily",
+      "sommario": "Ecco perché la Pixar ha scelto di tagliare l'emozionante reunion tra Jessie ed Emily in Toy Story 5",
+      "data": "2026-08-12T12:25:43.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Toy Story 5",
       "soggettoTipo": "film",
       "citati": [
         {
-          "nome": "Spider-Man: Brand New Day",
+          "nome": "Toy Story 5",
           "tipo": "film"
         }
       ],
-      "rilievo": 11,
+      "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.662Z",
-      "evidenza": true
+      "vistoIl": "2026-08-13T06:11:25.681Z",
+      "evidenza": false
     },
     {
       "titolo": "Toy Story 5 è pronto ad arrivare in digitale: ecco quando sarà possibile vederlo anche a casa",
@@ -189,6 +210,158 @@
       "rilievo": 7,
       "prevendite": false,
       "vistoIl": "2026-08-12T06:09:04.342Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Hokum, dove è stato girato? Le location da brivido tra Irlanda e Abu Dhabi",
+      "link": "https://www.badtaste.it/articoli/hokum-dove-e-stato-girato-le-location-da-brivido-tra-irlanda-e-abu-dhabi",
+      "sommario": "Un hotel isolato, una leggenda inquietante e i paesaggi selvaggi dell’Irlanda occidentale: in Hokum il territorio diventa presenza viva. Ma dove è stato girato davvero l’horror di Damian McCarthy? Dalle atmosfere di West Cork fino alle dune degli Emirati Arabi",
+      "data": "2026-08-12T11:40:25.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Hokum",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Hokum",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.682Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "La fine di Oak Street è un'avventura divertente che rievoca i film della Amblin",
+      "link": "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
+      "sommario": "David Robert Mitchell resuscita l'horror per famiglie insieme alla Bad Robot, con l'occhio rivolto a Spielberg, Matheson, Bradbury e Ai confini della realtà.",
+      "data": "2026-08-12T07:59:25.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.703Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Dal regista di It Follows alle atmosfere di Cloverfield: Perché La Fine di Oak Street è il thriller dell'estate",
+      "link": "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
+      "sommario": "Il nuovo film di David Robert Mitchell unisce fantascienza, horror e mistero, mentre le teorie su un possibile legame con Cloverfield continuano ad alimentare la curiosità dei fan.",
+      "data": "2026-08-10T07:30:05.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-11T05:49:26.624Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Un quartiere, un evento cosmico, il ritorno all'era preistorica: Cosa aspettarsi da La fine di Oak Street",
+      "link": "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/",
+      "sommario": "Dimenticate Jurassic Park: il nuovo film di David Robert Mitchell usa i dinosauri come punto di partenza per un enigmatico racconto tra fantascienza, horror e mistero.",
+      "data": "2026-08-03T07:00:01.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-07T17:48:54.862Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Crazy, Stupid Love: come Emma Stone ottenne il ruolo di Hannah prendendo in giro Ryan Gosling",
+      "link": "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling",
+      "sommario": "I registi di Crazy, Stupid, Love raccontano come Emma Stone conquistò il ruolo di Hannah rispondendo con ironia a un errore di Ryan Gosling durante il provino. Ecco la storia di un casting leggendario.",
+      "data": "2026-08-12T07:45:07.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.684Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa",
+      "link": "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
+      "sommario": "Marvel Comics ha rinviato di due settimane l'uscita di Amazing Spider-Man 1000 per problemi legati alla stampa. Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa leggi l’articolo su Fumettologica .",
+      "data": "2026-08-10T08:09:24.000Z",
+      "fonte": "Fumettologica",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-11T05:49:26.662Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man Brand New Day: Rosario Dawson doveva essere nel film, ecco i motivi del taglio",
+      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
+      "sommario": "Gli sceneggiatori di Spider-Man Brand New Day rivelano il motivo dietro il cameo tagliato del personaggio di Claire Temple, interpretata da Rosario Dawson",
+      "data": "2026-08-12T05:45:01.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-12T06:09:04.404Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day ha corretto un errore di Hulk che il MCU si trascinava da Avengers: Endgame",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/",
+      "sommario": "Con Mark Ruffalo di nuovo al fianco di Tom Holland nell'ultimo capitolo di Spider-Man, il MCU riapre una vecchia ferita per Bruce Banner, rimettendo in gioco un conflitto che sembrava ormai superato. Vedere Hulk - quell'Hulk - accanto all'Arrampicamuri, abbarb",
+      "data": "2026-08-11T10:34:44.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-12T06:09:04.451Z",
       "evidenza": false
     },
     {
@@ -250,101 +423,6 @@
       "rilievo": 7,
       "prevendite": false,
       "vistoIl": "2026-08-10T06:08:05.683Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Dal regista di It Follows alle atmosfere di Cloverfield: Perché La Fine di Oak Street è il thriller dell'estate",
-      "link": "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
-      "sommario": "Il nuovo film di David Robert Mitchell unisce fantascienza, horror e mistero, mentre le teorie su un possibile legame con Cloverfield continuano ad alimentare la curiosità dei fan.",
-      "data": "2026-08-10T07:30:05.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.624Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Un quartiere, un evento cosmico, il ritorno all'era preistorica: Cosa aspettarsi da La fine di Oak Street",
-      "link": "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/",
-      "sommario": "Dimenticate Jurassic Park: il nuovo film di David Robert Mitchell usa i dinosauri come punto di partenza per un enigmatico racconto tra fantascienza, horror e mistero.",
-      "data": "2026-08-03T07:00:01.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.862Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Spider-Man: Brand New Day è inarrestabile: sfiora un record di Avengers: Endgame e fa la storia al box office",
-      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-e-inarrestabile-sfiora-un-record-di-avengers-endgame-e-fa-la-storia-al-box-office",
-      "sommario": "Spider-Man: Brand New Day supera 1.5 miliardi di dollari in soli 12 giorni e firma un risultato internazionale, secondo solo ad Avengers: Endgame. Ecco tutti i numeri del weekend appena trascorso.",
-      "data": "2026-08-10T06:00:28.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-10T06:08:05.590Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Spider-Man Brand New Day: Rosario Dawson doveva essere nel film, ecco i motivi del taglio",
-      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
-      "sommario": "Gli sceneggiatori di Spider-Man Brand New Day rivelano il motivo dietro il cameo tagliato del personaggio di Claire Temple, interpretata da Rosario Dawson",
-      "data": "2026-08-12T05:45:01.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-12T06:09:04.404Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Spider-Man: Brand New Day ha corretto un errore di Hulk che il MCU si trascinava da Avengers: Endgame",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/",
-      "sommario": "Con Mark Ruffalo di nuovo al fianco di Tom Holland nell'ultimo capitolo di Spider-Man, il MCU riapre una vecchia ferita per Bruce Banner, rimettendo in gioco un conflitto che sembrava ormai superato. Vedere Hulk - quell'Hulk - accanto all'Arrampicamuri, abbarb",
-      "data": "2026-08-11T10:34:44.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-12T06:09:04.451Z",
       "evidenza": false
     },
     {
@@ -460,48 +538,6 @@
       "rilievo": 10,
       "prevendite": false,
       "vistoIl": "2026-08-07T17:48:54.841Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Oppenheimer, cosa c'è di vero nel film di Christopher Nolan? La storia reale del padre della bomba atomica",
-      "link": "https://www.badtaste.it/articoli/oppenheimer-cosa-ce-di-vero-nel-film-di-christopher-nolan-la-storia-reale-del-padre-della-bomba-atomica",
-      "sommario": "Quanto è accurato Oppenheimer di Christopher Nolan? Ecco la vera storia di J. Robert Oppenheimer, del Manhattan Project e dei protagonisti realmente esistiti.",
-      "data": "2026-08-07T07:30:36.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Oppenheimer",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista"
-        },
-        {
-          "nome": "Oppenheimer",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 8,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.836Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Insidious: Fuori dall'Altrove, il trailer finale del film",
-      "link": "https://www.screenweek.it/insidious-fuori-dallaltrove-il-trailer-finale-del-film/",
-      "sommario": "",
-      "data": "2026-08-05T14:15:53.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "Insidious: Fuori dall'Altrove",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Insidious: Fuori dall'Altrove",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.860Z",
       "evidenza": false
     }
   ]
