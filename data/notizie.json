@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-13T06:11:25.743Z",
+  "aggiornato": "2026-08-14T06:08:30.237Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -15,6 +15,33 @@
     "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/"
   ],
   "gruppi": [
+    {
+      "soggetto": "The Whale",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora"
+      ]
+    },
+    {
+      "soggetto": "La Fine di Oak Street",
+      "tipo": "film",
+      "quante": 4,
+      "link": [
+        "https://movieplayer.it/news/la-fine-di-oak-street-rotten-tomatoes-supera-film-jurassic-park_170579/",
+        "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
+        "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/"
+      ]
+    },
+    {
+      "soggetto": "Ryan Gosling",
+      "tipo": "attore",
+      "quante": 2,
+      "link": [
+        "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
+        "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling"
+      ]
+    },
     {
       "soggetto": "Toy Story 5",
       "tipo": "film",
@@ -33,27 +60,9 @@
       ]
     },
     {
-      "soggetto": "La Fine di Oak Street",
-      "tipo": "film",
-      "quante": 3,
-      "link": [
-        "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
-        "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
-        "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/"
-      ]
-    },
-    {
-      "soggetto": "Ryan Gosling",
-      "tipo": "attore",
-      "quante": 1,
-      "link": [
-        "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling"
-      ]
-    },
-    {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 12,
+      "quante": 11,
       "link": [
         "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
         "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
@@ -93,14 +102,6 @@
       "quante": 1,
       "link": [
         "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland"
-      ]
-    },
-    {
-      "soggetto": "Jurassic World - La rinascita",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://movieplayer.it/news/jurassic-world-rebirth-problema-nuovo-regista-divergenze-creative_170508/"
       ]
     }
   ],
@@ -175,6 +176,120 @@
       "evidenza": true
     },
     {
+      "titolo": "Iron Man 3, che fine ha fatto il giovane Harley? Oggi è adulto: dalla Marvel a The Whale, cosa fa ancora",
+      "link": "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora",
+      "sommario": "Era il bambino prodigio che aiutava Tony Stark nel momento più difficile. Sei anni dopo è ricomparso in Avengers: Endgame, ma Ty Simpkins nel frattempo è cresciuto, ha attraversato importanti produzioni cinematografiche e ha continuato a costruire una carriera",
+      "data": "2026-08-14T05:40:45.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "The Whale",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "The Whale",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-14T06:08:30.175Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "La fine di Oak Street su Rotten Tomatoes supera i film di Jurassic Park (tranne uno)",
+      "link": "https://movieplayer.it/news/la-fine-di-oak-street-rotten-tomatoes-supera-film-jurassic-park_170579/",
+      "sommario": "Il nuovo film di David Robert Mitchell con Anne Hathaway e Ewan McGregor debutta con l'84% di recensioni positive e batte quasi tutta la saga dei dinosauri più famosa del cinema. I dinosauri sono tornati sul grande schermo, ma questa volta il marchio Jurassic ",
+      "data": "2026-08-13T11:30:00.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-14T06:08:30.183Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "La fine di Oak Street è un'avventura divertente che rievoca i film della Amblin",
+      "link": "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
+      "sommario": "David Robert Mitchell resuscita l'horror per famiglie insieme alla Bad Robot, con l'occhio rivolto a Spielberg, Matheson, Bradbury e Ai confini della realtà.",
+      "data": "2026-08-12T07:59:25.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.703Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Dal regista di It Follows alle atmosfere di Cloverfield: Perché La Fine di Oak Street è il thriller dell'estate",
+      "link": "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
+      "sommario": "Il nuovo film di David Robert Mitchell unisce fantascienza, horror e mistero, mentre le teorie su un possibile legame con Cloverfield continuano ad alimentare la curiosità dei fan.",
+      "data": "2026-08-10T07:30:05.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-11T05:49:26.624Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Star Wars: Starfighter, il film con Ryan Gosling potrebbe mostrarsi prima di quanto pensiamo",
+      "link": "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
+      "sommario": "Manca pochissimo al D23 e nei progetti Disney sembra esserci anche quello di svelare in anteprima il primo trailer del nuovo film con Ryan Gosling. Ma noi quando potremo vederlo? Il prossimo viaggio cinematografico nella galassia lontana lontana potrebbe final",
+      "data": "2026-08-13T09:46:22.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-14T06:08:30.185Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Crazy, Stupid Love: come Emma Stone ottenne il ruolo di Hannah prendendo in giro Ryan Gosling",
+      "link": "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling",
+      "sommario": "I registi di Crazy, Stupid, Love raccontano come Emma Stone conquistò il ruolo di Hannah rispondendo con ironia a un errore di Ryan Gosling durante il provino. Ecco la storia di un casting leggendario.",
+      "data": "2026-08-12T07:45:07.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.684Z",
+      "evidenza": false
+    },
+    {
       "titolo": "Toy Story 5: svelata la scena eliminata con la toccante reunion tra Jessie ed Emily",
       "link": "https://www.badtaste.it/articoli/toy-story-5-svelata-la-scena-eliminata-con-la-toccante-reunion-tra-jessie-ed-emily",
       "sommario": "Ecco perché la Pixar ha scelto di tagliare l'emozionante reunion tra Jessie ed Emily in Toy Story 5",
@@ -229,82 +344,6 @@
       "rilievo": 7,
       "prevendite": false,
       "vistoIl": "2026-08-13T06:11:25.682Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "La fine di Oak Street è un'avventura divertente che rievoca i film della Amblin",
-      "link": "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
-      "sommario": "David Robert Mitchell resuscita l'horror per famiglie insieme alla Bad Robot, con l'occhio rivolto a Spielberg, Matheson, Bradbury e Ai confini della realtà.",
-      "data": "2026-08-12T07:59:25.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.703Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Dal regista di It Follows alle atmosfere di Cloverfield: Perché La Fine di Oak Street è il thriller dell'estate",
-      "link": "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
-      "sommario": "Il nuovo film di David Robert Mitchell unisce fantascienza, horror e mistero, mentre le teorie su un possibile legame con Cloverfield continuano ad alimentare la curiosità dei fan.",
-      "data": "2026-08-10T07:30:05.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.624Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Un quartiere, un evento cosmico, il ritorno all'era preistorica: Cosa aspettarsi da La fine di Oak Street",
-      "link": "https://www.screenweek.it/un-quartiere-un-evento-cosmico-il-ritorno-allera-preistorica-cosa-aspettarsi-da-la-fine-di-oak-street/",
-      "sommario": "Dimenticate Jurassic Park: il nuovo film di David Robert Mitchell usa i dinosauri come punto di partenza per un enigmatico racconto tra fantascienza, horror e mistero.",
-      "data": "2026-08-03T07:00:01.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.862Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Crazy, Stupid Love: come Emma Stone ottenne il ruolo di Hannah prendendo in giro Ryan Gosling",
-      "link": "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling",
-      "sommario": "I registi di Crazy, Stupid, Love raccontano come Emma Stone conquistò il ruolo di Hannah rispondendo con ironia a un errore di Ryan Gosling durante il provino. Ecco la storia di un casting leggendario.",
-      "data": "2026-08-12T07:45:07.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Ryan Gosling",
-      "soggettoTipo": "attore",
-      "citati": [
-        {
-          "nome": "Ryan Gosling",
-          "tipo": "attore"
-        }
-      ],
-      "rilievo": 3,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.684Z",
       "evidenza": false
     },
     {
@@ -507,37 +546,6 @@
       "rilievo": 11,
       "prevendite": false,
       "vistoIl": "2026-08-07T17:48:54.829Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Jurassic World Rebirth ha un grosso problema: deve trovare un nuovo regista",
-      "link": "https://movieplayer.it/news/jurassic-world-rebirth-problema-nuovo-regista-divergenze-creative_170508/",
-      "sommario": "Gareth Edwards non dirigerà il sequel di Jurassic World Rebirth: secondo fonti vicine alla produzione, il regista avrebbe abbandonato il progetto a causa di divergenze creative con Universal. Il futuro di Jurassic World dovrà fare a meno del regista che aveva ",
-      "data": "2026-08-07T09:30:29.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Jurassic World - La rinascita",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Jurassic World - La rinascita",
-          "tipo": "film"
-        },
-        {
-          "nome": "Jurassic World",
-          "tipo": "film"
-        },
-        {
-          "nome": "Jurassic World – Il regno distrutto",
-          "tipo": "film"
-        },
-        {
-          "nome": "Jurassic World - Il dominio",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 10,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.841Z",
       "evidenza": false
     }
   ]
