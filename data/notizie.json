@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-14T06:08:30.237Z",
+  "aggiornato": "2026-08-15T05:18:59.306Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -10,27 +10,27 @@
   ],
   "segnalazioniPrevendita": [],
   "evidenza": [
-    "https://www.badtaste.it/articoli/jurassic-world-perde-pezzi-il-regista-lascia-il-sequel-con-scarlett-johansson-e-ora-che-succede",
     "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
-    "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/"
+    "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
+    "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/"
   ],
   "gruppi": [
+    {
+      "soggetto": "La Fine di Oak Street",
+      "tipo": "film",
+      "quante": 5,
+      "link": [
+        "https://movieplayer.it/news/la-fine-di-oak-street-finale-spiegato-teoria-scientifica-dinosauri_170593/",
+        "https://movieplayer.it/news/la-fine-di-oak-street-rotten-tomatoes-supera-film-jurassic-park_170579/",
+        "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/"
+      ]
+    },
     {
       "soggetto": "The Whale",
       "tipo": "film",
       "quante": 1,
       "link": [
         "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora"
-      ]
-    },
-    {
-      "soggetto": "La Fine di Oak Street",
-      "tipo": "film",
-      "quante": 4,
-      "link": [
-        "https://movieplayer.it/news/la-fine-di-oak-street-rotten-tomatoes-supera-film-jurassic-park_170579/",
-        "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
-        "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/"
       ]
     },
     {
@@ -62,11 +62,11 @@
     {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 11,
+      "quante": 10,
       "link": [
-        "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
         "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
-        "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/"
+        "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/",
+        "https://www.screenweek.it/spider-man-brand-new-day-risaliamo-alle-origini-delle-ragnatele-organiche/"
       ]
     },
     {
@@ -107,37 +107,6 @@
   ],
   "notizie": [
     {
-      "titolo": "Jurassic World perde pezzi: il regista lascia il sequel con Scarlett Johansson, e ora che succede?",
-      "link": "https://www.badtaste.it/articoli/jurassic-world-perde-pezzi-il-regista-lascia-il-sequel-con-scarlett-johansson-e-ora-che-succede",
-      "sommario": "Gareth Edward ha deciso di lasciare la regia del sequel di Jurassic World: La rinascita, capitolo della celebre saga con Scarlett Johanson campione al botteghino nel 2025.",
-      "data": "2026-08-07T11:04:18.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Jurassic World - La rinascita",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Jurassic World - La rinascita",
-          "tipo": "film"
-        },
-        {
-          "nome": "Jurassic World",
-          "tipo": "film"
-        },
-        {
-          "nome": "Jurassic World – Il regno distrutto",
-          "tipo": "film"
-        },
-        {
-          "nome": "Jurassic World - Il dominio",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 14,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.834Z",
-      "evidenza": true
-    },
-    {
       "titolo": "Barbie 2 è in piena crisi: il sequel del film da 1,4 miliardi rischia di non vedere mai la luce",
       "link": "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
       "sommario": "Barbie 2 è in bilico: Warner Bros. e il team di Greta Gerwig non trovano un accordo e tra pochi mesi i diritti potrebbero tornare a Mattel. Ecco tutti i dettagli del nuovo report!",
@@ -176,22 +145,41 @@
       "evidenza": true
     },
     {
-      "titolo": "Iron Man 3, che fine ha fatto il giovane Harley? Oggi è adulto: dalla Marvel a The Whale, cosa fa ancora",
-      "link": "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora",
-      "sommario": "Era il bambino prodigio che aiutava Tony Stark nel momento più difficile. Sei anni dopo è ricomparso in Avengers: Endgame, ma Ty Simpkins nel frattempo è cresciuto, ha attraversato importanti produzioni cinematografiche e ha continuato a costruire una carriera",
-      "data": "2026-08-14T05:40:45.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "The Whale",
+      "titolo": "Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa",
+      "link": "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
+      "sommario": "Marvel Comics ha rinviato di due settimane l'uscita di Amazing Spider-Man 1000 per problemi legati alla stampa. Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa leggi l’articolo su Fumettologica .",
+      "data": "2026-08-10T08:09:24.000Z",
+      "fonte": "Fumettologica",
+      "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
       "citati": [
         {
-          "nome": "The Whale",
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-11T05:49:26.662Z",
+      "evidenza": true
+    },
+    {
+      "titolo": "La fine di Oak Street: il finale si basa su una teoria scientifica che (incredibilmente) esiste davvero",
+      "link": "https://movieplayer.it/news/la-fine-di-oak-street-finale-spiegato-teoria-scientifica-dinosauri_170593/",
+      "sommario": "La spiegazione del finale de La fine di Oak Street passa dai 'wormhole', un'ipotesi della fisica teorica resa celebre da Carl Sagan e trasformata dal film nella chiave per spiegare l'arrivo dei dinosauri nel 1982 I dinosauri al cinema non sono certo una novità",
+      "data": "2026-08-14T15:20:04.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
           "tipo": "film"
         }
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-14T06:08:30.175Z",
+      "vistoIl": "2026-08-15T05:18:59.257Z",
       "evidenza": false
     },
     {
@@ -233,22 +221,22 @@
       "evidenza": false
     },
     {
-      "titolo": "Dal regista di It Follows alle atmosfere di Cloverfield: Perché La Fine di Oak Street è il thriller dell'estate",
-      "link": "https://www.screenweek.it/dal-regista-di-it-follows-alle-atmosfere-di-cloverfield-perche-la-fine-di-oak-street-e-il-thriller-dellestate/",
-      "sommario": "Il nuovo film di David Robert Mitchell unisce fantascienza, horror e mistero, mentre le teorie su un possibile legame con Cloverfield continuano ad alimentare la curiosità dei fan.",
-      "data": "2026-08-10T07:30:05.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "La Fine di Oak Street",
+      "titolo": "Iron Man 3, che fine ha fatto il giovane Harley? Oggi è adulto: dalla Marvel a The Whale, cosa fa ancora",
+      "link": "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora",
+      "sommario": "Era il bambino prodigio che aiutava Tony Stark nel momento più difficile. Sei anni dopo è ricomparso in Avengers: Endgame, ma Ty Simpkins nel frattempo è cresciuto, ha attraversato importanti produzioni cinematografiche e ha continuato a costruire una carriera",
+      "data": "2026-08-14T05:40:45.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "The Whale",
       "soggettoTipo": "film",
       "citati": [
         {
-          "nome": "La Fine di Oak Street",
+          "nome": "The Whale",
           "tipo": "film"
         }
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.624Z",
+      "vistoIl": "2026-08-14T06:08:30.175Z",
       "evidenza": false
     },
     {
@@ -347,25 +335,6 @@
       "evidenza": false
     },
     {
-      "titolo": "Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa",
-      "link": "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
-      "sommario": "Marvel Comics ha rinviato di due settimane l'uscita di Amazing Spider-Man 1000 per problemi legati alla stampa. Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa leggi l’articolo su Fumettologica .",
-      "data": "2026-08-10T08:09:24.000Z",
-      "fonte": "Fumettologica",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.662Z",
-      "evidenza": false
-    },
-    {
       "titolo": "Spider-Man Brand New Day: Rosario Dawson doveva essere nel film, ecco i motivi del taglio",
       "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
       "sommario": "Gli sceneggiatori di Spider-Man Brand New Day rivelano il motivo dietro il cameo tagliato del personaggio di Claire Temple, interpretata da Rosario Dawson",
@@ -401,6 +370,25 @@
       "rilievo": 7,
       "prevendite": false,
       "vistoIl": "2026-08-12T06:09:04.451Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day, risaliamo alle origini delle ragnatele organiche",
+      "link": "https://www.screenweek.it/spider-man-brand-new-day-risaliamo-alle-origini-delle-ragnatele-organiche/",
+      "sommario": "Ora che possiede le ragnatele organiche, lo Spidey di Tom Holland si aggiunge a una lista di varianti ragnesche dotate di questa capacità.",
+      "data": "2026-08-05T04:49:11.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-15T05:18:59.275Z",
       "evidenza": false
     },
     {
