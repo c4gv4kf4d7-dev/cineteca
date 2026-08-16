@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-15T05:18:59.306Z",
+  "aggiornato": "2026-08-16T05:21:36.138Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -16,6 +16,16 @@
   ],
   "gruppi": [
     {
+      "soggetto": "Ryan Gosling",
+      "tipo": "attore",
+      "quante": 3,
+      "link": [
+        "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
+        "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
+        "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling"
+      ]
+    },
+    {
       "soggetto": "La Fine di Oak Street",
       "tipo": "film",
       "quante": 5,
@@ -31,15 +41,6 @@
       "quante": 1,
       "link": [
         "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora"
-      ]
-    },
-    {
-      "soggetto": "Ryan Gosling",
-      "tipo": "attore",
-      "quante": 2,
-      "link": [
-        "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
-        "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling"
       ]
     },
     {
@@ -164,6 +165,63 @@
       "evidenza": true
     },
     {
+      "titolo": "Data di uscita per Ahsoka 2 e nuovi dettagli su Ryan Gosling in Starfighter: gli annunci di Star Wars al D23",
+      "link": "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
+      "sommario": "Ahsoka 2 ecco quando debutta la seconda stagione. Trailer ufficiale: Anakin torna, Thrawn dichiara guerra e nuove battaglie epiche. Tutti i dettagli sulla seconda stagione.",
+      "data": "2026-08-15T12:09:04.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-16T05:21:36.079Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Star Wars: Starfighter, il film con Ryan Gosling potrebbe mostrarsi prima di quanto pensiamo",
+      "link": "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
+      "sommario": "Manca pochissimo al D23 e nei progetti Disney sembra esserci anche quello di svelare in anteprima il primo trailer del nuovo film con Ryan Gosling. Ma noi quando potremo vederlo? Il prossimo viaggio cinematografico nella galassia lontana lontana potrebbe final",
+      "data": "2026-08-13T09:46:22.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-14T06:08:30.185Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Crazy, Stupid Love: come Emma Stone ottenne il ruolo di Hannah prendendo in giro Ryan Gosling",
+      "link": "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling",
+      "sommario": "I registi di Crazy, Stupid, Love raccontano come Emma Stone conquistò il ruolo di Hannah rispondendo con ironia a un errore di Ryan Gosling durante il provino. Ecco la storia di un casting leggendario.",
+      "data": "2026-08-12T07:45:07.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.684Z",
+      "evidenza": false
+    },
+    {
       "titolo": "La fine di Oak Street: il finale si basa su una teoria scientifica che (incredibilmente) esiste davvero",
       "link": "https://movieplayer.it/news/la-fine-di-oak-street-finale-spiegato-teoria-scientifica-dinosauri_170593/",
       "sommario": "La spiegazione del finale de La fine di Oak Street passa dai 'wormhole', un'ipotesi della fisica teorica resa celebre da Carl Sagan e trasformata dal film nella chiave per spiegare l'arrivo dei dinosauri nel 1982 I dinosauri al cinema non sono certo una novità",
@@ -237,44 +295,6 @@
       "rilievo": 7,
       "prevendite": false,
       "vistoIl": "2026-08-14T06:08:30.175Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Star Wars: Starfighter, il film con Ryan Gosling potrebbe mostrarsi prima di quanto pensiamo",
-      "link": "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
-      "sommario": "Manca pochissimo al D23 e nei progetti Disney sembra esserci anche quello di svelare in anteprima il primo trailer del nuovo film con Ryan Gosling. Ma noi quando potremo vederlo? Il prossimo viaggio cinematografico nella galassia lontana lontana potrebbe final",
-      "data": "2026-08-13T09:46:22.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Ryan Gosling",
-      "soggettoTipo": "attore",
-      "citati": [
-        {
-          "nome": "Ryan Gosling",
-          "tipo": "attore"
-        }
-      ],
-      "rilievo": 3,
-      "prevendite": false,
-      "vistoIl": "2026-08-14T06:08:30.185Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Crazy, Stupid Love: come Emma Stone ottenne il ruolo di Hannah prendendo in giro Ryan Gosling",
-      "link": "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling",
-      "sommario": "I registi di Crazy, Stupid, Love raccontano come Emma Stone conquistò il ruolo di Hannah rispondendo con ironia a un errore di Ryan Gosling durante il provino. Ecco la storia di un casting leggendario.",
-      "data": "2026-08-12T07:45:07.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Ryan Gosling",
-      "soggettoTipo": "attore",
-      "citati": [
-        {
-          "nome": "Ryan Gosling",
-          "tipo": "attore"
-        }
-      ],
-      "rilievo": 3,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.684Z",
       "evidenza": false
     },
     {
