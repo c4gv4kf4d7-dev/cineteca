@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-16T05:21:36.138Z",
+  "aggiornato": "2026-08-17T05:28:38.085Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -10,9 +10,9 @@
   ],
   "segnalazioniPrevendita": [],
   "evidenza": [
+    "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
     "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
-    "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
-    "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/"
+    "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/"
   ],
   "gruppi": [
     {
@@ -63,11 +63,11 @@
     {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 10,
+      "quante": 13,
       "link": [
-        "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
-        "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/",
-        "https://www.screenweek.it/spider-man-brand-new-day-risaliamo-alle-origini-delle-ragnatele-organiche/"
+        "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
+        "https://www.badtaste.it/articoli/spider-man-brand-new-day-lattore-di-ned-spiega-il-significato-di-quella-scena",
+        "https://www.badtaste.it/articoli/sadie-sink-uccide-nel-nuovo-spider-man-gli-sceneggiatori-rispondono-alle-teorie"
       ]
     },
     {
@@ -108,6 +108,25 @@
   ],
   "notizie": [
     {
+      "titolo": "The End of Oak Street parte male al box office: per Anne Hathaway è tra i peggiori debutti della sua carriera",
+      "link": "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
+      "sommario": "The End of Oak Street delude al debutto al box office americano: il film con Anne Hathaway ed Ewan McGregor rischia uno dei peggiori esordi della carriera dell'attrice.",
+      "data": "2026-08-16T06:30:57.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "The End of Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "The End of Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-17T05:28:38.039Z",
+      "evidenza": true
+    },
+    {
       "titolo": "Barbie 2 è in piena crisi: il sequel del film da 1,4 miliardi rischia di non vedere mai la luce",
       "link": "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
       "sommario": "Barbie 2 è in bilico: Warner Bros. e il team di Greta Gerwig non trovano un accordo e tra pochi mesi i diritti potrebbero tornare a Mattel. Ecco tutti i dettagli del nuovo report!",
@@ -143,25 +162,6 @@
       "rilievo": 11,
       "prevendite": false,
       "vistoIl": "2026-08-11T05:49:26.602Z",
-      "evidenza": true
-    },
-    {
-      "titolo": "Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa",
-      "link": "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
-      "sommario": "Marvel Comics ha rinviato di due settimane l'uscita di Amazing Spider-Man 1000 per problemi legati alla stampa. Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa leggi l’articolo su Fumettologica .",
-      "data": "2026-08-10T08:09:24.000Z",
-      "fonte": "Fumettologica",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.662Z",
       "evidenza": true
     },
     {
@@ -355,10 +355,29 @@
       "evidenza": false
     },
     {
-      "titolo": "Spider-Man Brand New Day: Rosario Dawson doveva essere nel film, ecco i motivi del taglio",
-      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-rosario-dawson-doveva-essere-nel-film-ecco-i-motivi-del-taglio",
-      "sommario": "Gli sceneggiatori di Spider-Man Brand New Day rivelano il motivo dietro il cameo tagliato del personaggio di Claire Temple, interpretata da Rosario Dawson",
-      "data": "2026-08-12T05:45:01.000Z",
+      "titolo": "Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa",
+      "link": "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
+      "sommario": "Marvel Comics ha rinviato di due settimane l'uscita di Amazing Spider-Man 1000 per problemi legati alla stampa. Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa leggi l’articolo su Fumettologica .",
+      "data": "2026-08-10T08:09:24.000Z",
+      "fonte": "Fumettologica",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-11T05:49:26.662Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day, l'attore di Ned spiega il significato di QUELLA scena",
+      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-lattore-di-ned-spiega-il-significato-di-quella-scena",
+      "sommario": "Il finale di Spider-Man: Brand New Day lascia sperare nel ritorno dei ricordi di Ned: Jacob Batalon commenta la scena con Peter e la misteriosa stretta di mano.",
+      "data": "2026-08-16T08:00:19.000Z",
       "fonte": "BadTaste",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
@@ -370,15 +389,15 @@
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-12T06:09:04.404Z",
+      "vistoIl": "2026-08-17T05:28:38.037Z",
       "evidenza": false
     },
     {
-      "titolo": "Spider-Man: Brand New Day ha corretto un errore di Hulk che il MCU si trascinava da Avengers: Endgame",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-corretto-errore-hulk-mcu-avengers-endgame_170548/",
-      "sommario": "Con Mark Ruffalo di nuovo al fianco di Tom Holland nell'ultimo capitolo di Spider-Man, il MCU riapre una vecchia ferita per Bruce Banner, rimettendo in gioco un conflitto che sembrava ormai superato. Vedere Hulk - quell'Hulk - accanto all'Arrampicamuri, abbarb",
-      "data": "2026-08-11T10:34:44.000Z",
-      "fonte": "MoviePlayer",
+      "titolo": "Sadie Sink uccide nel nuovo Spider-Man? Gli sceneggiatori rispondono alle teorie",
+      "link": "https://www.badtaste.it/articoli/sadie-sink-uccide-nel-nuovo-spider-man-gli-sceneggiatori-rispondono-alle-teorie",
+      "sommario": "Jean Grey ha seminato il caos in Spider-Man: Brand New Day, ma ha davvero ucciso qualcuno? Gli sceneggiatori chiariscono un dettaglio fondamentale del film.",
+      "data": "2026-08-16T06:00:03.000Z",
+      "fonte": "BadTaste",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
       "citati": [
@@ -389,26 +408,7 @@
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-12T06:09:04.451Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Spider-Man: Brand New Day, risaliamo alle origini delle ragnatele organiche",
-      "link": "https://www.screenweek.it/spider-man-brand-new-day-risaliamo-alle-origini-delle-ragnatele-organiche/",
-      "sommario": "Ora che possiede le ragnatele organiche, lo Spidey di Tom Holland si aggiunge a una lista di varianti ragnesche dotate di questa capacità.",
-      "data": "2026-08-05T04:49:11.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-15T05:18:59.275Z",
+      "vistoIl": "2026-08-17T05:28:38.039Z",
       "evidenza": false
     },
     {
