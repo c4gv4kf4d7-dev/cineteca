@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-17T05:28:38.085Z",
+  "aggiornato": "2026-08-18T05:22:02.681Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -10,11 +10,21 @@
   ],
   "segnalazioniPrevendita": [],
   "evidenza": [
+    "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto",
     "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
-    "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
-    "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/"
+    "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce"
   ],
   "gruppi": [
+    {
+      "soggetto": "La Fine di Oak Street",
+      "tipo": "film",
+      "quante": 7,
+      "link": [
+        "https://www.badtaste.it/recensioni/la-fine-di-oak-street-la-recensione-cosa-resta-dei-blockbuster",
+        "https://movieplayer.it/news/fine-oak-street-anne-hathaway-ewan-mcgregor-finale-cambiato_170618/",
+        "https://movieplayer.it/news/la-fine-di-oak-street-finale-spiegato-teoria-scientifica-dinosauri_170593/"
+      ]
+    },
     {
       "soggetto": "Ryan Gosling",
       "tipo": "attore",
@@ -23,16 +33,6 @@
         "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
         "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
         "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling"
-      ]
-    },
-    {
-      "soggetto": "La Fine di Oak Street",
-      "tipo": "film",
-      "quante": 5,
-      "link": [
-        "https://movieplayer.it/news/la-fine-di-oak-street-finale-spiegato-teoria-scientifica-dinosauri_170593/",
-        "https://movieplayer.it/news/la-fine-di-oak-street-rotten-tomatoes-supera-film-jurassic-park_170579/",
-        "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/"
       ]
     },
     {
@@ -63,11 +63,11 @@
     {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 13,
+      "quante": 15,
       "link": [
-        "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
-        "https://www.badtaste.it/articoli/spider-man-brand-new-day-lattore-di-ned-spiega-il-significato-di-quella-scena",
-        "https://www.badtaste.it/articoli/sadie-sink-uccide-nel-nuovo-spider-man-gli-sceneggiatori-rispondono-alle-teorie"
+        "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
+        "https://fumettologica.it/2026/08/spider-man-brand-new-day-costume-film-marvel/",
+        "https://movieplayer.it/news/spider-man-brand-new-day-2-miliardi-box-office-sette-film-storia_170626/"
       ]
     },
     {
@@ -108,6 +108,29 @@
   ],
   "notizie": [
     {
+      "titolo": "Odissea torna in vetta al box office italiano: il kolossal di Nolan supera Spider-Man a Ferragosto",
+      "link": "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto",
+      "sommario": "Odissea di Christopher Nolan riconquista la vetta del box office italiano a Ferragosto, superando Spider-Man: Brand New Day dopo due settimane.",
+      "data": "2026-08-17T08:00:46.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Odissea",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film"
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 12,
+      "prevendite": false,
+      "vistoIl": "2026-08-18T05:22:02.620Z",
+      "evidenza": true
+    },
+    {
       "titolo": "The End of Oak Street parte male al box office: per Anne Hathaway è tra i peggiori debutti della sua carriera",
       "link": "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
       "sommario": "The End of Oak Street delude al debutto al box office americano: il film con Anne Hathaway ed Ewan McGregor rischia uno dei peggiori esordi della carriera dell'attrice.",
@@ -146,23 +169,61 @@
       "evidenza": true
     },
     {
-      "titolo": "Spider-Man: Brand New Day non arresta la corsa al box office e insidia un primato di Star Wars",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
-      "sommario": "Il nuovo film con Tom Holland continua a macinare incassi da record, giorno dopo giorno. E nel mirino del cinecomic c'è un primato detenuto da oltre dieci anni da Star Wars. Il ritorno di Spider-Man sul grande schermo sta assumendo dimensioni che pochi avrebbe",
-      "data": "2026-08-10T13:00:00.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Spider-Man: Brand New Day",
+      "titolo": "La fine di Oak Street, la recensione: cosa resta dei blockbuster",
+      "link": "https://www.badtaste.it/recensioni/la-fine-di-oak-street-la-recensione-cosa-resta-dei-blockbuster",
+      "sommario": "Il nuovo, atteso film di David Robert Mithcell è un progetto ambizioso e sulla carta a dir poco intrigante: un blockbuster folle e paradossale sulla crisi, forse soffocato dalla troppa nostalgia.",
+      "data": "2026-08-17T11:06:37.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "La Fine di Oak Street",
       "soggettoTipo": "film",
       "citati": [
         {
-          "nome": "Spider-Man: Brand New Day",
+          "nome": "La Fine di Oak Street",
           "tipo": "film"
         }
       ],
-      "rilievo": 11,
+      "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.602Z",
-      "evidenza": true
+      "vistoIl": "2026-08-18T05:22:02.618Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "La fine di Oak Street, Anne Hathaway ed Ewan McGregor spiegano il finale cambiato: \"Non riuscivo a capire\"",
+      "link": "https://movieplayer.it/news/fine-oak-street-anne-hathaway-ewan-mcgregor-finale-cambiato_170618/",
+      "sommario": "Anne Hathaway ed Ewan McGregor hanno raccontato alcuni retroscena di La fine di Oak Street, il nuovo film di David Robert Mitchell. I due attori hanno parlato del finale, modificato poco prima dell'inizio delle riprese con un cambiamento che ha trasformato il ",
+      "data": "2026-08-17T10:00:46.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-18T05:22:02.629Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "La fine di Oak Street: il finale si basa su una teoria scientifica che (incredibilmente) esiste davvero",
+      "link": "https://movieplayer.it/news/la-fine-di-oak-street-finale-spiegato-teoria-scientifica-dinosauri_170593/",
+      "sommario": "La spiegazione del finale de La fine di Oak Street passa dai 'wormhole', un'ipotesi della fisica teorica resa celebre da Carl Sagan e trasformata dal film nella chiave per spiegare l'arrivo dei dinosauri nel 1982 I dinosauri al cinema non sono certo una novità",
+      "data": "2026-08-14T15:20:04.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "La Fine di Oak Street",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La Fine di Oak Street",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-15T05:18:59.257Z",
+      "evidenza": false
     },
     {
       "titolo": "Data di uscita per Ahsoka 2 e nuovi dettagli su Ryan Gosling in Starfighter: gli annunci di Star Wars al D23",
@@ -219,63 +280,6 @@
       "rilievo": 3,
       "prevendite": false,
       "vistoIl": "2026-08-13T06:11:25.684Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "La fine di Oak Street: il finale si basa su una teoria scientifica che (incredibilmente) esiste davvero",
-      "link": "https://movieplayer.it/news/la-fine-di-oak-street-finale-spiegato-teoria-scientifica-dinosauri_170593/",
-      "sommario": "La spiegazione del finale de La fine di Oak Street passa dai 'wormhole', un'ipotesi della fisica teorica resa celebre da Carl Sagan e trasformata dal film nella chiave per spiegare l'arrivo dei dinosauri nel 1982 I dinosauri al cinema non sono certo una novità",
-      "data": "2026-08-14T15:20:04.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-15T05:18:59.257Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "La fine di Oak Street su Rotten Tomatoes supera i film di Jurassic Park (tranne uno)",
-      "link": "https://movieplayer.it/news/la-fine-di-oak-street-rotten-tomatoes-supera-film-jurassic-park_170579/",
-      "sommario": "Il nuovo film di David Robert Mitchell con Anne Hathaway e Ewan McGregor debutta con l'84% di recensioni positive e batte quasi tutta la saga dei dinosauri più famosa del cinema. I dinosauri sono tornati sul grande schermo, ma questa volta il marchio Jurassic ",
-      "data": "2026-08-13T11:30:00.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-14T06:08:30.183Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "La fine di Oak Street è un'avventura divertente che rievoca i film della Amblin",
-      "link": "https://www.screenweek.it/la-fine-di-oak-street-e-unavventura-divertente-che-rievoca-i-film-della-amblin/",
-      "sommario": "David Robert Mitchell resuscita l'horror per famiglie insieme alla Bad Robot, con l'occhio rivolto a Spielberg, Matheson, Bradbury e Ai confini della realtà.",
-      "data": "2026-08-12T07:59:25.000Z",
-      "fonte": "ScreenWeek",
-      "soggetto": "La Fine di Oak Street",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "La Fine di Oak Street",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.703Z",
       "evidenza": false
     },
     {
@@ -355,11 +359,11 @@
       "evidenza": false
     },
     {
-      "titolo": "Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa",
-      "link": "https://fumettologica.it/2026/08/amazing-spider-man-1000-rinviato/",
-      "sommario": "Marvel Comics ha rinviato di due settimane l'uscita di Amazing Spider-Man 1000 per problemi legati alla stampa. Marvel ha rinviato Amazing Spider-Man 1000 per problemi di stampa leggi l’articolo su Fumettologica .",
-      "data": "2026-08-10T08:09:24.000Z",
-      "fonte": "Fumettologica",
+      "titolo": "Spider-Man: Brand New Day non arresta la corsa al box office e insidia un primato di Star Wars",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
+      "sommario": "Il nuovo film con Tom Holland continua a macinare incassi da record, giorno dopo giorno. E nel mirino del cinecomic c'è un primato detenuto da oltre dieci anni da Star Wars. Il ritorno di Spider-Man sul grande schermo sta assumendo dimensioni che pochi avrebbe",
+      "data": "2026-08-10T13:00:00.000Z",
+      "fonte": "MoviePlayer",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
       "citati": [
@@ -370,15 +374,15 @@
       ],
       "rilievo": 11,
       "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.662Z",
+      "vistoIl": "2026-08-11T05:49:26.602Z",
       "evidenza": false
     },
     {
-      "titolo": "Spider-Man: Brand New Day, l'attore di Ned spiega il significato di QUELLA scena",
-      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-lattore-di-ned-spiega-il-significato-di-quella-scena",
-      "sommario": "Il finale di Spider-Man: Brand New Day lascia sperare nel ritorno dei ricordi di Ned: Jacob Batalon commenta la scena con Peter e la misteriosa stretta di mano.",
-      "data": "2026-08-16T08:00:19.000Z",
-      "fonte": "BadTaste",
+      "titolo": "Una delle cose migliori di Spider-Man: Brand New Day è anche uno dei suoi problemi più grandi",
+      "link": "https://fumettologica.it/2026/08/spider-man-brand-new-day-costume-film-marvel/",
+      "sommario": "Il costume indossato da Tom Holland in Spider-Man: Brand New Day è uno dei punti di forza del film, ma anche uno dei suoi limiti più grandi. Una delle cose migliori di Spider-Man: Brand New Day è anche uno dei suoi problemi più grandi leggi l’articolo su Fumet",
+      "data": "2026-08-18T05:00:00.000Z",
+      "fonte": "Fumettologica",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
       "citati": [
@@ -389,15 +393,15 @@
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-17T05:28:38.037Z",
+      "vistoIl": "2026-08-18T05:22:02.669Z",
       "evidenza": false
     },
     {
-      "titolo": "Sadie Sink uccide nel nuovo Spider-Man? Gli sceneggiatori rispondono alle teorie",
-      "link": "https://www.badtaste.it/articoli/sadie-sink-uccide-nel-nuovo-spider-man-gli-sceneggiatori-rispondono-alle-teorie",
-      "sommario": "Jean Grey ha seminato il caos in Spider-Man: Brand New Day, ma ha davvero ucciso qualcuno? Gli sceneggiatori chiariscono un dettaglio fondamentale del film.",
-      "data": "2026-08-16T06:00:03.000Z",
-      "fonte": "BadTaste",
+      "titolo": "Spider-Man: Brand New Day supera i 2 miliardi: solo sette film nella storia ci sono riusciti",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-2-miliardi-box-office-sette-film-storia_170626/",
+      "sommario": "Il film con Tom Holland ha superato quota 2 miliardi di dollari in appena tre weekend, ed è il secondo titolo più veloce di sempre a superare la soglia alle spalle di Avengers: Endgame Quel fenomeno di Spider-Man: Brand New Day ha raggiunto quota 2,022 miliard",
+      "data": "2026-08-17T10:43:06.000Z",
+      "fonte": "MoviePlayer",
       "soggetto": "Spider-Man: Brand New Day",
       "soggettoTipo": "film",
       "citati": [
@@ -408,7 +412,7 @@
       ],
       "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-17T05:28:38.039Z",
+      "vistoIl": "2026-08-18T05:22:02.628Z",
       "evidenza": false
     },
     {
