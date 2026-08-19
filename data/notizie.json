@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-18T05:22:02.681Z",
+  "aggiornato": "2026-08-19T05:22:24.278Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -10,15 +10,25 @@
   ],
   "segnalazioniPrevendita": [],
   "evidenza": [
-    "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto",
-    "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
-    "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce"
+    "https://movieplayer.it/news/avengers-doomsday-dune-3-record-piu-spider-man-preparatevi-dunesday_170640/",
+    "https://movieplayer.it/news/dune-3-denis-villeneuve-rassicura-fan-dopo-assalto-prevendite_170635/",
+    "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto"
   ],
   "gruppi": [
     {
+      "soggetto": "Ryan Gosling",
+      "tipo": "attore",
+      "quante": 4,
+      "link": [
+        "https://movieplayer.it/news/ghost-rider-ryan-gosling-data-uscita-2028-anno-marvel-tre-film-cinema_170634/",
+        "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
+        "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/"
+      ]
+    },
+    {
       "soggetto": "La Fine di Oak Street",
       "tipo": "film",
-      "quante": 7,
+      "quante": 6,
       "link": [
         "https://www.badtaste.it/recensioni/la-fine-di-oak-street-la-recensione-cosa-resta-dei-blockbuster",
         "https://movieplayer.it/news/fine-oak-street-anne-hathaway-ewan-mcgregor-finale-cambiato_170618/",
@@ -26,13 +36,11 @@
       ]
     },
     {
-      "soggetto": "Ryan Gosling",
-      "tipo": "attore",
-      "quante": 3,
+      "soggetto": "The End of Oak Street",
+      "tipo": "film",
+      "quante": 1,
       "link": [
-        "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
-        "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
-        "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling"
+        "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera"
       ]
     },
     {
@@ -41,6 +49,14 @@
       "quante": 1,
       "link": [
         "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora"
+      ]
+    },
+    {
+      "soggetto": "Barbie",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce"
       ]
     },
     {
@@ -63,7 +79,7 @@
     {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 15,
+      "quante": 8,
       "link": [
         "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
         "https://fumettologica.it/2026/08/spider-man-brand-new-day-costume-film-marvel/",
@@ -87,26 +103,47 @@
       "link": [
         "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible"
       ]
-    },
-    {
-      "soggetto": "The Batman: Part II",
-      "tipo": "film",
-      "quante": 2,
-      "link": [
-        "https://movieplayer.it/news/the-batman-3-esiste-solo-fantasia-fan-james-gunn-smentito_170509/",
-        "https://www.badtaste.it/articoli/the-batman-2-e-3-saranno-girati-insieme-james-gunn-rompe-il-silenzio-sul-rumor-che-coinvolge-matt-reeves"
-      ]
-    },
-    {
-      "soggetto": "Uncharted",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland"
-      ]
     }
   ],
   "notizie": [
+    {
+      "titolo": "Avengers: Doomsday ha già superato un record di Spider-Man: Brand New Day al botteghino",
+      "link": "https://movieplayer.it/news/avengers-doomsday-dune-3-record-piu-spider-man-preparatevi-dunesday_170640/",
+      "sommario": "Le prevendite di Avengers: Doomsday stanno viaggiando a un ritmo superiore rispetto a Spider-Man: Brand New Day, mentre i biglietti IMAX 70mm di Dune: Parte Tre registrano già numerosi sold out. Per gli analisti il Natale 2026 potrebbe trasformarsi in uno degl",
+      "data": "2026-08-18T14:00:24.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 13,
+      "prevendite": true,
+      "vistoIl": "2026-08-19T05:22:24.229Z",
+      "evidenza": true
+    },
+    {
+      "titolo": "Dune 3, Denis Villeneuve rassicura i fan dopo l'assalto alle prevendite: \"Vi abbiamo ascoltato\"",
+      "link": "https://movieplayer.it/news/dune-3-denis-villeneuve-rassicura-fan-dopo-assalto-prevendite_170635/",
+      "sommario": "L'entusiasmo per Dune: Parte Tre ha già mandato in tilt le prevendite delle proiezioni premium, al punto che Denis Villeneuve è intervenuto con un messaggio rivolto ai fan. L'attesa per Dune: Parte Tre si sta facendo sentire ben prima dell'arrivo del film nell",
+      "data": "2026-08-18T10:00:55.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Denis Villeneuve",
+      "soggettoTipo": "regista",
+      "citati": [
+        {
+          "nome": "Denis Villeneuve",
+          "tipo": "regista"
+        }
+      ],
+      "rilievo": 13,
+      "prevendite": true,
+      "vistoIl": "2026-08-19T05:22:24.244Z",
+      "evidenza": true
+    },
     {
       "titolo": "Odissea torna in vetta al box office italiano: il kolossal di Nolan supera Spider-Man a Ferragosto",
       "link": "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto",
@@ -131,42 +168,61 @@
       "evidenza": true
     },
     {
-      "titolo": "The End of Oak Street parte male al box office: per Anne Hathaway è tra i peggiori debutti della sua carriera",
-      "link": "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
-      "sommario": "The End of Oak Street delude al debutto al box office americano: il film con Anne Hathaway ed Ewan McGregor rischia uno dei peggiori esordi della carriera dell'attrice.",
-      "data": "2026-08-16T06:30:57.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "The End of Oak Street",
-      "soggettoTipo": "film",
+      "titolo": "Ghost Rider con Ryan Gosling ha una data d'uscita: il 2028 sarà l'anno Marvel con tre film al cinema",
+      "link": "https://movieplayer.it/news/ghost-rider-ryan-gosling-data-uscita-2028-anno-marvel-tre-film-cinema_170634/",
+      "sommario": "Dopo l'annuncio del casting al Comic-Con, Disney ha fissato la data d'uscita di Ghost Rider con Ryan Gosling, che si aggiunge a X-Men e Black Panther 3 in un 2028 ricchissimo per i fan della Casa delle Idee. Il futuro del Marvel Cinematic Universe prende sempr",
+      "data": "2026-08-18T09:00:28.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
       "citati": [
         {
-          "nome": "The End of Oak Street",
-          "tipo": "film"
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
         }
       ],
-      "rilievo": 11,
+      "rilievo": 7,
       "prevendite": false,
-      "vistoIl": "2026-08-17T05:28:38.039Z",
-      "evidenza": true
+      "vistoIl": "2026-08-19T05:22:24.244Z",
+      "evidenza": false
     },
     {
-      "titolo": "Barbie 2 è in piena crisi: il sequel del film da 1,4 miliardi rischia di non vedere mai la luce",
-      "link": "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
-      "sommario": "Barbie 2 è in bilico: Warner Bros. e il team di Greta Gerwig non trovano un accordo e tra pochi mesi i diritti potrebbero tornare a Mattel. Ecco tutti i dettagli del nuovo report!",
-      "data": "2026-08-13T06:00:11.000Z",
+      "titolo": "Data di uscita per Ahsoka 2 e nuovi dettagli su Ryan Gosling in Starfighter: gli annunci di Star Wars al D23",
+      "link": "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
+      "sommario": "Ahsoka 2 ecco quando debutta la seconda stagione. Trailer ufficiale: Anakin torna, Thrawn dichiara guerra e nuove battaglie epiche. Tutti i dettagli sulla seconda stagione.",
+      "data": "2026-08-15T12:09:04.000Z",
       "fonte": "BadTaste",
-      "soggetto": "Barbie",
-      "soggettoTipo": "film",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
       "citati": [
         {
-          "nome": "Barbie",
-          "tipo": "film"
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
         }
       ],
-      "rilievo": 11,
+      "rilievo": 3,
       "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.576Z",
-      "evidenza": true
+      "vistoIl": "2026-08-16T05:21:36.079Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Star Wars: Starfighter, il film con Ryan Gosling potrebbe mostrarsi prima di quanto pensiamo",
+      "link": "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
+      "sommario": "Manca pochissimo al D23 e nei progetti Disney sembra esserci anche quello di svelare in anteprima il primo trailer del nuovo film con Ryan Gosling. Ma noi quando potremo vederlo? Il prossimo viaggio cinematografico nella galassia lontana lontana potrebbe final",
+      "data": "2026-08-13T09:46:22.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-14T06:08:30.185Z",
+      "evidenza": false
     },
     {
       "titolo": "La fine di Oak Street, la recensione: cosa resta dei blockbuster",
@@ -226,60 +282,22 @@
       "evidenza": false
     },
     {
-      "titolo": "Data di uscita per Ahsoka 2 e nuovi dettagli su Ryan Gosling in Starfighter: gli annunci di Star Wars al D23",
-      "link": "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
-      "sommario": "Ahsoka 2 ecco quando debutta la seconda stagione. Trailer ufficiale: Anakin torna, Thrawn dichiara guerra e nuove battaglie epiche. Tutti i dettagli sulla seconda stagione.",
-      "data": "2026-08-15T12:09:04.000Z",
+      "titolo": "The End of Oak Street parte male al box office: per Anne Hathaway è tra i peggiori debutti della sua carriera",
+      "link": "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
+      "sommario": "The End of Oak Street delude al debutto al box office americano: il film con Anne Hathaway ed Ewan McGregor rischia uno dei peggiori esordi della carriera dell'attrice.",
+      "data": "2026-08-16T06:30:57.000Z",
       "fonte": "BadTaste",
-      "soggetto": "Ryan Gosling",
-      "soggettoTipo": "attore",
+      "soggetto": "The End of Oak Street",
+      "soggettoTipo": "film",
       "citati": [
         {
-          "nome": "Ryan Gosling",
-          "tipo": "attore"
+          "nome": "The End of Oak Street",
+          "tipo": "film"
         }
       ],
-      "rilievo": 3,
+      "rilievo": 11,
       "prevendite": false,
-      "vistoIl": "2026-08-16T05:21:36.079Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Star Wars: Starfighter, il film con Ryan Gosling potrebbe mostrarsi prima di quanto pensiamo",
-      "link": "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
-      "sommario": "Manca pochissimo al D23 e nei progetti Disney sembra esserci anche quello di svelare in anteprima il primo trailer del nuovo film con Ryan Gosling. Ma noi quando potremo vederlo? Il prossimo viaggio cinematografico nella galassia lontana lontana potrebbe final",
-      "data": "2026-08-13T09:46:22.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Ryan Gosling",
-      "soggettoTipo": "attore",
-      "citati": [
-        {
-          "nome": "Ryan Gosling",
-          "tipo": "attore"
-        }
-      ],
-      "rilievo": 3,
-      "prevendite": false,
-      "vistoIl": "2026-08-14T06:08:30.185Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Crazy, Stupid Love: come Emma Stone ottenne il ruolo di Hannah prendendo in giro Ryan Gosling",
-      "link": "https://www.badtaste.it/articoli/crazy-stupid-love-come-emma-stone-ottenne-il-ruolo-di-hannah-prendendo-in-giro-ryan-gosling",
-      "sommario": "I registi di Crazy, Stupid, Love raccontano come Emma Stone conquistò il ruolo di Hannah rispondendo con ironia a un errore di Ryan Gosling durante il provino. Ecco la storia di un casting leggendario.",
-      "data": "2026-08-12T07:45:07.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Ryan Gosling",
-      "soggettoTipo": "attore",
-      "citati": [
-        {
-          "nome": "Ryan Gosling",
-          "tipo": "attore"
-        }
-      ],
-      "rilievo": 3,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.684Z",
+      "vistoIl": "2026-08-17T05:28:38.039Z",
       "evidenza": false
     },
     {
@@ -299,6 +317,25 @@
       "rilievo": 7,
       "prevendite": false,
       "vistoIl": "2026-08-14T06:08:30.175Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Barbie 2 è in piena crisi: il sequel del film da 1,4 miliardi rischia di non vedere mai la luce",
+      "link": "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
+      "sommario": "Barbie 2 è in bilico: Warner Bros. e il team di Greta Gerwig non trovano un accordo e tra pochi mesi i diritti potrebbero tornare a Mattel. Ecco tutti i dettagli del nuovo report!",
+      "data": "2026-08-13T06:00:11.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Barbie",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Barbie",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-13T06:11:25.576Z",
       "evidenza": false
     },
     {
@@ -493,71 +530,6 @@
       "rilievo": 11,
       "prevendite": false,
       "vistoIl": "2026-08-07T17:48:54.786Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "The Batman 3 per ora esiste solo nella fantasia dei fan: James Gunn smentisce la folle indiscrezione",
-      "link": "https://movieplayer.it/news/the-batman-3-esiste-solo-fantasia-fan-james-gunn-smentito_170509/",
-      "sommario": "Nessuna lavorazione segreta per The Batman 3. James Gunn ha smentito le indiscrezioni secondo cui Matt Reeves starebbe girando contemporaneamente il secondo e il terzo capitolo della saga con Robert Pattinson. Per qualche ora i fan di The Batman hanno sperato ",
-      "data": "2026-08-07T12:00:20.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "The Batman: Part II",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "The Batman: Part II",
-          "tipo": "film"
-        },
-        {
-          "nome": "The Batman",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 8,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.841Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "The Batman 2 e 3 saranno girati insieme? James Gunn mette fine al rumor su Matt Reeves",
-      "link": "https://www.badtaste.it/articoli/the-batman-2-e-3-saranno-girati-insieme-james-gunn-rompe-il-silenzio-sul-rumor-che-coinvolge-matt-reeves",
-      "sommario": "James Gunn ha smentito le voci secondo cui Matt Reeves girerà The Batman 2 e The Batman 3 back-to-back, chiarendo i piani per il futuro della saga con Robert Pattinson.",
-      "data": "2026-08-07T07:00:38.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "The Batman: Part II",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "The Batman: Part II",
-          "tipo": "film"
-        },
-        {
-          "nome": "The Batman",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 8,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.836Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Uncharted 2 si farà? Ci sono novità sul sequel cinematografico con Tom Holland",
-      "link": "https://www.badtaste.it/articoli/uncharted-2-si-fara-ci-sono-novita-sul-sequel-cinematografico-con-tom-holland",
-      "sommario": "Dopo quasi 5 anni dall'uscita del primo film, ci sono dei aggiornamenti sul sequel dell'adattamento cinematografico del celebre gioco di Naughty Dog.",
-      "data": "2026-08-07T11:30:10.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Uncharted",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Uncharted",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.829Z",
       "evidenza": false
     }
   ]
