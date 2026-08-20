@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-19T05:22:24.278Z",
+  "aggiornato": "2026-08-20T05:23:41.651Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -16,9 +16,35 @@
   ],
   "gruppi": [
     {
+      "soggetto": "Insidious: Fuori dall'Altrove",
+      "tipo": "film",
+      "quante": 3,
+      "link": [
+        "https://www.badtaste.it/recensioni/insidious-fuori-dallaltrove-la-recensione-squadra-che-vince-si-cambia",
+        "https://www.screenweek.it/insidious-fuori-dallaltrove-leredita-del-trauma/",
+        "https://www.screenweek.it/insidious-fuori-dallaltrove-il-trailer-finale-del-film/"
+      ]
+    },
+    {
+      "soggetto": "La casa - Il rogo del Male",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://www.badtaste.it/articoli/manca-di-umorismo-la-star-delloriginale-la-casa-spiega-cosa-non-funziona-negli-ultimi-film"
+      ]
+    },
+    {
+      "soggetto": "The Batman: Part II",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://movieplayer.it/news/the-batman-2-nuovi-video-mostrano-indizi-atmosfera-gotham-matt-reeves_170656/"
+      ]
+    },
+    {
       "soggetto": "Ryan Gosling",
       "tipo": "attore",
-      "quante": 4,
+      "quante": 3,
       "link": [
         "https://movieplayer.it/news/ghost-rider-ryan-gosling-data-uscita-2028-anno-marvel-tre-film-cinema_170634/",
         "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
@@ -74,34 +100,6 @@
       "quante": 1,
       "link": [
         "https://www.badtaste.it/articoli/hokum-dove-e-stato-girato-le-location-da-brivido-tra-irlanda-e-abu-dhabi"
-      ]
-    },
-    {
-      "soggetto": "Spider-Man: Brand New Day",
-      "tipo": "film",
-      "quante": 8,
-      "link": [
-        "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
-        "https://fumettologica.it/2026/08/spider-man-brand-new-day-costume-film-marvel/",
-        "https://movieplayer.it/news/spider-man-brand-new-day-2-miliardi-box-office-sette-film-storia_170626/"
-      ]
-    },
-    {
-      "soggetto": "Odissea",
-      "tipo": "film",
-      "quante": 3,
-      "link": [
-        "https://www.badtaste.it/articoli/odissea-niente-cgi-per-alcune-delle-scene-piu-spettacolari-ecco-come-christopher-nolan-le-ha-realizzate",
-        "https://movieplayer.it/news/odissea-nolan-sfida-record-personale-vinto_170537/",
-        "https://www.badtaste.it/articoli/odissea-un-episodio-dei-simpson-di-24-anni-fa-e-tornato-improvvisamente-dattualita-grazie-a-nolan"
-      ]
-    },
-    {
-      "soggetto": "Mission Impossible - The Final Reckoning",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible"
       ]
     }
   ],
@@ -166,6 +164,109 @@
       "prevendite": false,
       "vistoIl": "2026-08-18T05:22:02.620Z",
       "evidenza": true
+    },
+    {
+      "titolo": "Insidious - Fuori dall'altrove, la recensione: squadra che vince, si cambia",
+      "link": "https://www.badtaste.it/recensioni/insidious-fuori-dallaltrove-la-recensione-squadra-che-vince-si-cambia",
+      "sommario": "Il sesto capitolo di Insidious cambia famiglia e regista ma non la sostanza: un horror che strizza l'occhio ai videogiocatori, tra fascino a metà e formula ripetitiva",
+      "data": "2026-08-19T16:25:20.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Insidious: Fuori dall'Altrove",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Insidious: Fuori dall'Altrove",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-20T05:23:41.585Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Insidious: Fuori dall'Altrove, l'eredità del trauma",
+      "link": "https://www.screenweek.it/insidious-fuori-dallaltrove-leredita-del-trauma/",
+      "sommario": "Il sesto capitolo della saga, diretto da Jacob Chase, alza la posta in gioco tra momenti di disgusto e ovvie interpretazioni psicanalitiche.",
+      "data": "2026-08-19T10:09:04.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "Insidious: Fuori dall'Altrove",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Insidious: Fuori dall'Altrove",
+          "tipo": "film"
+        },
+        {
+          "nome": "Insidious: Out of the Further",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 8,
+      "prevendite": false,
+      "vistoIl": "2026-08-20T05:23:41.623Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Insidious: Fuori dall'Altrove, il trailer finale del film",
+      "link": "https://www.screenweek.it/insidious-fuori-dallaltrove-il-trailer-finale-del-film/",
+      "sommario": "",
+      "data": "2026-08-05T14:15:53.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "Insidious: Fuori dall'Altrove",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Insidious: Fuori dall'Altrove",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 11,
+      "prevendite": false,
+      "vistoIl": "2026-08-20T05:23:41.635Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "\"Manca di umorismo\": la star dell'originale La Casa spiega cosa non funziona negli ultimi film",
+      "link": "https://www.badtaste.it/articoli/manca-di-umorismo-la-star-delloriginale-la-casa-spiega-cosa-non-funziona-negli-ultimi-film",
+      "sommario": "L'amatissimo interprete di Ash Williams ha rivelato cosa non funziona nei ultimi film de \"La casa\", ovvero la mancanza di umorismo e di colore.",
+      "data": "2026-08-19T10:22:27.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "La casa - Il rogo del Male",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "La casa - Il rogo del Male",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-20T05:23:41.587Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "The Batman 2, nuovi video dal set mostrano indizi sull'atmosfera del film e la Gotham di Matt Reeves",
+      "link": "https://movieplayer.it/news/the-batman-2-nuovi-video-mostrano-indizi-atmosfera-gotham-matt-reeves_170656/",
+      "sommario": "Nuovi filmati dal set di The Batman - Parte II offrono uno sguardo inedito sulla Gotham immaginata da Matt Reeves, nuovi indizi sull'atmosfera del film e sul ruolo crescente della polizia cittadina. Le riprese di The Batman - Parte II proseguono a pieno ritmo ",
+      "data": "2026-08-19T10:00:00.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "The Batman: Part II",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "The Batman: Part II",
+          "tipo": "film"
+        },
+        {
+          "nome": "The Batman",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 8,
+      "prevendite": false,
+      "vistoIl": "2026-08-20T05:23:41.603Z",
+      "evidenza": false
     },
     {
       "titolo": "Ghost Rider con Ryan Gosling ha una data d'uscita: il 2028 sarà l'anno Marvel con tre film al cinema",
@@ -393,143 +494,6 @@
       "rilievo": 7,
       "prevendite": false,
       "vistoIl": "2026-08-13T06:11:25.682Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Spider-Man: Brand New Day non arresta la corsa al box office e insidia un primato di Star Wars",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-box-office-insidia-primato-star-wars_170541/",
-      "sommario": "Il nuovo film con Tom Holland continua a macinare incassi da record, giorno dopo giorno. E nel mirino del cinecomic c'è un primato detenuto da oltre dieci anni da Star Wars. Il ritorno di Spider-Man sul grande schermo sta assumendo dimensioni che pochi avrebbe",
-      "data": "2026-08-10T13:00:00.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.602Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Una delle cose migliori di Spider-Man: Brand New Day è anche uno dei suoi problemi più grandi",
-      "link": "https://fumettologica.it/2026/08/spider-man-brand-new-day-costume-film-marvel/",
-      "sommario": "Il costume indossato da Tom Holland in Spider-Man: Brand New Day è uno dei punti di forza del film, ma anche uno dei suoi limiti più grandi. Una delle cose migliori di Spider-Man: Brand New Day è anche uno dei suoi problemi più grandi leggi l’articolo su Fumet",
-      "data": "2026-08-18T05:00:00.000Z",
-      "fonte": "Fumettologica",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-18T05:22:02.669Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Spider-Man: Brand New Day supera i 2 miliardi: solo sette film nella storia ci sono riusciti",
-      "link": "https://movieplayer.it/news/spider-man-brand-new-day-2-miliardi-box-office-sette-film-storia_170626/",
-      "sommario": "Il film con Tom Holland ha superato quota 2 miliardi di dollari in appena tre weekend, ed è il secondo titolo più veloce di sempre a superare la soglia alle spalle di Avengers: Endgame Quel fenomeno di Spider-Man: Brand New Day ha raggiunto quota 2,022 miliard",
-      "data": "2026-08-17T10:43:06.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Spider-Man: Brand New Day",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-18T05:22:02.628Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Odissea, niente CGI per alcune delle scene più spettacolari: ecco come Christopher Nolan le ha realizzate",
-      "link": "https://www.badtaste.it/articoli/odissea-niente-cgi-per-alcune-delle-scene-piu-spettacolari-ecco-come-christopher-nolan-le-ha-realizzate",
-      "sommario": "Christopher Nolan ha portato gli effetti pratici a un altro livello con Odissea: da Polifemo a Circe, ecco come sono nate alcune delle scene più spettacolari del film.",
-      "data": "2026-08-10T08:00:59.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Odissea",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Odissea",
-          "tipo": "film"
-        },
-        {
-          "nome": "Christopher Nolan",
-          "tipo": "regista"
-        }
-      ],
-      "rilievo": 8,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.597Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Con Odissea Nolan ha sfidato anche un suo record personale (e ha vinto)",
-      "link": "https://movieplayer.it/news/odissea-nolan-sfida-record-personale-vinto_170537/",
-      "sommario": "Il kolossal con Matt Damon continua la sua corsa al box office e conquista un nuovo primato nella filmografia di Christopher Nolan. Ma il prossimo film da battere a suon di incassi è ancora più ingombrante. Ci sono registi per i quali superare il miliardo di d",
-      "data": "2026-08-10T09:30:00.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Odissea",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Odissea",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-11T05:49:26.604Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Odissea, un episodio dei Simpson di 24 anni fa è tornato improvvisamente d'attualità grazie a Nolan",
-      "link": "https://www.badtaste.it/articoli/odissea-un-episodio-dei-simpson-di-24-anni-fa-e-tornato-improvvisamente-dattualita-grazie-a-nolan",
-      "sommario": "Odissea di Christopher Nolan conquista pubblico e critica, ma I Simpson avevano già raccontato e reinventato il poema di Omero nel 2002.",
-      "data": "2026-08-09T07:45:20.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Odissea",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Odissea",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-10T06:08:05.683Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Su Netflix, il thriller dimenticato del 1993 con Tom Cruise che ha anticipato Mission: Impossible",
-      "link": "https://www.badtaste.it/articoli/su-netflix-il-thriller-dimenticato-del-1993-con-tom-cruise-che-ha-anticipato-mission-impossible",
-      "sommario": "Questo film del 1993 con Tom Cruise è il vero prequel di Mission: Impossible. Scopri come questo thriller legale ha anticipato Ethan Hunt e il franchise di spionaggio.",
-      "data": "2026-08-07T16:00:42.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Mission Impossible - The Final Reckoning",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Mission Impossible - The Final Reckoning",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-07T17:48:54.786Z",
       "evidenza": false
     }
   ]
