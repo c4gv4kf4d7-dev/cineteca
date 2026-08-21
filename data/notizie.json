@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-20T05:23:41.651Z",
+  "aggiornato": "2026-08-21T05:26:18.173Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -15,6 +15,23 @@
     "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto"
   ],
   "gruppi": [
+    {
+      "soggetto": "Spider-Man: Brand New Day",
+      "tipo": "film",
+      "quante": 2,
+      "link": [
+        "https://movieplayer.it/news/spider-man-brand-new-day-incasso-film-italia-record_170677/",
+        "https://www.screenweek.it/spider-man-brand-new-day-risaliamo-alle-origini-delle-ragnatele-organiche/"
+      ]
+    },
+    {
+      "soggetto": "Obsession",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://movieplayer.it/news/obsession-star-inde-navarrette-rinunciato-25-milioni-dollari-mcu_170667/"
+      ]
+    },
     {
       "soggetto": "Insidious: Fuori dall'Altrove",
       "tipo": "film",
@@ -84,23 +101,6 @@
       "link": [
         "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce"
       ]
-    },
-    {
-      "soggetto": "Toy Story 5",
-      "tipo": "film",
-      "quante": 2,
-      "link": [
-        "https://www.badtaste.it/articoli/toy-story-5-svelata-la-scena-eliminata-con-la-toccante-reunion-tra-jessie-ed-emily",
-        "https://www.badtaste.it/articoli/toy-story-5-e-pronto-ad-arrivare-in-digitale-ecco-quando-sara-possibile-vederlo-anche-a-casa"
-      ]
-    },
-    {
-      "soggetto": "Hokum",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.badtaste.it/articoli/hokum-dove-e-stato-girato-le-location-da-brivido-tra-irlanda-e-abu-dhabi"
-      ]
     }
   ],
   "notizie": [
@@ -164,6 +164,63 @@
       "prevendite": false,
       "vistoIl": "2026-08-18T05:22:02.620Z",
       "evidenza": true
+    },
+    {
+      "titolo": "Spider-Man è il supereroe preferito degli italiani: Brand New Day è il cinecomic più visto nei nostri cinema",
+      "link": "https://movieplayer.it/news/spider-man-brand-new-day-incasso-film-italia-record_170677/",
+      "sommario": "Numeri da record al botteghino italiano per Spider-Man: Brand New Day. Il film con Tom Holland e Zendaya è il cinecomic più visto sul grande schermo. Record. Nell'epoca dei cinecomic ad alto budget la sfida era alquanto complicata. Con 33.262.422 milioni di eu",
+      "data": "2026-08-20T14:32:00.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-21T05:26:18.133Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day, risaliamo alle origini delle ragnatele organiche",
+      "link": "https://www.screenweek.it/spider-man-brand-new-day-risaliamo-alle-origini-delle-ragnatele-organiche/",
+      "sommario": "Ora che possiede le ragnatele organiche, lo Spidey di Tom Holland si aggiunge a una lista di varianti ragnesche dotate di questa capacità.",
+      "data": "2026-08-05T04:49:11.000Z",
+      "fonte": "ScreenWeek",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-21T05:26:18.166Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Obsession, la star Inde Navarrette avrebbe rinunciato a 2,5 milioni di dollari per entrare nel MCU",
+      "link": "https://movieplayer.it/news/obsession-star-inde-navarrette-rinunciato-25-milioni-dollari-mcu_170667/",
+      "sommario": "Secondo quanto riportato da Page Six Hollywood, la star di Obsession avrebbe rinunciato non soltanto a entrare in Heat 2, ma anche a un cachet da 2,5 milioni. Dopo il successo di Obsession, la carriera di Inde Navarrette sembra aver preso una direzione ben pre",
+      "data": "2026-08-20T10:30:54.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Obsession",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Obsession",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-21T05:26:18.136Z",
+      "evidenza": false
     },
     {
       "titolo": "Insidious - Fuori dall'altrove, la recensione: squadra che vince, si cambia",
@@ -437,63 +494,6 @@
       "rilievo": 11,
       "prevendite": false,
       "vistoIl": "2026-08-13T06:11:25.576Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Toy Story 5: svelata la scena eliminata con la toccante reunion tra Jessie ed Emily",
-      "link": "https://www.badtaste.it/articoli/toy-story-5-svelata-la-scena-eliminata-con-la-toccante-reunion-tra-jessie-ed-emily",
-      "sommario": "Ecco perché la Pixar ha scelto di tagliare l'emozionante reunion tra Jessie ed Emily in Toy Story 5",
-      "data": "2026-08-12T12:25:43.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Toy Story 5",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Toy Story 5",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.681Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Toy Story 5 è pronto ad arrivare in digitale: ecco quando sarà possibile vederlo anche a casa",
-      "link": "https://www.badtaste.it/articoli/toy-story-5-e-pronto-ad-arrivare-in-digitale-ecco-quando-sara-possibile-vederlo-anche-a-casa",
-      "sommario": "Toy Story 5 si prepara al debutto in digitale: ecco quando arriverà sulle principali piattaforme e quando usciranno le edizioni Blu-ray, 4K e DVD.",
-      "data": "2026-08-12T06:00:10.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Toy Story 5",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Toy Story 5",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-12T06:09:04.342Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Hokum, dove è stato girato? Le location da brivido tra Irlanda e Abu Dhabi",
-      "link": "https://www.badtaste.it/articoli/hokum-dove-e-stato-girato-le-location-da-brivido-tra-irlanda-e-abu-dhabi",
-      "sommario": "Un hotel isolato, una leggenda inquietante e i paesaggi selvaggi dell’Irlanda occidentale: in Hokum il territorio diventa presenza viva. Ma dove è stato girato davvero l’horror di Damian McCarthy? Dalle atmosfere di West Cork fino alle dune degli Emirati Arabi",
-      "data": "2026-08-12T11:40:25.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Hokum",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Hokum",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.682Z",
       "evidenza": false
     }
   ]
