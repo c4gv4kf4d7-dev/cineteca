@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-21T05:26:18.173Z",
+  "aggiornato": "2026-08-22T05:20:39.926Z",
   "fonti": [
     "BadTaste",
     "MoviePlayer",
@@ -12,14 +12,23 @@
   "evidenza": [
     "https://movieplayer.it/news/avengers-doomsday-dune-3-record-piu-spider-man-preparatevi-dunesday_170640/",
     "https://movieplayer.it/news/dune-3-denis-villeneuve-rassicura-fan-dopo-assalto-prevendite_170635/",
-    "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto"
+    "https://cinefilos.it/business/odissea-christopher-nolan-record-box-office-718351"
   ],
   "gruppi": [
     {
+      "soggetto": "Michael",
+      "tipo": "film",
+      "quante": 1,
+      "link": [
+        "https://movieplayer.it/news/michael-2-jaafar-jackson-affronteremo-accuse-abusi-minori_170686/"
+      ]
+    },
+    {
       "soggetto": "Spider-Man: Brand New Day",
       "tipo": "film",
-      "quante": 2,
+      "quante": 3,
       "link": [
+        "https://www.badtaste.it/articoli/spider-man-brand-new-day-fa-la-storia-in-italia-e-il-cinecomic-piu-visto-di-sempre",
         "https://movieplayer.it/news/spider-man-brand-new-day-incasso-film-italia-record_170677/",
         "https://www.screenweek.it/spider-man-brand-new-day-risaliamo-alle-origini-delle-ragnatele-organiche/"
       ]
@@ -61,11 +70,11 @@
     {
       "soggetto": "Ryan Gosling",
       "tipo": "attore",
-      "quante": 3,
+      "quante": 4,
       "link": [
         "https://movieplayer.it/news/ghost-rider-ryan-gosling-data-uscita-2028-anno-marvel-tre-film-cinema_170634/",
-        "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
-        "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/"
+        "https://movieplayer.it/news/ghost-rider-provino-ryan-gosling-convinto-marvel-sei-minuti-pitch_170689/",
+        "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23"
       ]
     },
     {
@@ -79,27 +88,20 @@
       ]
     },
     {
+      "soggetto": "Odissea",
+      "tipo": "film",
+      "quante": 2,
+      "link": [
+        "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto",
+        "https://www.badtaste.it/articoli/odissea-batte-deadpool-wolverine-e-fa-la-storia-ryan-reynolds-reagisce-al-sorpasso-a-modo-suo"
+      ]
+    },
+    {
       "soggetto": "The End of Oak Street",
       "tipo": "film",
       "quante": 1,
       "link": [
         "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera"
-      ]
-    },
-    {
-      "soggetto": "The Whale",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora"
-      ]
-    },
-    {
-      "soggetto": "Barbie",
-      "tipo": "film",
-      "quante": 1,
-      "link": [
-        "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce"
       ]
     }
   ],
@@ -143,11 +145,11 @@
       "evidenza": true
     },
     {
-      "titolo": "Odissea torna in vetta al box office italiano: il kolossal di Nolan supera Spider-Man a Ferragosto",
-      "link": "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto",
-      "sommario": "Odissea di Christopher Nolan riconquista la vetta del box office italiano a Ferragosto, superando Spider-Man: Brand New Day dopo due settimane.",
-      "data": "2026-08-17T08:00:46.000Z",
-      "fonte": "BadTaste",
+      "titolo": "Odissea di Christopher Nolan entra nella storia del box office con un nuovo record",
+      "link": "https://cinefilos.it/business/odissea-christopher-nolan-record-box-office-718351",
+      "sommario": "Odissea di Christopher Nolan entra nella storia del box office con un nuovo record Odissea (The Odyssey) di Christopher Nolan continua una corsa al box office che, a poco più di un mese dall’uscita, ha ormai assunto dimensioni storiche. Dopo aver superato il m",
+      "data": "2026-08-21T14:46:02.000Z",
+      "fonte": "Cinefilos",
       "soggetto": "Odissea",
       "soggettoTipo": "film",
       "citati": [
@@ -156,14 +158,52 @@
           "tipo": "film"
         },
         {
-          "nome": "Spider-Man: Brand New Day",
-          "tipo": "film"
+          "nome": "Christopher Nolan",
+          "tipo": "regista"
         }
       ],
       "rilievo": 12,
       "prevendite": false,
-      "vistoIl": "2026-08-18T05:22:02.620Z",
+      "vistoIl": "2026-08-22T05:20:39.914Z",
       "evidenza": true
+    },
+    {
+      "titolo": "Michael 2, Jaafar Jackson: \"Affronteremo anche le accuse di abusi su minori\"",
+      "link": "https://movieplayer.it/news/michael-2-jaafar-jackson-affronteremo-accuse-abusi-minori_170686/",
+      "sommario": "In un'intervista rilasciata a GQ Middle East, l'attore ha spiegato che il nuovo film offrirà una prospettiva più ampia sugli eventi che hanno segnato gli ultimi anni della carriera dello zio, cercando di raccontare anche il suo punto di vista. Dopo il clamoros",
+      "data": "2026-08-21T11:00:20.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Michael",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Michael",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-22T05:20:39.881Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Spider-Man: Brand New Day fa la storia in Italia: è il cinecomic più visto di sempre",
+      "link": "https://www.badtaste.it/articoli/spider-man-brand-new-day-fa-la-storia-in-italia-e-il-cinecomic-piu-visto-di-sempre",
+      "sommario": "Spider-Man: Brand New Day continua la sua corsa al box office e conquista un primato storico in Italia: il film con Tom Holland supera i 4,1 milioni di spettatori e diventa il cinecomic più visto di sempre.",
+      "data": "2026-08-21T06:15:52.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Spider-Man: Brand New Day",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-22T05:20:39.872Z",
+      "evidenza": false
     },
     {
       "titolo": "Spider-Man è il supereroe preferito degli italiani: Brand New Day è il cinecomic più visto nei nostri cinema",
@@ -345,6 +385,25 @@
       "evidenza": false
     },
     {
+      "titolo": "Ghost Rider, il provino di Ryan Gosling che ha convinto la Marvel: una presentazione di soli 6 minuti",
+      "link": "https://movieplayer.it/news/ghost-rider-provino-ryan-gosling-convinto-marvel-sei-minuti-pitch_170689/",
+      "sommario": "Ryan Gosling non si limiterà a interpretare Ghost Rider nel Marvel Cinematic Universe: è stato proprio lui a proporre l'idea del film. Ora Shawn Levy racconta come quella presentazione abbia conquistato lui e Kevin Feige in pochissimi minuti, alimentando le as",
+      "data": "2026-08-21T14:00:12.000Z",
+      "fonte": "MoviePlayer",
+      "soggetto": "Ryan Gosling",
+      "soggettoTipo": "attore",
+      "citati": [
+        {
+          "nome": "Ryan Gosling",
+          "tipo": "attore"
+        }
+      ],
+      "rilievo": 3,
+      "prevendite": false,
+      "vistoIl": "2026-08-22T05:20:39.877Z",
+      "evidenza": false
+    },
+    {
       "titolo": "Data di uscita per Ahsoka 2 e nuovi dettagli su Ryan Gosling in Starfighter: gli annunci di Star Wars al D23",
       "link": "https://www.badtaste.it/articoli/data-di-uscita-per-ahsoka-2-e-nuovi-dettagli-su-ryan-gosling-in-starfighter-gli-annunci-di-star-wars-al-d23",
       "sommario": "Ahsoka 2 ecco quando debutta la seconda stagione. Trailer ufficiale: Anakin torna, Thrawn dichiara guerra e nuove battaglie epiche. Tutti i dettagli sulla seconda stagione.",
@@ -361,25 +420,6 @@
       "rilievo": 3,
       "prevendite": false,
       "vistoIl": "2026-08-16T05:21:36.079Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Star Wars: Starfighter, il film con Ryan Gosling potrebbe mostrarsi prima di quanto pensiamo",
-      "link": "https://movieplayer.it/news/star-wars-starfighter-primo-trailer-vicino_170576/",
-      "sommario": "Manca pochissimo al D23 e nei progetti Disney sembra esserci anche quello di svelare in anteprima il primo trailer del nuovo film con Ryan Gosling. Ma noi quando potremo vederlo? Il prossimo viaggio cinematografico nella galassia lontana lontana potrebbe final",
-      "data": "2026-08-13T09:46:22.000Z",
-      "fonte": "MoviePlayer",
-      "soggetto": "Ryan Gosling",
-      "soggettoTipo": "attore",
-      "citati": [
-        {
-          "nome": "Ryan Gosling",
-          "tipo": "attore"
-        }
-      ],
-      "rilievo": 3,
-      "prevendite": false,
-      "vistoIl": "2026-08-14T06:08:30.185Z",
       "evidenza": false
     },
     {
@@ -440,6 +480,48 @@
       "evidenza": false
     },
     {
+      "titolo": "Odissea torna in vetta al box office italiano: il kolossal di Nolan supera Spider-Man a Ferragosto",
+      "link": "https://www.badtaste.it/articoli/odissea-torna-in-vetta-al-box-office-italiano-il-kolossal-di-nolan-supera-spider-man-a-ferragosto",
+      "sommario": "Odissea di Christopher Nolan riconquista la vetta del box office italiano a Ferragosto, superando Spider-Man: Brand New Day dopo due settimane.",
+      "data": "2026-08-17T08:00:46.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Odissea",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film"
+        },
+        {
+          "nome": "Spider-Man: Brand New Day",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 12,
+      "prevendite": false,
+      "vistoIl": "2026-08-18T05:22:02.620Z",
+      "evidenza": false
+    },
+    {
+      "titolo": "Odissea batte Deadpool & Wolverine e fa la storia, Ryan Reynolds reagisce al sorpasso a modo suo",
+      "link": "https://www.badtaste.it/articoli/odissea-batte-deadpool-wolverine-e-fa-la-storia-ryan-reynolds-reagisce-al-sorpasso-a-modo-suo",
+      "sommario": "Odissea di Christopher Nolan è riuscito a fare la storia, strappando a Deadpool & Wolverine un record storico. Ryan Reynolds ha reagito a questa notizia a modo suo.",
+      "data": "2026-08-21T07:45:43.000Z",
+      "fonte": "BadTaste",
+      "soggetto": "Odissea",
+      "soggettoTipo": "film",
+      "citati": [
+        {
+          "nome": "Odissea",
+          "tipo": "film"
+        }
+      ],
+      "rilievo": 7,
+      "prevendite": false,
+      "vistoIl": "2026-08-22T05:20:39.870Z",
+      "evidenza": false
+    },
+    {
       "titolo": "The End of Oak Street parte male al box office: per Anne Hathaway è tra i peggiori debutti della sua carriera",
       "link": "https://www.badtaste.it/articoli/the-end-of-oak-street-parte-male-al-box-office-per-anne-hathaway-e-tra-i-peggiori-debutti-della-sua-carriera",
       "sommario": "The End of Oak Street delude al debutto al box office americano: il film con Anne Hathaway ed Ewan McGregor rischia uno dei peggiori esordi della carriera dell'attrice.",
@@ -456,44 +538,6 @@
       "rilievo": 11,
       "prevendite": false,
       "vistoIl": "2026-08-17T05:28:38.039Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Iron Man 3, che fine ha fatto il giovane Harley? Oggi è adulto: dalla Marvel a The Whale, cosa fa ancora",
-      "link": "https://www.badtaste.it/articoli/iron-man-3-che-fine-ha-fatto-il-giovane-harley-oggi-e-adulto-dalla-marvel-a-the-whale-cosa-fa-ancora",
-      "sommario": "Era il bambino prodigio che aiutava Tony Stark nel momento più difficile. Sei anni dopo è ricomparso in Avengers: Endgame, ma Ty Simpkins nel frattempo è cresciuto, ha attraversato importanti produzioni cinematografiche e ha continuato a costruire una carriera",
-      "data": "2026-08-14T05:40:45.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "The Whale",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "The Whale",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 7,
-      "prevendite": false,
-      "vistoIl": "2026-08-14T06:08:30.175Z",
-      "evidenza": false
-    },
-    {
-      "titolo": "Barbie 2 è in piena crisi: il sequel del film da 1,4 miliardi rischia di non vedere mai la luce",
-      "link": "https://www.badtaste.it/articoli/barbie-2-e-in-piena-crisi-il-sequel-del-film-da-14-miliardi-rischia-di-non-vedere-mai-la-luce",
-      "sommario": "Barbie 2 è in bilico: Warner Bros. e il team di Greta Gerwig non trovano un accordo e tra pochi mesi i diritti potrebbero tornare a Mattel. Ecco tutti i dettagli del nuovo report!",
-      "data": "2026-08-13T06:00:11.000Z",
-      "fonte": "BadTaste",
-      "soggetto": "Barbie",
-      "soggettoTipo": "film",
-      "citati": [
-        {
-          "nome": "Barbie",
-          "tipo": "film"
-        }
-      ],
-      "rilievo": 11,
-      "prevendite": false,
-      "vistoIl": "2026-08-13T06:11:25.576Z",
       "evidenza": false
     }
   ]
