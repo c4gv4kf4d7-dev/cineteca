@@ -14763,7 +14763,102 @@
           "profile": "/j9e2HBqicMM59lErK8pL94Jh59v.jpg"
         }
       ]
+    },
+    {
+      "id": "tmdb-1283515",
+      "tmdbId": 1283515,
+      "title": "Verity",
+      "originalTitle": null,
+      "release": "2026-10-01",
+      "director": "Michael Showalter",
+      "genres": [
+        "Mistero",
+        "Thriller"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 114,
+      "trailer": null,
+      "cast": [
+        "Dakota Johnson",
+        "Anne Hathaway",
+        "Josh Hartnett",
+        "Ismael Cruz Cordova",
+        "Brady Wagner",
+        "Irina Dvorovenko",
+        "K.K. Moggie",
+        "Michael Abbott Jr.",
+        "Alex Cooper"
+      ],
+      "plot": "Lowen Ashleigh (Dakota Johnson), una scrittrice in difficoltà, si trasferisce nella remota tenuta dei Crawford per fare da ghostwriter alla celebre autrice Verity Crawford (Anne Hathaway). Dopo aver scoperto quelli che sembrano essere gli inquietanti appunti autobiografici di Verity, Lowen deve fare i conti con le torbide e distorte confessioni sul marito di lei, Jeremy (Josh Hartnett), trovando difficile distinguere la finzione dalla realtà, la manipolazione dall'attrazione e l'opportunità dall'ossessione.",
+      "lista": "cinema",
+      "source": "tmdb:1283515",
+      "imdbId": "tt32261958",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2026-09-30",
+      "releaseUS": "2026-10-02",
+      "poster": "/cLMNbCkgzn1qlmox7FyQBgXwL4D.jpg",
+      "backdrop": "/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 9.993,
+      "budget": 40000000,
+      "revenue": null,
+      "tagline": "Dove andiamo non c'è luce",
+      "scoperte": [],
+      "castDetail": [
+        {
+          "name": "Dakota Johnson",
+          "character": "Lowen Ashleigh",
+          "profile": "/jI8GITDOV0xatWvkDNHjXYwNkxw.jpg"
+        },
+        {
+          "name": "Anne Hathaway",
+          "character": "Verity Crawford",
+          "profile": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
+        },
+        {
+          "name": "Josh Hartnett",
+          "character": "Jeremy Crawford",
+          "profile": "/5eMo8D7h1XrSu6ZN4UXhPcS6YNG.jpg"
+        },
+        {
+          "name": "Ismael Cruz Cordova",
+          "character": "Corey",
+          "profile": "/oXcrsQGndk60iFkNB8qFnMHlNzL.jpg"
+        },
+        {
+          "name": "Brady Wagner",
+          "character": "Crew Crawford",
+          "profile": "/tAzT9FRrs7Zb3qlhNBHk2a7Z2Mx.jpg"
+        },
+        {
+          "name": "Irina Dvorovenko",
+          "character": null,
+          "profile": "/f0XyxPtobP1MkwByneD3zAi0YNj.jpg"
+        },
+        {
+          "name": "K.K. Moggie",
+          "character": null,
+          "profile": "/hQvZKknETtr4eTuK5I27f6jdRUY.jpg"
+        },
+        {
+          "name": "Michael Abbott Jr.",
+          "character": null,
+          "profile": "/lL6epnepASAxQolqXeNve8hEcaR.jpg"
+        },
+        {
+          "name": "Alex Cooper",
+          "character": "Alex Cooper",
+          "profile": "/s04BgPEHp6UN7ELegquaveJXo19.jpg"
+        }
+      ]
     }
   ],
-  "enrichedAt": "2026-08-22T11:47:06.163Z"
+  "enrichedAt": "2026-08-22T11:54:23.702Z"
 }

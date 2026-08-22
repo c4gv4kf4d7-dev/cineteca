@@ -155,6 +155,10 @@
   ],
   "cinema": [
     {
+      "tmdbId": 1283515,
+      "titolo": "Verity"
+    },
+    {
       "tmdbId": 1281331,
       "titolo": "The Social: Il prezzo della verità"
     },
