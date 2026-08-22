@@ -8201,21 +8201,21 @@
           "tipo": "simile"
         },
         {
+          "tmdbId": 1020662,
+          "titolo": "Gemini Lounge",
+          "poster": "/7gSANKU6YRlZZD8myn9WBhY9P7I.jpg",
+          "anno": 2023,
+          "voto": 6.038,
+          "votanti": 80,
+          "tipo": "simile"
+        },
+        {
           "tmdbId": 487680,
           "titolo": "Le regine del crimine",
           "poster": "/2P7SWS7YOBk3dm0bePFQ8SLzScH.jpg",
           "anno": 2019,
           "voto": 6.095,
           "votanti": 738,
-          "tipo": "simile"
-        },
-        {
-          "tmdbId": 1020662,
-          "titolo": "Gemini Lounge",
-          "poster": "/7gSANKU6YRlZZD8myn9WBhY9P7I.jpg",
-          "anno": 2023,
-          "voto": 6.038,
-          "votanti": 79,
           "tipo": "simile"
         },
         {
@@ -8228,21 +8228,21 @@
           "tipo": "simile"
         },
         {
-          "tmdbId": 395458,
-          "titolo": "Suburbicon",
-          "poster": "/kGerqouMiaBsGVb5eZV9qLMBLN5.jpg",
-          "anno": 2017,
-          "voto": 5.888,
-          "votanti": 1836,
-          "tipo": "simile"
-        },
-        {
           "tmdbId": 24249,
           "titolo": "Cattive compagnie",
           "poster": "/n2rMrY1MdzVXKHp1Ue8rExHRuJD.jpg",
           "anno": 1990,
           "voto": 5.985,
           "votanti": 197,
+          "tipo": "simile"
+        },
+        {
+          "tmdbId": 395458,
+          "titolo": "Suburbicon",
+          "poster": "/kGerqouMiaBsGVb5eZV9qLMBLN5.jpg",
+          "anno": 2017,
+          "voto": 5.888,
+          "votanti": 1836,
           "tipo": "simile"
         },
         {
@@ -10129,7 +10129,7 @@
           "poster": "/81gGnVhxUbahcS3tiqzOQRdwLpu.jpg",
           "anno": 2020,
           "voto": 7.44,
-          "votanti": 4212,
+          "votanti": 4213,
           "tipo": "simile"
         },
         {
@@ -10183,7 +10183,7 @@
           "poster": "/bqkClyt9iJcbmZXouCgUrIna91W.jpg",
           "anno": 2023,
           "voto": 6.402,
-          "votanti": 3746,
+          "votanti": 3745,
           "tipo": "simile"
         },
         {
@@ -14428,7 +14428,342 @@
           "profile": "/hmXfQY8bFhyWlryDiPIDnepBy1a.jpg"
         }
       ]
+    },
+    {
+      "id": "tmdb-1281331",
+      "tmdbId": 1281331,
+      "title": "The Social: Il prezzo della verità",
+      "originalTitle": null,
+      "release": "2026-10-08",
+      "director": "Aaron Sorkin",
+      "genres": [
+        "Dramma"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": 120,
+      "trailer": "https://www.youtube.com/watch?v=2mybzyr_r2I",
+      "cast": [
+        "Mikey Madison",
+        "Jeremy Allen White",
+        "Jeremy Strong",
+        "Wunmi Mosaku",
+        "Betty Gilpin",
+        "Billy Magnussen",
+        "Bill Burr",
+        "Gbenga Akinnagbe",
+        "Anna Lambe",
+        "Aidan Laprete",
+        "Kelley Pereira",
+        "Nelson Franklin"
+      ],
+      "plot": "Frances Haugen, giovane ingegnere di Facebook, si avvale dell'aiuto di Jeff Horwitz, un reporter del Wall Street Journal, per intraprendere un pericoloso viaggio che finisce per rivelare i segreti più custoditi del social network.",
+      "lista": "cinema",
+      "source": "tmdb:1281331",
+      "imdbId": "tt37510326",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseFonte": "IT",
+      "releaseGlobale": "2026-10-07",
+      "releaseUS": "2026-10-09",
+      "poster": "/qZr5bxGXE1t2A9pNSikb9fQKzov.jpg",
+      "backdrop": "/ycqTwRV7jUxjMospXxKTVS74nft.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 5.3924,
+      "budget": null,
+      "revenue": null,
+      "tagline": "We're way past making friends.",
+      "scoperte": [],
+      "castDetail": [
+        {
+          "name": "Mikey Madison",
+          "character": "Frances Haugen",
+          "profile": "/nsWQNYBTBYE2TCzGpyXTpA0TTEz.jpg"
+        },
+        {
+          "name": "Jeremy Allen White",
+          "character": "Jeff Horwitz",
+          "profile": "/pXRADDRhprgaQ4Bri44NH3bYeu6.jpg"
+        },
+        {
+          "name": "Jeremy Strong",
+          "character": "Mark Zuckerberg",
+          "profile": "/jcMhXWICSi4QjQttJVhFSiKVvpF.jpg"
+        },
+        {
+          "name": "Wunmi Mosaku",
+          "character": "Raya",
+          "profile": "/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg"
+        },
+        {
+          "name": "Betty Gilpin",
+          "character": null,
+          "profile": "/6GvlDnnKM0WxBt0jUipBJw5VgD5.jpg"
+        },
+        {
+          "name": "Billy Magnussen",
+          "character": "Teddy",
+          "profile": "/ugyx7Wn2uAWsNlR5eX4yWFsGV2Y.jpg"
+        },
+        {
+          "name": "Bill Burr",
+          "character": "Charlie",
+          "profile": "/4U95TX23X97OK9csaKVwzqAjFUV.jpg"
+        },
+        {
+          "name": "Gbenga Akinnagbe",
+          "character": null,
+          "profile": "/vFcVgkew7ign5utNWycKvUiBb75.jpg"
+        },
+        {
+          "name": "Anna Lambe",
+          "character": null,
+          "profile": "/cKm5ZnAOVc6nD8KAgSDMJdZclYH.jpg"
+        },
+        {
+          "name": "Aidan Laprete",
+          "character": null,
+          "profile": "/ipfzLeDycmV9qqpiyN4yzGj8Ure.jpg"
+        },
+        {
+          "name": "Kelley Pereira",
+          "character": null,
+          "profile": "/AvlYJ6QXyb0gGmj93jL276mA3Oi.jpg"
+        },
+        {
+          "name": "Nelson Franklin",
+          "character": null,
+          "profile": "/2YYnTxpFmS5i9qRkb6H4Nxky2px.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1492198",
+      "tmdbId": 1492198,
+      "title": "Artificial",
+      "originalTitle": null,
+      "release": null,
+      "director": "Luca Guadagnino",
+      "genres": [
+        "Commedia",
+        "Dramma"
+      ],
+      "countries": [
+        "Italia",
+        "Gran Bretagna",
+        "USA"
+      ],
+      "runtime": null,
+      "trailer": null,
+      "cast": [
+        "Andrew Garfield",
+        "Yura Borisov",
+        "Jason Schwartzman",
+        "Cooper Koch",
+        "Cooper Hoffman",
+        "Monica Barbaro",
+        "Billie Lourd",
+        "Zosia Mamet",
+        "Chris O'Dowd",
+        "Will Angus",
+        "Thaddea Graham",
+        "Nicholas Hamilton"
+      ],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:1492198",
+      "imdbId": "tt37171180",
+      "releaseFonte": null,
+      "releaseGlobale": null,
+      "releaseUS": null,
+      "poster": "/6RKRs1vE0KPQIAtRseP9y6MNJe1.jpg",
+      "backdrop": null,
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 1.4053,
+      "budget": 40000000,
+      "revenue": null,
+      "tagline": null,
+      "scoperte": [],
+      "castDetail": [
+        {
+          "name": "Andrew Garfield",
+          "character": "Sam Altman",
+          "profile": "/beO5YvbTjrr5yy8hW26KVDMSr35.jpg"
+        },
+        {
+          "name": "Yura Borisov",
+          "character": "Ilya Sutskever",
+          "profile": "/zLcD2UmXJG6m3qOQhNZs13SQRIp.jpg"
+        },
+        {
+          "name": "Jason Schwartzman",
+          "character": null,
+          "profile": "/gCjMdmW1DiPAClHVl4zHEIffIsE.jpg"
+        },
+        {
+          "name": "Cooper Koch",
+          "character": null,
+          "profile": "/oOcaCFuVKq6m6DeJwTesPVWpjG8.jpg"
+        },
+        {
+          "name": "Cooper Hoffman",
+          "character": "Greg Brockman",
+          "profile": "/6VY3YOg5o2k8CTldr8lYLijGnsN.jpg"
+        },
+        {
+          "name": "Monica Barbaro",
+          "character": "Mira Murati",
+          "profile": "/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+        },
+        {
+          "name": "Billie Lourd",
+          "character": null,
+          "profile": "/1u8bZL6ZXu5iDbPO3Z0Spetyt34.jpg"
+        },
+        {
+          "name": "Zosia Mamet",
+          "character": null,
+          "profile": "/8G4n5CMVhzKfYworKrc9Pd2QjHm.jpg"
+        },
+        {
+          "name": "Chris O'Dowd",
+          "character": null,
+          "profile": "/xhfgliN8DInDVBliPq7JDeKNCvz.jpg"
+        },
+        {
+          "name": "Will Angus",
+          "character": null,
+          "profile": "/5BGFShvByj9XKSeFWFeXGVr42bL.jpg"
+        },
+        {
+          "name": "Thaddea Graham",
+          "character": null,
+          "profile": "/A9JcILciCMWx5v0eMQYADaMB60z.jpg"
+        },
+        {
+          "name": "Nicholas Hamilton",
+          "character": null,
+          "profile": "/6XB730yU5XKJfEhV5W2zV8B9Fmh.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tmdb-1297467",
+      "tmdbId": 1297467,
+      "title": "The Exorcist: Martyrs",
+      "originalTitle": null,
+      "release": "2027-03-12",
+      "director": "Mike Flanagan",
+      "genres": [
+        "Horror"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "runtime": null,
+      "trailer": null,
+      "cast": [
+        "Scarlett Johansson",
+        "Jacobi Jupe",
+        "Diane Lane",
+        "Chiwetel Ejiofor",
+        "Laurence Fishburne",
+        "Sasha Calle",
+        "John Leguizamo",
+        "Rahul Kohli",
+        "Hamish Linklater",
+        "Gil Bellows",
+        "Carl Lumbly",
+        "Robert Longstreet"
+      ],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:1297467",
+      "imdbId": "tt32492552",
+      "rtScore": null,
+      "metascore": null,
+      "imdbRating": null,
+      "imdbVotes": null,
+      "releaseFonte": "US",
+      "releaseGlobale": "2027-03-11",
+      "releaseUS": "2027-03-12",
+      "poster": null,
+      "backdrop": "/bl4ym2v9TfJEoYM7flLtIHksXp8.jpg",
+      "tmdbRating": null,
+      "tmdbVotes": null,
+      "popularity": 2.8441,
+      "budget": null,
+      "revenue": null,
+      "tagline": null,
+      "scoperte": [],
+      "castDetail": [
+        {
+          "name": "Scarlett Johansson",
+          "character": null,
+          "profile": "/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+          "name": "Jacobi Jupe",
+          "character": null,
+          "profile": "/wVpax8MOwdelnQILiDNoDkTzebU.jpg"
+        },
+        {
+          "name": "Diane Lane",
+          "character": null,
+          "profile": "/6OfP3vFMuCL51zamFKgb8aS74hs.jpg"
+        },
+        {
+          "name": "Chiwetel Ejiofor",
+          "character": null,
+          "profile": "/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg"
+        },
+        {
+          "name": "Laurence Fishburne",
+          "character": null,
+          "profile": "/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+        },
+        {
+          "name": "Sasha Calle",
+          "character": null,
+          "profile": "/yLZY25AQOC2xKzsWqteyJTcWPK3.jpg"
+        },
+        {
+          "name": "John Leguizamo",
+          "character": null,
+          "profile": "/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg"
+        },
+        {
+          "name": "Rahul Kohli",
+          "character": null,
+          "profile": "/9wTBpyPhyDRUfgR1MGSmsILuZ8d.jpg"
+        },
+        {
+          "name": "Hamish Linklater",
+          "character": null,
+          "profile": "/ksTXQnWuKvmcVcbmHrvGaDof0P2.jpg"
+        },
+        {
+          "name": "Gil Bellows",
+          "character": null,
+          "profile": "/eCOIv2nSGnWTHdn88NoMyNOKWyR.jpg"
+        },
+        {
+          "name": "Carl Lumbly",
+          "character": null,
+          "profile": "/ew1URcenWNl1Uclsz9ADiRb0uBD.jpg"
+        },
+        {
+          "name": "Robert Longstreet",
+          "character": null,
+          "profile": "/j9e2HBqicMM59lErK8pL94Jh59v.jpg"
+        }
+      ]
     }
   ],
-  "enrichedAt": "2026-08-22T11:34:38.453Z"
+  "enrichedAt": "2026-08-22T11:47:06.163Z"
 }

@@ -1456,6 +1456,54 @@
       "plot": null,
       "lista": "casa",
       "source": "tmdb:1022888"
+    },
+    {
+      "id": "tmdb-1281331",
+      "tmdbId": 1281331,
+      "title": "The Social: Il prezzo della verità",
+      "originalTitle": null,
+      "release": null,
+      "director": null,
+      "genres": [],
+      "countries": [],
+      "runtime": null,
+      "trailer": null,
+      "cast": [],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:1281331"
+    },
+    {
+      "id": "tmdb-1492198",
+      "tmdbId": 1492198,
+      "title": "Artificial",
+      "originalTitle": null,
+      "release": null,
+      "director": null,
+      "genres": [],
+      "countries": [],
+      "runtime": null,
+      "trailer": null,
+      "cast": [],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:1492198"
+    },
+    {
+      "id": "tmdb-1297467",
+      "tmdbId": 1297467,
+      "title": "The Exorcist: Martyrs",
+      "originalTitle": null,
+      "release": null,
+      "director": null,
+      "genres": [],
+      "countries": [],
+      "runtime": null,
+      "trailer": null,
+      "cast": [],
+      "plot": null,
+      "lista": "cinema",
+      "source": "tmdb:1297467"
     }
   ]
 }
